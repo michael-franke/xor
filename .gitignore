@@ -45,15 +45,20 @@ vignettes/*.pdf
 *.out
 *.rel
 *.run.xml
+*.synctex
+*.lof
+*.ent
 auto
 
 # python stuff
 *.pyc
 
 # psiturk stuff
-*/participants.db
+participants.db
 */.psiturk_history
 */.jshintrc
 
 # no markdown output
 *.html
+
+.~lock.*
