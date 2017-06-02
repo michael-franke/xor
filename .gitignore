@@ -54,3 +54,6 @@ auto
 */participants.db
 */.psiturk_history
 */.jshintrc
+
+# no markdown output
+*.html
