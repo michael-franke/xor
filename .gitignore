@@ -31,3 +31,26 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
+
+# MacOs directory info
+.DS_Store
+
+# LaTeX auxiliaries
+*.log
+*.aux
+*.bbl
+*.blg
+*.gz
+*-blx.bib
+*.out
+*.rel
+*.run.xml
+auto
+
+# python stuff
+*.pyc
+
+# psiturk stuff
+*/participants.db
+*/.psiturk_history
+*/.jshintrc
