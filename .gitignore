@@ -55,8 +55,8 @@ auto
 
 # psiturk stuff
 participants.db
-*/.psiturk_history
-*/.jshintrc
+.psiturk_history
+.jshintrc
 
 # no markdown output
 *.html
