@@ -1,0 +1,232 @@
+---
+title: "Exclusive 'or'"
+output: html_document
+---
+
+```{r setup, include = FALSE, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(fig.width=10, fig.height=5, 
+                      echo=FALSE, warning=FALSE, message=FALSE)
+require('ggplot2')
+# require('plyr')
+require('dplyr')
+require('lme4')
+require('gridExtra')
+require('reshape2')
+
+save = TRUE # whether to save plots
+```
+
+## Prepare data Exp 5
+
+```{r, echo = TRUE}
+  d5 <- read.csv("data5_080616.csv")
+  d5 <- droplevels(filter(d5, !(language %in% c("Spanish"))))
+  control5 <- d5[d5$condition == "test",]
+  control5$distance <- ifelse(control5$trialType == "test_uncertain", 
+                             abs(control5$answer - 0.5),
+                             ifelse(control5$trialType == "test_false",
+                                    control5$answer,
+                                    1-control5$answer))
+  loafers5 = control5 %>% group_by(id) %>% summarise(dist = sum(distance))
+#   loafers5 <- ddply(
+#     control5, c("id"), summarise,
+#     dist = sum(distance)
+#   )
+  loafing_threshold5 = mean(loafers5$dist) + 2 * sd(loafers5$dist)
+  bad_participants5 <- loafers5[loafers5$dist > loafing_threshold5,]$id
+  d5 <- d5[!(d5$id %in% bad_participants5),]
+  # d5 <- d5[(d5$id != "A2P065E9CYMYJL:3IXEICO793R2XURCARGYWH966VHT6V"),]
+  d5$id <- factor(d5$id)
+  cdata5 = subset(d5, d5$condition == "critical") %>% 
+    group_by(name, type) %>%
+    summarise(N       = length(answer),
+      mean    = mean(answer),
+      se.mean = sd(answer) / sqrt(N),
+      se.RT   = sd(RT) / sqrt(N),
+      RT      = mean(RT))
+#   cdata5 <- ddply(
+#       subset(d5, d5$condition == "critical"), c("name", "type"), summarise,
+#       N       = length(answer),
+#       mean    = mean(answer),
+#       se.mean = sd(answer) / sqrt(N),
+#       se.RT   = sd(RT) / sqrt(N),
+#       RT      = mean(RT)
+#   )
+```
+  
+## Prepare data Exp 1
+
+```{r, echo = TRUE}
+  data <- read.csv("../01_xor-main/data2.csv")
+  data <- droplevels(filter(data, !(language %in% c("Vietnamese", 
+              "Spanish", 
+              "Bengali, but I speak English as if I were a native speaker"))))
+  data = droplevels(filter(data, name != "Bill's order"))
+  control <- data[data$condition %in% c("test_uncertain", "test_false", "test_true"),]
+  control$distance <- ifelse(control$condition == "test_uncertain", 
+                             abs(control$answer - 0.5),
+                             ifelse(control$condition == "test_false",
+                                    control$answer,
+                                    1-control$answer))
+  loafers = control %>% group_by(id) %>% summarise(dist = sum(distance))
+#   loafers <- ddply(
+#     control, c("id"), summarise,
+#     dist = sum(distance)
+#   )
+  loafing_threshold = mean(loafers$dist) + 2 * sd(loafers$dist)
+  bad_participants <- loafers[loafers$dist > loafing_threshold,]$id
+  data <- data[!(data$id %in% bad_participants),]
+  data$id <- factor(data$id)
+  cdata = data %>% 
+    group_by(name, condition, type) %>%
+    summarise(N = length(answer),
+      mean    = mean(answer),
+      se.mean = sd(answer) / sqrt(N),
+      se.RT   = sd(RT) / sqrt(N),
+      RT      = mean(RT))
+#   cdata <- ddply(
+#       data, c("name", "condition", "type"), summarise,
+#       N       = length(answer),
+#       mean    = mean(answer),
+#       se.mean = sd(answer) / sqrt(N),
+#       se.RT   = sd(RT) / sqrt(N),
+#       RT      = mean(RT)
+#   )
+```
+
+## Analysis
+
+We construct a generalised linear model predicting proportions based on the average scores for each item and condition.
+
+```{r echo = TRUE}
+  rel.dp        <- cdata[cdata$condition == "rel",]$mean
+  pri.dp        <- cdata[cdata$condition == "prior",]$mean
+  com.dp        <- cdata[cdata$condition == "comp",]$mean
+  priCon.dp        <- cdata5$mean
+  names(rel.dp) <- cdata[cdata$condition == "rel",]$name
+  names(pri.dp) <- cdata[cdata$condition == "prior",]$name
+  names(com.dp) <- cdata[cdata$condition == "comp",]$name
+  names(priCon.dp) <- cdata5$name
+  data$rel      <- rel.dp[data$name]
+  data$pri      <- pri.dp[data$name]
+  data$com      <- com.dp[data$name]
+  data$priCon      <- priCon.dp[data$name]
+
+  xor <- data[data$condition == "xor",]
+
+  model <- glm(answer ~ rel + pri + com + priCon, data = xor)
+  
+  summary(model)
+```
+
+
+
+## Correlation plot and correlation test
+
+Per-vignette means of the prior ratings for conditional and conjunctive statements are highly correlated.
+
+```{r fig.height = 3}
+  xor.dp <- cdata[cdata$condition == "xor",]$mean
+  df <- data.frame(xor = xor.dp, rel = rel.dp, com = com.dp, pri = pri.dp, priCon = priCon.dp)
+  df$vignetteID = c("clothes", "dancing", "sunscreen", "squash", "graduate", "exams", "pet", "NY", "delay", "golf",
+                    "drinking", "health", "lunch", "accident", "club")
+  corPlot5 = ggplot(df, aes(x = pri, y = priCon)) + geom_point() + theme_bw() + geom_smooth(method = lm, se = TRUE) +
+    geom_text(aes(label=vignetteID),hjust=0.5, vjust=-0.4, color = "firebrick", size = 2.5) + xlim(0,1) +
+    xlab("mean conditional statements") + ylab("mean conjunctive statements")
+  show(corPlot5)
+  if (save) {
+    ggsave(filename = "../../texts/01_paper_draft/pics/correlationPriorMeasuresExp1and5.pdf", plot = corPlot5, width = 3, height = 3)
+  }
+
+```
+
+```{r}
+cor.test(df$pri, df$priCon)
+```
+
+
+## Bayesian model comparison
+
+```{r, message=FALSE, echo = TRUE}
+require('BayesFactor')
+bfsAll = generalTestBF(answer ~ rel + com + pri, data = xor)
+bfsAllpriCon = generalTestBF(answer ~ rel + com + pri + priCon, data = xor)
+bfspriCon = generalTestBF(answer ~ priCon, data = xor)
+plot(bfsAllpriCon)
+# if (save) {
+#   pdf('../../texts/01_paper_draft/pics/bfsAll.pdf', height = 4, width = 6)
+#   plot(c(bfspriCon, bfsAll))
+#   dev.off()
+#   }
+```
+
+
+## Combined plot of Exp 1 and 5
+
+```{r}
+
+dataPri = filter(data, condition == "prior") 
+answerPri = 0
+
+for (i in 1:(nrow(dataPri))) {
+  dataSub = filter(dataPri, id == dataPri$id[i], name == dataPri$name[i])
+  answerPri[i] = mean(dataSub$answer)
+}
+dataPri$answer = answerPri
+dataPri = dataPri[(1:(nrow(dataPri)/2)) * 2 - 1 ,]
+
+prepData = rbind(filter(data, condition != "prior"), dataPri)
+combinedData1 = filter(prepData, condition %in% c("rel", "prior", "comp", "xor")) %>% 
+  melt(measure.vars = c("answer"), id.vars = c("name", "type", "condition")) %>%
+  mutate(condition = substr(condition, 1, 3))
+combinedData5 = filter(d5, condition == "critical") %>% mutate(condition = "priCon") %>%
+  melt(measure.vars = "answer", id.vars = c("name", "type", "condition"))
+combinedData = rbind(combinedData1, combinedData5)
+combinedData$value[combinedData$condition == "pri"] = 1 - combinedData$value[combinedData$condition == "pri"]
+combinedData$value[combinedData$condition == "priCon"] = 1 - combinedData$value[combinedData$condition == "priCon"]
+
+nameMap = function(x) {
+  shortNames = c("clothes", "dancing", "sunscreen", "squash", "graduate", "exams", "pet", "NY", "delay", "golf",
+                    "drinking", "health", "lunch", "accident", "club")
+#   typeList = c("hlh", "hll", "lhh", "hhh", "llh", "hlh", "lll", "lll", "llh", "hll",
+#                     "lhl", "hhh", "hhl", "hhl", "lhl")
+  typeList = c("hll", "hlh", "lhl", "hhl", "lll", "hll", "llh", "llh", "lll", "hlh",
+                    "lhh", "hhl", "hhh", "hhh", "lhh") # high prior => likely that "NOT (A and B)"
+  longNames = levels(combinedData$name)
+  paste(shortNames[which(longNames == x)], " (", typeList[which(longNames == x)], ")", sep = "", collapse = "")
+}
+nameMap = Vectorize(nameMap)
+combinedData$name = factor(nameMap(x = combinedData$name),
+                           levels = c("lunch (hhh)", "squash (hhl)", "dancing (hlh)", "club (lhh)", 
+                                      "exams (hll)", "exams (lhl)", "NY (llh)", "delay (lll)", "sunscreen (lhl)",
+                                      "accident (hhh)", "health (hhl)", "golf (hlh)", "drinking (lhh)", 
+                                      "clothes (hll)", "pet (llh)", "graduate (lll)"))
+combinedData$condition = factor(combinedData$condition, levels = c("xor", "rel", "com", "pri", "priCon"), ordered = TRUE)
+cd = combinedData %>% group_by(name, condition) %>% 
+  mutate(meanValueItem = mean(value))
+cd = cd %>% group_by(condition) %>%
+  mutate(meanValuePopulation = mean(value))
+
+combinedBoxPlot = ggplot(cd, aes(x = condition, y = value, fill = condition)) + geom_boxplot() + facet_wrap(~ name, ncol = 8) +
+  geom_point(aes(x = condition, y = meanValueItem, shape = "itemShape"), color = "black", size = 2.5) + 
+  geom_point(aes(x = condition, y = meanValuePopulation, shape = "populationShape"), color = "black", size = 2.5 ) + 
+  scale_shape_manual(name = 'means', 
+         values =c('itemShape'= 4, 'populationShape' = 1), labels = c('per item','population'))
+show(combinedBoxPlot)
+
+
+
+```
+
+## Regression to test relation of measures
+
+To test whether the ratings of the conditionals sentences and those of the conjunctive sentences are any different, we look at a regression with dependent variable "Rating" and independent variables "vignette" and "measure type".
+
+```{r}
+regData = filter(combinedData, condition %in% c("pri", "priCon"))
+bfsInd = generalTestBF(value ~ condition + name, data = regData)
+plot(bfsInd)
+show(bfsInd/bfsInd)
+```
+
+

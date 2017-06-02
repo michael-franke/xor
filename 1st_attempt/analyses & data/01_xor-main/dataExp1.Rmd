@@ -1,0 +1,364 @@
+---
+title: "Exclusive 'or'"
+output: html_document
+---
+
+```{r setup, include = FALSE, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(fig.width=10, fig.height=5, 
+                      echo=FALSE, warning=FALSE, message=FALSE)
+require('ggplot2')
+require('plyr')
+require('dplyr')
+require('lme4')
+require('gridExtra')
+require('reshape2')
+
+save = TRUE # whether to save plots
+```
+
+## Prepare data
+
+200 participants recruited via MTurk with US IPs and at least 90% acceptance rates were payed 80 cents. We exclude 3 subjects for not being self-reported native speakers of English. Unfortunately, one vignitte, namely "Bill's order" was ill-constructed and should be removed entirely.
+
+```{r, echo = TRUE}
+  data <- read.csv("data2.csv")
+  data <- droplevels(filter(data, !(language %in% c("Vietnamese", 
+              "Spanish", 
+              "Bengali, but I speak English as if I were a native speaker"))))
+  data = droplevels(filter(data, name != "Bill's order"))
+```
+
+
+
+## Remove loafers by deviance score
+
+This plot shows the distribution of participants based on their *deviance score*, i.e., the total absolute distance from ideal answers to control items (i.e., 0, 0.5, and 1 for "test_false", "test_uncertain", and "test_true").
+
+```{r}
+  
+  control <- data[data$condition %in% c("test_uncertain", "test_false", "test_true"),]
+  control$distance <- ifelse(control$condition == "test_uncertain", 
+                             abs(control$answer - 0.5),
+                             ifelse(control$condition == "test_false",
+                                    control$answer,
+                                    1-control$answer))
+  loafers <- ddply(
+    control, c("id"), summarise,
+    dist = sum(distance)
+  )
+  
+  show(ggplot(loafers, aes(x = dist)) + geom_histogram(binwidth = 0.5, colour = "black", fill = "firebrick") + theme_bw())
+  
+  loafing_threshold = mean(loafers$dist) + 2 * sd(loafers$dist)
+```
+
+The mean deviance score is `r round(mean(loafers$dist),3)`; its standard deviation is `r round(sd(loafers$dist),3)`.
+
+There were originally `r nrow(loafers)` participants. We remove the `r nrow(loafers[loafers$dist > loafing_threshold,])` participants whose deviance score exceeded `r round(loafing_threshold,3)`, which is the mean plus twice the standard deviance of all deviance scores.
+
+```{r, echo = TRUE}
+  bad_participants <- loafers[loafers$dist > loafing_threshold,]$id
+  data <- data[!(data$id %in% bad_participants),]
+  data$id <- factor(data$id)
+  # extract data
+  cdata <- ddply(
+  data, c("name", "condition", "type"), summarise,
+  N       = length(answer),
+  mean    = mean(answer),
+  se.mean = sd(answer) / sqrt(N),
+  se.RT   = sd(RT) / sqrt(N),
+  RT      = mean(RT)
+  )
+```
+
+## Expectations versus results
+
+```{r}
+  rel.dif <- round(cdata[cdata$condition == "rel",]$mean - mean(data[data$condition == "rel",]$answer), 2)
+  pri.dif <- round(cdata[cdata$condition == "prior",]$mean - mean(data[data$condition == "prior",]$answer), 2)
+  com.dif <- round(cdata[cdata$condition == "comp",]$mean - mean(data[data$condition == "comp",]$answer), 2)
+  sum.dif <- abs(rel.dif) + abs(pri.dif) + abs(com.dif)
+```
+
+This table shows the difference from the mean for each item and condition as well as our expectations. So when the prediction is 'h' we predicted a positive score and when the prediction is 'l' we predicted a negative score. The means for *relevance*, *competence*, and *prior* were `r round(mean(data[data$condition == "rel",]$answer), 2)`, `r round(mean(data[data$condition == "comp",]$answer), 2)`, and `r round(mean(data[data$condition == "prior",]$answer), 2)`)
+
+| Item |  Pred  |  Rel|Comp|Prior  |  Total   |
+|--------|----------|---------|---------|---------|--------|
+|`r levels(cdata$name)[1]` | `r cdata[cdata$name == levels(cdata$name)[1],]$type[1]` | `r rel.dif[1]` | `r com.dif[1]` | `r pri.dif[1]` | `r sum.dif[1]` |
+|`r levels(cdata$name)[2]` | `r cdata[cdata$name == levels(cdata$name)[2],]$type[1]` | `r rel.dif[2]` | `r com.dif[2]` | `r pri.dif[2]` | `r sum.dif[2]` |
+|`r levels(cdata$name)[3]` | `r cdata[cdata$name == levels(cdata$name)[3],]$type[1]` | `r rel.dif[3]` | `r com.dif[3]` | `r pri.dif[3]` | `r sum.dif[3]` |
+|`r levels(cdata$name)[4]` | `r cdata[cdata$name == levels(cdata$name)[4],]$type[1]` | `r rel.dif[4]` | `r com.dif[4]` | `r pri.dif[4]` | `r sum.dif[4]` |
+|`r levels(cdata$name)[5]` | `r cdata[cdata$name == levels(cdata$name)[5],]$type[1]` | `r rel.dif[5]` | `r com.dif[5]` | `r pri.dif[5]` | `r sum.dif[5]` |
+|`r levels(cdata$name)[6]` | `r cdata[cdata$name == levels(cdata$name)[6],]$type[1]` | `r rel.dif[6]` | `r com.dif[6]` | `r pri.dif[6]` | `r sum.dif[6]` |
+|`r levels(cdata$name)[7]` | `r cdata[cdata$name == levels(cdata$name)[7],]$type[1]` | `r rel.dif[7]` | `r com.dif[7]` | `r pri.dif[7]` | `r sum.dif[7]` |
+|`r levels(cdata$name)[8]` | `r cdata[cdata$name == levels(cdata$name)[8],]$type[1]` | `r rel.dif[8]` | `r com.dif[8]` | `r pri.dif[8]` | `r sum.dif[8]` |
+|`r levels(cdata$name)[9]` | `r cdata[cdata$name == levels(cdata$name)[9],]$type[1]` | `r rel.dif[9]` | `r com.dif[9]` | `r pri.dif[9]` | `r sum.dif[9]` |
+|`r levels(cdata$name)[10]` | `r cdata[cdata$name == levels(cdata$name)[10],]$type[1]` | `r rel.dif[10]` | `r com.dif[10]` | `r pri.dif[10]` | `r sum.dif[10]` |
+|`r levels(cdata$name)[11]` | `r cdata[cdata$name == levels(cdata$name)[11],]$type[1]` | `r rel.dif[11]` | `r com.dif[11]` | `r pri.dif[11]` | `r sum.dif[11]` |
+|`r levels(cdata$name)[12]` | `r cdata[cdata$name == levels(cdata$name)[12],]$type[1]` | `r rel.dif[12]` | `r com.dif[12]` | `r pri.dif[12]` | `r sum.dif[12]` |
+|`r levels(cdata$name)[13]` | `r cdata[cdata$name == levels(cdata$name)[13],]$type[1]` | `r rel.dif[13]` | `r com.dif[13]` | `r pri.dif[13]` | `r sum.dif[13]` |
+|`r levels(cdata$name)[14]` | `r cdata[cdata$name == levels(cdata$name)[14],]$type[1]` | `r rel.dif[14]` | `r com.dif[14]` | `r pri.dif[14]` | `r sum.dif[14]` |
+|`r levels(cdata$name)[15]` | `r cdata[cdata$name == levels(cdata$name)[15],]$type[1]` | `r rel.dif[15]` | `r com.dif[15]` | `r pri.dif[15]` | `r sum.dif[15]` |
+|`r levels(cdata$name)[16]` | `r cdata[cdata$name == levels(cdata$name)[16],]$type[1]` | `r rel.dif[16]` | `r com.dif[16]` | `r pri.dif[16]` | `r sum.dif[16]` |
+
+We might have liked some more dispersion especially for *competence* but there seems to be sufficient variation for all conditions.
+
+We can also test whether, over all vignettes, our expectations led to significant differences.
+
+```{r}
+  t.test(answer ~ relevance, data = filter(data, condition %in% c("rel") ))
+  t.test(answer ~ competence, data = filter(data, condition %in% c("comp") ))
+  t.test(answer ~ prior, data = filter(data, condition %in% c("prior") ))
+  
+  factorData = data %>% 
+    filter(condition %in% c("rel", "comp", "prior"))
+  factorData = melt(factorData, id.vars = c("relevance", "competence", "prior", "condition"), 
+                    measure.vars = "answer")
+  factorData$highLow = ifelse(factorData$condition == "comp", factorData$competence,
+                              ifelse(factorData$condition == "rel", factorData$relevance,factorData$prior))
+  factorData$highLow = factor(ifelse(factorData$highLow, "high", "low"), levels = c('low', 'high'))
+  
+  factorData$condition = ifelse(factorData$condition == "comp", "com",
+                                ifelse(factorData$condition == "prior", "pri", "rel"))
+  
+  factorData$condition = factor(factorData$condition, ordered = T, levels = c("rel", "com", "pri"))
+  factorBoxPlot = ggplot(factorData, aes(x=highLow, y=value, fill=highLow)) + geom_boxplot() + facet_wrap(~ condition) +
+    guides(fill=FALSE) + xlab('intuitive categorization') + ylab('rating') + theme_bw()
+  show(factorBoxPlot)
+  
+  if (save) {ggsave(filename = '../../texts/01_paper_draft/pics/factorBoxPlotExp1.pdf', factorBoxPlot, height = 3, width = 6)}
+```
+
+
+## Distribution of ratings
+
+This plot shows the distribution of ratings for each of the four factors of interest.
+
+```{r}
+  densityFactors = ggplot(data = filter(cdata, ! condition %in% c("test_false", "test_uncertain", "test_true") ),
+         aes(x = mean)) +
+  geom_density(alpha = 0.2, fill = "firebrick") +
+  theme_bw() +
+  facet_wrap(~ condition, ncol = 4) +
+  xlab("rating")
+  show(densityFactors)
+  if (save) {
+    ggsave(filename = "../../texts/01_paper_draft/pics/densityFactorsExp1.pdf", plot = densityFactors, width = 6, height = 3)
+  }
+```
+
+The distribution for *competence* is perhaps slightly less spread out than we had hoped (mean `r round(mean(filter(data, data$condition == "comp")$answer),2)`, standard deviation `r round(sd(filter(data, data$condition == "comp")$answer),2)`). The distribution for *prior* is slightly skewed to the left (mean `r round(mean(filter(data, data$condition == "prior")$answer),2)`, standard deviation `r round(sd(filter(data, data$condition == "prior")$answer),2)`). The distribution for *relevance* is ideal (mean `r round(mean(filter(data, data$condition == "rel")$answer),2)`, standard deviation `r round(sd(filter(data, data$condition == "rel")$answer),2)`). The distribution for *xor* is skewed towards the right and peaks at about 0.70 which seems reasonable for an inference task (mean `r round(mean(filter(data, data$condition == "xor")$answer),2)`, standard deviation `r round(sd(filter(data, data$condition == "xor")$answer),2)`).
+
+Here's the distribution of ratings over test conditions.
+
+```{r}
+  densityTest = ggplot(data = filter(cdata, condition %in% c("test_false", "test_uncertain", "test_true") ),
+         aes(x = mean)) +
+  geom_density(alpha = 0.2, fill = "firebrick") +
+  theme_bw() +
+  facet_wrap(~ condition, ncol = 4) +
+  theme()
+  show(densityTest)
+```
+
+The distribution for the controls looks good. Ratings of false test statements are lower than those of uncertain statements, which in turn are lower than ratings of true statements.
+
+```{r}
+  t.test(mean ~ condition , 
+         data = filter(cdata, condition %in% c("test_false", "test_uncertain")),
+         alternative = "less")
+  t.test(mean ~ condition , 
+         data = filter(cdata, condition %in% c("test_uncertain", "test_true")),
+         alternative = "greater")
+```
+
+
+Finally, look at the distribution of answers for each vignette separately.
+
+```{r}
+plotData = data %>% filter( condition %in% c('xor') ) %>%
+            select(name, type, answer) %>%
+            mutate(nameType = paste0(type, '-', name))
+answerByVignette = ggplot(plotData, aes(y = answer, x = nameType)) + geom_boxplot()  + coord_flip()          
+show(answerByVignette)
+```
+
+
+## Analysis
+
+We construct a generalised linear model predicting proportions based on the average scores for each item and condition.
+
+```{r echo = TRUE}
+  rel.dp        <- cdata[cdata$condition == "rel",]$mean
+  pri.dp        <- cdata[cdata$condition == "prior",]$mean
+  com.dp        <- cdata[cdata$condition == "comp",]$mean
+  names(rel.dp) <- cdata[cdata$condition == "rel",]$name
+  names(pri.dp) <- cdata[cdata$condition == "prior",]$name
+  names(com.dp) <- cdata[cdata$condition == "comp",]$name
+  data$rel      <- rel.dp[data$name]
+  data$pri      <- pri.dp[data$name]
+  data$com      <- com.dp[data$name]
+
+  xor <- data[data$condition == "xor",]
+
+  model <- glm(answer ~ rel + pri + com, data = xor)
+  
+  summary(model)
+```
+
+A significant effect of *prior* on the exclusivity ratings. The more likely the conjunctive situation the less likely it is that the sentence with `or' is judged as exclusive. The other two factors are not significant although *relevance* tends in the same direction as *prior*.
+
+## Compare models of different complexity
+
+Instead of asking which factors are significant deviations in the best fitted regression model, we can also ask which factors should be included for better regression models.
+
+```{r, echo = TRUE}
+modelRel <- glm(answer ~ rel, data = xor)
+modelCom <- glm(answer ~ com, data = xor)
+modelPri <- glm(answer ~ pri, data = xor)
+modelRelCom <- glm(answer ~ rel + com, data = xor)
+modelComPri <- glm(answer ~ com + pri, data = xor)
+modelRelPri <- glm(answer ~ rel + pri, data = xor)
+modelRelComPri <- glm(answer ~ rel + com + pri, data = xor)
+show(AIC(modelRel, modelCom, modelPri, modelRelCom, modelComPri, modelRelPri, modelRelComPri))
+```
+
+This means that a model that only takes *prior* is already pretty good, but the best model would take *prior* and *relevance* as factors. Including *competence* does not increase model strength. (NB: lower AIC -> better model.)
+
+## Bayesian model comparison
+
+Instead of comparing models with AICs, we can use Bayes factors, because these better take model complexity into account.
+
+```{r, message=FALSE, echo = TRUE}
+require('BayesFactor')
+bfsAll = generalTestBF(answer ~ rel + com + pri, data = xor)
+plot(bfsAll)
+if (save) {
+  pdf('../../texts/01_paper_draft/pics/bfsAllExp1.pdf', height = 4, width = 6)
+  plot(bfsAll)
+  dev.off()
+  }
+```
+
+This suggests that the model that only takes "prior" into account is the best. But it is only marginally better than models that also look at "competence" and "relevance".
+
+```{r, echo=FALSE, message = FALSE, warnings = FALSE}
+# this is just some extra testing
+
+## including interactions
+# bfsAllInt = generalTestBF(answer ~ rel * com * pri, data = xor)
+# plot(bfsAllInt)
+
+## treating IV as categorical
+# bfsBinary = sort(regressionBF(answer ~ relevance * competence * prior, data = xor))
+# plot(bfsBinary)
+# xor$relevanceF = factor(xor$relevance)
+# xor$competenceF = factor(xor$competence)
+# xor$priorF = factor(xor$prior)
+# bfsCat = sort(anovaBF(answer ~ relevanceF + competenceF + priorF, data = xor, whichModels = "bottom"))
+# plot(bfsCat)
+# summary(aov(answer ~ relevanceF + competenceF + priorF, data = xor))
+
+## including by-participant random effects
+# bfsAllNoIntMixed = generalTestBF(answer ~ rel + com + pri + id, data = xor, whichRandom = "id")
+# plot(bfsAllNoIntMixed)
+# bfsAllMixed = generalTestBF(answer ~ rel * com * pri + id, data = xor, whichRandom = "id")
+# plot(bfsAllMixed)
+```
+
+We can also inspect the estimates of the coefficients for the model with all three factors.
+
+```{r, warning = FALSE, echo=TRUE , message = FALSE}
+require('ggmcmc') # for nicer plots
+full = lmBF(answer ~ rel + pri + com, data = xor)
+chains = posterior(full, iterations = 50000, chains = 2) # get posterior samples
+mc = ggs(mcmc(chains)) # transform to ggmcmc object
+mc = filter(mc, Parameter %in% c("rel", "com", "pri"))
+mc$Parameter = factor(mc$Parameter, levels = c("rel", "com", "pri"), ordered = T)
+densityMCMC = ggplot(mc, aes(x = value)) + geom_density() + 
+  facet_wrap(~ Parameter) + theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
+  xlab("values of regression coefficients") + ylab("posterior probability") + theme_bw()
+# densityMCMC = ggs_density(mc, family = c("rel|com|pri"))
+show(densityMCMC)
+if (save) {ggsave(filename = '../../texts/01_paper_draft/pics/densityMCMCExp1.pdf', densityMCMC, height = 3, width = 5)}
+
+# try this only for competence in the model
+compModel = lmBF(answer ~ com, data = xor)
+chainsComp = posterior(compModel, iterations = 50000) # get posterior samples
+mcComp = ggs(mcmc(chainsComp)) # transform to ggmcmc object
+ggs_density(mcComp)
+```
+
+This plots shows the posterior over model coefficients. It shows that there is a problem of directionality with "relevance" and "competence": since the tendency for both is to be negative (though this is not "significant"), higher ratings for these move expected implicature strength downwards, contrary to expectation given the standard doctrine.
+
+## Transform the data
+
+Proportions are sometimes analysed after an arcsine transformation although that procedure has been criticised. Let's give it a try nonetheless.
+
+```{r echo = TRUE, message = FALSE}
+  
+  cdata2 <- ddply(
+    data, c("name", "condition", "type"), summarise,
+    mean = mean(asin(answer))
+  )
+  
+  rel.dp2        <- cdata2[cdata2$condition == "rel",]$mean
+  pri.dp2        <- cdata2[cdata2$condition == "prior",]$mean
+  com.dp2        <- cdata2[cdata2$condition == "comp",]$mean
+  names(rel.dp2) <- cdata2[cdata2$condition == "rel",]$name
+  names(pri.dp2) <- cdata2[cdata2$condition == "prior",]$name
+  names(com.dp2) <- cdata2[cdata2$condition == "comp",]$name
+  data2          <- data
+  data2$rel      <- rel.dp[data$name]
+  data2$pri      <- pri.dp[data$name]
+  data2$com      <- com.dp[data$name]
+
+  xor2 <- data2[data2$condition == "xor",]
+  xor2$answer <- asin(xor2$answer)
+
+  model2 <- glm(answer ~ rel + pri + com, data = xor2)
+  
+  summary(model2)
+  
+```
+This doesn't make a difference.
+
+## Correlation plots
+
+```{r fig.height = 3}
+  xor.dp <- cdata[cdata$condition == "xor",]$mean
+  df <- data.frame(xor = xor.dp, rel = rel.dp, com = com.dp, pri = pri.dp)
+  df$vignetteID = c("clothes", "dancing", "sunscreen", "squash", "graduate", "exams", "pet", "NY", "delay", "golf",
+                    "drinking", "health", "lunch", "accident", "club")
+  dfPlot = melt(df, measure.vars = c("rel", "com", "pri"))
+  
+  corPlot = ggplot(dfPlot, aes(x = value, y = xor)) + geom_point() + theme_bw() + geom_smooth(method = lm, se = TRUE) +
+    geom_text(aes(label=vignetteID),hjust=0.5, vjust=-0.4, color = "firebrick", size = 2.5) + xlim(0,1) + facet_wrap(~ variable, ncol = 3) +
+    xlab("mean value of explanatory factor") + ylab("mean strength of exclusive reading") + theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+  if (save) {
+    ggsave(filename = "../../texts/01_paper_draft/pics/correlationExp1.pdf", plot = corPlot, width = 6, height = 3)
+  }
+  
+```
+
+## Should we exlude any vignette from the analysis
+
+We should check if there is any vignette, similar to <span style = "font-style: italic">NBA experts</span> in Experiment 3 which is different from all the others. This is not the case: no vignette is pairwise different, by a two-sided <span style = "font-style: italic">t</span>-test, from all of the other vignettes.
+
+
+```{r}
+d = data
+pValues = matrix(-1, ncol = nlevels(d$name), nrow = nlevels(d$name))
+colnames(pValues) = levels(d$name)
+rownames(pValues) = levels(d$name)
+for (i in 1:nlevels(d$name)) {
+  for (j in 1:nlevels(d$name)) {
+    if (i != j) {
+      pValues[i,j] = t.test(filter(data, condition == "xor", name == levels(d$name)[i])$answer,
+         filter(data, condition == "xor", name == levels(d$name)[j])$answer)$p.value 
+    }
+  }
+}
+apply(pValues,1, max)
+```

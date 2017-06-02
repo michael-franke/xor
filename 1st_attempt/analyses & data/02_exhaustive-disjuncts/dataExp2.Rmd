@@ -1,0 +1,266 @@
+---
+title: "Exclusive 'or'"
+output: html_document
+---
+
+```{r setup, include = FALSE, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(fig.width=10, fig.height=5, 
+                      echo=FALSE, warning=FALSE, message=FALSE)
+require('ggplot2')
+# require('plyr')
+require('dplyr')
+require('lme4')
+require('gridExtra')
+require('reshape2')
+
+save = TRUE # whether to save plots
+```
+
+## Prepare data Exp 2
+
+```{r, echo = TRUE}
+  d2 <- read.csv("dataExp2_14122015.csv")
+  d2 <- droplevels(filter(d2, !(language %in% c("Tamil"))))
+  control2 <- d2[d2$condition == "test",]
+  control2$distance <- ifelse(control2$trialType == "test_uncertain", 
+                             abs(control2$answer - 0.5),
+                             ifelse(control2$trialType == "test_false",
+                                    control2$answer,
+                                    1-control2$answer))
+  loafers2 = control2 %>% group_by(id) %>% summarise(dist = sum(distance))
+#   loafers2 <- ddply(
+#     control2, c("id"), summarise,
+#     dist = sum(distance)
+#   )
+  loafing_threshold2 = mean(loafers2$dist) + 2 * sd(loafers2$dist)
+  bad_participants2 <- loafers2[loafers2$dist > loafing_threshold2,]$id
+  d2 <- d2[!(d2$id %in% bad_participants2),]
+  # d2 <- d2[(d2$id != "A2P065E9CYMYJL:3IXEICO793R2XURCARGYWH966VHT6V"),]
+  d2$id <- factor(d2$id)
+  cdata2 = subset(d2, d2$condition == "critical") %>% 
+    group_by(name, type) %>%
+    summarise(N       = length(answer),
+      mean    = mean(answer),
+      se.mean = sd(answer) / sqrt(N),
+      se.RT   = sd(RT) / sqrt(N),
+      RT      = mean(RT))
+#   cdata2 <- ddply(
+#       subset(d2, d2$condition == "critical"), c("name", "type"), summarise,
+#       N       = length(answer),
+#       mean    = mean(answer),
+#       se.mean = sd(answer) / sqrt(N),
+#       se.RT   = sd(RT) / sqrt(N),
+#       RT      = mean(RT)
+#   )
+```
+  
+## Prepare data Exp 1
+
+```{r, echo = TRUE}
+  data <- read.csv("../01_xor-main/data2.csv")
+  data <- droplevels(filter(data, !(language %in% c("Vietnamese", 
+              "Spanish", 
+              "Bengali, but I speak English as if I were a native speaker"))))
+  data = droplevels(filter(data, name != "Bill's order"))
+  control <- data[data$condition %in% c("test_uncertain", "test_false", "test_true"),]
+  control$distance <- ifelse(control$condition == "test_uncertain", 
+                             abs(control$answer - 0.5),
+                             ifelse(control$condition == "test_false",
+                                    control$answer,
+                                    1-control$answer))
+  loafers = control %>% group_by(id) %>% summarise(dist = sum(distance))
+#   loafers <- ddply(
+#     control, c("id"), summarise,
+#     dist = sum(distance)
+#   )
+  loafing_threshold = mean(loafers$dist) + 2 * sd(loafers$dist)
+  bad_participants <- loafers[loafers$dist > loafing_threshold,]$id
+  data <- data[!(data$id %in% bad_participants),]
+  data$id <- factor(data$id)
+  cdata = data %>% 
+    group_by(name, condition, type) %>%
+    summarise(N = length(answer),
+      mean    = mean(answer),
+      se.mean = sd(answer) / sqrt(N),
+      se.RT   = sd(RT) / sqrt(N),
+      RT      = mean(RT))
+#   cdata <- ddply(
+#       data, c("name", "condition", "type"), summarise,
+#       N       = length(answer),
+#       mean    = mean(answer),
+#       se.mean = sd(answer) / sqrt(N),
+#       se.RT   = sd(RT) / sqrt(N),
+#       RT      = mean(RT)
+#   )
+```
+
+## Analysis
+
+We construct a generalised linear model predicting proportions based on the average scores for each item and condition.
+
+```{r echo = TRUE}
+  rel.dp        <- cdata[cdata$condition == "rel",]$mean
+  pri.dp        <- cdata[cdata$condition == "prior",]$mean
+  com.dp        <- cdata[cdata$condition == "comp",]$mean
+  exh.dp        <- cdata2$mean
+#   altMean       <- subset(d2, d2$trialType %in% c("exh1", "exh2")) %>% 
+#     group_by(name, trialType) %>% summarize(meanA = mean(answer)) %>% 
+#     group_by(name) %>% summarize(mean = mean(meanA))
+#   exh.dp = altMean$mean
+  names(rel.dp) <- cdata[cdata$condition == "rel",]$name
+  names(pri.dp) <- cdata[cdata$condition == "prior",]$name
+  names(com.dp) <- cdata[cdata$condition == "comp",]$name
+  names(exh.dp) <- cdata2$name
+  # names(exh.dp) <- altMean$name
+  data$rel      <- rel.dp[data$name]
+  data$pri      <- pri.dp[data$name]
+  data$com      <- com.dp[data$name]
+  data$exh      <- exh.dp[data$name]
+
+  xor <- data[data$condition == "xor",]
+
+  model <- glm(answer ~ rel + pri + com + exh, data = xor)
+  
+  summary(model)
+```
+
+
+## Correlation plots
+
+```{r fig.height = 3}
+  xor.dp <- cdata[cdata$condition == "xor",]$mean
+  df <- data.frame(xor = xor.dp, rel = rel.dp, com = com.dp, pri = pri.dp, exh = exh.dp)
+  df$vignetteID = c("clothes", "dancing", "sunscreen", "squash", "graduate", "exams", "pet", "NY", "delay", "golf",
+                    "drinking", "health", "lunch", "accident", "club")
+  dfPlot = melt(df, measure.vars = c("rel", "com", "pri", "exh"))
+  corPlot = ggplot(dfPlot, aes(x = value, y = xor)) + geom_point() + theme_bw() + geom_smooth(method = lm, se = TRUE) +
+    geom_text(aes(label=vignetteID),hjust=0.5, vjust=-0.4, color = "firebrick", size = 2.5) + xlim(0,1) + facet_wrap(~ variable, ncol = 4) +
+    xlab("mean value of explanatory factor") + ylab("mean strength of exclusive reading")
+  show(corPlot)
+  if (save) {
+    ggsave(filename = "../../texts/01_paper_draft/pics/correlationExp1and3.pdf", plot = corPlot, width = 8, height = 3)
+  }
+
+```
+
+
+```{r fig.height = 3}
+  xor.dp <- cdata[cdata$condition == "xor",]$mean
+  dfSimple <- data.frame(xor = xor.dp, exh = exh.dp, pri = pri.dp)
+  dfSimple$vignetteID = c("clothes", "dancing", "sunscreen", "squash", "graduate", "exams", "pet", "NY", "delay", "golf",
+                    "drinking", "health", "lunch", "accident", "club")
+  dfPlotSimple = melt(df, measure.vars = c("pri", "xor"))
+  corPlotSimple = ggplot(dfPlotSimple, aes(x = exh,  y = value)) + geom_point() + theme_bw() + geom_smooth(method = lm, se = TRUE) +
+    geom_text(aes(label=vignetteID),hjust=0.5, vjust=-0.4, color = "firebrick", size = 2.5) + xlim(0,1) + facet_grid(. ~ variable) +
+    xlab("mean exhaustive reading") + ylab("mean prior / mean exclusive reading") + theme(axis.text.x = element_text(angle = 30, hjust = 1))
+  show(corPlotSimple)
+  if (save) {
+    ggsave(filename = "../../texts/01_paper_draft/pics/correlationExhXorPri.pdf", plot = corPlotSimple, width = 6, height = 3)
+  }
+
+```
+
+Is there a correlation between prior ratings and exhaustive readings?
+
+```{r}
+with(df, cor.test(pri, exh))
+with(filter(df, vignetteID != "squash"), cor.test(pri, exh))
+```
+
+
+## Bayesian model comparison
+
+```{r, message=FALSE, echo = TRUE}
+require('BayesFactor')
+bfsAll = generalTestBF(answer ~ rel + com + pri, data = xor)
+bfsAllExh = generalTestBF(answer ~ rel + com + pri + exh, data = xor)
+bfsExh = generalTestBF(answer ~ exh, data = xor)
+show(plot(c(bfsExh, bfsAll)))
+if (save) {
+  pdf('../../texts/01_paper_draft/pics/bfsAllExp4.pdf', height = 4, width = 6)
+  plot(c(bfsExh, bfsAll))
+  dev.off()
+}
+show(c(bfsExh, bfsAll) / c(bfsExh, bfsAll))
+```
+
+```{r, warning = FALSE, echo=TRUE , message = FALSE}
+require('ggmcmc') # for nicer plots
+full = lmBF(answer ~ rel + pri + com + exh, data = xor)
+chains = posterior(full, iterations = 50000, chains = 2) # get posterior samples
+mc = ggs(mcmc(chains)) # transform to ggmcmc object
+densityMCMC = ggs_density(mc, family = c("rel|com|pri|exh"))
+show(densityMCMC)
+if (save) {ggsave(filename = '../../texts/01_paper_draft/pics/densityMCMC.pdf', densityMCMC, height = 4, width = 6)}
+
+# try this only for competence in the model
+compModel = lmBF(answer ~ com, data = xor)
+chainsComp = posterior(compModel, iterations = 50000) # get posterior samples
+mcComp = ggs(mcmc(chainsComp)) # transform to ggmcmc object
+ggs_density(mcComp)
+```
+
+## Bayesian model comparison when excluding "squash"
+
+```{r, message=FALSE, echo = TRUE}
+
+dataRestriced = filter(xor, name != "Danny's racket")
+bfsAllRestricted = generalTestBF(answer ~ rel + com + pri, data = dataRestriced)
+bfsExhRestricted = generalTestBF(answer ~ exh, data = dataRestriced)
+show(plot(c(bfsExhRestricted, bfsAllRestricted)))
+if (save) {
+  pdf('../../texts/01_paper_draft/pics/bfsAllRestricted.pdf', height = 4, width = 6)
+  plot(c(bfsExhRestricted, bfsAllRestricted))
+  dev.off()
+}
+show(c(bfsExhRestricted, bfsAllRestricted) / c(bfsExhRestricted, bfsAllRestricted))
+```
+
+## Combined plot of Exp 1 and 2
+
+```{r}
+
+combinedData1 = filter(data, condition %in% c("rel", "prior", "comp", "xor")) %>% 
+  melt(measure.vars = c("answer"), id.vars = c("name", "type", "condition")) %>%
+  mutate(condition = substr(condition, 1, 3))
+combinedData2 = filter(d2, condition == "critical") %>% mutate(condition = "exh") %>%
+  melt(measure.vars = "answer", id.vars = c("name", "type", "condition"))
+combinedData = rbind(combinedData1, combinedData2)
+combinedData$value[combinedData$condition == "pri"] = 1 - combinedData$value[combinedData$condition == "pri"]
+
+nameMap = function(x) {
+  shortNames = c("clothes", "dancing", "sunscreen", "squash", "graduate", "exams", "pet", "NY", "delay", "golf",
+                    "drinking", "health", "lunch", "accident", "club")
+#   typeList = c("hlh", "hll", "lhh", "hhh", "llh", "hlh", "lll", "lll", "llh", "hll",
+#                     "lhl", "hhh", "hhl", "hhl", "lhl")
+  typeList = c("hll", "hlh", "lhl", "hhl", "lll", "hll", "llh", "llh", "lll", "hlh",
+                    "lhh", "hhl", "hhh", "hhh", "lhh") # high prior => likely that "NOT (A and B)"
+  longNames = levels(combinedData$name)
+  paste(shortNames[which(longNames == x)], " (", typeList[which(longNames == x)], ")", sep = "", collapse = "")
+}
+nameMap = Vectorize(nameMap)
+combinedData$name = factor(nameMap(x = combinedData$name),
+                           levels = c("lunch (hhh)", "squash (hhl)", "dancing (hlh)", "club (lhh)", 
+                                      "exams (hll)", "exams (lhl)", "NY (llh)", "delay (lll)", "sunscreen (lhl)",
+                                      "accident (hhh)", "health (hhl)", "golf (hlh)", "drinking (lhh)", 
+                                      "clothes (hll)", "pet (llh)", "graduate (lll)"))
+combinedData$condition = factor(combinedData$condition, levels = c("xor", "rel", "com", "pri", "exh"), ordered = TRUE)
+cd = combinedData %>% group_by(name, condition) %>% 
+  mutate(meanValueItem = mean(value))
+cd = cd %>% group_by(condition) %>%
+  mutate(meanValuePopulation = mean(value))
+
+combinedBoxPlot = ggplot(cd, aes(x = condition, y = value, fill = condition)) + geom_boxplot() + facet_wrap(~ name, ncol = 8) +
+  geom_point(aes(x = condition, y = meanValueItem, shape = "itemShape"), color = "black", size = 2.5) + 
+  geom_point(aes(x = condition, y = meanValuePopulation, shape = "populationShape"), color = "black", size = 2.5 ) + 
+  scale_shape_manual(name = 'means', 
+         values =c('itemShape'= 4, 'populationShape' = 1), labels = c('per item','population'))
+show(combinedBoxPlot)
+
+
+
+```
+
+
+
+

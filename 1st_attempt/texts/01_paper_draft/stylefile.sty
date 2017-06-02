@@ -1,0 +1,40 @@
+\usepackage{mathptmx}
+\usepackage[longnamesfirst]{natbib}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{subcaption}
+\usepackage{xspace}
+\usepackage{linguex}
+\usepackage{hanging}
+\usepackage{amssymb}
+\usepackage{booktabs}
+
+\newcommand{\firstrefdash}{}
+
+\newcommand{\acro}[1]{\textsc{#1}\xspace}
+\newcommand{\rel}{\acro{Rel}}
+\newcommand{\com}{\acro{Com}}
+\newcommand{\pri}{\acro{Pri}}
+\newcommand{\exh}{\acro{Exh}}
+\newcommand{\set}[1]{\left\{#1\right\}}
+
+\definecolor{Red}{RGB}{178,34,34}
+\newcommand{\mf}[1]{\textcolor{Red}{[mf: #1]}} 
+\newcommand{\bt}[1]{\textcolor{blue}{[bt: #1]}} 
+
+\frenchspacing
+\bibliographystyle{apa-good}
+
+\newcommand{\vs}[1]{\vspace{#1ex}}
+
+\newenvironment{blockquote}%
+	{\begin{list}{}%
+		{\setlength\leftmargin{\parindent}%
+		\setlength\rightmargin{\parindent}}%
+		\item[]\small}%
+	{\end{list}}
+
+
+\renewenvironment{abstract}%
+	{\vspace{3ex}\begin{blockquote}{\subsubsection*{Abstract}\vs{-1}}}%
+	{\end{blockquote}\vspace{3ex}}

@@ -1,0 +1,47 @@
+\textbf{1. health} \emph{(Rel+ / Com+ / Pri+)} \\
+Mrs Gibbs is worried about her husband''s health. Her friend Cindy, who is a waitress at a local restaurant, served Mrs Gibbs' husband yesterday. Cindy says to Mrs Gibbs: ``Yesterday your husband had a steak or a beer.''\\
+
+\noindent \textbf{2. squash} \emph{(Rel+ / Com+ / Pri+)} \\
+Danny and Alex reserved a squash court but Alex still has to buy a racket and a pair of shoes. Danny is talking to Alex's girlfriend Jill who just went to the sports store with him. Jill says to Danny: ``Alex bought a racket or a pair of shoes.''\\
+
+\noindent \textbf{3. lunch} \emph{(Rel+ / Com+ / Pri--)} \\
+During summer camp, every student was allowed at most one main dish for lunch. But some students queued up twice. Mrs Sanders was with her son Ted during the whole lunch break yesterday. A teacher approaches Mrs Sanders to find out how her son behaved during lunch. Mrs Sanders says to the teacher: ``Ted had pizza or pasta yesterday.''\\
+
+\noindent \textbf{4. accident} \emph{(Rel+ / Com+ / Pri--)} \\
+Pete was playing on the schoolyard during lunch break when he fell off the slide. His teacher drove him to the hospital immediately and called Pete's mother from there. The teacher told Pete''s mother: ``Pete broke his arm or his leg.''\\
+
+\noindent \textbf{5. clothes} \emph{(Rel+ / Com-- / Pri+)} \\
+Brad is notorious for his shabby clothes. His friends Gina and Mandy make frequent jokes about it, much to Brad's distress. Gina heard that he finally went shopping the other day. Gina tells Mandy: ``Brad bought a sweater or a pair of jeans.''\\
+
+\noindent \textbf{6. exams} \emph{(Rel+ / Com-- / Pri+)} \\
+Recently, Gigi took exams in Physics and Chemistry. She studied day and night and even paid for private tutoring. Carrie just heard some rumors from her fellow students. Carrie tells Gigi's best friend: ``Gigi passed her Physics exam or her Chemistry exam.''\\
+
+\noindent \textbf{7. dancing} \emph{(Rel+ / Com-- / Pri--)} \\
+Many people came to Carl's garden party yesterday, including his ex-wives Sue and Mary. It was terribly crowded everywhere. John helped out in the kitchen where it was much more quiet during most of the evening. Afterwards John told Carl's wife: ``Carl danced passionately with Sue or Mary.''\\
+
+\noindent \textbf{8. golf} \emph{(Rel+ / Com-- / Pri--)} \\
+Leo is sponsoring a golf tournament. In particular, he provides a luxurious car for any hole-in-one. When Leo arrives at the tournament, his friend Hans comes up to him to tell about the events so far. Hans tells Leo: ``I heard someone just hit a hole-in-one on the first or second hole.''\\
+
+\noindent \textbf{9. order} \emph{(Rel-- / Com+ / Pri+)} \\
+Jake and Bill went jogging together in the afternoon. Afterwards they were very hungry and went to a restaurant. Jake later told Bill's wife: ``Bill ordered a starter or a side dish with his main course.''\footnote{\label{fn:order_exp2} We excluded this item, because of an unfortunate mistake in the formulation of the disjunctive utterance which included the phrase ``with his main course''. As this phrase was mistakenly not included in the formulation of the target statements concerning relevance, competence and prior, it is not guaranteed that the information obtained for different target statements is coherent.}\\
+
+\noindent \textbf{10. sunscreen} \emph{(Rel-- / Com+ / Pri+)} \\
+Chloe is telling her father about her holidays with her two friends Susan and Amelia. Chloe forgot to bring suntan lotion. Chloe tells her father: ``Susan or Amelia brought some extra suntan lotion I could use.''\\
+
+\noindent \textbf{11. club} \emph{(Rel-- / Com+ / Pri--)} \\
+Tony loves to dance to electronic music, preferably Techno. The simpler and more monotonic, the better. He contemplates going to club Macabre tonight, but he has no idea what music they play. He phones his friend Rob who occasionally works at club Macabre as a bartender. Rob tells Tony: ``They play Jazz or Metal tonight.''\\
+
+\noindent \textbf{12. drinking} \emph{(Rel-- / Com+ / Pri--)} \\
+Lily is worried that her husband Eric is still drinking despite the doctor's orders. She phones up Eric's drinking buddy Bill who went to a bar with him last night. Bill tells Lily: ``Your husband drank whisky or vodka.''\\
+
+\noindent \textbf{13. delay} \emph{(Rel-- / Com-- / Pri+)} \\
+Kevin, Cory and Joshua are 7-year-olds from the same neighborhood. They are friends but argue a lot. Yesterday Joshua, who has very strict parents, was later than usual to arrive at their hang-out. Kevin thinks that Joshua doesn’t like to play with them anymore. Cory says to Kevin: ``Joshua had to eat lunch or do his homework.''\\
+
+\noindent \textbf{14. graduate} \emph{(Rel-- / Com-- / Pri+)} \\
+Nico and Rick are talking about their mutual friend Gerald. Gerald has been studying for ages but Nico heard he recently graduated. Nico says to Rick: ``His mother or his father attended the ceremony.''\\
+
+\noindent \textbf{15. NY} \emph{(Rel-- / Com-- / Pri--)} \\
+Jimmy skipped school to go on a day-trip to New York City last week. Having to be back in the afternoon, he barely had one hour to spend in the city. Jimmy's younger brother, who is very talkative even if he doesn't know what he is talking about, told the neighbors about the trip afterwards. Jimmy's younger brother told the neighbors: ``Jimmy visited the Statue of Liberty or the Empire State Building.''\\
+
+\noindent \textbf{16. pet} \emph{(Rel-- / Com-- / Pri--)} \\
+Richard and Tom are talking about Harold. Harold has been wanting a pet for a long time but his girlfriend wouldn't let him. Richard heard she finally gave in. Richard says to Tom: ``Harold bought a cat or a dog.''

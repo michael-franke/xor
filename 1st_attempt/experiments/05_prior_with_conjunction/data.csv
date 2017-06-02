@@ -1,0 +1,13 @@
+id,itemTime,trialNumber,name,type,utterance,relevance,competence,prior,condition,trialType,answer,RT,language,comments,engagement,difficulty
+debugB1LX1Y:debugKSX2MT,1465392381146,1,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,0.71,6506,test,one,5,5
+debugB1LX1Y:debugKSX2MT,1465392394083,2,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh2,0.24,12937,test,one,5,5
+debugB1LX1Y:debugKSX2MT,1465392396401,3,Jimmy's trip,lll,Jimmy had to rush to be back home and did not have much time to spend in the city.,0,0,0,test,test_true,0.67,2317,test,one,5,5
+debugB1LX1Y:debugKSX2MT,1465392398010,4,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.24,1609,test,one,5,5
+debugB1LX1Y:debugKSX2MT,1465392399855,5,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.69,1845,test,one,5,5
+debugB1LX1Y:debugKSX2MT,1465392401936,6,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.23,2081,test,one,5,5
+debugB1LX1Y:debugKSX2MT,1465392404388,7,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0.72,2452,test,one,5,5
+debugB1LX1Y:debugKSX2MT,1465392405851,8,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.61,1462,test,one,5,5
+debugB1LX1Y:debugKSX2MT,1465392408731,9,Mrs Gibbs' worry,hhh,Cindy is secretly in love with Mrs Gibbs' husband.,1,1,1,test,test_uncertain,0.37,2880,test,one,5,5
+debugB1LX1Y:debugKSX2MT,1465392409823,10,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.68,1091,test,one,5,5
+debugB1LX1Y:debugKSX2MT,1465392410947,11,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test,test_false,0.29,1124,test,one,5,5
+debugB1LX1Y:debugKSX2MT,1465392412590,12,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.65,1642,test,one,5,5

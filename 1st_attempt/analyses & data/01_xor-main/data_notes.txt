@@ -1,0 +1,11 @@
+Data collected in two session:
+
+- first 40 collected on 26/10/2015; data in file 'data1_26102015.csv'
+- remaining 160 collected on 28/10/2015
+- full data set in file 'data2_28102015.csv'
+
+Total of 200 participants. Each paid 0.80 US$. Screened for:
+
+- 90% acceptance rate
+- US IP-address
+

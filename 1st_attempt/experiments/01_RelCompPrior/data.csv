@@ -1,0 +1,37 @@
+id,itemTime,name,type,question,relevance,competence,prior,condition,answer,RT,language,comments,engagement,difficulty
+debug1FHVNU:debugNIFB1V,1445263734577,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test_false,1,1886,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263736051,Chloe's holiday,lhh,"If Amelia brought some extra suntan lotion, Susan brought some as well.",0,1,1,prior,0.01,1474,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263737176,Chloe's holiday,lhh,"If Susan brought some extra suntan lotion, Amelia brought some as well.",0,1,1,prior,0.75,1125,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263738694,Gigi's exams,hlh,Gigi hired a private tutor to help her with her Biology and Chemistry exams.,1,0,1,test_false,0,1518,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263740292,Gigi's exams,hlh,It is important for Gigi's best friend to know whether Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,rel,0.92,1597,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263741496,Danny's racket,hhh,Danny and Alex went to the sports shop together.,1,1,1,test_false,0.06,1204,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263742587,Danny's racket,hhh,Alex's girlfriend knows whether Alex bought both a racket and a pair of shoes.,1,1,1,comp,0.89,1091,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263743768,Jimmy's trip,lll,Jimmy had told his friends about his plans to visit New York City before.,0,0,0,test_uncertain,0.12,1181,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263744916,Jimmy's trip,lll,From what the brother said we may conclude that Jimmy did not see both the Statue of Liberty and the Empire State Building.,0,0,0,xor,0.86,1147,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263746154,Joshua's delay,llh,Kevin and Corry expected Joshua to arrive earlier.,0,0,1,test_true,0.11,1237,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263747301,Joshua's delay,llh,It is important for Kevin to know whether Joshua had to eat lunch and do his homework.,0,0,1,rel,0.91,1147,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263748415,Carl's party,hll,John did not spend much time outside.,1,0,0,test_true,0.11,1114,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263749855,Carl's party,hll,From what John said we may conclude that Carl did not dance passionately with both Sue and Mary.,1,0,0,xor,0.89,1440,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263751014,Mrs Sanders' son,hhl,Ted is Mrs Sanders' husband.,1,1,0,test_false,0.12,1159,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263752049,Mrs Sanders' son,hhl,"If Ted had pasta, he also had pizza.",1,1,0,prior,0.89,1035,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263753095,Mrs Sanders' son,hhl,"If Ted had pizza, he also had pasta.",1,1,0,prior,0.11,1046,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263754164,Tony's clubbing,lhl,Techno is quite different from Latin and from Metal.,0,1,0,test_true,0.84,1069,7th,some comment,0,10
+debug1FHVNU:debugNIFB1V,1445263756436,Tony's clubbing,lhl,Rob knows whether they play both Latin and Metal at the club tonight.,0,1,0,comp,0.12,2272,7th,some comment,0,10
+debug99JEB8:debug23QZQK,1445429675210,Leo's wife,hll,Leo is wealthy.,1,0,0,test_true,1,57674,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445429692539,Leo's wife,hll,"If someone made a hole-in-one on the first hole, she also made one on the second hole.",1,0,0,prior,0.04,17329,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445429694302,Leo's wife,hll,"If someone made a hole-in-one on the second hole, she also made one on the first hole.",1,0,0,prior,0,1762,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445429726939,Chloe's holiday,lhh,Chloe recently got back from holidays.,0,1,1,test_true,0.72,32636,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445429812835,Chloe's holiday,lhh,It is important for Chloe's father to know whether both Susan and Amelia brought some extra suntan lotion.,0,1,1,rel,0.77,85896,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445429874127,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test_uncertain,0.14,61292,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445429899519,Gerald's graduation,llh,From what Nico said we may conclude that Gerald's mother and his father did not both attend the ceremony.,0,0,1,xor,0.76,25392,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445429906618,Danny's racket,hhh,Alex needed to buy some equipment before he could play squash with Danny.,1,1,1,test_true,0.29,7099,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445430494819,Danny's racket,hhh,It is important for Danny to know whether Alex bought both a racket and a pair of shoes.,1,1,1,rel,0.71,588200,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445430750348,Gigi's exams,hlh,Gigi studied hard to pass her exams.,1,0,1,test_true,0.79,255529,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445430754892,Gigi's exams,hlh,"If Gigi passed her Physics exam, she also passed her Chemistry exam.",1,0,1,prior,0.83,4543,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445430755927,Gigi's exams,hlh,"If Gigi passed her Chemistry exam, she also passed her Physics exam.",1,0,1,prior,0.18,1035,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445430764534,Bertie's pet,lll,Bertie's girlfriend gave in because Bertie kept nagging her about wanting a pet.,0,0,0,test_uncertain,0.79,8606,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445430766379,Bertie's pet,lll,Richard knows whether Bertie bought both a cat and a dog.,0,0,0,comp,0.19,1845,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445430771791,Tony's clubbing,lhl,Tony has to work at club Macabre tonight.,0,1,0,test_false,0.78,5412,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445430773309,Tony's clubbing,lhl,From what Rob said we may conclude that they do not play both Latin and Metal tonight.,0,1,0,xor,0.22,1518,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445430780217,Mrs Sanders' son,hhl,Mrs Sanders had pasta for lunch yesterday.,1,1,0,test_uncertain,0.79,6908,barbaric,super di puper!,10,0
+debug99JEB8:debug23QZQK,1445430783784,Mrs Sanders' son,hhl,Mrs Sanders knows whether Ted had both pizza and pasta.,1,1,0,comp,0.32,3567,barbaric,super di puper!,10,0

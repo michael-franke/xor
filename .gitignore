@@ -62,3 +62,5 @@ participants.db
 *.html
 
 .~lock.*
+
+*.tmp

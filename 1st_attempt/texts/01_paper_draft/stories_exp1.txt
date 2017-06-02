@@ -1,0 +1,57 @@
+\textbf{1. airco} \emph{(Rel+ / Com+ / Pri+)} \\
+Harry's job is to inspect hotels of an international franchise in order to check whether everything is according to the high standards of the organization. He reports to his boss Mr Jaynes after a visit to the San Diego hotel. Harry reports to Mr Jaynes: ``Some of the rooms had working air conditioning.''\\
+
+\noindent \textbf{2. quiz} \emph{(Rel+ / Com+ / Pri+)} \\
+George and Amber are playing a quiz. George gets to ask Amber ten questions on a topic of George's choice. George picked ``Star Trek'' as a topic but he does not know Amber is actually a big ''Star Trek'' fan. Amber just answered the final question. George says: ``You got some of the answers right.''\\
+
+\noindent \textbf{3. NBA} \emph{(Rel+ / Com+ / Pri--)} \\
+Jason Barley and Richard Trellis are TV experts engaged in a live discussion of the current NBA season which is nearing its end. They are debating about whether Greg Jones should be the Most Valuable Player of the season. Jason Barley thinks so, but Richard Trellis is less convinced. Jason Barley says: ``Greg Jones secured victory for his team during the last seconds of some of the decisive playoff matches.''\footnote{\label{fn:NBA_exp1}This item was removed from the analysis. We observed that the average robustness rating for the upper-bounding construal of ``some'' for this item (39\%) was substantially below the corresponding ratings for the other items (58\% or more). In addition, almost half of the participants indicated that the probability of the upper-bounded reading was zero, while none did so for the next lowest scoring item. On closer examination, we noticed an ambiguity in the statement measuring the robustness of the upper-bounding construal:
+
+\ex.	From what Jason Barley said we may conclude that Greg Jones did not secure victory for his team during the last seconds of all of the decisive playoff matches.
+
+This statement may be read as implying that Greg Jones did not secure victory during the last seconds of \emph{any} of the decisive playoff matches, which is is manifestly false. In order to determine if participants indeed succumbed to this ambiguity, we tested an alternative formulation:
+
+\ex.	From what Jason Barley said we may conclude that not all of the decisive playoff matches were secured during the last seconds by Greg Jones.
+
+Importantly, this formulation is equivalent to the desired reading of \LLast but lacks the ambiguity because the negation directly modifies the noun rather than the verb phrase.
+
+We presented 40 participants on Mechanical Turk with the NBA story, followed by three questions. The first two were control questions. The third one was the target question. Half of the participants saw \LLast and the other half \Last. The procedure was the same as in the original experiment, except that responses were made by marking a value on a seven-point scale rather than by means of a continuous slider. The results for the formulation in \LLast (28\%) were in line with the results of the original experiment (39\%). However, the results for the formulation in \Last were significantly higher (66\%, $t$(29) = 4.28, $p$ $<$ .001), thus indicating that participants did not arrive at the desired reading of \LLast. Hence, we decided to remove this item from the analysis.}\\
+
+\noindent \textbf{4. donkey} \emph{(Rel+ / Com+ / Pri--)} \\
+Grace and Oliver are playing a game of pin the tail on the donkey. Oliver has hung up a large number of pictures of donkeys and Grace has to pin the tail on as many of them as possible while wearing a blindfold. Grace just pinned the last tail. Oliver says: ``You put some of the tails in the right place.''\\
+
+\noindent \textbf{5. watch} \emph{(Rel+ / Com-- / Pri+)} \\
+Mr Tobler works for a Swiss factory which produces luxury watches. Today he ran several tests with a new prototype in order to make sure that it meets the very high requirements on product quality that the company aims for. At this late stage in the project nobody expects any problems. But quality control is very important for the company's image. Mr Tobler's boss Mr Papenhauer is curious about the results and tries to call Mr Tobler but he has just left. Therefore Mr Tobler's apprentice answers the phone. The apprentice has only attended the first half of the testing procedure. The apprentice says: ``The prototype passed some of the tests scheduled for today.''\\
+
+\noindent \textbf{6. Harvard} \emph{(Rel+ / Com-- / Pri+)} \\
+Ethan is hoping to go to Harvard so he has to do well on his final exams. Fortunately he has had a month of spare time during which he studied day and night. His friend Eleanor just heard rumors from her fellow students. She says: ``You passed some of the exams.''\\
+
+\noindent \textbf{7. tomatoes} \emph{(Rel+ / Com-- / Pri--)} \\
+Ted is a chef at a three star restaurant. He asks his sous chef Gilbert to check today's purchase of fresh produce. Gilbert looks at the first crate of tomatoes, and comes running back. Gilbert says: ``Some of the tomatoes are rotten.''\\
+
+\noindent \textbf{8. schizo} \emph{(Rel+ / Com-- / Pri--)} \\
+Lucy has to give a talk in front of a big audience of psychologists. She is going to criticize one of the dominant theories about schizophrenia. Afterwards, Jacob, who was in the audience, chatted with his neighbours. He tells Lucy: ``Some of the people enjoyed your talk.''\\
+
+\noindent \textbf{9. gifts} \emph{(Rel-- / Com+ / Pri+)} \\
+Leonard celebrated his 5th birthday with his best friends today. All of his friends brought him presents. The presents were given to him while everybody was sitting at the table after a nice piece of chocolate cake. When Suzanne's mother comes to take her daughter home from the party, Leonards's mother tells Suzanne's mother about the party. Leonard's mother says: ``Leonard unwrapped some of the presents right away.''\\
+
+\noindent \textbf{10. M\&M''s} \emph{(Rel-- / Com+ / Pri+)} \\
+Henry is in the hospital because he broke his arm in a skiing accident. His aunt Bethany visited him yesterday and brought him some fruit and a bag of M\&Ms. Later, Henry tells his father: ``I liked some of the M\&Ms.''\\
+
+\noindent \textbf{11. vGogh} \emph{(Rel-- / Com+ / Pri--)} \\
+The mayor joins the opening of a new van Gogh exhibition in the city''s Museum of Modern Art. The curator welcomes him warmly and gives him a private tour through the exhibition. The curator says: ``Some of van Gogh's paintings are among the most valuable paintings in the world.''\\
+
+\noindent \textbf{12. drinking} \emph{(Rel-- / Com+ / Pri--)} \\
+Edward is in a crowded bar IDing the patrons who are drinking alcohol. There are new laws and if there is even one incident of underage drinking today Edward will close down the bar. Later he tells the owner of the bar: ``Some of the patrons drinking alcohol were underage.''\\
+
+\noindent \textbf{13. dessert} \emph{(Rel-- / Com-- / Pri+)} \\
+Jeremy is asking his friend Claire for her opinion about the newly opened gourmet restaurant on 5th Street. Claire has been there twice already and she is very enthusiastic. Claire says: ``Some of their desserts are fantastic.''\\
+
+\noindent \textbf{14. cookies} \emph{(Rel-- / Com-- / Pri+)} \\
+Martha received a couple of chocolate cookies even though neither she nor her husband eats chocolate. This evening the two of them are going out for dinner leaving Emily to babysit their children. Emily is a voracious eater and chocolate lover. When she comes home, Martha sees some crumbs on the couch. She says to her husband: ``Emily ate some of the cookies.''\\
+
+\noindent \textbf{15. comedy} \emph{(Rel-- / Com-- / Pri--)} \\
+Lennard is a very popular stand-up comedian. He is currently on tour. Both shows in Seattle were sold out. 500 tickets were sold for each show. He phones his wife after the second show in Seattle. Lennard says: ``Some of the people who came yesterday also came to today''s show.''\\
+
+\noindent \textbf{16. emails} \emph{(Rel-- / Com-- / Pri--)} \\
+Kate has problems with her laptop but she needs to let Joshua know she will not be able to make it to their meeting today. Therefore she sends the same email numerous times from different email accounts. Later that day, Joshua phones Kate up and says: ``I received some of your emails.''

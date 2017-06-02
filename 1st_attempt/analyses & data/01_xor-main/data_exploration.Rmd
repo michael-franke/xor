@@ -1,0 +1,102 @@
+---
+title: "XOr - Data exploration"
+output:
+  html_document:
+    highlight: pygments
+    theme: flatly
+    toc: yes
+---
+
+## Prepare data, screen participants
+
+```{r setup, include=FALSE, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(fig.width=12, fig.height=8, 
+                      echo=FALSE, warning=FALSE, message=FALSE)
+require('ggplot2')
+require('reshape2')
+require('dplyr')
+```
+
+160 participants recruited via MTurk with US IPs and at least 90% acceptance rates were payed 80 US-cent. We exclude 3 subjects for not being self-reported native speakers of English.
+
+
+```{r, echo = TRUE}
+  d = read.csv('data2_28102015.csv')
+  d = droplevels(filter(d, ! language %in% c("Vietnamese", 
+                                             "Spanish", 
+                                             "Bengali, but I speak English as if I were a native speaker")))
+```
+
+To see how each participant fared on controls, we can look at the quadratic distance from a "perfect answer" (true -> 1; uncertain -> 0.5; false -> 0). Here's the distribution of total quadratic distance among all participants.
+
+```{r}
+  testData = filter(d, condition %in% c('test_uncertain', 'test_true', 'test_false'))
+  performance = testData %>% mutate(distancePrototype = ifelse(condition == "test_uncertain", abs(answer-0.5)^2,
+                                                               ifelse(condition == "test_true", abs(answer-1)^2,
+                                                                      answer^2))) %>% 
+                group_by(id) %>% summarise(totalDistance = sum(distancePrototype))
+  show(ggplot(performance, aes(x = totalDistance)) + geom_histogram())
+```
+
+Brief visual inspection says that it may make sense to discard top 5% worst performers. 
+
+```{r, echo = TRUE}
+quants = quantile(performance$totalDistance, probs = c(0.05, 0.95))
+badguys = performance[which(performance$totalDistance > quants[2]),]$id
+show(badguys)
+d = filter(d, ! id %in% badguys)
+```
+
+
+## Check performance on controls
+ 
+Boxplots of answers on control questions by control question type:
+
+```{r}
+testData = filter(d, condition %in% c('test_uncertain', 'test_true', 'test_false'))
+show(ggplot(testData, aes(x= condition, y = answer)) + geom_boxplot())
+```
+
+## Check independent measures
+
+We'd like to know if the answers given for independent measures match our intuitive classification. So, here are boxplots of answers for independent measures, as functions of whether the context was classified as high or low by us:
+
+```{r}
+plotData = d %>% filter( ! condition %in% c('test_uncertain', 'test_true', 'test_false', 'xor') ) %>%
+            mutate(highlow = ifelse((condition == "comp" & competence == 1) |
+                                      (condition == "prior" & prior == 1) |
+                                      (condition == "rel" & relevance == 1), "high", 'low')) %>%
+            mutate(HL = paste0(condition, '-', highlow)) %>%
+            select(HL, answer, RT)
+             
+show(ggplot(plotData, aes(x = HL, y = answer)) + geom_boxplot())
+```
+
+Some t-tests:
+
+```{r, echo = TRUE}
+t.test(filter(plotData, HL == "comp-high")$answer, 
+       filter(plotData, HL == "comp-low")$answer, paired = FALSE)
+
+t.test(filter(plotData, HL == "prior-high")$answer, 
+       filter(plotData, HL == "prior-low")$answer, paired = FALSE)
+
+t.test(filter(plotData, HL == "rel-high")$answer, 
+       filter(plotData, HL == "rel-low")$answer, paired = FALSE)
+```
+
+## Check XOr ratings
+
+A type like "hlh" indicates whether relevance , competence and prior (in that order) are high (h) or low (l).
+
+Visual inspection is pretty futile, but for what it's worth:
+
+- visual tendency of relevance on two of four pairs (hlh vs llh and hll vs lll)
+- no visual effect of competence, except for the last pair (lhl vs lll)
+- tendency of an effect of prior (each adjacent except lhh vs lhl)
+
+```{r}
+plotData = d %>% filter( ! condition == 'xor')
+show(ggplot(plotData, aes(x = type, y = answer)) + geom_boxplot())
+```
+

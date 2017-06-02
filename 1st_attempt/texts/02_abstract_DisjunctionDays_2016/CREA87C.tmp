@@ -1,0 +1,173 @@
+\documentclass[10pt]{article}
+\usepackage[margin = 2cm]{geometry}
+
+\usepackage{linguex}
+\usepackage[svgnames]{xcolor}
+\usepackage{tikz, pgfplots}
+\usetikzlibrary{backgrounds,fit}
+\usetikzlibrary{calc}
+
+% \usepackage[backend=biber,
+%         bibstyle=biblatex-sp-unified,
+%         citestyle=sp-authoryear-comp,
+%         maxcitenames=3,
+%         maxbibnames=99]{biblatex}
+
+\usepackage[natbib=true,
+            style=authoryear-comp,
+            backend=bibtex,
+            doi=false,
+            url=false,
+            sortcites=false,
+            maxcitenames=3, 
+            maxbibnames=99]{biblatex}
+
+\addbibresource{MyRefGlobal.bib}
+
+%\usepackage[T1]{fontenc}
+
+\usepackage{textcomp}
+\usepackage{mathptmx}
+\usepackage{booktabs,multirow}
+\usepackage{todonotes}
+\usepackage{nicefrac}
+\usepackage{amsmath}
+\usepackage{amssymb,amsmath}
+\usepackage{subcaption}
+\usepackage{wrapfig} 
+\usepackage{float} 
+
+%%%% some commands
+
+\newcommand{\den}[1]{\left [\! \left [ #1 \right ]\! \right]}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\tuple}[1]{\left \langle #1\right\rangle}
+\newcommand{\card}[1]{\left \lvert \, #1 \, \right\rvert}
+\newcommand{\abs}[1]{\lvert #1 \rvert}
+\newcommand{\setbar}{\ensuremath{\thinspace \mid \thinspace}}
+\newcommand{\probbar}{\ensuremath{\mid}}
+\DeclareMathOperator{\expo}{exp}
+
+
+\newcommand{\mygray}[1]{\textcolor{gray}{#1}}
+\definecolor{Red}{RGB}{178,34,34}
+\newcommand{\mf}[1]{\textcolor{Red}{[#1]}} 
+
+
+
+\begin{document}
+
+\pagestyle{empty}
+
+\noindent \textbf{Exclusive disjunction: implicature or \dots}
+
+\noindent Exclusive readings of disjunctions are frequently treated as a scalar implicature
+arising from the competition of lexical alternatives \emph{or} and \emph{and}, parallel to the
+case of \emph{some} and \emph{all}. On the other hand, there is recent experimental evidence
+for the assumption that the strength of scalar inferences can vary substantially between
+different scalar items \citep[e.g.][]{Tielvan-TielMiltenburgvan-Miltenburg2014:Scalar-Diversit}
+and be affected by multiple contextual factors in subtle ways
+\citep[e.g.][]{Degen2015:Investigating-t}. The main question that we would like to address
+experimentally in this paper is therefore: is the strength of exclusive readings of
+disjunctions influenced by contextual factors in such a way as a scalar implicature account
+would predict?
+
+Many factors may have an effect on the strength of scalar inferences. We will focus on three
+factors, for reasons of theoretical interest. Firstly, it should matter whether the scalar
+inference is \emph{relevant} information for the listener. Secondly, it matters whether the
+speaker is \emph{competent}, i.e., whether it is safe to assume that she knows whether a
+stronger alternative statement would be true. Thirdly, although this is not usually explicitly
+considered, it is plausible that \emph{prior expectations} would influence the strength of
+scalar inferences as well \citep[e.g.][]{DegenTessler2015:Wonky-worlds:-L}. 
+
+Different theoretical positions towards scalar implicatures may relate differently to some of
+these factors, but, arguably, most would acknowledge that these factors play a role. For
+instance, standard Gricean(-like) reasoning could make relevance of information and the
+speaker's competence necessary conditions for the derivation of a scalar implicature, but also
+see a role for prior plausibility. A game-theoretic or probabilistic approach might put
+particular emphasis on the role of prior expectations instead. When it comes to grammatical
+approaches, where scalar implicatures are generated as parses of sentences that feed into some
+disambiguation procedure, the relevance of alternatives is often flagged as important, but
+it is not strange to think that the disambiguation procedure is sensitive to all three factors
+mentioned here as well: for instance, it may weigh in the contextual plausibility of ignorance
+inferences that different parses would give rise to
+\citep{Fox2007:Free-Choice-and,ChemlaSingh2014:Remarks-on-the-}.
+
+Irrespective of the general theoretical framework adopted, we would therefore expect that
+strength of scalar inferences should rise (i) the more contextual relevance is attributed to
+the stronger alternative, (ii) the more likely the speaker is taken to know whether the
+stronger alternative is true, and (iii) the less likely it is \emph{a priori} that the stronger
+alternative is true. If this pattern is empirically confirmed for some scalar inferences, but
+not for others that would be surprising, and mild evidence against a homogeneous theoretical
+treatment. 
+
+% \begin{enumerate}
+% \item the higher the contextual relevance of the information conveyed by the scalar alternative
+%   is to the listener, the more salient the scalar inference should be;
+% \item the more likely the speaker is thought to know whether the scalar alternative is true,
+%   the more strongly the scalar inference should suggest itself;
+% \item the less likely the scalar alternative is true, the stronger the scalar implicature
+%   should be.
+% \end{enumerate}
+
+\paragraph{Experiment 1} In this experiment we tested the effects of relevance, competence and
+prior probability on the robustness of exclusive readings. Materials consisted of 16 vignettes
+involving two characters $S$ and $H$. Each vignette ended with $S$ uttering a sentence of the
+form ``$A$ or $B$.'' Each vignette was associated with five statements: three control
+statements and four target statements, which aimed at relevance (``It is important for $H$ to
+know whether $A$ and $B$''), competence (``$S$ knows whether $A$ and $B$''), prior probability
+(``If $A$, it is likely that $B$ as well'' and ``If $B$, it is likely that $A$ as well''), and
+exclusive readings (``From what $S$ said we may conclude that not both $A$ and $B$''). Each
+vignette was intuitively classified as either high or low in each of the three factors of
+relevance. There were 2 vignettes for each of the 8 possible vignette types, i.e., high/low
+factor combinations.
+
+200 participants each read 8 of these vignettes, one of each vignette type. Each vignette was
+followed by two questions: one control question and one target question. Participants were
+instructed to indicate how likely the statement was and could respond by setting a slider on a
+continuous scale ranging from ``Certainly false'' to ``Certainly true.''
+Figure~\ref{fig:correlationsExp1} shows the relation of per-vignette mean implicature ratings
+and per-vignette mean ratings for the three explanatory factors. 
+
+\begin{figure}[b]
+  \centering
+
+  \includegraphics[width = 0.65\textwidth]{../01_paper_draft/pics/correlationExp1.pdf}
+  
+  \caption{Per-vignette means of implicature rating vs. per-vignette means of factor ratings in
+    Experiment~1}
+  \label{fig:correlationsExp1}
+\end{figure}
+
+We looked at linear regression models whose dependent variable were ratings of the exclusive
+reading statements and whose explanatory factors were the by-vignette means of the three
+explanatory factors relevance, competence and prior. Comparison of models by Bayes factors
+showed that there were two optimal models for predicting the robustness of exclusive readings
+that were significantly better than all competitors: one containing only prior probability, and
+one containing prior probability and competence. Estimates of the posterior distributions over
+model parameter coefficients indicated that both of these factors had significant
+effects. Critically, however, the effect of competence went in the opposite direction to what
+an implicature-based approach predicts: the perceived robustness of the exclusive reading
+\emph{decreased} with the perceived competence of the speaker (see
+Figure~\ref{fig:correlationsExp1}). In effect, our analysis and data suggest that the prior
+probability of the \emph{and}-alternative is the decisive predictor of exclusive-\emph{or}
+strength, and, although it does have a slight explanatory effect, competence of the speaker
+influenced strength of exclusive-\emph{or} in the wrong direction.
+
+How to explain the surprising negative effect of competence? Perhaps the most parsimonious explanation would be to attribute it to methodological flaws. That is, perhaps our manipulation did not measure what we assumed it measured. In order to address that possibility we replicated Experiment 1 using vignettes with \emph{some}. 
+
+\paragraph{Experiment 2} The design and procedure of Experiment 3 was analogous to that of Experiment 1 except that we created 16 vignettes that ended with an utterance containing \emph{some} instead of \emph{or}.
+
+Regression model comparison indicated that the optimal model contained prior probability and competence. In the results of this experiment, the role of competence went in the direction predicted by the implicature-based approach. So unlike exhaustive readings, the robustness of upper-bounding inferences associated with \emph{some} increases with the speaker's competence.
+
+Taken together, these findings 
+
+\bigskip
+
+
+
+
+\printbibliography 
+
+
+\end{document}

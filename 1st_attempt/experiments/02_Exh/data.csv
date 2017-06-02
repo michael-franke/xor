@@ -1,0 +1,55 @@
+id,itemTime,trialNumber,name,type,utterance,relevance,competence,prior,condition,trialType,answer,RT,language,comments,engagement,difficulty
+debugARBG0B:debug69A8GF,1449760918261,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test,1,0.61,1622,gee,NA,5,5,
+debugARBG0B:debug69A8GF,1449760919487,Gerald's graduation,llh,From what Nico said we may conclude that Gerald's mother did not attend the ceremony as well.,0,0,1,critical,0,0.5,1225,gee,NA,5,5,
+debugARBG0B:debug69A8GF,1449760920488,Pete's accident,hhl,Pete's teacher saw him fall off the slide.,1,1,0,test,1,0.54,1001,gee,NA,5,5,
+debugARBG0B:debug69A8GF,1449760921500,Pete's accident,hhl,From what Pete's teacher said we may conclude that Pete did not break his leg as well.,1,1,0,critical,1,0.59,1011,gee,NA,5,5,
+debugARBG0B:debug69A8GF,1449760922581,Gigi's exams,hlh,Gigi aspires to a career in science.,1,0,1,test,0,0.6,1080,gee,NA,5,5,
+debugARBG0B:debug69A8GF,1449760923942,Gigi's exams,hlh,From what Carrie said we may conclude that Gigi did not pass her Physics exam as well.,1,0,1,critical,0,0.32,1361,gee,NA,5,5,
+debugARBG0B:debug69A8GF,1449760924819,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,1,0.46,877,gee,NA,5,5,
+debugARBG0B:debug69A8GF,1449760926203,Danny's racket,hhh,From what Alex's girlfriend said we may conclude that Alex did not buy a racket as well.,1,1,1,critical,0,0.99,1383,gee,NA,5,5,
+debugARBG0B:debug69A8GF,1449760927542,Tony's clubbing,lhl,Rob is a big fan of Techno music as well.,0,1,0,test,1,0.28,1338,gee,NA,5,5,
+debugARBG0B:debug69A8GF,1449760928577,Tony's clubbing,lhl,From what Rob said we may conclude that they do not play Jazz as well.,0,1,0,critical,0,0.73,1035,gee,NA,5,5,
+debug15WEHY:debug7RII9P,1449761416267,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.66,1195,asdf,NA,5,5,
+debug15WEHY:debug7RII9P,1449761417268,Carl's party,hll,From what John said we may conclude that Carl did not dance passionately with Mary as well.,1,0,0,critical,exh1,0.57,1000,asdf,NA,5,5,
+debug15WEHY:debug7RII9P,1449761418045,Joshua's delay,llh,"Kevin, Cory and Joshua do not like to hang out with girls.",0,0,1,test,test_uncertain,0.41,775,asdf,NA,5,5,
+debug15WEHY:debug7RII9P,1449761418900,Joshua's delay,llh,From what Cory said we may conclude that Joshua did not have to eat lunch as well.,0,0,1,critical,exh2,0.58,855,asdf,NA,5,5,
+debug15WEHY:debug7RII9P,1449761419698,Jimmy's trip,lll,Jimmy had told his friends about his plans to visit New York City before.,0,0,0,test,test_uncertain,0.42,797,asdf,NA,5,5,
+debug15WEHY:debug7RII9P,1449761420778,Jimmy's trip,lll,From what the brother said we may conclude that Jimmy did not visit the Statue of Liberty as well.,0,0,0,critical,exh2,0.6,1079,asdf,NA,5,5,
+debug15WEHY:debug7RII9P,1449761421690,Mrs Sanders' son,hhl,Mrs Sanders had pasta for lunch yesterday.,1,1,0,test,test_uncertain,0.41,911,asdf,NA,5,5,
+debug15WEHY:debug7RII9P,1449761422646,Mrs Sanders' son,hhl,From what Mrs Sanders said we may conclude that Ted did not have pizza as well.,1,1,0,critical,exh2,0.59,956,asdf,NA,5,5,
+debug15WEHY:debug7RII9P,1449761423636,Mrs Gibbs' worry,hhh,Cindy is secretly in love with Mrs Gibbs' husband.,1,1,1,test,test_uncertain,0.4,990,asdf,NA,5,5,
+debug15WEHY:debug7RII9P,1449761424761,Mrs Gibbs' worry,hhh,From what Cindy said we may conclude that Mr Gibbs did not have a steak as well.,1,1,1,critical,exh2,0.59,1125,asdf,NA,5,5,
+debug0JIBJU:debugTZWL75,1449761619662,Gigi's exams,hlh,Gigi aspires to a career in science.,1,0,1,test,test_uncertain,0.31,1804,dsf,NA,5,5,
+debug0JIBJU:debugTZWL75,1449761620505,Gigi's exams,hlh,From what Carrie said we may conclude that Gigi did not pass her Physics exam as well.,1,0,1,critical,exh2,0.56,842,dsf,NA,5,5,
+debug0JIBJU:debugTZWL75,1449761621698,Mrs Sanders' son,hhl,Mrs Sanders had pasta for lunch yesterday.,1,1,0,test,test_uncertain,0.62,1192,dsf,NA,5,5,
+debug0JIBJU:debugTZWL75,1449761622643,Mrs Sanders' son,hhl,From what Mrs Sanders said we may conclude that Ted did not have pizza as well.,1,1,0,critical,exh2,0.57,944,dsf,NA,5,5,
+debug0JIBJU:debugTZWL75,1449761623464,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.43,821,dsf,NA,5,5,
+debug0JIBJU:debugTZWL75,1449761624229,Carl's party,hll,From what John said we may conclude that Carl did not dance passionately with Sue as well.,1,0,0,critical,exh2,0.59,765,dsf,NA,5,5,
+debug0JIBJU:debugTZWL75,1449761625118,Mrs Gibbs' worry,hhh,Cindy is secretly in love with Mrs Gibbs' husband.,1,1,1,test,test_uncertain,0.42,889,dsf,NA,5,5,
+debug0JIBJU:debugTZWL75,1449761626130,Mrs Gibbs' worry,hhh,From what Cindy said we may conclude that Mr Gibbs did not have a steak as well.,1,1,1,critical,exh2,0.64,1012,dsf,NA,5,5,
+debug0JIBJU:debugTZWL75,1449761627075,Jimmy's trip,lll,Jimmy had told his friends about his plans to visit New York City before.,0,0,0,test,test_uncertain,0.4,944,dsf,NA,5,5,
+debug0JIBJU:debugTZWL75,1449761628065,Jimmy's trip,lll,From what the brother said we may conclude that Jimmy did not visit the Statue of Liberty as well.,0,0,0,critical,exh2,0.76,989,dsf,NA,5,5,
+debug1FVGGT:debugHUC6CC,1449811439382,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test,test_uncertain,0.68,68711,German,NA,5,5,
+debug1FVGGT:debugHUC6CC,1449811452269,Gerald's graduation,llh,From what Nico said we may conclude that Gerald's mother did not attend the ceremony as well.,0,0,1,critical,exh2,0.79,12885,German,NA,5,5,
+debug1FVGGT:debugHUC6CC,1449811477103,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,1,24833,German,NA,5,5,
+debug1FVGGT:debugHUC6CC,1449811485198,Lily's husband,lhl,From what Bill said we may conclude that Eric did not drink whisky as well.,0,1,0,critical,exh2,0.9,8094,German,NA,5,5,
+debug1FVGGT:debugHUC6CC,1449811509866,Carl's party,hll,"John and Carl, the hosts, are a gay couple.",1,0,0,test,test_false,0.38,24667,German,NA,5,5,
+debug1FVGGT:debugHUC6CC,1449811516566,Carl's party,hll,From what John said we may conclude that Carl did not dance passionately with Mary as well.,1,0,0,critical,exh1,1,6699,German,NA,5,5,
+debug1FVGGT:debugHUC6CC,1449811543432,Bill's order,lhh,Jake and Bill went to the restaurant before they went jogging.,0,1,1,test,test_false,0.11,26865,German,NA,5,5,
+debug1FVGGT:debugHUC6CC,1449811648796,Bill's order,lhh,From what Jake said we may conclude that Bill did not order a side dish as well.,0,1,1,critical,exh1,0.67,105363,German,NA,5,5,
+debug1FVGGT:debugHUC6CC,1449811673973,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,0.74,25176,German,NA,5,5,
+debug1FVGGT:debugHUC6CC,1449811685505,Leo's wife,hll,From what Hans said we may conclude that the player in question didn't make a hole-in-one on the second hole as well.,1,0,0,critical,exh1,0.29,11532,German,NA,5,5,
+debug1FVGGT:debugHUC6CC,1449811694916,Harold's pet,lll,Harold's girlfriend gave in because Harold kept nagging her about wanting a pet.,0,0,0,test,test_uncertain,0.74,9411,German,NA,5,5,
+debug1FVGGT:debugHUC6CC,1449811702717,Harold's pet,lll,From what Richard said we may conclude that Harold did not buy a cat as well.,0,0,0,critical,exh2,1,7800,German,NA,5,5,
+debug82DABL:debugL60KBN,1449812761685,1,Jimmy's trip,lll,Jimmy had to rush to be back home and did not have much time to spend in the city.,0,0,0,test,test_true,0.6,1508,Slavic,NA,5,5
+debug82DABL:debugL60KBN,1449812763266,2,Jimmy's trip,lll,From what the brother said we may conclude that Jimmy did not visit the Statue of Liberty as well.,0,0,0,critical,exh2,0.42,1581,Slavic,NA,5,5
+debug82DABL:debugL60KBN,1449812764689,3,Joshua's delay,llh,Kevin and Cory expected Joshua to arrive earlier.,0,0,1,test,test_true,0.6,1422,Slavic,NA,5,5
+debug82DABL:debugL60KBN,1449812765922,4,Joshua's delay,llh,From what Cory said we may conclude that Joshua did not have to do his homework as well.,0,0,1,critical,exh1,0.39,1233,Slavic,NA,5,5
+debug82DABL:debugL60KBN,1449812767136,5,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.66,1213,Slavic,NA,5,5
+debug82DABL:debugL60KBN,1449812768267,6,Danny's racket,hhh,From what Alex's girlfriend said we may conclude that Alex did not buy a pair of shoes as well.,1,1,1,critical,exh1,0.31,1130,Slavic,NA,5,5
+debug82DABL:debugL60KBN,1449812769434,7,Leo's wife,hll,Leo is an avid golf player.,1,0,0,test,test_uncertain,0.62,1167,Slavic,NA,5,5
+debug82DABL:debugL60KBN,1449812770793,8,Leo's wife,hll,From what Hans said we may conclude that the player in question didn't make a hole-in-one on the first hole as well,1,0,0,critical,exh2,0.35,1358,Slavic,NA,5,5
+debug82DABL:debugL60KBN,1449812772167,9,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test,test_false,0.65,1374,Slavic,NA,5,5
+debug82DABL:debugL60KBN,1449812773771,10,Chloe's holiday,lhh,From what Chloe said we may conclude that Amelia did not bring some extra suntan lotion as well.,0,1,1,critical,exh1,0.38,1603,Slavic,NA,5,5
+debug82DABL:debugL60KBN,1449812775225,11,Gigi's exams,hlh,Gigi hired a private tutor to help her with her Biology and Chemistry exams.,1,0,1,test,test_false,0.72,1453,Slavic,NA,5,5
+debug82DABL:debugL60KBN,1449812776679,12,Gigi's exams,hlh,From what Carrie said we may conclude that Gigi did not pass her Physics exam as well.,1,0,1,critical,exh2,0.3,1452,Slavic,NA,5,5

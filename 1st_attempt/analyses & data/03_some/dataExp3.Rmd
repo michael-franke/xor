@@ -1,0 +1,471 @@
+---
+title: "Exclusive 'or': Experiment 3 on 'some'"
+output: html_document
+---
+
+```{r setup, include = FALSE, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(fig.width=10, fig.height=5, 
+                      echo=FALSE, warning=FALSE, message=FALSE)
+
+require('ggplot2')
+# require('plyr')
+require('dplyr')
+require('lme4')
+require('gridExtra')
+require('reshape2')
+
+save = TRUE # whether to save plots
+```
+
+## <span style = "color:firebrick">IMPORTANT NOTE</span>
+
+There was a coding mistake in the input materials file. The item *gift wrapping* got classified as "llh" but it should have been "lhh". This actually had an effect on which items were seen by participants, since these codings were used to select items to present to each participant. Every subject saw one item (randomly drawn) from each type, i.e., each participant actually saw the only item that was classified as "lhh" which was *Martha's cookies*. <span style = "color:firebrick">DAMN!</span>
+
+
+## Prepare data
+
+200 participants were recruited and payed 0.80$ compensation. Four were excluded for not being self-reported English speakers.
+
+```{r, echo = TRUE}
+  d <- read.csv("data_exp3.csv", sep = "\t")
+  d$id = factor(substr(d$id, 1, 13))
+  d = droplevels(filter(d, ! language %in% c("373", "Pashto", "vietnamese")))
+  data = d
+
+```
+
+
+## Remove loafers by deviance score
+
+This plot shows the distribution of participants based on their *deviance score*, i.e., the total absolute distance from ideal answers to control items (i.e., 0, 0.5, and 1 for "test_false", "test_uncertain", and "test_true").
+
+```{r}
+  
+  control <- data[data$condition %in% c("test_uncertain", "test_false", "test_true"),]
+  control$distance <- ifelse(control$condition == "test_uncertain", 
+                             abs(control$answer - 0.5),
+                             ifelse(control$condition == "test_false",
+                                    control$answer,
+                                    1-control$answer))
+#   loafers <- ddply(
+#     control, c("id"), summarise,
+#     dist = sum(distance)
+#   )
+  loafers = control %>% group_by(id) %>% summarize(dist = sum(distance))
+  
+  show(ggplot(loafers, aes(x = dist)) + geom_histogram(binwidth = 0.5, colour = "black", fill = "firebrick") + theme_bw())
+  
+  loafing_threshold = mean(loafers$dist) + 2 * sd(loafers$dist)
+```
+
+The mean deviance score is `r round(mean(loafers$dist),3)`; its standard deviation is `r round(sd(loafers$dist),3)`.
+
+There were originally `r nrow(loafers)` participants. We remove the `r nrow(loafers[loafers$dist > loafing_threshold,])` participants whose deviance score exceeded `r round(loafing_threshold,3)`, which is the mean plus twice the standard deviance of all deviance scores.
+
+```{r, echo = TRUE}
+  bad_participants <- loafers[loafers$dist > loafing_threshold,]$id
+  data <- data[!(data$id %in% bad_participants),]
+  data$id <- factor(data$id)
+  # extract data
+#   cdata <- ddply(
+#   data, c("name", "condition", "type"), summarise,
+#   N       = length(answer),
+#   mean    = mean(answer),
+#   se.mean = sd(answer) / sqrt(N),
+#   se.RT   = sd(RT) / sqrt(N),
+#   RT      = mean(RT)
+#   )
+  cdata = data %>% group_by(name, condition, type) %>%
+    summarize(N = length(answer),
+              mean    = mean(answer),
+              se.mean = sd(answer) / sqrt(N),
+              se.RT   = sd(RT) / sqrt(N),
+              RT      = mean(RT))
+```
+
+```{r}
+
+  #################################
+  #### exclude individual vignettes
+  #### => after loafer elimination!
+  #################################
+#   > levels(factor(d$name))
+#  [1] "Harvard admission exams"      "M&M's in the hospital"        "Martha's cookies"             "NBA experts"                 
+#  [5] "Star Trek expert quiz"        "Swiss watch protoype testing" "emails from a broken laptop"  "gift unwrapping"             
+#  [9] "gourmet desserts"             "hotel check"                  "rotten tomatoes"              "schizophrenia talk"          
+# [13] "stand-up comedy show"         "tail-donkey blindfold"        "underage drinking"            "van Gogh exhibition" 
+#   data = droplevels(filter(data, name != levels(factor(d$name))[4]))
+#   data = droplevels(filter(data, name != levels(factor(d$name))[1]))
+  
+```
+
+
+## Expectations versus results
+
+```{r}
+  rel.dif <- round(cdata[cdata$condition == "rel",]$mean - mean(d[d$condition == "rel",]$answer), 2)
+  pri.dif <- round(cdata[cdata$condition == "prior",]$mean - mean(d[d$condition == "prior",]$answer), 2)
+  com.dif <- round(cdata[cdata$condition == "comp",]$mean - mean(d[d$condition == "comp",]$answer), 2)
+  sum.dif <- abs(rel.dif) + abs(pri.dif) + abs(com.dif)
+```
+
+This table shows the difference from the mean for each item and condition as well as our expectations. So when the prediction is 'h' we predicted a positive score and when the prediction is 'l' we predicted a negative score. The means for *relevance*, *competence*, and *prior* were `r round(mean(data[data$condition == "rel",]$answer), 2)`, `r round(mean(data[data$condition == "comp",]$answer), 2)`, and `r round(mean(data[data$condition == "prior",]$answer), 2)`)
+
+| Item |  Pred  |  Rel|Comp|Prior  |  Total   |
+|--------|----------|---------|---------|---------|--------|
+|`r levels(cdata$name)[1]` | `r cdata[cdata$name == levels(cdata$name)[1],]$type[1]` | `r rel.dif[1]` | `r com.dif[1]` | `r pri.dif[1]` | `r sum.dif[1]` |
+|`r levels(cdata$name)[2]` | `r cdata[cdata$name == levels(cdata$name)[2],]$type[1]` | `r rel.dif[2]` | `r com.dif[2]` | `r pri.dif[2]` | `r sum.dif[2]` |
+|`r levels(cdata$name)[3]` | `r cdata[cdata$name == levels(cdata$name)[3],]$type[1]` | `r rel.dif[3]` | `r com.dif[3]` | `r pri.dif[3]` | `r sum.dif[3]` |
+|`r levels(cdata$name)[4]` | `r cdata[cdata$name == levels(cdata$name)[4],]$type[1]` | `r rel.dif[4]` | `r com.dif[4]` | `r pri.dif[4]` | `r sum.dif[4]` |
+|`r levels(cdata$name)[5]` | `r cdata[cdata$name == levels(cdata$name)[5],]$type[1]` | `r rel.dif[5]` | `r com.dif[5]` | `r pri.dif[5]` | `r sum.dif[5]` |
+|`r levels(cdata$name)[6]` | `r cdata[cdata$name == levels(cdata$name)[6],]$type[1]` | `r rel.dif[6]` | `r com.dif[6]` | `r pri.dif[6]` | `r sum.dif[6]` |
+|`r levels(cdata$name)[7]` | `r cdata[cdata$name == levels(cdata$name)[7],]$type[1]` | `r rel.dif[7]` | `r com.dif[7]` | `r pri.dif[7]` | `r sum.dif[7]` |
+|`r levels(cdata$name)[8]` | `r cdata[cdata$name == levels(cdata$name)[8],]$type[1]` | `r rel.dif[8]` | `r com.dif[8]` | `r pri.dif[8]` | `r sum.dif[8]` |
+|`r levels(cdata$name)[9]` | `r cdata[cdata$name == levels(cdata$name)[9],]$type[1]` | `r rel.dif[9]` | `r com.dif[9]` | `r pri.dif[9]` | `r sum.dif[9]` |
+|`r levels(cdata$name)[10]` | `r cdata[cdata$name == levels(cdata$name)[10],]$type[1]` | `r rel.dif[10]` | `r com.dif[10]` | `r pri.dif[10]` | `r sum.dif[10]` |
+|`r levels(cdata$name)[11]` | `r cdata[cdata$name == levels(cdata$name)[11],]$type[1]` | `r rel.dif[11]` | `r com.dif[11]` | `r pri.dif[11]` | `r sum.dif[11]` |
+|`r levels(cdata$name)[12]` | `r cdata[cdata$name == levels(cdata$name)[12],]$type[1]` | `r rel.dif[12]` | `r com.dif[12]` | `r pri.dif[12]` | `r sum.dif[12]` |
+|`r levels(cdata$name)[13]` | `r cdata[cdata$name == levels(cdata$name)[13],]$type[1]` | `r rel.dif[13]` | `r com.dif[13]` | `r pri.dif[13]` | `r sum.dif[13]` |
+|`r levels(cdata$name)[14]` | `r cdata[cdata$name == levels(cdata$name)[14],]$type[1]` | `r rel.dif[14]` | `r com.dif[14]` | `r pri.dif[14]` | `r sum.dif[14]` |
+|`r levels(cdata$name)[15]` | `r cdata[cdata$name == levels(cdata$name)[15],]$type[1]` | `r rel.dif[15]` | `r com.dif[15]` | `r pri.dif[15]` | `r sum.dif[15]` |
+|`r levels(cdata$name)[16]` | `r cdata[cdata$name == levels(cdata$name)[16],]$type[1]` | `r rel.dif[16]` | `r com.dif[16]` | `r pri.dif[16]` | `r sum.dif[16]` |
+
+There seems to be sufficient variation for all conditions.
+
+We can also test whether, over all vignettes, our expectations led to significant differences.
+
+```{r}
+  # data <- data[! data$name %in% c("NBA experts"),]
+  t.test(answer ~ relevance, data = filter(data, condition %in% c("rel") ))
+  t.test(answer ~ competence, data = filter(data, condition %in% c("comp") ))
+  t.test(answer ~ prior, data = filter(data, condition %in% c("prior") ))
+  
+  factorData = data %>% 
+    filter(condition %in% c("rel", "comp", "prior"))
+  factorData = melt(factorData, id.vars = c("relevance", "competence", "prior", "condition"), 
+                    measure.vars = "answer")
+  factorData$highLow = ifelse(factorData$condition == "comp", factorData$competence,
+                              ifelse(factorData$condition == "rel", factorData$relevance,factorData$prior))
+  factorData$highLow = factor(ifelse(factorData$highLow, "high", "low"), levels = c('low', 'high'))
+  
+  factorData$condition = ifelse(factorData$condition == "comp", "com",
+                                ifelse(factorData$condition == "prior", "pri", "rel"))
+  
+  factorData$condition = factor(factorData$condition, ordered = T, levels = c("rel", "com", "pri"))
+  
+  factorBoxPlot = ggplot(factorData, aes(x=highLow, y=value, fill=highLow)) + geom_boxplot() + facet_wrap(~ condition) +
+    guides(fill=FALSE) + xlab('intuitive categorization') + ylab('rating') + theme_bw()
+  show(factorBoxPlot)
+  
+  if (save) {ggsave(filename = '../../texts/01_paper_draft/pics/factorBoxPlotExp3.pdf', factorBoxPlot, height = 3, width = 6)}
+```
+
+
+## Distribution of ratings
+
+This plot shows the distribution of ratings for each of the four factors of interest.
+
+```{r}
+  densityFactors = ggplot(data = filter(cdata, ! condition %in% c("test_false", "test_uncertain", "test_true") ),
+         aes(x = mean)) +
+  geom_density(alpha = 0.2, fill = "firebrick") +
+  theme_bw() +
+  facet_wrap(~ condition, ncol = 4) +
+  xlab("rating")
+  show(densityFactors)
+  if (save) {
+    ggsave(filename = "../../texts/01_paper_draft/pics/densityFactorsExp3.pdf", plot = densityFactors, width = 6, height = 3)
+  }
+```
+
+The distribution for *competence* is not very pointed (mean `r round(mean(filter(data, data$condition == "comp")$answer),2)`, standard deviation `r round(sd(filter(data, data$condition == "comp")$answer),2)`). The distribution for *prior* is slightly skewed to the left (mean `r round(mean(filter(data, data$condition == "prior")$answer),2)`, standard deviation `r round(sd(filter(data, data$condition == "prior")$answer),2)`). The distribution for *relevance* is also rater murky (mean `r round(mean(filter(data, data$condition == "rel")$answer),2)`, standard deviation `r round(sd(filter(data, data$condition == "rel")$answer),2)`). The distribution for *imp* is skewed towards the right and peaks at about 0.8 (mean `r round(mean(filter(data, data$condition == "imp")$answer),2)`, standard deviation `r round(sd(filter(data, data$condition == "imp")$answer),2)`).
+
+Here's the distribution of ratings over answers in the control conditions.
+
+```{r}
+  densityTest = ggplot(data = filter(cdata, condition %in% c("test_false", "test_uncertain", "test_true") ),
+         aes(x = mean)) +
+  geom_density(alpha = 0.2, fill = "firebrick") +
+  theme_bw() +
+  facet_wrap(~ condition, ncol = 4) +
+  theme()
+  show(densityTest)
+```
+
+The distribution for the controls looks good. Ratings of false test statements are lower than those of uncertain statements, which in turn are lower than ratings of true statements.
+
+```{r}
+  t.test(mean ~ condition , 
+         data = filter(cdata, condition %in% c("test_false", "test_uncertain")),
+         alternative = "less")
+  t.test(mean ~ condition , 
+         data = filter(cdata, condition %in% c("test_uncertain", "test_true")),
+         alternative = "greater")
+```
+
+
+Finally, look at the distribution of answers for the implicature conditions for each vignette separately.
+
+```{r}
+plotData = data %>% filter( condition %in% c('imp') ) %>%
+            select(name, type, answer) %>%
+            mutate(nameType = paste0(type, '-', name))
+answerByVignette = ggplot(plotData, aes(y = answer, x = nameType)) + geom_boxplot()  + coord_flip()          
+show(answerByVignette)
+```
+
+We already see here that one condition stands out: <span style = "font-style: italic">NBA experts</span> has a lower overal implicature rating than the other vignettes (see also below). This is particularly puzzling since it was intuitively classified as high relevance, high competence and low prior, so that we'd expect especially high implicature ratings. The empirically measured ratings for relevance, competence and prior accord with inuition, so there seems to be something else going on.
+
+
+## Analysis
+
+We construct a generalised linear model predicting proportions based on the average scores for each item and condition.
+
+```{r echo = TRUE}
+  rel.dp        <- cdata[cdata$condition == "rel",]$mean
+  pri.dp        <- cdata[cdata$condition == "prior",]$mean
+  com.dp        <- cdata[cdata$condition == "comp",]$mean
+  names(rel.dp) <- cdata[cdata$condition == "rel",]$name
+  names(pri.dp) <- cdata[cdata$condition == "prior",]$name
+  names(com.dp) <- cdata[cdata$condition == "comp",]$name
+  data$rel      <- rel.dp[data$name]
+  data$pri      <- pri.dp[data$name]
+  data$com      <- com.dp[data$name]
+
+  imp <- data[data$condition == "imp",]
+
+  model <- glm(answer ~ rel + pri + com, data = imp)
+  
+  summary(model)
+```
+
+A significant effect of *prior* on the exclusivity ratings. The more likely the conjunctive situation the less likely it is that the sentence with `or' is judged as exclusive. The other two factors are not significant although *relevance* tends in the same direction as *prior*.
+
+## Compare models of different complexity
+
+Instead of asking which factors are significant deviations in the best fitted regression model, we can also ask which factors should be included for better regression models.
+
+```{r, echo = TRUE}
+modelRel <- glm(answer ~ rel, data = imp)
+modelCom <- glm(answer ~ com, data = imp)
+modelPri <- glm(answer ~ pri, data = imp)
+modelRelCom <- glm(answer ~ rel + com, data = imp)
+modelComPri <- glm(answer ~ com + pri, data = imp)
+modelRelPri <- glm(answer ~ rel + pri, data = imp)
+modelRelComPri <- glm(answer ~ rel + com + pri, data = imp)
+show(AIC(modelRel, modelCom, modelPri, modelRelCom, modelComPri, modelRelPri, modelRelComPri))
+```
+
+This means that a model that only takes *prior* is already pretty good, but the best model would take *prior* and *relevance* as factors. Including *competence* does not increase model strength. (NB: lower AIC -> better model.)
+
+## Bayesian model comparison
+
+Instead of comparing models with AICs, we can use Bayes factors, because these better take model complexity into account.
+
+```{r, message=FALSE, echo = TRUE}
+require('BayesFactor')
+bfsAll = generalTestBF(answer ~ rel + com + pri, data = imp)
+plot(bfsAll)
+if (save) {
+  pdf('../../texts/01_paper_draft/pics/bfsAllExp3.pdf', height = 4, width = 6)
+  plot(bfsAll)
+  dev.off()
+}
+
+```
+
+This suggests that the model that only takes "prior" into account is the best. But it is only marginally better than models that also look at "competence" and "relevance".
+
+```{r, echo=FALSE, message = FALSE, warnings = FALSE}
+# this is just some extra testing
+
+## including interactions
+# bfsAllInt = generalTestBF(answer ~ rel * com * pri, data = imp)
+# plot(bfsAllInt)
+
+## treating IV as categorical
+# bfsBinary = sort(regressionBF(answer ~ relevance * competence * prior, data = imp))
+# plot(bfsBinary)
+# imp$relevanceF = factor(imp$relevance)
+# imp$competenceF = factor(imp$competence)
+# imp$priorF = factor(imp$prior)
+# bfsCat = sort(anovaBF(answer ~ relevanceF + competenceF + priorF, data = imp, whichModels = "bottom"))
+# plot(bfsCat)
+# summary(aov(answer ~ relevanceF + competenceF + priorF, data = imp))
+
+## including by-participant random effects
+# bfsAllNoIntMixed = generalTestBF(answer ~ rel + com + pri + id, data = imp, whichRandom = "id")
+# plot(bfsAllNoIntMixed)
+# bfsAllMixed = generalTestBF(answer ~ rel * com * pri + id, data = imp, whichRandom = "id")
+# plot(bfsAllMixed)
+```
+
+We can also inspect the estimates of the coefficients for the model with all three factors.
+
+```{r, warning = FALSE, echo=TRUE , message = FALSE}
+require('ggmcmc') # for nicer plots
+full = lmBF(answer ~ rel + pri + com, data = imp)
+chains = posterior(full, iterations = 50000, chains = 2) # get posterior samples
+mc = ggs(mcmc(chains)) # transform to ggmcmc object
+densityMCMC = ggs_density(mc, family = c("rel|com|pri"))
+show(densityMCMC)
+if (save) {ggsave(filename = '../../texts/01_paper_draft/pics/densityMCMCExp3.pdf', densityMCMC, height = 4, width = 6)}
+
+# try this only for competence in the model
+compModel = lmBF(answer ~ com, data = imp)
+chainsComp = posterior(compModel, iterations = 50000) # get posterior samples
+mcComp = ggs(mcmc(chainsComp)) # transform to ggmcmc object
+ggs_density(mcComp)
+```
+
+This plots shows the posterior over model coefficients. 
+
+## Treating the <span style = "font-style: italic">NBA experts</span> differently
+
+There is something special about the NBA experts case (see above). It is the only "argumentative context," but it's hard to pin down what exactly an "argumentative" context really is. But it is also the only context in which the listener would likely known the truth of the <span style = "font-style: italic">all</span>-alternative. It might be therefore that we see so low implicature ratings despite high competence, high relevance and low prior ratings.
+
+To address whether <span style = "font-style: italic">NBA experts</span> should be treated differently, we add a factor <span style = "font-style: italic">listenerKnows</span> which is 1 for this vignette and 0 for all others. We then compute Bayes factors and see whether the addition of this factor makes our predictions better.
+
+```{r, message = FALSE}
+imp$listenerKnows = ifelse(imp$name == "NBA experts", 1, 0)
+bfsAllListenerKnows = generalTestBF(answer ~ rel + com + pri + listenerKnows, data = imp)
+plot(bfsAllListenerKnows)
+if (save) {
+  pdf('../../texts/01_paper_draft/pics/bfsAllListenerKnowsExp3.pdf', height = 4, width = 6)
+  plot(bfsAllListenerKnows)
+  dev.off()
+}
+```
+
+This shows that the <span style = "font-style: italic">NBA experts</span> vignette clearly seems to follow a different pattern: including factor <span style = "font-style: italic">listenerKnows</span> increases model credibility substantially. Also, if we take this factor into account, there is a positive influence of factors REL and COMP, just as the standard theory would predict. But the main point remains that all models with PRI are more credible than the corresponding model without it.
+
+Let's sanity check: if we look at the direction of the coefficients for the full model with <span style = "font-style: italic">listenerKnows</span> then we get no surprises: relevance is irrelevant, competence and prior go in the right direction, and if the listener knows whether the alternative is true or not, subjects give low implicature ratings.
+
+```{r}
+fullListenerKnows = lmBF(answer ~ rel + com + pri + listenerKnows, data = imp)
+chainsComp2 = posterior(fullListenerKnows, iterations = 50000) # get posterior samples
+mcComp2 = ggs(mcmc(chainsComp2)) # transform to ggmcmc object
+ggs_density(mcComp2)
+```
+
+How can we motivate that the vignette <span style = "font-style: italic">NBA experts</span> is special and should be treated as such? Well, it's the only vignette with significantly different implicature rates from all the other vignetes, by a simple two-sided <span style = "font-style: italic">t</span>-test. All vignettes other than <span style = "font-style: italic">NBA experts</span> have at least one vignette from which they are not significantly different by a <span style = "font-style: italic">t</span>-test.
+
+
+```{r, echo = TRUE}
+pValues = matrix(-1, ncol = nlevels(d$name), nrow = nlevels(d$name))
+colnames(pValues) = levels(d$name)
+rownames(pValues) = levels(d$name)
+for (i in 1:nlevels(d$name)) {
+  for (j in 1:nlevels(d$name)) {
+    if (i != j) {
+      pValues[i,j] = t.test(filter(data, condition == "imp", name == levels(d$name)[i])$answer,
+         filter(data, condition == "imp", name == levels(d$name)[j])$answer)$p.value 
+    }
+  }
+}
+apply(pValues,1, max)
+```
+
+
+
+```{r}
+
+## What if we flag other vignettes as special?
+
+# Let's introduce similar flags, one for each vignette, just like we did with <span style = "font-style: italic">NBA experts</span>. The following (hideous) list of plots does that for each vignette, whose name is given in the title (or somewhere close to where the title should be.)
+
+# for (i in levels(d$name)){
+#   imp$vignetteFlag = ifelse(imp$name == i, 1, 0)
+#   bfsAllvignetteFlag = generalTestBF(answer ~ rel + com + pri + vignetteFlag, data = imp)
+#   plot(bfsAllvignetteFlag)
+#   title(main = i)
+# }
+
+```
+
+
+## Transform the data
+
+Proportions are sometimes analysed after an arcsine transformation although that procedure has been criticised. Let's give it a try nonetheless.
+
+```{r echo = TRUE, message = FALSE}
+  
+#   cdata2 <- ddply(
+#     data, c("name", "condition", "type"), summarise,
+#     mean = mean(asin(answer))
+#   )
+  cdata2 = data %>% group_by(name, condition, type) %>%
+    summarize(mean = mean(asin(answer)))
+  
+  rel.dp2        <- cdata2[cdata2$condition == "rel",]$mean
+  pri.dp2        <- cdata2[cdata2$condition == "prior",]$mean
+  com.dp2        <- cdata2[cdata2$condition == "comp",]$mean
+  names(rel.dp2) <- cdata2[cdata2$condition == "rel",]$name
+  names(pri.dp2) <- cdata2[cdata2$condition == "prior",]$name
+  names(com.dp2) <- cdata2[cdata2$condition == "comp",]$name
+  data2          <- data
+  data2$rel      <- rel.dp[data$name]
+  data2$pri      <- pri.dp[data$name]
+  data2$com      <- com.dp[data$name]
+
+  imp2 <- data2[data2$condition == "imp",]
+  imp2$answer <- asin(imp2$answer)
+
+  model2 <- glm(answer ~ rel + pri + com, data = imp2)
+  
+  summary(model2)
+  
+```
+This doesn't make a difference.
+
+## Correlation plots
+
+```{r fig.height = 3}
+  imp.dp <- cdata[cdata$condition == "imp",]$mean
+  df <- data.frame(imp = imp.dp, rel = rel.dp, com = com.dp, pri = pri.dp)
+  df$vignetteID = c("Harvard", "M&M's", "cookies", "NBA", "quiz", "watch", "emails", "gifts", "dessert", "airco",
+                    "tomatoes", "schizo", "comedy", "donkey", "drinking", "vGogh")
+  #df <- df[! df$vignetteID %in% c("gifts"),]
+  dfPlot = melt(df, measure.vars = c("rel", "com", "pri"))
+  
+  
+  corPlot = ggplot(dfPlot, aes(x = value, y = imp)) + geom_point() + theme_bw() + geom_smooth(method = lm, se = TRUE) +
+    geom_text(aes(label=vignetteID),hjust=0.5, vjust=-0.4, color = "firebrick", size = 2.5) + xlim(0,1) + facet_wrap(~ variable, ncol = 3) +
+    xlab("mean value of explanatory factor") + ylab("mean strength of implicature") + theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+  if (save) {
+    ggsave(filename = "../../texts/01_paper_draft/pics/correlationExp3.pdf", plot = corPlot, width = 6, height = 3)
+  }
+  
+  
+```
+
+
+## Bayesian model comparison without NBA-item
+
+Let's exclude the "NBA" item and redo the linear regression.
+
+```{r, message=FALSE, echo = TRUE}
+require('BayesFactor')
+bfsAllnoNBA = generalTestBF(answer ~ rel + com + pri, data = filter(imp, name != "NBA experts"))
+plot(bfsAllnoNBA)
+if (save) {
+  pdf('../../texts/01_paper_draft/pics/bfsAllExp3_noNBA.pdf', height = 4, width = 6)
+  plot(bfsAllnoNBA)
+  dev.off()
+}
+
+full = lmBF(answer ~ rel + pri + com, data = filter(imp, name != "NBA experts"))
+chains = posterior(full, iterations = 50000, chains = 2) # get posterior samples
+mc = ggs(mcmc(chains)) # transform to ggmcmc object
+mc = filter(mc, Parameter %in% c("rel", "com", "pri"))
+mc$Parameter = factor(mc$Parameter, levels = c("rel", "com", "pri"), ordered = T)
+densityMCMC3 = ggplot(mc, aes(x = value)) + geom_density() + 
+  facet_wrap(~ Parameter) + theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
+  xlab("values of regression coefficients") + ylab("posterior probability") + theme_bw()
+# densityMCMC = ggs_density(mc, family = c("rel|com|pri"))
+show(densityMCMC3)
+if (save) {ggsave(filename = '../../texts/01_paper_draft/pics/densityMCMCExp3.pdf', densityMCMC3, height = 4, width = 6)}
+
+
+```

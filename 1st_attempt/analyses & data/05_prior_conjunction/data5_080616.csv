@@ -1,0 +1,841 @@
+id,itemTime,trialNumber,name,type,statement,relevance,competence,prior,condition,trialType,answer,RT,language,comments,engagement,difficulty
+A10A25H4472NHN:3RJSC4XJ1125YHU776IJK0T1MVO50F,1465402670619,1,Tony's clubbing,lhl,Tony has to work at club Macabre tonight.,0,1,0,test,test_false,0,21531,english,NA,3,5
+A10A25H4472NHN:3RJSC4XJ1125YHU776IJK0T1MVO50F,1465402683546,2,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.5,12919,english,NA,3,5
+A10A25H4472NHN:3RJSC4XJ1125YHU776IJK0T1MVO50F,1465402706438,3,Carl's party,hll,John did not spend much time outside.,1,0,0,test,test_true,1,22887,english,NA,3,5
+A10A25H4472NHN:3RJSC4XJ1125YHU776IJK0T1MVO50F,1465402711857,4,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.5,5415,english,NA,3,5
+A10A25H4472NHN:3RJSC4XJ1125YHU776IJK0T1MVO50F,1465402721600,5,Harold's pet,lll,Harold is single.,0,0,0,test,test_false,0,9741,english,NA,3,5
+A10A25H4472NHN:3RJSC4XJ1125YHU776IJK0T1MVO50F,1465402728848,6,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh2,0.42,7245,english,NA,3,5
+A10A25H4472NHN:3RJSC4XJ1125YHU776IJK0T1MVO50F,1465402741679,7,Brad's clothes,hlh,Mandy feels attracted to Brad.,1,0,1,test,test_uncertain,0.5,12829,english,NA,3,5
+A10A25H4472NHN:3RJSC4XJ1125YHU776IJK0T1MVO50F,1465402748695,8,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.51,7014,english,NA,3,5
+A10A25H4472NHN:3RJSC4XJ1125YHU776IJK0T1MVO50F,1465402763323,9,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test,test_uncertain,0.53,14626,english,NA,3,5
+A10A25H4472NHN:3RJSC4XJ1125YHU776IJK0T1MVO50F,1465402768656,10,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.56,5330,english,NA,3,5
+A10A25H4472NHN:3RJSC4XJ1125YHU776IJK0T1MVO50F,1465402780677,11,Pete's accident,hhl,Pete's mother was not there when he fell of the slide.,1,1,0,test,test_true,1,12019,english,NA,3,5
+A10A25H4472NHN:3RJSC4XJ1125YHU776IJK0T1MVO50F,1465402857185,12,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.47,76505,english,NA,3,5
+A13GRYSDPEZGJ:304SM51WA4C7O6VSHISGXSZCRJMSBJ,1465394531452,1,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.65,17080,English,NA,9,3
+A13GRYSDPEZGJ:304SM51WA4C7O6VSHISGXSZCRJMSBJ,1465394541425,2,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.81,9972,English,NA,9,3
+A13GRYSDPEZGJ:304SM51WA4C7O6VSHISGXSZCRJMSBJ,1465394559320,3,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.03,17893,English,NA,9,3
+A13GRYSDPEZGJ:304SM51WA4C7O6VSHISGXSZCRJMSBJ,1465394564962,4,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.1,5641,English,NA,9,3
+A13GRYSDPEZGJ:304SM51WA4C7O6VSHISGXSZCRJMSBJ,1465394585765,5,Mrs Sanders' son,hhl,The teacher is trying to find out who queued up twice.,1,1,0,test,test_true,0.87,20801,English,NA,9,3
+A13GRYSDPEZGJ:304SM51WA4C7O6VSHISGXSZCRJMSBJ,1465394589071,6,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh1,0.07,3305,English,NA,9,3
+A13GRYSDPEZGJ:304SM51WA4C7O6VSHISGXSZCRJMSBJ,1465394596682,7,Harold's pet,lll,Harold is single.,0,0,0,test,test_false,0,7611,English,NA,9,3
+A13GRYSDPEZGJ:304SM51WA4C7O6VSHISGXSZCRJMSBJ,1465394600115,8,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.01,3432,English,NA,9,3
+A13GRYSDPEZGJ:304SM51WA4C7O6VSHISGXSZCRJMSBJ,1465394611562,9,Mrs Gibbs' worry,hhh,Cindy is secretly in love with Mrs Gibbs' husband.,1,1,1,test,test_uncertain,0.14,11447,English,NA,9,3
+A13GRYSDPEZGJ:304SM51WA4C7O6VSHISGXSZCRJMSBJ,1465394616826,10,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.68,5263,English,NA,9,3
+A13GRYSDPEZGJ:304SM51WA4C7O6VSHISGXSZCRJMSBJ,1465394625816,11,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,0.98,8989,English,NA,9,3
+A13GRYSDPEZGJ:304SM51WA4C7O6VSHISGXSZCRJMSBJ,1465394630675,12,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.59,4858,English,NA,9,3
+A18G2CLYSTENK:333U7HK6IAN740AM8KA80HWPYLQJD6,1465402781754,1,Gigi's exams,hlh,Gigi hired a private tutor to help her with her Biology and Chemistry exams.,1,0,1,test,test_false,1,11273,English,interesting study,8,1
+A18G2CLYSTENK:333U7HK6IAN740AM8KA80HWPYLQJD6,1465402785371,2,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.65,3616,English,interesting study,8,1
+A18G2CLYSTENK:333U7HK6IAN740AM8KA80HWPYLQJD6,1465402804044,3,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test,test_uncertain,0.2,18672,English,interesting study,8,1
+A18G2CLYSTENK:333U7HK6IAN740AM8KA80HWPYLQJD6,1465402810722,4,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.78,6678,English,interesting study,8,1
+A18G2CLYSTENK:333U7HK6IAN740AM8KA80HWPYLQJD6,1465402821892,5,Harold's pet,lll,Harold's girlfriend didn't want a pet in her house before.,0,0,0,test,test_true,0.75,11169,English,interesting study,8,1
+A18G2CLYSTENK:333U7HK6IAN740AM8KA80HWPYLQJD6,1465402825469,6,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh2,0.11,3577,English,interesting study,8,1
+A18G2CLYSTENK:333U7HK6IAN740AM8KA80HWPYLQJD6,1465402835836,7,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test,test_false,0,10366,English,interesting study,8,1
+A18G2CLYSTENK:333U7HK6IAN740AM8KA80HWPYLQJD6,1465402839621,8,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh2,0.44,3784,English,interesting study,8,1
+A18G2CLYSTENK:333U7HK6IAN740AM8KA80HWPYLQJD6,1465402851349,9,Carl's party,hll,John did not spend much time outside.,1,0,0,test,test_true,0.81,11727,English,interesting study,8,1
+A18G2CLYSTENK:333U7HK6IAN740AM8KA80HWPYLQJD6,1465402857445,10,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.17,6096,English,interesting study,8,1
+A18G2CLYSTENK:333U7HK6IAN740AM8KA80HWPYLQJD6,1465402867168,11,Pete's accident,hhl,Pete's teacher saw him fall off the slide.,1,1,0,test,test_uncertain,0.66,9721,English,interesting study,8,1
+A18G2CLYSTENK:333U7HK6IAN740AM8KA80HWPYLQJD6,1465402870692,12,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.18,3524,English,interesting study,8,1
+A19F0UPKU4IT2P:3FTOP5WARGWD5G9SW8MDLAC64WH0JU,1465400313853,1,Mrs Sanders' son,hhl,Ted is Mrs Sanders' husband.,1,1,0,test,test_false,0,48359,English,N/A,8,2
+A19F0UPKU4IT2P:3FTOP5WARGWD5G9SW8MDLAC64WH0JU,1465400325025,2,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh2,0.29,11170,English,N/A,8,2
+A19F0UPKU4IT2P:3FTOP5WARGWD5G9SW8MDLAC64WH0JU,1465400333087,3,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,0.78,8061,English,N/A,8,2
+A19F0UPKU4IT2P:3FTOP5WARGWD5G9SW8MDLAC64WH0JU,1465400342363,4,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.2,9275,English,N/A,8,2
+A19F0UPKU4IT2P:3FTOP5WARGWD5G9SW8MDLAC64WH0JU,1465400359615,5,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.1,17252,English,N/A,8,2
+A19F0UPKU4IT2P:3FTOP5WARGWD5G9SW8MDLAC64WH0JU,1465400368913,6,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.26,9297,English,N/A,8,2
+A19F0UPKU4IT2P:3FTOP5WARGWD5G9SW8MDLAC64WH0JU,1465400379185,7,Gigi's exams,hlh,Gigi aspires to a career in science.,1,0,1,test,test_uncertain,0.61,10270,English,N/A,8,2
+A19F0UPKU4IT2P:3FTOP5WARGWD5G9SW8MDLAC64WH0JU,1465400383375,8,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh2,0.75,4190,English,N/A,8,2
+A19F0UPKU4IT2P:3FTOP5WARGWD5G9SW8MDLAC64WH0JU,1465400405819,9,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.28,22442,English,N/A,8,2
+A19F0UPKU4IT2P:3FTOP5WARGWD5G9SW8MDLAC64WH0JU,1465400412901,10,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.12,7081,English,N/A,8,2
+A19F0UPKU4IT2P:3FTOP5WARGWD5G9SW8MDLAC64WH0JU,1465400437556,11,Jimmy's trip,lll,Jimmy had to rush to be back home and did not have much time to spend in the city.,0,0,0,test,test_true,0.92,24654,English,N/A,8,2
+A19F0UPKU4IT2P:3FTOP5WARGWD5G9SW8MDLAC64WH0JU,1465400441057,12,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh2,0.14,3500,English,N/A,8,2
+A1AQQFJAF8CI4H:3Z2R0DQ0JIMCQAQEXUF07ISTWM5E27,1465402940815,1,Brad's clothes,hlh,Mandy feels attracted to Brad.,1,0,1,test,test_uncertain,0.5,20038,English,n/a,8,2
+A1AQQFJAF8CI4H:3Z2R0DQ0JIMCQAQEXUF07ISTWM5E27,1465402951720,2,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.78,10903,English,n/a,8,2
+A1AQQFJAF8CI4H:3Z2R0DQ0JIMCQAQEXUF07ISTWM5E27,1465402957980,3,Carl's party,hll,John did not spend much time outside.,1,0,0,test,test_true,0.18,6260,English,n/a,8,2
+A1AQQFJAF8CI4H:3Z2R0DQ0JIMCQAQEXUF07ISTWM5E27,1465402960956,4,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.16,2975,English,n/a,8,2
+A1AQQFJAF8CI4H:3Z2R0DQ0JIMCQAQEXUF07ISTWM5E27,1465402966779,5,Chloe's holiday,lhh,"Chloe forgot about bringing some beach towels, too.",0,1,1,test,test_uncertain,0.32,5822,English,n/a,8,2
+A1AQQFJAF8CI4H:3Z2R0DQ0JIMCQAQEXUF07ISTWM5E27,1465402970196,6,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh2,0.58,3416,English,n/a,8,2
+A1AQQFJAF8CI4H:3Z2R0DQ0JIMCQAQEXUF07ISTWM5E27,1465402992926,7,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.26,22729,English,n/a,8,2
+A1AQQFJAF8CI4H:3Z2R0DQ0JIMCQAQEXUF07ISTWM5E27,1465402998719,8,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.4,5792,English,n/a,8,2
+A1AQQFJAF8CI4H:3Z2R0DQ0JIMCQAQEXUF07ISTWM5E27,1465403008669,9,Leo's wife,hll,Leo is sponsoring a tennis tournament.,1,0,0,test,test_false,0.38,9949,English,n/a,8,2
+A1AQQFJAF8CI4H:3Z2R0DQ0JIMCQAQEXUF07ISTWM5E27,1465403013474,10,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.14,4804,English,n/a,8,2
+A1AQQFJAF8CI4H:3Z2R0DQ0JIMCQAQEXUF07ISTWM5E27,1465403023095,11,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.08,9620,English,n/a,8,2
+A1AQQFJAF8CI4H:3Z2R0DQ0JIMCQAQEXUF07ISTWM5E27,1465403026197,12,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.68,3100,English,n/a,8,2
+A1CSWN23S8BHQY:3WT783CTPCPRHP6WKW2GINVU5G6CBF,1465403434344,1,Gigi's exams,hlh,Gigi aspires to a career in science.,1,0,1,test,test_uncertain,0.56,1892,English,no,5,5
+A1CSWN23S8BHQY:3WT783CTPCPRHP6WKW2GINVU5G6CBF,1465403435728,2,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.48,1383,English,no,5,5
+A1CSWN23S8BHQY:3WT783CTPCPRHP6WKW2GINVU5G6CBF,1465403436864,3,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.56,1135,English,no,5,5
+A1CSWN23S8BHQY:3WT783CTPCPRHP6WKW2GINVU5G6CBF,1465403437952,4,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.55,1087,English,no,5,5
+A1CSWN23S8BHQY:3WT783CTPCPRHP6WKW2GINVU5G6CBF,1465403439656,5,Carl's party,hll,John did not spend much time outside.,1,0,0,test,test_true,0.58,1703,English,no,5,5
+A1CSWN23S8BHQY:3WT783CTPCPRHP6WKW2GINVU5G6CBF,1465403440744,6,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.56,1088,English,no,5,5
+A1CSWN23S8BHQY:3WT783CTPCPRHP6WKW2GINVU5G6CBF,1465403441904,7,Harold's pet,lll,Harold is single.,0,0,0,test,test_false,0.47,1160,English,no,5,5
+A1CSWN23S8BHQY:3WT783CTPCPRHP6WKW2GINVU5G6CBF,1465403443080,8,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.4,1176,English,no,5,5
+A1CSWN23S8BHQY:3WT783CTPCPRHP6WKW2GINVU5G6CBF,1465403444216,9,Tony's clubbing,lhl,Techno is quite different from Jazz and from Metal.,0,1,0,test,test_true,0.52,1136,English,no,5,5
+A1CSWN23S8BHQY:3WT783CTPCPRHP6WKW2GINVU5G6CBF,1465403445416,10,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.54,1200,English,no,5,5
+A1CSWN23S8BHQY:3WT783CTPCPRHP6WKW2GINVU5G6CBF,1465403447448,11,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0.56,2032,English,no,5,5
+A1CSWN23S8BHQY:3WT783CTPCPRHP6WKW2GINVU5G6CBF,1465403449352,12,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.63,1904,English,no,5,5
+A1DJDT4B5B19Q2:3L6L49WXW15MX5C8Q75LW3JE37Z45P,1465396368114,1,Tony's clubbing,lhl,Techno is quite different from Jazz and from Metal.,0,1,0,test,test_true,0.84,25400,English,thank you,9,7
+A1DJDT4B5B19Q2:3L6L49WXW15MX5C8Q75LW3JE37Z45P,1465396408266,2,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.42,40149,English,thank you,9,7
+A1DJDT4B5B19Q2:3L6L49WXW15MX5C8Q75LW3JE37Z45P,1465396427451,3,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,0.97,19183,English,thank you,9,7
+A1DJDT4B5B19Q2:3L6L49WXW15MX5C8Q75LW3JE37Z45P,1465396467365,4,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.44,39911,English,thank you,9,7
+A1DJDT4B5B19Q2:3L6L49WXW15MX5C8Q75LW3JE37Z45P,1465396548191,5,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.44,80819,English,thank you,9,7
+A1DJDT4B5B19Q2:3L6L49WXW15MX5C8Q75LW3JE37Z45P,1465396559782,6,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.4,11579,English,thank you,9,7
+A1DJDT4B5B19Q2:3L6L49WXW15MX5C8Q75LW3JE37Z45P,1465396585838,7,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.56,26044,English,thank you,9,7
+A1DJDT4B5B19Q2:3L6L49WXW15MX5C8Q75LW3JE37Z45P,1465396591266,8,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.78,5418,English,thank you,9,7
+A1DJDT4B5B19Q2:3L6L49WXW15MX5C8Q75LW3JE37Z45P,1465396611480,9,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0.16,20210,English,thank you,9,7
+A1DJDT4B5B19Q2:3L6L49WXW15MX5C8Q75LW3JE37Z45P,1465396620406,10,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.6,8918,English,thank you,9,7
+A1DJDT4B5B19Q2:3L6L49WXW15MX5C8Q75LW3JE37Z45P,1465396635846,11,Harold's pet,lll,Harold's girlfriend gave in because Harold kept nagging her about wanting a pet.,0,0,0,test,test_uncertain,0.6,15428,English,thank you,9,7
+A1DJDT4B5B19Q2:3L6L49WXW15MX5C8Q75LW3JE37Z45P,1465396652406,12,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh2,0.33,16547,English,thank you,9,7
+A1FYFBIFYWTMJS:3ND9UOO81LAC8WYDS0RB8KY29Q1WLU,1465397759665,1,Mrs Gibbs' worry,hhh,Cindy is secretly in love with Mrs Gibbs' husband.,1,1,1,test,test_uncertain,0.16,11598,English,NA,8,7
+A1FYFBIFYWTMJS:3ND9UOO81LAC8WYDS0RB8KY29Q1WLU,1465397773511,2,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.64,13845,English,NA,8,7
+A1FYFBIFYWTMJS:3ND9UOO81LAC8WYDS0RB8KY29Q1WLU,1465397782031,3,Pete's accident,hhl,Pete's teacher saw him fall off the slide.,1,1,0,test,test_uncertain,0.73,8519,English,NA,8,7
+A1FYFBIFYWTMJS:3ND9UOO81LAC8WYDS0RB8KY29Q1WLU,1465397789655,4,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.62,7623,English,NA,8,7
+A1FYFBIFYWTMJS:3ND9UOO81LAC8WYDS0RB8KY29Q1WLU,1465397799207,5,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.91,9551,English,NA,8,7
+A1FYFBIFYWTMJS:3ND9UOO81LAC8WYDS0RB8KY29Q1WLU,1465397803632,6,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.71,4424,English,NA,8,7
+A1FYFBIFYWTMJS:3ND9UOO81LAC8WYDS0RB8KY29Q1WLU,1465397822207,7,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0,18574,English,NA,8,7
+A1FYFBIFYWTMJS:3ND9UOO81LAC8WYDS0RB8KY29Q1WLU,1465397828495,8,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.74,6287,English,NA,8,7
+A1FYFBIFYWTMJS:3ND9UOO81LAC8WYDS0RB8KY29Q1WLU,1465397838626,9,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,0.81,10130,English,NA,8,7
+A1FYFBIFYWTMJS:3ND9UOO81LAC8WYDS0RB8KY29Q1WLU,1465397844715,10,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.05,6088,English,NA,8,7
+A1FYFBIFYWTMJS:3ND9UOO81LAC8WYDS0RB8KY29Q1WLU,1465397869359,11,Mrs Sanders' son,hhl,The teacher is trying to find out who queued up twice.,1,1,0,test,test_true,0.86,24644,English,NA,8,7
+A1FYFBIFYWTMJS:3ND9UOO81LAC8WYDS0RB8KY29Q1WLU,1465397872327,12,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh1,0.86,2967,English,NA,8,7
+A1HWI4N1RJGKYY:34YB12FSQZW0HSQYD7O8MUR3F71GMH,1465400065084,1,Pete's accident,hhl,Pete's mother was not there when he fell of the slide.,1,1,0,test,test_true,0.66,14065,english,NA,8,0
+A1HWI4N1RJGKYY:34YB12FSQZW0HSQYD7O8MUR3F71GMH,1465400072666,2,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.38,7581,english,NA,8,0
+A1HWI4N1RJGKYY:34YB12FSQZW0HSQYD7O8MUR3F71GMH,1465400084475,3,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.63,11808,english,NA,8,0
+A1HWI4N1RJGKYY:34YB12FSQZW0HSQYD7O8MUR3F71GMH,1465400088446,4,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.33,3970,english,NA,8,0
+A1HWI4N1RJGKYY:34YB12FSQZW0HSQYD7O8MUR3F71GMH,1465400098081,5,Harold's pet,lll,Harold is single.,0,0,0,test,test_false,0,9634,english,NA,8,0
+A1HWI4N1RJGKYY:34YB12FSQZW0HSQYD7O8MUR3F71GMH,1465400101862,6,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh2,0.5,3780,english,NA,8,0
+A1HWI4N1RJGKYY:34YB12FSQZW0HSQYD7O8MUR3F71GMH,1465400111929,7,Leo's wife,hll,Leo is sponsoring a tennis tournament.,1,0,0,test,test_false,0,10067,english,NA,8,0
+A1HWI4N1RJGKYY:34YB12FSQZW0HSQYD7O8MUR3F71GMH,1465400116382,8,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.5,4453,english,NA,8,0
+A1HWI4N1RJGKYY:34YB12FSQZW0HSQYD7O8MUR3F71GMH,1465400124181,9,Chloe's holiday,lhh,"Chloe forgot about bringing some beach towels, too.",0,1,1,test,test_uncertain,0.34,7798,english,NA,8,0
+A1HWI4N1RJGKYY:34YB12FSQZW0HSQYD7O8MUR3F71GMH,1465400130445,10,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.5,6263,english,NA,8,0
+A1HWI4N1RJGKYY:34YB12FSQZW0HSQYD7O8MUR3F71GMH,1465400144952,11,Joshua's delay,llh,"Kevin, Cory and Joshua do not like to hang out with girls.",0,0,1,test,test_uncertain,0.41,14507,english,NA,8,0
+A1HWI4N1RJGKYY:34YB12FSQZW0HSQYD7O8MUR3F71GMH,1465400148671,12,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.5,3719,english,NA,8,0
+A1I4YFIL263DP8:3IO1LGZLKA5JZAZO7T535LDJ1O986J,1465399938785,1,Gerald's graduation,llh,Gerald is friends with both Nico and Rick.,0,0,1,test,test_true,1,18313,English,NA,8,6
+A1I4YFIL263DP8:3IO1LGZLKA5JZAZO7T535LDJ1O986J,1465399954279,2,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.54,15494,English,NA,8,6
+A1I4YFIL263DP8:3IO1LGZLKA5JZAZO7T535LDJ1O986J,1465399974125,3,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0.03,19844,English,NA,8,6
+A1I4YFIL263DP8:3IO1LGZLKA5JZAZO7T535LDJ1O986J,1465399994655,4,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.8,20529,English,NA,8,6
+A1I4YFIL263DP8:3IO1LGZLKA5JZAZO7T535LDJ1O986J,1465400008758,5,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,0.92,14103,English,NA,8,6
+A1I4YFIL263DP8:3IO1LGZLKA5JZAZO7T535LDJ1O986J,1465400023826,6,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.44,15067,English,NA,8,6
+A1I4YFIL263DP8:3IO1LGZLKA5JZAZO7T535LDJ1O986J,1465400058509,7,Carl's party,hll,"John and Carl, the hosts, are a gay couple.",1,0,0,test,test_false,0.29,34682,English,NA,8,6
+A1I4YFIL263DP8:3IO1LGZLKA5JZAZO7T535LDJ1O986J,1465400066982,8,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.66,8472,English,NA,8,6
+A1I4YFIL263DP8:3IO1LGZLKA5JZAZO7T535LDJ1O986J,1465400098040,9,Brad's clothes,hlh,Mandy feels attracted to Brad.,1,0,1,test,test_uncertain,0.65,31058,English,NA,8,6
+A1I4YFIL263DP8:3IO1LGZLKA5JZAZO7T535LDJ1O986J,1465400103629,10,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.59,5588,English,NA,8,6
+A1I4YFIL263DP8:3IO1LGZLKA5JZAZO7T535LDJ1O986J,1465400159768,11,Tony's clubbing,lhl,Rob is a big fan of Techno music as well.,0,1,0,test,test_uncertain,0.63,56138,English,NA,8,6
+A1I4YFIL263DP8:3IO1LGZLKA5JZAZO7T535LDJ1O986J,1465400164492,12,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh1,0.26,4721,English,NA,8,6
+A1JQI98NY1RMNS:3GA6AFUKOPWDV2DZRV1BBVUYUGYH32,1465403491195,1,Leo's wife,hll,Leo is sponsoring a tennis tournament.,1,0,0,test,test_false,0,18222,english,NA,5,4
+A1JQI98NY1RMNS:3GA6AFUKOPWDV2DZRV1BBVUYUGYH32,1465403505261,2,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.3,14065,english,NA,5,4
+A1JQI98NY1RMNS:3GA6AFUKOPWDV2DZRV1BBVUYUGYH32,1465403514149,3,Pete's accident,hhl,Pete's teacher saw him fall off the slide.,1,1,0,test,test_uncertain,0.53,8888,english,NA,5,4
+A1JQI98NY1RMNS:3GA6AFUKOPWDV2DZRV1BBVUYUGYH32,1465403521310,4,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.55,7161,english,NA,5,4
+A1JQI98NY1RMNS:3GA6AFUKOPWDV2DZRV1BBVUYUGYH32,1465403528615,5,Gigi's exams,hlh,Gigi aspires to a career in science.,1,0,1,test,test_uncertain,0.38,7305,english,NA,5,4
+A1JQI98NY1RMNS:3GA6AFUKOPWDV2DZRV1BBVUYUGYH32,1465403534047,6,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh2,0.74,5431,english,NA,5,4
+A1JQI98NY1RMNS:3GA6AFUKOPWDV2DZRV1BBVUYUGYH32,1465403545072,7,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0.16,11024,english,NA,5,4
+A1JQI98NY1RMNS:3GA6AFUKOPWDV2DZRV1BBVUYUGYH32,1465403548313,8,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.56,3241,english,NA,5,4
+A1JQI98NY1RMNS:3GA6AFUKOPWDV2DZRV1BBVUYUGYH32,1465403558010,9,Harold's pet,lll,Harold's girlfriend didn't want a pet in her house before.,0,0,0,test,test_true,0.6,9697,english,NA,5,4
+A1JQI98NY1RMNS:3GA6AFUKOPWDV2DZRV1BBVUYUGYH32,1465403560386,10,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.32,2376,english,NA,5,4
+A1JQI98NY1RMNS:3GA6AFUKOPWDV2DZRV1BBVUYUGYH32,1465403566947,11,Gerald's graduation,llh,Gerald is friends with both Nico and Rick.,0,0,1,test,test_true,0.98,6561,english,NA,5,4
+A1JQI98NY1RMNS:3GA6AFUKOPWDV2DZRV1BBVUYUGYH32,1465403569795,12,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.72,2848,english,NA,5,4
+A1KEZTODV5S7MX:3P1L2B7AD2X43NPB1E01RQLG6O2OLA,1465399732035,1,Tony's clubbing,lhl,Rob is a big fan of Techno music as well.,0,1,0,test,test_uncertain,0.75,24003,English,NA,7,2
+A1KEZTODV5S7MX:3P1L2B7AD2X43NPB1E01RQLG6O2OLA,1465399756513,2,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh1,0.5,24473,English,NA,7,2
+A1KEZTODV5S7MX:3P1L2B7AD2X43NPB1E01RQLG6O2OLA,1465399770183,3,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0,13666,English,NA,7,2
+A1KEZTODV5S7MX:3P1L2B7AD2X43NPB1E01RQLG6O2OLA,1465399781206,4,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.71,11016,English,NA,7,2
+A1KEZTODV5S7MX:3P1L2B7AD2X43NPB1E01RQLG6O2OLA,1465399797822,5,Harold's pet,lll,Harold's girlfriend didn't want a pet in her house before.,0,0,0,test,test_true,0.88,16611,English,NA,7,2
+A1KEZTODV5S7MX:3P1L2B7AD2X43NPB1E01RQLG6O2OLA,1465399807261,6,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh2,0.11,9434,English,NA,7,2
+A1KEZTODV5S7MX:3P1L2B7AD2X43NPB1E01RQLG6O2OLA,1465399824705,7,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.99,17441,English,NA,7,2
+A1KEZTODV5S7MX:3P1L2B7AD2X43NPB1E01RQLG6O2OLA,1465399834139,8,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.5,9430,English,NA,7,2
+A1KEZTODV5S7MX:3P1L2B7AD2X43NPB1E01RQLG6O2OLA,1465399857394,9,Gigi's exams,hlh,Gigi studied hard to pass her exams.,1,0,1,test,test_true,1,23250,English,NA,7,2
+A1KEZTODV5S7MX:3P1L2B7AD2X43NPB1E01RQLG6O2OLA,1465399866442,10,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.92,9044,English,NA,7,2
+A1KEZTODV5S7MX:3P1L2B7AD2X43NPB1E01RQLG6O2OLA,1465399888857,11,Mrs Sanders' son,hhl,Mrs Sanders had pasta for lunch yesterday.,1,1,0,test,test_uncertain,0.5,22410,English,NA,7,2
+A1KEZTODV5S7MX:3P1L2B7AD2X43NPB1E01RQLG6O2OLA,1465399899351,12,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh2,0.5,10491,English,NA,7,2
+A1L8EDNM7HZZAX:3WEV0KO0ON0033TCVEJMSINCU43DSG,1465399912381,1,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,0.18,12133,Spanish,None,8,5
+A1L8EDNM7HZZAX:3WEV0KO0ON0033TCVEJMSINCU43DSG,1465399918171,2,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.66,5788,Spanish,None,8,5
+A1L8EDNM7HZZAX:3WEV0KO0ON0033TCVEJMSINCU43DSG,1465399932971,3,Lily's husband,lhl,Eric has a problem with his liver for which he has to stop drinking alcohol.,0,1,0,test,test_uncertain,0.71,14800,Spanish,None,8,5
+A1L8EDNM7HZZAX:3WEV0KO0ON0033TCVEJMSINCU43DSG,1465399940197,4,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.23,7226,Spanish,None,8,5
+A1L8EDNM7HZZAX:3WEV0KO0ON0033TCVEJMSINCU43DSG,1465399954727,5,Mrs Gibbs' worry,hhh,Mrs Gibbs is worried about Cindy's health.,1,1,1,test,test_false,0,14528,Spanish,None,8,5
+A1L8EDNM7HZZAX:3WEV0KO0ON0033TCVEJMSINCU43DSG,1465399961011,6,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.2,6283,Spanish,None,8,5
+A1L8EDNM7HZZAX:3WEV0KO0ON0033TCVEJMSINCU43DSG,1465399980527,7,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,0.77,19512,Spanish,None,8,5
+A1L8EDNM7HZZAX:3WEV0KO0ON0033TCVEJMSINCU43DSG,1465399984451,8,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.26,3913,Spanish,None,8,5
+A1L8EDNM7HZZAX:3WEV0KO0ON0033TCVEJMSINCU43DSG,1465399999317,9,Carl's party,hll,"John and Carl, the hosts, are a gay couple.",1,0,0,test,test_false,0.37,14865,Spanish,None,8,5
+A1L8EDNM7HZZAX:3WEV0KO0ON0033TCVEJMSINCU43DSG,1465400005021,10,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.35,5702,Spanish,None,8,5
+A1L8EDNM7HZZAX:3WEV0KO0ON0033TCVEJMSINCU43DSG,1465400021499,11,Harold's pet,lll,Harold's girlfriend gave in because Harold kept nagging her about wanting a pet.,0,0,0,test,test_uncertain,0.86,16477,Spanish,None,8,5
+A1L8EDNM7HZZAX:3WEV0KO0ON0033TCVEJMSINCU43DSG,1465400024462,12,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.11,2962,Spanish,None,8,5
+A1O6B5LIV00PJ7:3DPNQGW4LMNIG9CMVQFQO9XEZ2D64A,1465402687979,1,Joshua's delay,llh,Kevin and Cory expected Joshua to arrive earlier.,0,0,1,test,test_true,0.78,15934,English,NA,6,0
+A1O6B5LIV00PJ7:3DPNQGW4LMNIG9CMVQFQO9XEZ2D64A,1465402691685,2,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.84,3702,English,NA,6,0
+A1O6B5LIV00PJ7:3DPNQGW4LMNIG9CMVQFQO9XEZ2D64A,1465402697776,3,Leo's wife,hll,Leo is sponsoring a tennis tournament.,1,0,0,test,test_false,0,6091,English,NA,6,0
+A1O6B5LIV00PJ7:3DPNQGW4LMNIG9CMVQFQO9XEZ2D64A,1465402703509,4,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.5,5731,English,NA,6,0
+A1O6B5LIV00PJ7:3DPNQGW4LMNIG9CMVQFQO9XEZ2D64A,1465402710926,5,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.5,7417,English,NA,6,0
+A1O6B5LIV00PJ7:3DPNQGW4LMNIG9CMVQFQO9XEZ2D64A,1465402719300,6,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.5,8374,English,NA,6,0
+A1O6B5LIV00PJ7:3DPNQGW4LMNIG9CMVQFQO9XEZ2D64A,1465402730613,7,Lily's husband,lhl,Eric has a problem with his liver for which he has to stop drinking alcohol.,0,1,0,test,test_uncertain,0.85,11313,English,NA,6,0
+A1O6B5LIV00PJ7:3DPNQGW4LMNIG9CMVQFQO9XEZ2D64A,1465402735377,8,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.51,4764,English,NA,6,0
+A1O6B5LIV00PJ7:3DPNQGW4LMNIG9CMVQFQO9XEZ2D64A,1465402745183,9,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.5,9806,English,NA,6,0
+A1O6B5LIV00PJ7:3DPNQGW4LMNIG9CMVQFQO9XEZ2D64A,1465402749808,10,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.71,4625,English,NA,6,0
+A1O6B5LIV00PJ7:3DPNQGW4LMNIG9CMVQFQO9XEZ2D64A,1465402861987,11,Tony's clubbing,lhl,Techno is quite different from Jazz and from Metal.,0,1,0,test,test_true,1,112179,English,NA,6,0
+A1O6B5LIV00PJ7:3DPNQGW4LMNIG9CMVQFQO9XEZ2D64A,1465402869728,12,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh1,0.52,7741,English,NA,6,0
+A1S6C6EN8MPKC3:3U5JL4WY5LHVZOWIWDOGOMAYW56X4N,1465394787181,1,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0,32297,english,NA,7,5
+A1S6C6EN8MPKC3:3U5JL4WY5LHVZOWIWDOGOMAYW56X4N,1465394812590,2,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.52,25407,english,NA,7,5
+A1S6C6EN8MPKC3:3U5JL4WY5LHVZOWIWDOGOMAYW56X4N,1465394828606,3,Mrs Gibbs' worry,hhh,Mrs Gibbs is worried about Cindy's health.,1,1,1,test,test_false,0,16016,english,NA,7,5
+A1S6C6EN8MPKC3:3U5JL4WY5LHVZOWIWDOGOMAYW56X4N,1465394858991,4,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.22,30384,english,NA,7,5
+A1S6C6EN8MPKC3:3U5JL4WY5LHVZOWIWDOGOMAYW56X4N,1465394872445,5,Brad's clothes,hlh,Mandy feels attracted to Brad.,1,0,1,test,test_uncertain,0.5,13451,english,NA,7,5
+A1S6C6EN8MPKC3:3U5JL4WY5LHVZOWIWDOGOMAYW56X4N,1465394881174,6,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh2,0.49,8727,english,NA,7,5
+A1S6C6EN8MPKC3:3U5JL4WY5LHVZOWIWDOGOMAYW56X4N,1465394908670,7,Danny's racket,hhh,Alex needs to buy some equipment before he can play squash with Danny.,1,1,1,test,test_true,0.82,27495,english,NA,7,5
+A1S6C6EN8MPKC3:3U5JL4WY5LHVZOWIWDOGOMAYW56X4N,1465394920646,8,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0,11976,english,NA,7,5
+A1S6C6EN8MPKC3:3U5JL4WY5LHVZOWIWDOGOMAYW56X4N,1465394943077,9,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,0.68,22430,english,NA,7,5
+A1S6C6EN8MPKC3:3U5JL4WY5LHVZOWIWDOGOMAYW56X4N,1465394949902,10,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0,6824,english,NA,7,5
+A1S6C6EN8MPKC3:3U5JL4WY5LHVZOWIWDOGOMAYW56X4N,1465394966934,11,Harold's pet,lll,Harold's girlfriend gave in because Harold kept nagging her about wanting a pet.,0,0,0,test,test_uncertain,1,17031,english,NA,7,5
+A1S6C6EN8MPKC3:3U5JL4WY5LHVZOWIWDOGOMAYW56X4N,1465394971877,12,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0,4942,english,NA,7,5
+A1UGD2VEVSML1U:3IXQG4FA2U6PJRZT8CSPGXUMZVX9BP,1465394529520,1,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.18,25428,English,Nope,8,5
+A1UGD2VEVSML1U:3IXQG4FA2U6PJRZT8CSPGXUMZVX9BP,1465394538039,2,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.17,8515,English,Nope,8,5
+A1UGD2VEVSML1U:3IXQG4FA2U6PJRZT8CSPGXUMZVX9BP,1465394554951,3,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.14,16909,English,Nope,8,5
+A1UGD2VEVSML1U:3IXQG4FA2U6PJRZT8CSPGXUMZVX9BP,1465394564689,4,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.24,9734,English,Nope,8,5
+A1UGD2VEVSML1U:3IXQG4FA2U6PJRZT8CSPGXUMZVX9BP,1465394579502,5,Joshua's delay,llh,"Kevin, Cory and Joshua do not like to hang out with girls.",0,0,1,test,test_uncertain,0.15,14810,English,Nope,8,5
+A1UGD2VEVSML1U:3IXQG4FA2U6PJRZT8CSPGXUMZVX9BP,1465394590214,6,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.15,10707,English,Nope,8,5
+A1UGD2VEVSML1U:3IXQG4FA2U6PJRZT8CSPGXUMZVX9BP,1465394599326,7,Brad's clothes,hlh,Mandy feels attracted to Brad.,1,0,1,test,test_uncertain,0,9107,English,Nope,8,5
+A1UGD2VEVSML1U:3IXQG4FA2U6PJRZT8CSPGXUMZVX9BP,1465394607182,8,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.12,7850,English,Nope,8,5
+A1UGD2VEVSML1U:3IXQG4FA2U6PJRZT8CSPGXUMZVX9BP,1465394618845,9,Pete's accident,hhl,Pete's mother was not there when he fell of the slide.,1,1,0,test,test_true,1,11657,English,Nope,8,5
+A1UGD2VEVSML1U:3IXQG4FA2U6PJRZT8CSPGXUMZVX9BP,1465394625724,10,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.16,6876,English,Nope,8,5
+A1UGD2VEVSML1U:3IXQG4FA2U6PJRZT8CSPGXUMZVX9BP,1465394638829,11,Tony's clubbing,lhl,Tony has to work at club Macabre tonight.,0,1,0,test,test_false,0.09,13101,English,Nope,8,5
+A1UGD2VEVSML1U:3IXQG4FA2U6PJRZT8CSPGXUMZVX9BP,1465394650445,12,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh1,0.51,11610,English,Nope,8,5
+A1WDUICI1FG9F:30LB5CDZNDI35VEWEUPZ940WNUPZ09,1465395280923,1,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.66,15196,English,NA,5,2
+A1WDUICI1FG9F:30LB5CDZNDI35VEWEUPZ940WNUPZ09,1465395285268,2,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.2,4337,English,NA,5,2
+A1WDUICI1FG9F:30LB5CDZNDI35VEWEUPZ940WNUPZ09,1465395290806,3,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,1,5535,English,NA,5,2
+A1WDUICI1FG9F:30LB5CDZNDI35VEWEUPZ940WNUPZ09,1465395294676,4,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.67,3869,English,NA,5,2
+A1WDUICI1FG9F:30LB5CDZNDI35VEWEUPZ940WNUPZ09,1465395306327,5,Gerald's graduation,llh,Gerald is friends with both Nico and Rick.,0,0,1,test,test_true,1,11646,English,NA,5,2
+A1WDUICI1FG9F:30LB5CDZNDI35VEWEUPZ940WNUPZ09,1465395312672,6,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.51,6336,English,NA,5,2
+A1WDUICI1FG9F:30LB5CDZNDI35VEWEUPZ940WNUPZ09,1465395334823,7,Danny's racket,hhh,Danny and Alex went to the sports store together.,1,1,1,test,test_false,0.2,22141,English,NA,5,2
+A1WDUICI1FG9F:30LB5CDZNDI35VEWEUPZ940WNUPZ09,1465395338308,8,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.73,3478,English,NA,5,2
+A1WDUICI1FG9F:30LB5CDZNDI35VEWEUPZ940WNUPZ09,1465395354006,9,Jimmy's trip,lll,Jimmy went on a school trip to New York City.,0,0,0,test,test_false,0,15694,English,NA,5,2
+A1WDUICI1FG9F:30LB5CDZNDI35VEWEUPZ940WNUPZ09,1465395357684,10,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.68,3667,English,NA,5,2
+A1WDUICI1FG9F:30LB5CDZNDI35VEWEUPZ940WNUPZ09,1465395369105,11,Mrs Gibbs' worry,hhh,Cindy is secretly in love with Mrs Gibbs' husband.,1,1,1,test,test_uncertain,0.27,11418,English,NA,5,2
+A1WDUICI1FG9F:30LB5CDZNDI35VEWEUPZ940WNUPZ09,1465395371868,12,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.71,2758,English,NA,5,2
+A1X5IZPCRLL0Z7:3ZAK8W07I5MMJWKM87QRSCLHLCF0UQ,1465400530337,1,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,1,10603,English,No,8,3
+A1X5IZPCRLL0Z7:3ZAK8W07I5MMJWKM87QRSCLHLCF0UQ,1465400539657,2,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.13,9316,English,No,8,3
+A1X5IZPCRLL0Z7:3ZAK8W07I5MMJWKM87QRSCLHLCF0UQ,1465400554178,3,Lily's husband,lhl,Eric has a problem with his liver for which he has to stop drinking alcohol.,0,1,0,test,test_uncertain,0.67,14521,English,No,8,3
+A1X5IZPCRLL0Z7:3ZAK8W07I5MMJWKM87QRSCLHLCF0UQ,1465400558204,4,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.5,4024,English,No,8,3
+A1X5IZPCRLL0Z7:3ZAK8W07I5MMJWKM87QRSCLHLCF0UQ,1465400567949,5,Joshua's delay,llh,"Kevin, Cory and Joshua do not like to hang out with girls.",0,0,1,test,test_uncertain,0.11,9744,English,No,8,3
+A1X5IZPCRLL0Z7:3ZAK8W07I5MMJWKM87QRSCLHLCF0UQ,1465400571994,6,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.59,4043,English,No,8,3
+A1X5IZPCRLL0Z7:3ZAK8W07I5MMJWKM87QRSCLHLCF0UQ,1465400582423,7,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.73,10427,English,No,8,3
+A1X5IZPCRLL0Z7:3ZAK8W07I5MMJWKM87QRSCLHLCF0UQ,1465400588271,8,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.49,5847,English,No,8,3
+A1X5IZPCRLL0Z7:3ZAK8W07I5MMJWKM87QRSCLHLCF0UQ,1465400604536,9,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.48,16264,English,No,8,3
+A1X5IZPCRLL0Z7:3ZAK8W07I5MMJWKM87QRSCLHLCF0UQ,1465400608592,10,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.68,4055,English,No,8,3
+A1X5IZPCRLL0Z7:3ZAK8W07I5MMJWKM87QRSCLHLCF0UQ,1465400616845,11,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0.15,8251,English,No,8,3
+A1X5IZPCRLL0Z7:3ZAK8W07I5MMJWKM87QRSCLHLCF0UQ,1465400622766,12,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.42,5919,English,No,8,3
+A1X94LTZZQMHTP:3VD82FOHKRWB0JV5O172O7VTCFMOCS,1465398254548,1,Harold's pet,lll,Harold's girlfriend gave in because Harold kept nagging her about wanting a pet.,0,0,0,test,test_uncertain,0.65,4866,english,NA,5,5
+A1X94LTZZQMHTP:3VD82FOHKRWB0JV5O172O7VTCFMOCS,1465398256364,2,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.63,1813,english,NA,5,5
+A1X94LTZZQMHTP:3VD82FOHKRWB0JV5O172O7VTCFMOCS,1465398257916,3,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test,test_false,0.35,1551,english,NA,5,5
+A1X94LTZZQMHTP:3VD82FOHKRWB0JV5O172O7VTCFMOCS,1465398259804,4,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh2,0.76,1887,english,NA,5,5
+A1X94LTZZQMHTP:3VD82FOHKRWB0JV5O172O7VTCFMOCS,1465398262877,5,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,0.82,3073,english,NA,5,5
+A1X94LTZZQMHTP:3VD82FOHKRWB0JV5O172O7VTCFMOCS,1465398264709,6,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.67,1831,english,NA,5,5
+A1X94LTZZQMHTP:3VD82FOHKRWB0JV5O172O7VTCFMOCS,1465398266725,7,Mrs Sanders' son,hhl,Ted is Mrs Sanders' husband.,1,1,0,test,test_false,0.72,2015,english,NA,5,5
+A1X94LTZZQMHTP:3VD82FOHKRWB0JV5O172O7VTCFMOCS,1465398268309,8,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh1,0.35,1583,english,NA,5,5
+A1X94LTZZQMHTP:3VD82FOHKRWB0JV5O172O7VTCFMOCS,1465398270109,9,Gigi's exams,hlh,Gigi aspires to a career in science.,1,0,1,test,test_uncertain,0.54,1799,english,NA,5,5
+A1X94LTZZQMHTP:3VD82FOHKRWB0JV5O172O7VTCFMOCS,1465398271565,10,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh2,0.61,1455,english,NA,5,5
+A1X94LTZZQMHTP:3VD82FOHKRWB0JV5O172O7VTCFMOCS,1465398272765,11,Gerald's graduation,llh,Gerald is friends with both Nico and Rick.,0,0,1,test,test_true,0.62,1199,english,NA,5,5
+A1X94LTZZQMHTP:3VD82FOHKRWB0JV5O172O7VTCFMOCS,1465398274341,12,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.42,1575,english,NA,5,5
+A1XSL223UP6NMI:3VFJCI1K407RE83QIFKP8TLDLTURG8,1465396946763,1,Harold's pet,lll,Harold is single.,0,0,0,test,test_false,0,16098,English,Some of the sentences were grammatically incorrect.,8,3
+A1XSL223UP6NMI:3VFJCI1K407RE83QIFKP8TLDLTURG8,1465396957313,2,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.1,10519,English,Some of the sentences were grammatically incorrect.,8,3
+A1XSL223UP6NMI:3VFJCI1K407RE83QIFKP8TLDLTURG8,1465396978362,3,Joshua's delay,llh,"Kevin, Cory and Joshua do not like to hang out with girls.",0,0,1,test,test_uncertain,0.49,21049,English,Some of the sentences were grammatically incorrect.,8,3
+A1XSL223UP6NMI:3VFJCI1K407RE83QIFKP8TLDLTURG8,1465396993981,4,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.82,15619,English,Some of the sentences were grammatically incorrect.,8,3
+A1XSL223UP6NMI:3VFJCI1K407RE83QIFKP8TLDLTURG8,1465397015310,5,Gigi's exams,hlh,Gigi hired a private tutor to help her with her Biology and Chemistry exams.,1,0,1,test,test_false,0,21329,English,Some of the sentences were grammatically incorrect.,8,3
+A1XSL223UP6NMI:3VFJCI1K407RE83QIFKP8TLDLTURG8,1465397022912,6,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.78,7602,English,Some of the sentences were grammatically incorrect.,8,3
+A1XSL223UP6NMI:3VFJCI1K407RE83QIFKP8TLDLTURG8,1465397039643,7,Leo's wife,hll,Leo is an avid golf player.,1,0,0,test,test_uncertain,0.76,16731,English,Some of the sentences were grammatically incorrect.,8,3
+A1XSL223UP6NMI:3VFJCI1K407RE83QIFKP8TLDLTURG8,1465397050660,8,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.18,11017,English,Some of the sentences were grammatically incorrect.,8,3
+A1XSL223UP6NMI:3VFJCI1K407RE83QIFKP8TLDLTURG8,1465397071227,9,Gerald's graduation,llh,Gerald is friends with both Nico and Rick.,0,0,1,test,test_true,1,20567,English,Some of the sentences were grammatically incorrect.,8,3
+A1XSL223UP6NMI:3VFJCI1K407RE83QIFKP8TLDLTURG8,1465397080992,10,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.75,9765,English,Some of the sentences were grammatically incorrect.,8,3
+A1XSL223UP6NMI:3VFJCI1K407RE83QIFKP8TLDLTURG8,1465397093990,11,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,1,12998,English,Some of the sentences were grammatically incorrect.,8,3
+A1XSL223UP6NMI:3VFJCI1K407RE83QIFKP8TLDLTURG8,1465397101906,12,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.28,7916,English,Some of the sentences were grammatically incorrect.,8,3
+A1YD6IATEIIG4X:3YDGXNSEO025KNVAO5CO8NT55XA845,1465405847480,1,Leo's wife,hll,Leo is sponsoring a tennis tournament.,1,0,0,test,test_false,0,13422,English,NA,7,3
+A1YD6IATEIIG4X:3YDGXNSEO025KNVAO5CO8NT55XA845,1465405852358,2,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.24,4878,English,NA,7,3
+A1YD6IATEIIG4X:3YDGXNSEO025KNVAO5CO8NT55XA845,1465405866288,3,Gigi's exams,hlh,Gigi studied hard to pass her exams.,1,0,1,test,test_true,0.88,13930,English,NA,7,3
+A1YD6IATEIIG4X:3YDGXNSEO025KNVAO5CO8NT55XA845,1465405869175,4,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.5,2887,English,NA,7,3
+A1YD6IATEIIG4X:3YDGXNSEO025KNVAO5CO8NT55XA845,1465405880518,5,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test,test_uncertain,0.55,11343,English,NA,7,3
+A1YD6IATEIIG4X:3YDGXNSEO025KNVAO5CO8NT55XA845,1465405887079,6,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.68,6561,English,NA,7,3
+A1YD6IATEIIG4X:3YDGXNSEO025KNVAO5CO8NT55XA845,1465405898671,7,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.41,11592,English,NA,7,3
+A1YD6IATEIIG4X:3YDGXNSEO025KNVAO5CO8NT55XA845,1465405905959,8,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.78,7287,English,NA,7,3
+A1YD6IATEIIG4X:3YDGXNSEO025KNVAO5CO8NT55XA845,1465405922012,9,Jimmy's trip,lll,Jimmy went on a school trip to New York City.,0,0,0,test,test_false,1,16053,English,NA,7,3
+A1YD6IATEIIG4X:3YDGXNSEO025KNVAO5CO8NT55XA845,1465405928886,10,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.53,6874,English,NA,7,3
+A1YD6IATEIIG4X:3YDGXNSEO025KNVAO5CO8NT55XA845,1465405941280,11,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.56,12394,English,NA,7,3
+A1YD6IATEIIG4X:3YDGXNSEO025KNVAO5CO8NT55XA845,1465405945952,12,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.29,4672,English,NA,7,3
+A242GFDFCPQ619:3QEMNNSB2Y7EK59K7BLBXRRG7QZD72,1465404263634,1,Joshua's delay,llh,"Kevin, Cory and Joshua do not like to hang out with girls.",0,0,1,test,test_uncertain,0.32,9530,English,NA,9,3
+A242GFDFCPQ619:3QEMNNSB2Y7EK59K7BLBXRRG7QZD72,1465404271858,2,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.34,8221,English,NA,9,3
+A242GFDFCPQ619:3QEMNNSB2Y7EK59K7BLBXRRG7QZD72,1465404286241,3,Jimmy's trip,lll,Jimmy went on a school trip to New York City.,0,0,0,test,test_false,0,14382,English,NA,9,3
+A242GFDFCPQ619:3QEMNNSB2Y7EK59K7BLBXRRG7QZD72,1465404293817,4,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.59,7574,English,NA,9,3
+A242GFDFCPQ619:3QEMNNSB2Y7EK59K7BLBXRRG7QZD72,1465404304417,5,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.08,10598,English,NA,9,3
+A242GFDFCPQ619:3QEMNNSB2Y7EK59K7BLBXRRG7QZD72,1465404308874,6,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.53,4455,English,NA,9,3
+A242GFDFCPQ619:3QEMNNSB2Y7EK59K7BLBXRRG7QZD72,1465404328665,7,Danny's racket,hhh,Alex needs to buy some equipment before he can play squash with Danny.,1,1,1,test,test_true,1,19790,English,NA,9,3
+A242GFDFCPQ619:3QEMNNSB2Y7EK59K7BLBXRRG7QZD72,1465404331570,8,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.79,2903,English,NA,9,3
+A242GFDFCPQ619:3QEMNNSB2Y7EK59K7BLBXRRG7QZD72,1465404339113,9,Mrs Gibbs' worry,hhh,Cindy is secretly in love with Mrs Gibbs' husband.,1,1,1,test,test_uncertain,0.09,7540,English,NA,9,3
+A242GFDFCPQ619:3QEMNNSB2Y7EK59K7BLBXRRG7QZD72,1465404344745,10,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.06,5631,English,NA,9,3
+A242GFDFCPQ619:3QEMNNSB2Y7EK59K7BLBXRRG7QZD72,1465404356522,11,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,1,11775,English,NA,9,3
+A242GFDFCPQ619:3QEMNNSB2Y7EK59K7BLBXRRG7QZD72,1465404362043,12,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.11,5518,English,NA,9,3
+A24CAU1WKCIPT5:35GMH2SV3FPQXHFJKSDXEVVWXR8OEU,1465404034556,1,Danny's racket,hhh,Danny and Alex went to the sports store together.,1,1,1,test,test_false,1,25295,English,NA,10,0
+A24CAU1WKCIPT5:35GMH2SV3FPQXHFJKSDXEVVWXR8OEU,1465404047924,2,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,1,13362,English,NA,10,0
+A24CAU1WKCIPT5:35GMH2SV3FPQXHFJKSDXEVVWXR8OEU,1465404065342,3,Mrs Sanders' son,hhl,Mrs Sanders had pasta for lunch yesterday.,1,1,0,test,test_uncertain,0.5,17413,English,NA,10,0
+A24CAU1WKCIPT5:35GMH2SV3FPQXHFJKSDXEVVWXR8OEU,1465404071561,4,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh2,0.5,6215,English,NA,10,0
+A24CAU1WKCIPT5:35GMH2SV3FPQXHFJKSDXEVVWXR8OEU,1465404084489,5,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,1,12910,English,NA,10,0
+A24CAU1WKCIPT5:35GMH2SV3FPQXHFJKSDXEVVWXR8OEU,1465404089607,6,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh2,0.51,5117,English,NA,10,0
+A24CAU1WKCIPT5:35GMH2SV3FPQXHFJKSDXEVVWXR8OEU,1465404104002,7,Mrs Gibbs' worry,hhh,Mrs Gibbs is worried about Cindy's health.,1,1,1,test,test_false,0,14394,English,NA,10,0
+A24CAU1WKCIPT5:35GMH2SV3FPQXHFJKSDXEVVWXR8OEU,1465404107945,8,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.5,3939,English,NA,10,0
+A24CAU1WKCIPT5:35GMH2SV3FPQXHFJKSDXEVVWXR8OEU,1465404116938,9,Gerald's graduation,llh,Gerald is friends with both Nico and Rick.,0,0,1,test,test_true,1,8992,English,NA,10,0
+A24CAU1WKCIPT5:35GMH2SV3FPQXHFJKSDXEVVWXR8OEU,1465404120329,10,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.5,3391,English,NA,10,0
+A24CAU1WKCIPT5:35GMH2SV3FPQXHFJKSDXEVVWXR8OEU,1465404132285,11,Leo's wife,hll,Leo is an avid golf player.,1,0,0,test,test_uncertain,0.5,11955,English,NA,10,0
+A24CAU1WKCIPT5:35GMH2SV3FPQXHFJKSDXEVVWXR8OEU,1465404141322,12,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0,9036,English,NA,10,0
+A2541C8MY0BYV3:39GHHAVOMGZU44RTF99FXD2JL8S4J9,1465396018577,1,Jimmy's trip,lll,Jimmy had told his friends about his plans to visit New York City before.,0,0,0,test,test_uncertain,0.03,12168,English,NA,10,10
+A2541C8MY0BYV3:39GHHAVOMGZU44RTF99FXD2JL8S4J9,1465396022417,2,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh2,0.85,3838,English,NA,10,10
+A2541C8MY0BYV3:39GHHAVOMGZU44RTF99FXD2JL8S4J9,1465396030682,3,Chloe's holiday,lhh,"Chloe forgot about bringing some beach towels, too.",0,1,1,test,test_uncertain,0.49,8263,English,NA,10,10
+A2541C8MY0BYV3:39GHHAVOMGZU44RTF99FXD2JL8S4J9,1465396035163,4,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh2,0.7,4478,English,NA,10,10
+A2541C8MY0BYV3:39GHHAVOMGZU44RTF99FXD2JL8S4J9,1465396050073,5,Danny's racket,hhh,Danny and Alex went to the sports store together.,1,1,1,test,test_false,0.14,14908,English,NA,10,10
+A2541C8MY0BYV3:39GHHAVOMGZU44RTF99FXD2JL8S4J9,1465396056928,6,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.3,6852,English,NA,10,10
+A2541C8MY0BYV3:39GHHAVOMGZU44RTF99FXD2JL8S4J9,1465396062371,7,Harold's pet,lll,Harold is single.,0,0,0,test,test_false,0,5441,English,NA,10,10
+A2541C8MY0BYV3:39GHHAVOMGZU44RTF99FXD2JL8S4J9,1465396068332,8,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.2,5959,English,NA,10,10
+A2541C8MY0BYV3:39GHHAVOMGZU44RTF99FXD2JL8S4J9,1465396080194,9,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.07,11861,English,NA,10,10
+A2541C8MY0BYV3:39GHHAVOMGZU44RTF99FXD2JL8S4J9,1465396087375,10,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0,7180,English,NA,10,10
+A2541C8MY0BYV3:39GHHAVOMGZU44RTF99FXD2JL8S4J9,1465396092025,11,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,1,4648,English,NA,10,10
+A2541C8MY0BYV3:39GHHAVOMGZU44RTF99FXD2JL8S4J9,1465396095351,12,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.61,3323,English,NA,10,10
+A2551EKB87S2XY:36V4Q8R5ZL8RUHKCG3TKG8V5LU5MQD,1465396739316,1,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0.69,7025,english,n/a,10,6
+A2551EKB87S2XY:36V4Q8R5ZL8RUHKCG3TKG8V5LU5MQD,1465396742887,2,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.4,3568,english,n/a,10,6
+A2551EKB87S2XY:36V4Q8R5ZL8RUHKCG3TKG8V5LU5MQD,1465396745379,3,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test,test_false,0.64,2492,english,n/a,10,6
+A2551EKB87S2XY:36V4Q8R5ZL8RUHKCG3TKG8V5LU5MQD,1465396747373,4,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.73,1993,english,n/a,10,6
+A2551EKB87S2XY:36V4Q8R5ZL8RUHKCG3TKG8V5LU5MQD,1465396750815,5,Jimmy's trip,lll,Jimmy had to rush to be back home and did not have much time to spend in the city.,0,0,0,test,test_true,0.67,3440,english,n/a,10,6
+A2551EKB87S2XY:36V4Q8R5ZL8RUHKCG3TKG8V5LU5MQD,1465396778732,6,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh2,0.69,27914,english,n/a,10,6
+A2551EKB87S2XY:36V4Q8R5ZL8RUHKCG3TKG8V5LU5MQD,1465396780921,7,Harold's pet,lll,Harold's girlfriend didn't want a pet in her house before.,0,0,0,test,test_true,0.76,2184,english,n/a,10,6
+A2551EKB87S2XY:36V4Q8R5ZL8RUHKCG3TKG8V5LU5MQD,1465396782291,8,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.39,1369,english,n/a,10,6
+A2551EKB87S2XY:36V4Q8R5ZL8RUHKCG3TKG8V5LU5MQD,1465396783537,9,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.36,1243,english,n/a,10,6
+A2551EKB87S2XY:36V4Q8R5ZL8RUHKCG3TKG8V5LU5MQD,1465396784610,10,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.65,1071,english,n/a,10,6
+A2551EKB87S2XY:36V4Q8R5ZL8RUHKCG3TKG8V5LU5MQD,1465396786078,11,Brad's clothes,hlh,Mandy feels attracted to Brad.,1,0,1,test,test_uncertain,0.4,1466,english,n/a,10,6
+A2551EKB87S2XY:36V4Q8R5ZL8RUHKCG3TKG8V5LU5MQD,1465396787370,12,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh2,0.67,1290,english,n/a,10,6
+A26ENSYH8UVYC2:3TY7ZAOG5GS8G0FAETMPMPCJJLCK08,1465394570220,1,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test,test_false,0.63,19072,English,NA,9,2
+A26ENSYH8UVYC2:3TY7ZAOG5GS8G0FAETMPMPCJJLCK08,1465394583287,2,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.49,13066,English,NA,9,2
+A26ENSYH8UVYC2:3TY7ZAOG5GS8G0FAETMPMPCJJLCK08,1465394599767,3,Harold's pet,lll,Harold's girlfriend gave in because Harold kept nagging her about wanting a pet.,0,0,0,test,test_uncertain,0.76,16479,English,NA,9,2
+A26ENSYH8UVYC2:3TY7ZAOG5GS8G0FAETMPMPCJJLCK08,1465394603903,4,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.33,4135,English,NA,9,2
+A26ENSYH8UVYC2:3TY7ZAOG5GS8G0FAETMPMPCJJLCK08,1465394615235,5,Lily's husband,lhl,Eric and Lily went to a bar together last night.,0,1,0,test,test_false,0.35,11331,English,NA,9,2
+A26ENSYH8UVYC2:3TY7ZAOG5GS8G0FAETMPMPCJJLCK08,1465394621177,6,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.29,5940,English,NA,9,2
+A26ENSYH8UVYC2:3TY7ZAOG5GS8G0FAETMPMPCJJLCK08,1465394633735,7,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,1,12558,English,NA,9,2
+A26ENSYH8UVYC2:3TY7ZAOG5GS8G0FAETMPMPCJJLCK08,1465394638188,8,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh2,0.28,4450,English,NA,9,2
+A26ENSYH8UVYC2:3TY7ZAOG5GS8G0FAETMPMPCJJLCK08,1465394652669,9,Pete's accident,hhl,Pete's mother was not there when he fell of the slide.,1,1,0,test,test_true,1,14480,English,NA,9,2
+A26ENSYH8UVYC2:3TY7ZAOG5GS8G0FAETMPMPCJJLCK08,1465394656951,10,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.26,4280,English,NA,9,2
+A26ENSYH8UVYC2:3TY7ZAOG5GS8G0FAETMPMPCJJLCK08,1465394966925,11,Tony's clubbing,lhl,Rob is a big fan of Techno music as well.,0,1,0,test,test_uncertain,0.24,309971,English,NA,9,2
+A26ENSYH8UVYC2:3TY7ZAOG5GS8G0FAETMPMPCJJLCK08,1465394972886,12,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.04,5958,English,NA,9,2
+A26JRMEO37XT6Z:3WI0P0II620O2OTZGPJH28IG82KDRS,1465399759888,1,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,0.82,27438,english,no problems,7,3
+A26JRMEO37XT6Z:3WI0P0II620O2OTZGPJH28IG82KDRS,1465399769053,2,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.13,9163,english,no problems,7,3
+A26JRMEO37XT6Z:3WI0P0II620O2OTZGPJH28IG82KDRS,1465399811148,3,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.5,42094,english,no problems,7,3
+A26JRMEO37XT6Z:3WI0P0II620O2OTZGPJH28IG82KDRS,1465399823580,4,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.25,12431,english,no problems,7,3
+A26JRMEO37XT6Z:3WI0P0II620O2OTZGPJH28IG82KDRS,1465399854955,5,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.49,31374,english,no problems,7,3
+A26JRMEO37XT6Z:3WI0P0II620O2OTZGPJH28IG82KDRS,1465399863339,6,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.88,8383,english,no problems,7,3
+A26JRMEO37XT6Z:3WI0P0II620O2OTZGPJH28IG82KDRS,1465399899387,7,Gigi's exams,hlh,Gigi hired a private tutor to help her with her Biology and Chemistry exams.,1,0,1,test,test_false,0.13,36047,english,no problems,7,3
+A26JRMEO37XT6Z:3WI0P0II620O2OTZGPJH28IG82KDRS,1465399907786,8,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.58,8398,english,no problems,7,3
+A26JRMEO37XT6Z:3WI0P0II620O2OTZGPJH28IG82KDRS,1465399927882,9,Jimmy's trip,lll,Jimmy had to rush to be back home and did not have much time to spend in the city.,0,0,0,test,test_true,0.99,20094,english,no problems,7,3
+A26JRMEO37XT6Z:3WI0P0II620O2OTZGPJH28IG82KDRS,1465399937498,10,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.12,9615,english,no problems,7,3
+A26JRMEO37XT6Z:3WI0P0II620O2OTZGPJH28IG82KDRS,1465399963018,11,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.51,25518,english,no problems,7,3
+A26JRMEO37XT6Z:3WI0P0II620O2OTZGPJH28IG82KDRS,1465399975801,12,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.51,12782,english,no problems,7,3
+A26RO8GGTQAXGG:3BDCF01OGY2GX1TD719ZTHJIKY1YLV,1465399954000,1,Tony's clubbing,lhl,Rob is a big fan of Techno music as well.,0,1,0,test,test_uncertain,0.5,10601,english,no,8,6
+A26RO8GGTQAXGG:3BDCF01OGY2GX1TD719ZTHJIKY1YLV,1465399958550,2,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.09,4546,english,no,8,6
+A26RO8GGTQAXGG:3BDCF01OGY2GX1TD719ZTHJIKY1YLV,1465399969790,3,Mrs Sanders' son,hhl,The teacher is trying to find out who queued up twice.,1,1,0,test,test_true,0.57,11235,english,no,8,6
+A26RO8GGTQAXGG:3BDCF01OGY2GX1TD719ZTHJIKY1YLV,1465399975270,4,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh2,0.44,5476,english,no,8,6
+A26RO8GGTQAXGG:3BDCF01OGY2GX1TD719ZTHJIKY1YLV,1465399984287,5,Pete's accident,hhl,Pete's teacher saw him fall off the slide.,1,1,0,test,test_uncertain,0.55,9013,english,no,8,6
+A26RO8GGTQAXGG:3BDCF01OGY2GX1TD719ZTHJIKY1YLV,1465399988949,6,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.36,4660,english,no,8,6
+A26RO8GGTQAXGG:3BDCF01OGY2GX1TD719ZTHJIKY1YLV,1465399999469,7,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,0.89,10516,english,no,8,6
+A26RO8GGTQAXGG:3BDCF01OGY2GX1TD719ZTHJIKY1YLV,1465400003606,8,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.43,4135,english,no,8,6
+A26RO8GGTQAXGG:3BDCF01OGY2GX1TD719ZTHJIKY1YLV,1465400012077,9,Carl's party,hll,"John and Carl, the hosts, are a gay couple.",1,0,0,test,test_false,0.5,8468,english,no,8,6
+A26RO8GGTQAXGG:3BDCF01OGY2GX1TD719ZTHJIKY1YLV,1465400016285,10,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.12,4206,english,no,8,6
+A26RO8GGTQAXGG:3BDCF01OGY2GX1TD719ZTHJIKY1YLV,1465400029925,11,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.59,13639,english,no,8,6
+A26RO8GGTQAXGG:3BDCF01OGY2GX1TD719ZTHJIKY1YLV,1465400033997,12,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.5,4070,english,no,8,6
+A28IW9FQON9SY5:3VELCLL3GLRX738E91ZSKH3OGH71FW,1465399836042,1,Mrs Sanders' son,hhl,Ted is Mrs Sanders' husband.,1,1,0,test,test_false,0.05,54490,English,I wasn't really sure how to respond on some of them.,7,2
+A28IW9FQON9SY5:3VELCLL3GLRX738E91ZSKH3OGH71FW,1465399845167,2,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh1,0.37,9121,English,I wasn't really sure how to respond on some of them.,7,2
+A28IW9FQON9SY5:3VELCLL3GLRX738E91ZSKH3OGH71FW,1465399864601,3,Tony's clubbing,lhl,Rob is a big fan of Techno music as well.,0,1,0,test,test_uncertain,0.72,19434,English,I wasn't really sure how to respond on some of them.,7,2
+A28IW9FQON9SY5:3VELCLL3GLRX738E91ZSKH3OGH71FW,1465399872434,4,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.17,7829,English,I wasn't really sure how to respond on some of them.,7,2
+A28IW9FQON9SY5:3VELCLL3GLRX738E91ZSKH3OGH71FW,1465399894909,5,Jimmy's trip,lll,Jimmy had to rush to be back home and did not have much time to spend in the city.,0,0,0,test,test_true,1,22474,English,I wasn't really sure how to respond on some of them.,7,2
+A28IW9FQON9SY5:3VELCLL3GLRX738E91ZSKH3OGH71FW,1465399900427,6,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.06,5516,English,I wasn't really sure how to respond on some of them.,7,2
+A28IW9FQON9SY5:3VELCLL3GLRX738E91ZSKH3OGH71FW,1465399918186,7,Mrs Gibbs' worry,hhh,Mrs Gibbs is worried about Cindy's health.,1,1,1,test,test_false,0.12,17759,English,I wasn't really sure how to respond on some of them.,7,2
+A28IW9FQON9SY5:3VELCLL3GLRX738E91ZSKH3OGH71FW,1465399929847,8,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.41,11661,English,I wasn't really sure how to respond on some of them.,7,2
+A28IW9FQON9SY5:3VELCLL3GLRX738E91ZSKH3OGH71FW,1465399947166,9,Danny's racket,hhh,Alex needs to buy some equipment before he can play squash with Danny.,1,1,1,test,test_true,1,17319,English,I wasn't really sure how to respond on some of them.,7,2
+A28IW9FQON9SY5:3VELCLL3GLRX738E91ZSKH3OGH71FW,1465399952661,10,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,1,5495,English,I wasn't really sure how to respond on some of them.,7,2
+A28IW9FQON9SY5:3VELCLL3GLRX738E91ZSKH3OGH71FW,1465399971416,11,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.6,18755,English,I wasn't really sure how to respond on some of them.,7,2
+A28IW9FQON9SY5:3VELCLL3GLRX738E91ZSKH3OGH71FW,1465399976465,12,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.33,5049,English,I wasn't really sure how to respond on some of them.,7,2
+A2EBNMFLUR2SQF:3LOTDFNYA87Q84OH6PODD7TICUFWFP,1465399739320,1,Carl's party,hll,John did not spend much time outside.,1,0,0,test,test_true,0.74,13453,English,NA,9,2
+A2EBNMFLUR2SQF:3LOTDFNYA87Q84OH6PODD7TICUFWFP,1465399745456,2,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.27,6133,English,NA,9,2
+A2EBNMFLUR2SQF:3LOTDFNYA87Q84OH6PODD7TICUFWFP,1465399750250,3,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,0.87,4789,English,NA,9,2
+A2EBNMFLUR2SQF:3LOTDFNYA87Q84OH6PODD7TICUFWFP,1465399753652,4,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.23,3394,English,NA,9,2
+A2EBNMFLUR2SQF:3LOTDFNYA87Q84OH6PODD7TICUFWFP,1465399760036,5,Pete's accident,hhl,Pete's teacher saw him fall off the slide.,1,1,0,test,test_uncertain,0.72,6378,English,NA,9,2
+A2EBNMFLUR2SQF:3LOTDFNYA87Q84OH6PODD7TICUFWFP,1465399763007,6,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.17,2967,English,NA,9,2
+A2EBNMFLUR2SQF:3LOTDFNYA87Q84OH6PODD7TICUFWFP,1465399771065,7,Harold's pet,lll,Harold is single.,0,0,0,test,test_false,0.04,8056,English,NA,9,2
+A2EBNMFLUR2SQF:3LOTDFNYA87Q84OH6PODD7TICUFWFP,1465399776135,8,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.25,5068,English,NA,9,2
+A2EBNMFLUR2SQF:3LOTDFNYA87Q84OH6PODD7TICUFWFP,1465399784047,9,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0.09,7904,English,NA,9,2
+A2EBNMFLUR2SQF:3LOTDFNYA87Q84OH6PODD7TICUFWFP,1465399787264,10,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.69,3214,English,NA,9,2
+A2EBNMFLUR2SQF:3LOTDFNYA87Q84OH6PODD7TICUFWFP,1465399793406,11,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test,test_uncertain,0.25,6139,English,NA,9,2
+A2EBNMFLUR2SQF:3LOTDFNYA87Q84OH6PODD7TICUFWFP,1465399797578,12,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.85,4169,English,NA,9,2
+A2ET3KM3IE33MM:3A0EX8ZRN9W4KS71GOK5FEND84NYB8,1465399585034,1,Tony's clubbing,lhl,Rob is a big fan of Techno music as well.,0,1,0,test,test_uncertain,0.22,23869,ENGLISH,NA,6,3
+A2ET3KM3IE33MM:3A0EX8ZRN9W4KS71GOK5FEND84NYB8,1465399599034,2,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.12,14000,ENGLISH,NA,6,3
+A2ET3KM3IE33MM:3A0EX8ZRN9W4KS71GOK5FEND84NYB8,1465399620664,3,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.37,21629,ENGLISH,NA,6,3
+A2ET3KM3IE33MM:3A0EX8ZRN9W4KS71GOK5FEND84NYB8,1465399628970,4,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.82,8305,ENGLISH,NA,6,3
+A2ET3KM3IE33MM:3A0EX8ZRN9W4KS71GOK5FEND84NYB8,1465399643462,5,Mrs Gibbs' worry,hhh,Mrs Gibbs is worried about Cindy's health.,1,1,1,test,test_false,0.29,14491,ENGLISH,NA,6,3
+A2ET3KM3IE33MM:3A0EX8ZRN9W4KS71GOK5FEND84NYB8,1465399650041,6,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.6,6578,ENGLISH,NA,6,3
+A2ET3KM3IE33MM:3A0EX8ZRN9W4KS71GOK5FEND84NYB8,1465399674158,7,Leo's wife,hll,Leo is sponsoring a tennis tournament.,1,0,0,test,test_false,0.02,24117,ENGLISH,NA,6,3
+A2ET3KM3IE33MM:3A0EX8ZRN9W4KS71GOK5FEND84NYB8,1465399681290,8,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.03,7132,ENGLISH,NA,6,3
+A2ET3KM3IE33MM:3A0EX8ZRN9W4KS71GOK5FEND84NYB8,1465399698664,9,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,1,17374,ENGLISH,NA,6,3
+A2ET3KM3IE33MM:3A0EX8ZRN9W4KS71GOK5FEND84NYB8,1465399703616,10,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.5,4951,ENGLISH,NA,6,3
+A2ET3KM3IE33MM:3A0EX8ZRN9W4KS71GOK5FEND84NYB8,1465399720940,11,Gigi's exams,hlh,Gigi studied hard to pass her exams.,1,0,1,test,test_true,1,17323,ENGLISH,NA,6,3
+A2ET3KM3IE33MM:3A0EX8ZRN9W4KS71GOK5FEND84NYB8,1465399725669,12,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.95,4727,ENGLISH,NA,6,3
+A2G7N0X0PNX0EE:3TE3O85731G1ZEVJJ0Z06PRCBBVR2X,1465399703098,1,Harold's pet,lll,Harold is single.,0,0,0,test,test_false,0,10521,English,NA,5,2
+A2G7N0X0PNX0EE:3TE3O85731G1ZEVJJ0Z06PRCBBVR2X,1465399712203,2,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh2,0.3,9103,English,NA,5,2
+A2G7N0X0PNX0EE:3TE3O85731G1ZEVJJ0Z06PRCBBVR2X,1465399735962,3,Mrs Sanders' son,hhl,Ted is Mrs Sanders' husband.,1,1,0,test,test_false,0,23759,English,NA,5,2
+A2G7N0X0PNX0EE:3TE3O85731G1ZEVJJ0Z06PRCBBVR2X,1465399742098,4,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh1,0.26,6135,English,NA,5,2
+A2G7N0X0PNX0EE:3TE3O85731G1ZEVJJ0Z06PRCBBVR2X,1465399758001,5,Lily's husband,lhl,Eric has a problem with his liver for which he has to stop drinking alcohol.,0,1,0,test,test_uncertain,0.69,15903,English,NA,5,2
+A2G7N0X0PNX0EE:3TE3O85731G1ZEVJJ0Z06PRCBBVR2X,1465399772793,6,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.31,14792,English,NA,5,2
+A2G7N0X0PNX0EE:3TE3O85731G1ZEVJJ0Z06PRCBBVR2X,1465399785225,7,Pete's accident,hhl,Pete's teacher saw him fall off the slide.,1,1,0,test,test_uncertain,0.73,12432,English,NA,5,2
+A2G7N0X0PNX0EE:3TE3O85731G1ZEVJJ0Z06PRCBBVR2X,1465399789897,8,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.27,4671,English,NA,5,2
+A2G7N0X0PNX0EE:3TE3O85731G1ZEVJJ0Z06PRCBBVR2X,1465399807401,9,Tony's clubbing,lhl,Techno is quite different from Jazz and from Metal.,0,1,0,test,test_true,1,17503,English,NA,5,2
+A2G7N0X0PNX0EE:3TE3O85731G1ZEVJJ0Z06PRCBBVR2X,1465399817050,10,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh1,0.14,9648,English,NA,5,2
+A2G7N0X0PNX0EE:3TE3O85731G1ZEVJJ0Z06PRCBBVR2X,1465399829410,11,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,1,12359,English,NA,5,2
+A2G7N0X0PNX0EE:3TE3O85731G1ZEVJJ0Z06PRCBBVR2X,1465399834819,12,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.15,5409,English,NA,5,2
+A2HG1CRP582ISF:3Z2R0DQ0JIMCQAQEXUF07ISTWM02EQ,1465394553408,1,Danny's racket,hhh,Danny and Alex went to the sports store together.,1,1,1,test,test_false,1,58046,ennglsh,no,10,1
+A2HG1CRP582ISF:3Z2R0DQ0JIMCQAQEXUF07ISTWM02EQ,1465394561797,2,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,1,8382,ennglsh,no,10,1
+A2HG1CRP582ISF:3Z2R0DQ0JIMCQAQEXUF07ISTWM02EQ,1465394584491,3,Chloe's holiday,lhh,Chloe recently got back from holidays.,0,1,1,test,test_true,0.83,22692,ennglsh,no,10,1
+A2HG1CRP582ISF:3Z2R0DQ0JIMCQAQEXUF07ISTWM02EQ,1465394603049,4,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh2,0.58,18556,ennglsh,no,10,1
+A2HG1CRP582ISF:3Z2R0DQ0JIMCQAQEXUF07ISTWM02EQ,1465394618728,5,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,1,15677,ennglsh,no,10,1
+A2HG1CRP582ISF:3Z2R0DQ0JIMCQAQEXUF07ISTWM02EQ,1465394646811,6,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.59,28082,ennglsh,no,10,1
+A2HG1CRP582ISF:3Z2R0DQ0JIMCQAQEXUF07ISTWM02EQ,1465394672987,7,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test,test_uncertain,0.53,26174,ennglsh,no,10,1
+A2HG1CRP582ISF:3Z2R0DQ0JIMCQAQEXUF07ISTWM02EQ,1465394691608,8,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.9,18620,ennglsh,no,10,1
+A2HG1CRP582ISF:3Z2R0DQ0JIMCQAQEXUF07ISTWM02EQ,1465394702744,9,Lily's husband,lhl,Eric and Lily went to a bar together last night.,0,1,0,test,test_false,0.01,11134,ennglsh,no,10,1
+A2HG1CRP582ISF:3Z2R0DQ0JIMCQAQEXUF07ISTWM02EQ,1465394714954,10,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.66,12209,ennglsh,no,10,1
+A2HG1CRP582ISF:3Z2R0DQ0JIMCQAQEXUF07ISTWM02EQ,1465394737094,11,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.53,22139,ennglsh,no,10,1
+A2HG1CRP582ISF:3Z2R0DQ0JIMCQAQEXUF07ISTWM02EQ,1465394753865,12,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.48,16769,ennglsh,no,10,1
+A2J44NKNUFCS68:3DEL4X4EL7TBXVA2LKCN4BE5R7BYXH,1465399859565,1,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test,test_false,1,15195,english,NA,8,6
+A2J44NKNUFCS68:3DEL4X4EL7TBXVA2LKCN4BE5R7BYXH,1465399877482,2,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.25,17912,english,NA,8,6
+A2J44NKNUFCS68:3DEL4X4EL7TBXVA2LKCN4BE5R7BYXH,1465399891032,3,Pete's accident,hhl,Pete's teacher saw him fall off the slide.,1,1,0,test,test_uncertain,1,13545,english,NA,8,6
+A2J44NKNUFCS68:3DEL4X4EL7TBXVA2LKCN4BE5R7BYXH,1465399901880,4,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.4,10843,english,NA,8,6
+A2J44NKNUFCS68:3DEL4X4EL7TBXVA2LKCN4BE5R7BYXH,1465399927340,5,Jimmy's trip,lll,Jimmy had told his friends about his plans to visit New York City before.,0,0,0,test,test_uncertain,0.7,25454,english,NA,8,6
+A2J44NKNUFCS68:3DEL4X4EL7TBXVA2LKCN4BE5R7BYXH,1465399932372,6,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.63,5024,english,NA,8,6
+A2J44NKNUFCS68:3DEL4X4EL7TBXVA2LKCN4BE5R7BYXH,1465399946456,7,Gigi's exams,hlh,Gigi hired a private tutor to help her with her Biology and Chemistry exams.,1,0,1,test,test_false,1,14074,english,NA,8,6
+A2J44NKNUFCS68:3DEL4X4EL7TBXVA2LKCN4BE5R7BYXH,1465399952032,8,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh2,0.76,5569,english,NA,8,6
+A2J44NKNUFCS68:3DEL4X4EL7TBXVA2LKCN4BE5R7BYXH,1465399958592,9,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,1,6555,english,NA,8,6
+A2J44NKNUFCS68:3DEL4X4EL7TBXVA2LKCN4BE5R7BYXH,1465399968232,10,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.34,9633,english,NA,8,6
+A2J44NKNUFCS68:3DEL4X4EL7TBXVA2LKCN4BE5R7BYXH,1465399975866,11,Carl's party,hll,John did not spend much time outside.,1,0,0,test,test_true,0.83,7625,english,NA,8,6
+A2J44NKNUFCS68:3DEL4X4EL7TBXVA2LKCN4BE5R7BYXH,1465399988202,12,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.14,12327,english,NA,8,6
+A2M8FUQVU4GJGZ:3X66WABAJXQZV6IO7PJTQVIXFGK3GO,1465399699635,1,Pete's accident,hhl,Pete's mother was not there when he fell of the slide.,1,1,0,test,test_true,1,12174,English,NA,8,4
+A2M8FUQVU4GJGZ:3X66WABAJXQZV6IO7PJTQVIXFGK3GO,1465399715284,2,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.47,15648,English,NA,8,4
+A2M8FUQVU4GJGZ:3X66WABAJXQZV6IO7PJTQVIXFGK3GO,1465399733217,3,Carl's party,hll,"John and Carl, the hosts, are a gay couple.",1,0,0,test,test_false,0.4,17932,English,NA,8,4
+A2M8FUQVU4GJGZ:3X66WABAJXQZV6IO7PJTQVIXFGK3GO,1465399738989,4,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.47,5771,English,NA,8,4
+A2M8FUQVU4GJGZ:3X66WABAJXQZV6IO7PJTQVIXFGK3GO,1465399794364,5,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0,55375,English,NA,8,4
+A2M8FUQVU4GJGZ:3X66WABAJXQZV6IO7PJTQVIXFGK3GO,1465399801904,6,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.59,7539,English,NA,8,4
+A2M8FUQVU4GJGZ:3X66WABAJXQZV6IO7PJTQVIXFGK3GO,1465399813211,7,Lily's husband,lhl,Eric has a problem with his liver for which he has to stop drinking alcohol.,0,1,0,test,test_uncertain,0.62,11307,English,NA,8,4
+A2M8FUQVU4GJGZ:3X66WABAJXQZV6IO7PJTQVIXFGK3GO,1465399816991,8,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.45,3779,English,NA,8,4
+A2M8FUQVU4GJGZ:3X66WABAJXQZV6IO7PJTQVIXFGK3GO,1465399834772,9,Gigi's exams,hlh,Gigi aspires to a career in science.,1,0,1,test,test_uncertain,0.55,17780,English,NA,8,4
+A2M8FUQVU4GJGZ:3X66WABAJXQZV6IO7PJTQVIXFGK3GO,1465399841640,10,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.73,6867,English,NA,8,4
+A2M8FUQVU4GJGZ:3X66WABAJXQZV6IO7PJTQVIXFGK3GO,1465399855947,11,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.57,14306,English,NA,8,4
+A2M8FUQVU4GJGZ:3X66WABAJXQZV6IO7PJTQVIXFGK3GO,1465399862245,12,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.47,6297,English,NA,8,4
+A2MG1LLIKMGAMX:3PJ71Z61R5AO6TH16FZ0ALHDDJB91B,1465401957936,1,Joshua's delay,llh,Kevin and Cory expected Joshua to arrive earlier.,0,0,1,test,test_true,1,17158,English,Thanks!,10,2
+A2MG1LLIKMGAMX:3PJ71Z61R5AO6TH16FZ0ALHDDJB91B,1465401975536,2,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.71,17598,English,Thanks!,10,2
+A2MG1LLIKMGAMX:3PJ71Z61R5AO6TH16FZ0ALHDDJB91B,1465402003000,3,Carl's party,hll,"John and Carl, the hosts, are a gay couple.",1,0,0,test,test_false,0.15,27462,English,Thanks!,10,2
+A2MG1LLIKMGAMX:3PJ71Z61R5AO6TH16FZ0ALHDDJB91B,1465402014087,4,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.05,11085,English,Thanks!,10,2
+A2MG1LLIKMGAMX:3PJ71Z61R5AO6TH16FZ0ALHDDJB91B,1465402037960,5,Jimmy's trip,lll,Jimmy had told his friends about his plans to visit New York City before.,0,0,0,test,test_uncertain,0.08,23871,English,Thanks!,10,2
+A2MG1LLIKMGAMX:3PJ71Z61R5AO6TH16FZ0ALHDDJB91B,1465402051367,6,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.32,13406,English,Thanks!,10,2
+A2MG1LLIKMGAMX:3PJ71Z61R5AO6TH16FZ0ALHDDJB91B,1465402067018,7,Gerald's graduation,llh,Gerald is friends with both Nico and Rick.,0,0,1,test,test_true,1,15649,English,Thanks!,10,2
+A2MG1LLIKMGAMX:3PJ71Z61R5AO6TH16FZ0ALHDDJB91B,1465402082225,8,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.65,15205,English,Thanks!,10,2
+A2MG1LLIKMGAMX:3PJ71Z61R5AO6TH16FZ0ALHDDJB91B,1465402096320,9,Mrs Gibbs' worry,hhh,Cindy is secretly in love with Mrs Gibbs' husband.,1,1,1,test,test_uncertain,0.05,14092,English,Thanks!,10,2
+A2MG1LLIKMGAMX:3PJ71Z61R5AO6TH16FZ0ALHDDJB91B,1465402112583,10,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.55,16261,English,Thanks!,10,2
+A2MG1LLIKMGAMX:3PJ71Z61R5AO6TH16FZ0ALHDDJB91B,1465402133864,11,Tony's clubbing,lhl,Tony has to work at club Macabre tonight.,0,1,0,test,test_false,0.57,21278,English,Thanks!,10,2
+A2MG1LLIKMGAMX:3PJ71Z61R5AO6TH16FZ0ALHDDJB91B,1465402149080,12,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.13,15213,English,Thanks!,10,2
+A2QSVBUPZQ9USZ:3MX2NQ3YCA2DV70IAI7QTEGCW27X50,1465400001294,1,Joshua's delay,llh,Kevin and Cory expected Joshua to arrive earlier.,0,0,1,test,test_true,0.75,2987,English,fun,8,2
+A2QSVBUPZQ9USZ:3MX2NQ3YCA2DV70IAI7QTEGCW27X50,1465400002998,2,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.26,1702,English,fun,8,2
+A2QSVBUPZQ9USZ:3MX2NQ3YCA2DV70IAI7QTEGCW27X50,1465400004266,3,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test,test_uncertain,0.92,1267,English,fun,8,2
+A2QSVBUPZQ9USZ:3MX2NQ3YCA2DV70IAI7QTEGCW27X50,1465400005514,4,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.67,1247,English,fun,8,2
+A2QSVBUPZQ9USZ:3MX2NQ3YCA2DV70IAI7QTEGCW27X50,1465400006889,5,Jimmy's trip,lll,Jimmy went on a school trip to New York City.,0,0,0,test,test_false,0.2,1374,English,fun,8,2
+A2QSVBUPZQ9USZ:3MX2NQ3YCA2DV70IAI7QTEGCW27X50,1465400008557,6,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.74,1667,English,fun,8,2
+A2QSVBUPZQ9USZ:3MX2NQ3YCA2DV70IAI7QTEGCW27X50,1465400010178,7,Lily's husband,lhl,Eric has a problem with his liver for which he has to stop drinking alcohol.,0,1,0,test,test_uncertain,0.33,1620,English,fun,8,2
+A2QSVBUPZQ9USZ:3MX2NQ3YCA2DV70IAI7QTEGCW27X50,1465400012007,8,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.85,1828,English,fun,8,2
+A2QSVBUPZQ9USZ:3MX2NQ3YCA2DV70IAI7QTEGCW27X50,1465400014158,9,Brad's clothes,hlh,Gina and Mandy accompanied Brad on his shopping trip.,1,0,1,test,test_false,0.89,2148,English,fun,8,2
+A2QSVBUPZQ9USZ:3MX2NQ3YCA2DV70IAI7QTEGCW27X50,1465400016002,10,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.15,1842,English,fun,8,2
+A2QSVBUPZQ9USZ:3MX2NQ3YCA2DV70IAI7QTEGCW27X50,1465400017746,11,Harold's pet,lll,Harold's girlfriend didn't want a pet in her house before.,0,0,0,test,test_true,0.75,1744,English,fun,8,2
+A2QSVBUPZQ9USZ:3MX2NQ3YCA2DV70IAI7QTEGCW27X50,1465400019974,12,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh2,0.72,2227,English,fun,8,2
+A2TZJKKUN0LSHY:37QW5D2ZRHUOM8XLE6866Q9BJD1S8K,1465395588850,1,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.49,28405,English,NA,8,3
+A2TZJKKUN0LSHY:37QW5D2ZRHUOM8XLE6866Q9BJD1S8K,1465395597955,2,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.46,9104,English,NA,8,3
+A2TZJKKUN0LSHY:37QW5D2ZRHUOM8XLE6866Q9BJD1S8K,1465395609386,3,Lily's husband,lhl,Eric has a problem with his liver for which he has to stop drinking alcohol.,0,1,0,test,test_uncertain,1,11430,English,NA,8,3
+A2TZJKKUN0LSHY:37QW5D2ZRHUOM8XLE6866Q9BJD1S8K,1465395616579,4,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.5,7192,English,NA,8,3
+A2TZJKKUN0LSHY:37QW5D2ZRHUOM8XLE6866Q9BJD1S8K,1465395628163,5,Leo's wife,hll,Leo is an avid golf player.,1,0,0,test,test_uncertain,0.56,11583,English,NA,8,3
+A2TZJKKUN0LSHY:37QW5D2ZRHUOM8XLE6866Q9BJD1S8K,1465395643108,6,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.34,14944,English,NA,8,3
+A2TZJKKUN0LSHY:37QW5D2ZRHUOM8XLE6866Q9BJD1S8K,1465395655037,7,Pete's accident,hhl,Pete's mother was not there when he fell of the slide.,1,1,0,test,test_true,1,11928,English,NA,8,3
+A2TZJKKUN0LSHY:37QW5D2ZRHUOM8XLE6866Q9BJD1S8K,1465395660373,8,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.37,5335,English,NA,8,3
+A2TZJKKUN0LSHY:37QW5D2ZRHUOM8XLE6866Q9BJD1S8K,1465395679878,9,Tony's clubbing,lhl,Tony has to work at club Macabre tonight.,0,1,0,test,test_false,0,19504,English,NA,8,3
+A2TZJKKUN0LSHY:37QW5D2ZRHUOM8XLE6866Q9BJD1S8K,1465395685495,10,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh1,0,5617,English,NA,8,3
+A2TZJKKUN0LSHY:37QW5D2ZRHUOM8XLE6866Q9BJD1S8K,1465395713991,11,Mrs Sanders' son,hhl,The teacher is trying to find out who queued up twice.,1,1,0,test,test_true,1,28495,English,NA,8,3
+A2TZJKKUN0LSHY:37QW5D2ZRHUOM8XLE6866Q9BJD1S8K,1465395739520,12,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh2,0.22,25528,English,NA,8,3
+A2VGEE0ZIZ8CBQ:36V4Q8R5ZL8RUHKCG3TKG8V5LUAMQI,1465400567238,1,Jimmy's trip,lll,Jimmy went on a school trip to New York City.,0,0,0,test,test_false,0.06,29483,english,none,7,3
+A2VGEE0ZIZ8CBQ:36V4Q8R5ZL8RUHKCG3TKG8V5LUAMQI,1465400577046,2,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.07,9803,english,none,7,3
+A2VGEE0ZIZ8CBQ:36V4Q8R5ZL8RUHKCG3TKG8V5LUAMQI,1465400592967,3,Tony's clubbing,lhl,Tony has to work at club Macabre tonight.,0,1,0,test,test_false,0.05,15914,english,none,7,3
+A2VGEE0ZIZ8CBQ:36V4Q8R5ZL8RUHKCG3TKG8V5LUAMQI,1465400607985,4,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh1,0.18,15013,english,none,7,3
+A2VGEE0ZIZ8CBQ:36V4Q8R5ZL8RUHKCG3TKG8V5LUAMQI,1465400624993,5,Gigi's exams,hlh,Gigi studied hard to pass her exams.,1,0,1,test,test_true,0.97,17004,english,none,7,3
+A2VGEE0ZIZ8CBQ:36V4Q8R5ZL8RUHKCG3TKG8V5LUAMQI,1465400629141,6,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh2,0.89,4143,english,none,7,3
+A2VGEE0ZIZ8CBQ:36V4Q8R5ZL8RUHKCG3TKG8V5LUAMQI,1465400644606,7,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test,test_uncertain,0.54,15459,english,none,7,3
+A2VGEE0ZIZ8CBQ:36V4Q8R5ZL8RUHKCG3TKG8V5LUAMQI,1465400651495,8,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.63,6884,english,none,7,3
+A2VGEE0ZIZ8CBQ:36V4Q8R5ZL8RUHKCG3TKG8V5LUAMQI,1465400685729,9,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.53,34228,english,none,7,3
+A2VGEE0ZIZ8CBQ:36V4Q8R5ZL8RUHKCG3TKG8V5LUAMQI,1465400694547,10,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.23,8810,english,none,7,3
+A2VGEE0ZIZ8CBQ:36V4Q8R5ZL8RUHKCG3TKG8V5LUAMQI,1465400708988,11,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.4,14436,english,none,7,3
+A2VGEE0ZIZ8CBQ:36V4Q8R5ZL8RUHKCG3TKG8V5LUAMQI,1465400718916,12,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.78,9922,english,none,7,3
+A2VY16N1O40VEL:3SITXWYCNWHFKNHRBSY3W0G46YVBXH,1465402014742,1,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0,37596,English,Not at all.,10,0
+A2VY16N1O40VEL:3SITXWYCNWHFKNHRBSY3W0G46YVBXH,1465402044231,2,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0,29487,English,Not at all.,10,0
+A2VY16N1O40VEL:3SITXWYCNWHFKNHRBSY3W0G46YVBXH,1465402066525,3,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,0.97,22292,English,Not at all.,10,0
+A2VY16N1O40VEL:3SITXWYCNWHFKNHRBSY3W0G46YVBXH,1465402081827,4,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.07,15301,English,Not at all.,10,0
+A2VY16N1O40VEL:3SITXWYCNWHFKNHRBSY3W0G46YVBXH,1465402134722,5,Jimmy's trip,lll,Jimmy had told his friends about his plans to visit New York City before.,0,0,0,test,test_uncertain,0.37,52894,English,Not at all.,10,0
+A2VY16N1O40VEL:3SITXWYCNWHFKNHRBSY3W0G46YVBXH,1465402151722,6,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh2,0.08,16998,English,Not at all.,10,0
+A2VY16N1O40VEL:3SITXWYCNWHFKNHRBSY3W0G46YVBXH,1465402177234,7,Mrs Gibbs' worry,hhh,Cindy is secretly in love with Mrs Gibbs' husband.,1,1,1,test,test_uncertain,0.09,25510,English,Not at all.,10,0
+A2VY16N1O40VEL:3SITXWYCNWHFKNHRBSY3W0G46YVBXH,1465402198884,8,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.16,21649,English,Not at all.,10,0
+A2VY16N1O40VEL:3SITXWYCNWHFKNHRBSY3W0G46YVBXH,1465402245401,9,Danny's racket,hhh,Alex needs to buy some equipment before he can play squash with Danny.,1,1,1,test,test_true,1,46516,English,Not at all.,10,0
+A2VY16N1O40VEL:3SITXWYCNWHFKNHRBSY3W0G46YVBXH,1465402268582,10,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.88,23180,English,Not at all.,10,0
+A2VY16N1O40VEL:3SITXWYCNWHFKNHRBSY3W0G46YVBXH,1465402315560,11,Gigi's exams,hlh,Gigi hired a private tutor to help her with her Biology and Chemistry exams.,1,0,1,test,test_false,0.67,46975,English,Not at all.,10,0
+A2VY16N1O40VEL:3SITXWYCNWHFKNHRBSY3W0G46YVBXH,1465402329904,12,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.99,14343,English,Not at all.,10,0
+A2WQTSU6SSBUWC:3DYGAII7PMGXFKHP8JLCXCP0QZLQPI,1465401451899,1,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0,12712,english,NA,4,5
+A2WQTSU6SSBUWC:3DYGAII7PMGXFKHP8JLCXCP0QZLQPI,1465401457123,2,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.5,5223,english,NA,4,5
+A2WQTSU6SSBUWC:3DYGAII7PMGXFKHP8JLCXCP0QZLQPI,1465401466307,3,Chloe's holiday,lhh,"Chloe forgot about bringing some beach towels, too.",0,1,1,test,test_uncertain,0.5,9183,english,NA,4,5
+A2WQTSU6SSBUWC:3DYGAII7PMGXFKHP8JLCXCP0QZLQPI,1465401471179,4,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.56,4871,english,NA,4,5
+A2WQTSU6SSBUWC:3DYGAII7PMGXFKHP8JLCXCP0QZLQPI,1465401485124,5,Joshua's delay,llh,Kevin and Cory expected Joshua to arrive earlier.,0,0,1,test,test_true,0.82,13944,english,NA,4,5
+A2WQTSU6SSBUWC:3DYGAII7PMGXFKHP8JLCXCP0QZLQPI,1465401490195,6,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.69,5070,english,NA,4,5
+A2WQTSU6SSBUWC:3DYGAII7PMGXFKHP8JLCXCP0QZLQPI,1465401505027,7,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.47,14832,english,NA,4,5
+A2WQTSU6SSBUWC:3DYGAII7PMGXFKHP8JLCXCP0QZLQPI,1465401509523,8,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.82,4495,english,NA,4,5
+A2WQTSU6SSBUWC:3DYGAII7PMGXFKHP8JLCXCP0QZLQPI,1465401524802,9,Carl's party,hll,"John and Carl, the hosts, are a gay couple.",1,0,0,test,test_false,0.28,15278,english,NA,4,5
+A2WQTSU6SSBUWC:3DYGAII7PMGXFKHP8JLCXCP0QZLQPI,1465401527699,10,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.5,2896,english,NA,4,5
+A2WQTSU6SSBUWC:3DYGAII7PMGXFKHP8JLCXCP0QZLQPI,1465401540180,11,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.5,12481,english,NA,4,5
+A2WQTSU6SSBUWC:3DYGAII7PMGXFKHP8JLCXCP0QZLQPI,1465401543315,12,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.39,3134,english,NA,4,5
+A2X1W7WJ1IKCLL:3A0EX8ZRN9W4KS71GOK5FEND84NBYL,1465399968331,1,Mrs Gibbs' worry,hhh,Cindy is secretly in love with Mrs Gibbs' husband.,1,1,1,test,test_uncertain,0.07,26980,English,NA,7,2
+A2X1W7WJ1IKCLL:3A0EX8ZRN9W4KS71GOK5FEND84NBYL,1465399982816,2,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.78,14467,English,NA,7,2
+A2X1W7WJ1IKCLL:3A0EX8ZRN9W4KS71GOK5FEND84NBYL,1465399997057,3,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0,14238,English,NA,7,2
+A2X1W7WJ1IKCLL:3A0EX8ZRN9W4KS71GOK5FEND84NBYL,1465400007384,4,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.7,10324,English,NA,7,2
+A2X1W7WJ1IKCLL:3A0EX8ZRN9W4KS71GOK5FEND84NBYL,1465400026303,5,Carl's party,hll,John did not spend much time outside.,1,0,0,test,test_true,0.95,18917,English,NA,7,2
+A2X1W7WJ1IKCLL:3A0EX8ZRN9W4KS71GOK5FEND84NBYL,1465400058359,6,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.05,32054,English,NA,7,2
+A2X1W7WJ1IKCLL:3A0EX8ZRN9W4KS71GOK5FEND84NBYL,1465400084595,7,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.45,26233,English,NA,7,2
+A2X1W7WJ1IKCLL:3A0EX8ZRN9W4KS71GOK5FEND84NBYL,1465400090842,8,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.4,6245,English,NA,7,2
+A2X1W7WJ1IKCLL:3A0EX8ZRN9W4KS71GOK5FEND84NBYL,1465400106825,9,Brad's clothes,hlh,Gina and Mandy accompanied Brad on his shopping trip.,1,0,1,test,test_false,0,15982,English,NA,7,2
+A2X1W7WJ1IKCLL:3A0EX8ZRN9W4KS71GOK5FEND84NBYL,1465400115457,10,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.71,8630,English,NA,7,2
+A2X1W7WJ1IKCLL:3A0EX8ZRN9W4KS71GOK5FEND84NBYL,1465400132311,11,Gigi's exams,hlh,Gigi studied hard to pass her exams.,1,0,1,test,test_true,0.99,16851,English,NA,7,2
+A2X1W7WJ1IKCLL:3A0EX8ZRN9W4KS71GOK5FEND84NBYL,1465400142167,12,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.91,9855,English,NA,7,2
+A2XPSWBZG7ING3:3DL65MZB8ENPOSIGUN46JV1F8DJCEF,1465400092951,1,Carl's party,hll,"John and Carl, the hosts, are a gay couple.",1,0,0,test,test_false,0.06,42468,English,None,6,2
+A2XPSWBZG7ING3:3DL65MZB8ENPOSIGUN46JV1F8DJCEF,1465400111829,2,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.18,18876,English,None,6,2
+A2XPSWBZG7ING3:3DL65MZB8ENPOSIGUN46JV1F8DJCEF,1465400128127,3,Mrs Gibbs' worry,hhh,Mrs Gibbs is worried about Cindy's health.,1,1,1,test,test_false,0.11,16297,English,None,6,2
+A2XPSWBZG7ING3:3DL65MZB8ENPOSIGUN46JV1F8DJCEF,1465400145359,4,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.12,17230,English,None,6,2
+A2XPSWBZG7ING3:3DL65MZB8ENPOSIGUN46JV1F8DJCEF,1465400166149,5,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,0.96,20789,English,None,6,2
+A2XPSWBZG7ING3:3DL65MZB8ENPOSIGUN46JV1F8DJCEF,1465400182390,6,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.27,16240,English,None,6,2
+A2XPSWBZG7ING3:3DL65MZB8ENPOSIGUN46JV1F8DJCEF,1465400202982,7,Pete's accident,hhl,Pete's teacher saw him fall off the slide.,1,1,0,test,test_uncertain,0.7,20591,English,None,6,2
+A2XPSWBZG7ING3:3DL65MZB8ENPOSIGUN46JV1F8DJCEF,1465400221406,8,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.48,18423,English,None,6,2
+A2XPSWBZG7ING3:3DL65MZB8ENPOSIGUN46JV1F8DJCEF,1465400260759,9,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.36,39352,English,None,6,2
+A2XPSWBZG7ING3:3DL65MZB8ENPOSIGUN46JV1F8DJCEF,1465400273706,10,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.97,12946,English,None,6,2
+A2XPSWBZG7ING3:3DL65MZB8ENPOSIGUN46JV1F8DJCEF,1465400303484,11,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,1,29777,English,None,6,2
+A2XPSWBZG7ING3:3DL65MZB8ENPOSIGUN46JV1F8DJCEF,1465400310861,12,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh2,0.71,7376,English,None,6,2
+A32LDLONQAQOQG:3SLE99ER0OL4PIH6CAMOTLWFEYRBZC,1465399998652,1,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0.19,12921,english,NA,5,2
+A32LDLONQAQOQG:3SLE99ER0OL4PIH6CAMOTLWFEYRBZC,1465400005323,2,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.3,6668,english,NA,5,2
+A32LDLONQAQOQG:3SLE99ER0OL4PIH6CAMOTLWFEYRBZC,1465400016164,3,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.42,10840,english,NA,5,2
+A32LDLONQAQOQG:3SLE99ER0OL4PIH6CAMOTLWFEYRBZC,1465400021636,4,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.63,5471,english,NA,5,2
+A32LDLONQAQOQG:3SLE99ER0OL4PIH6CAMOTLWFEYRBZC,1465400033643,5,Harold's pet,lll,Harold's girlfriend didn't want a pet in her house before.,0,0,0,test,test_true,1,12006,english,NA,5,2
+A32LDLONQAQOQG:3SLE99ER0OL4PIH6CAMOTLWFEYRBZC,1465400039011,6,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh2,0.16,5367,english,NA,5,2
+A32LDLONQAQOQG:3SLE99ER0OL4PIH6CAMOTLWFEYRBZC,1465400050627,7,Tony's clubbing,lhl,Rob is a big fan of Techno music as well.,0,1,0,test,test_uncertain,0.07,11615,english,NA,5,2
+A32LDLONQAQOQG:3SLE99ER0OL4PIH6CAMOTLWFEYRBZC,1465400058491,8,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.41,7863,english,NA,5,2
+A32LDLONQAQOQG:3SLE99ER0OL4PIH6CAMOTLWFEYRBZC,1465400070460,9,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0,11968,english,NA,5,2
+A32LDLONQAQOQG:3SLE99ER0OL4PIH6CAMOTLWFEYRBZC,1465400073955,10,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.15,3494,english,NA,5,2
+A32LDLONQAQOQG:3SLE99ER0OL4PIH6CAMOTLWFEYRBZC,1465400081667,11,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,0.96,7711,english,NA,5,2
+A32LDLONQAQOQG:3SLE99ER0OL4PIH6CAMOTLWFEYRBZC,1465400093027,12,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.33,11359,english,NA,5,2
+A338QNPKTOI7DF:3XIQGXAUMDGSIBE1YBMNRYU8N7WX77,1465394532983,1,Jimmy's trip,lll,Jimmy had to rush to be back home and did not have much time to spend in the city.,0,0,0,test,test_true,1,35453,English,no,7,3
+A338QNPKTOI7DF:3XIQGXAUMDGSIBE1YBMNRYU8N7WX77,1465394540132,2,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh2,0.24,7146,English,no,7,3
+A338QNPKTOI7DF:3XIQGXAUMDGSIBE1YBMNRYU8N7WX77,1465394559729,3,Lily's husband,lhl,Eric has a problem with his liver for which he has to stop drinking alcohol.,0,1,0,test,test_uncertain,0.57,19597,English,no,7,3
+A338QNPKTOI7DF:3XIQGXAUMDGSIBE1YBMNRYU8N7WX77,1465394570270,4,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.28,10540,English,no,7,3
+A338QNPKTOI7DF:3XIQGXAUMDGSIBE1YBMNRYU8N7WX77,1465394605502,5,Joshua's delay,llh,Kevin and Cory expected Joshua to arrive earlier.,0,0,1,test,test_true,0.77,35230,English,no,7,3
+A338QNPKTOI7DF:3XIQGXAUMDGSIBE1YBMNRYU8N7WX77,1465394609343,6,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.26,3839,English,no,7,3
+A338QNPKTOI7DF:3XIQGXAUMDGSIBE1YBMNRYU8N7WX77,1465394625510,7,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test,test_uncertain,0.17,16165,English,no,7,3
+A338QNPKTOI7DF:3XIQGXAUMDGSIBE1YBMNRYU8N7WX77,1465394629729,8,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.82,4216,English,no,7,3
+A338QNPKTOI7DF:3XIQGXAUMDGSIBE1YBMNRYU8N7WX77,1465394655231,9,Tony's clubbing,lhl,Tony has to work at club Macabre tonight.,0,1,0,test,test_false,0,25502,English,no,7,3
+A338QNPKTOI7DF:3XIQGXAUMDGSIBE1YBMNRYU8N7WX77,1465394660801,10,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh1,0.07,5569,English,no,7,3
+A338QNPKTOI7DF:3XIQGXAUMDGSIBE1YBMNRYU8N7WX77,1465394685357,11,Leo's wife,hll,Leo is sponsoring a tennis tournament.,1,0,0,test,test_false,0,24555,English,no,7,3
+A338QNPKTOI7DF:3XIQGXAUMDGSIBE1YBMNRYU8N7WX77,1465394698686,12,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.02,13328,English,no,7,3
+A36CZ0F88ELFWF:3PMBY0YE28B8TWRZMCOKRH04HGX9CW,1465395231806,1,Jimmy's trip,lll,Jimmy had told his friends about his plans to visit New York City before.,0,0,0,test,test_uncertain,0.54,34746,English,"Great study, thank you!",10,4
+A36CZ0F88ELFWF:3PMBY0YE28B8TWRZMCOKRH04HGX9CW,1465395245149,2,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.09,13343,English,"Great study, thank you!",10,4
+A36CZ0F88ELFWF:3PMBY0YE28B8TWRZMCOKRH04HGX9CW,1465395267797,3,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0.13,22648,English,"Great study, thank you!",10,4
+A36CZ0F88ELFWF:3PMBY0YE28B8TWRZMCOKRH04HGX9CW,1465395281787,4,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.59,13990,English,"Great study, thank you!",10,4
+A36CZ0F88ELFWF:3PMBY0YE28B8TWRZMCOKRH04HGX9CW,1465395299873,5,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,1,18086,English,"Great study, thank you!",10,4
+A36CZ0F88ELFWF:3PMBY0YE28B8TWRZMCOKRH04HGX9CW,1465395309169,6,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.58,9296,English,"Great study, thank you!",10,4
+A36CZ0F88ELFWF:3PMBY0YE28B8TWRZMCOKRH04HGX9CW,1465395333809,7,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.48,24640,English,"Great study, thank you!",10,4
+A36CZ0F88ELFWF:3PMBY0YE28B8TWRZMCOKRH04HGX9CW,1465395340671,8,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.38,6862,English,"Great study, thank you!",10,4
+A36CZ0F88ELFWF:3PMBY0YE28B8TWRZMCOKRH04HGX9CW,1465395361762,9,Leo's wife,hll,Leo is an avid golf player.,1,0,0,test,test_uncertain,0.85,21091,English,"Great study, thank you!",10,4
+A36CZ0F88ELFWF:3PMBY0YE28B8TWRZMCOKRH04HGX9CW,1465395369732,10,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.3,7969,English,"Great study, thank you!",10,4
+A36CZ0F88ELFWF:3PMBY0YE28B8TWRZMCOKRH04HGX9CW,1465395394054,11,Danny's racket,hhh,Danny and Alex went to the sports store together.,1,1,1,test,test_false,0.65,24321,English,"Great study, thank you!",10,4
+A36CZ0F88ELFWF:3PMBY0YE28B8TWRZMCOKRH04HGX9CW,1465395398963,12,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.73,4909,English,"Great study, thank you!",10,4
+A36KDWI1CGJFFA:3ZV9H2YQQEFVSS8OMUNBCY4L94B3WO,1465399873124,1,Pete's accident,hhl,Pete's teacher saw him fall off the slide.,1,1,0,test,test_uncertain,0.64,28504,English,NA,8,1
+A36KDWI1CGJFFA:3ZV9H2YQQEFVSS8OMUNBCY4L94B3WO,1465399888607,2,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.1,15480,English,NA,8,1
+A36KDWI1CGJFFA:3ZV9H2YQQEFVSS8OMUNBCY4L94B3WO,1465399907705,3,Harold's pet,lll,Harold's girlfriend gave in because Harold kept nagging her about wanting a pet.,0,0,0,test,test_uncertain,0.62,19096,English,NA,8,1
+A36KDWI1CGJFFA:3ZV9H2YQQEFVSS8OMUNBCY4L94B3WO,1465399918375,4,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh2,0.13,10667,English,NA,8,1
+A36KDWI1CGJFFA:3ZV9H2YQQEFVSS8OMUNBCY4L94B3WO,1465399936391,5,Gerald's graduation,llh,Gerald is friends with both Nico and Rick.,0,0,1,test,test_true,1,18014,English,NA,8,1
+A36KDWI1CGJFFA:3ZV9H2YQQEFVSS8OMUNBCY4L94B3WO,1465399946585,6,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.74,10192,English,NA,8,1
+A36KDWI1CGJFFA:3ZV9H2YQQEFVSS8OMUNBCY4L94B3WO,1465399972899,7,Tony's clubbing,lhl,Techno is quite different from Jazz and from Metal.,0,1,0,test,test_true,0.98,26313,English,NA,8,1
+A36KDWI1CGJFFA:3ZV9H2YQQEFVSS8OMUNBCY4L94B3WO,1465399979136,8,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.06,6236,English,NA,8,1
+A36KDWI1CGJFFA:3ZV9H2YQQEFVSS8OMUNBCY4L94B3WO,1465400003024,9,Lily's husband,lhl,Eric and Lily went to a bar together last night.,0,1,0,test,test_false,0.02,23887,English,NA,8,1
+A36KDWI1CGJFFA:3ZV9H2YQQEFVSS8OMUNBCY4L94B3WO,1465400017974,10,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.41,14949,English,NA,8,1
+A36KDWI1CGJFFA:3ZV9H2YQQEFVSS8OMUNBCY4L94B3WO,1465400050715,11,Danny's racket,hhh,Danny and Alex went to the sports store together.,1,1,1,test,test_false,0.44,32741,English,NA,8,1
+A36KDWI1CGJFFA:3ZV9H2YQQEFVSS8OMUNBCY4L94B3WO,1465400066862,12,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.97,16145,English,NA,8,1
+A37XJVQF62ZYC:3XIQGXAUMDGSIBE1YBMNRYU8N82X7F,1465400111371,1,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,0.91,40671,English,No comments,5,2
+A37XJVQF62ZYC:3XIQGXAUMDGSIBE1YBMNRYU8N82X7F,1465400123132,2,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh2,0.51,11738,English,No comments,5,2
+A37XJVQF62ZYC:3XIQGXAUMDGSIBE1YBMNRYU8N82X7F,1465400140215,3,Lily's husband,lhl,Eric and Lily went to a bar together last night.,0,1,0,test,test_false,0.05,17060,English,No comments,5,2
+A37XJVQF62ZYC:3XIQGXAUMDGSIBE1YBMNRYU8N82X7F,1465400161491,4,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.5,21255,English,No comments,5,2
+A37XJVQF62ZYC:3XIQGXAUMDGSIBE1YBMNRYU8N82X7F,1465400179912,5,Chloe's holiday,lhh,Chloe recently got back from holidays.,0,1,1,test,test_true,0.86,18393,English,No comments,5,2
+A37XJVQF62ZYC:3XIQGXAUMDGSIBE1YBMNRYU8N82X7F,1465400190272,6,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.48,10337,English,No comments,5,2
+A37XJVQF62ZYC:3XIQGXAUMDGSIBE1YBMNRYU8N82X7F,1465400226422,7,Mrs Sanders' son,hhl,Mrs Sanders had pasta for lunch yesterday.,1,1,0,test,test_uncertain,0.48,36126,English,No comments,5,2
+A37XJVQF62ZYC:3XIQGXAUMDGSIBE1YBMNRYU8N82X7F,1465400238506,8,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh2,0.47,12051,English,No comments,5,2
+A37XJVQF62ZYC:3XIQGXAUMDGSIBE1YBMNRYU8N82X7F,1465400249212,9,Harold's pet,lll,Harold's girlfriend gave in because Harold kept nagging her about wanting a pet.,0,0,0,test,test_uncertain,0.64,10684,English,No comments,5,2
+A37XJVQF62ZYC:3XIQGXAUMDGSIBE1YBMNRYU8N82X7F,1465400263390,10,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.37,14154,English,No comments,5,2
+A37XJVQF62ZYC:3XIQGXAUMDGSIBE1YBMNRYU8N82X7F,1465400275434,11,Mrs Gibbs' worry,hhh,Mrs Gibbs is worried about Cindy's health.,1,1,1,test,test_false,0.33,12016,English,No comments,5,2
+A37XJVQF62ZYC:3XIQGXAUMDGSIBE1YBMNRYU8N82X7F,1465400286079,12,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.49,10622,English,No comments,5,2
+A39XD5I3E00YO3:3XIQGXAUMDGSIBE1YBMNRYU8N837XQ,1465400425081,1,Joshua's delay,llh,"Kevin, Cory and Joshua do not like to hang out with girls.",0,0,1,test,test_uncertain,0,23727,English,Thank you for letting me participate. ,7,2
+A39XD5I3E00YO3:3XIQGXAUMDGSIBE1YBMNRYU8N837XQ,1465400436282,2,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.49,11201,English,Thank you for letting me participate. ,7,2
+A39XD5I3E00YO3:3XIQGXAUMDGSIBE1YBMNRYU8N837XQ,1465400448352,3,Chloe's holiday,lhh,Chloe recently got back from holidays.,0,1,1,test,test_true,1,12070,English,Thank you for letting me participate. ,7,2
+A39XD5I3E00YO3:3XIQGXAUMDGSIBE1YBMNRYU8N837XQ,1465400454757,4,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh2,0.49,6405,English,Thank you for letting me participate. ,7,2
+A39XD5I3E00YO3:3XIQGXAUMDGSIBE1YBMNRYU8N837XQ,1465400474186,5,Jimmy's trip,lll,Jimmy went on a school trip to New York City.,0,0,0,test,test_false,0,19429,English,Thank you for letting me participate. ,7,2
+A39XD5I3E00YO3:3XIQGXAUMDGSIBE1YBMNRYU8N837XQ,1465400483744,6,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.7,9558,English,Thank you for letting me participate. ,7,2
+A39XD5I3E00YO3:3XIQGXAUMDGSIBE1YBMNRYU8N837XQ,1465400498521,7,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,1,14777,English,Thank you for letting me participate. ,7,2
+A39XD5I3E00YO3:3XIQGXAUMDGSIBE1YBMNRYU8N837XQ,1465400504455,8,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.29,5934,English,Thank you for letting me participate. ,7,2
+A39XD5I3E00YO3:3XIQGXAUMDGSIBE1YBMNRYU8N837XQ,1465400518066,9,Danny's racket,hhh,Danny and Alex have known each other since high school.,1,1,1,test,test_uncertain,0.38,13611,English,Thank you for letting me participate. ,7,2
+A39XD5I3E00YO3:3XIQGXAUMDGSIBE1YBMNRYU8N837XQ,1465400529695,10,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.99,11629,English,Thank you for letting me participate. ,7,2
+A39XD5I3E00YO3:3XIQGXAUMDGSIBE1YBMNRYU8N837XQ,1465400546309,11,Brad's clothes,hlh,Gina and Mandy accompanied Brad on his shopping trip.,1,0,1,test,test_false,0,16614,English,Thank you for letting me participate. ,7,2
+A39XD5I3E00YO3:3XIQGXAUMDGSIBE1YBMNRYU8N837XQ,1465400555169,12,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.59,8860,English,Thank you for letting me participate. ,7,2
+A3B6ANBQU81J1J:3X4JMASXCNH7NXBG8G9WNMTTWR8B0K,1465402234580,1,Joshua's delay,llh,"Kevin, Cory and Joshua do not like to hang out with girls.",0,0,1,test,test_uncertain,0.7,25356,english,NA,10,5
+A3B6ANBQU81J1J:3X4JMASXCNH7NXBG8G9WNMTTWR8B0K,1465402241650,2,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.3,7068,english,NA,10,5
+A3B6ANBQU81J1J:3X4JMASXCNH7NXBG8G9WNMTTWR8B0K,1465402257137,3,Brad's clothes,hlh,Gina and Mandy accompanied Brad on his shopping trip.,1,0,1,test,test_false,0,15485,english,NA,10,5
+A3B6ANBQU81J1J:3X4JMASXCNH7NXBG8G9WNMTTWR8B0K,1465402266244,4,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh2,0.69,9106,english,NA,10,5
+A3B6ANBQU81J1J:3X4JMASXCNH7NXBG8G9WNMTTWR8B0K,1465402276638,5,Mrs Gibbs' worry,hhh,Cindy is secretly in love with Mrs Gibbs' husband.,1,1,1,test,test_uncertain,0,10393,english,NA,10,5
+A3B6ANBQU81J1J:3X4JMASXCNH7NXBG8G9WNMTTWR8B0K,1465402284011,6,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.67,7372,english,NA,10,5
+A3B6ANBQU81J1J:3X4JMASXCNH7NXBG8G9WNMTTWR8B0K,1465402302712,7,Jimmy's trip,lll,Jimmy had to rush to be back home and did not have much time to spend in the city.,0,0,0,test,test_true,1,18699,english,NA,10,5
+A3B6ANBQU81J1J:3X4JMASXCNH7NXBG8G9WNMTTWR8B0K,1465402307170,8,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh2,0,4457,english,NA,10,5
+A3B6ANBQU81J1J:3X4JMASXCNH7NXBG8G9WNMTTWR8B0K,1465402321436,9,Danny's racket,hhh,Alex needs to buy some equipment before he can play squash with Danny.,1,1,1,test,test_true,1,14264,english,NA,10,5
+A3B6ANBQU81J1J:3X4JMASXCNH7NXBG8G9WNMTTWR8B0K,1465402325868,10,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,1,4430,english,NA,10,5
+A3B6ANBQU81J1J:3X4JMASXCNH7NXBG8G9WNMTTWR8B0K,1465402341165,11,Gigi's exams,hlh,Gigi hired a private tutor to help her with her Biology and Chemistry exams.,1,0,1,test,test_false,0.28,15295,english,NA,10,5
+A3B6ANBQU81J1J:3X4JMASXCNH7NXBG8G9WNMTTWR8B0K,1465402346580,12,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,1,5414,english,NA,10,5
+A3BH9LOU9KV6T0:33F859I567LIYXHC6OGHTESAI85HBN,1465394524786,1,Gigi's exams,hlh,Gigi studied hard to pass her exams.,1,0,1,test,test_true,0.69,17509,English,"Most of these statements were pretty nonsensical, I thought it would be more straightforward ""If A, then B"" but how can we know the answers to any of these?",8,8
+A3BH9LOU9KV6T0:33F859I567LIYXHC6OGHTESAI85HBN,1465394529289,2,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh2,0.52,4500,English,"Most of these statements were pretty nonsensical, I thought it would be more straightforward ""If A, then B"" but how can we know the answers to any of these?",8,8
+A3BH9LOU9KV6T0:33F859I567LIYXHC6OGHTESAI85HBN,1465394539680,3,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.35,10389,English,"Most of these statements were pretty nonsensical, I thought it would be more straightforward ""If A, then B"" but how can we know the answers to any of these?",8,8
+A3BH9LOU9KV6T0:33F859I567LIYXHC6OGHTESAI85HBN,1465394544000,4,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.5,4317,English,"Most of these statements were pretty nonsensical, I thought it would be more straightforward ""If A, then B"" but how can we know the answers to any of these?",8,8
+A3BH9LOU9KV6T0:33F859I567LIYXHC6OGHTESAI85HBN,1465394556295,5,Jimmy's trip,lll,Jimmy had told his friends about his plans to visit New York City before.,0,0,0,test,test_uncertain,0.31,12293,English,"Most of these statements were pretty nonsensical, I thought it would be more straightforward ""If A, then B"" but how can we know the answers to any of these?",8,8
+A3BH9LOU9KV6T0:33F859I567LIYXHC6OGHTESAI85HBN,1465394558656,6,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.5,2358,English,"Most of these statements were pretty nonsensical, I thought it would be more straightforward ""If A, then B"" but how can we know the answers to any of these?",8,8
+A3BH9LOU9KV6T0:33F859I567LIYXHC6OGHTESAI85HBN,1465394570879,7,Tony's clubbing,lhl,Techno is quite different from Jazz and from Metal.,0,1,0,test,test_true,0.84,12222,English,"Most of these statements were pretty nonsensical, I thought it would be more straightforward ""If A, then B"" but how can we know the answers to any of these?",8,8
+A3BH9LOU9KV6T0:33F859I567LIYXHC6OGHTESAI85HBN,1465394575255,8,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh1,0.12,4374,English,"Most of these statements were pretty nonsensical, I thought it would be more straightforward ""If A, then B"" but how can we know the answers to any of these?",8,8
+A3BH9LOU9KV6T0:33F859I567LIYXHC6OGHTESAI85HBN,1465394583518,9,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.5,8262,English,"Most of these statements were pretty nonsensical, I thought it would be more straightforward ""If A, then B"" but how can we know the answers to any of these?",8,8
+A3BH9LOU9KV6T0:33F859I567LIYXHC6OGHTESAI85HBN,1465394586790,10,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.3,3270,English,"Most of these statements were pretty nonsensical, I thought it would be more straightforward ""If A, then B"" but how can we know the answers to any of these?",8,8
+A3BH9LOU9KV6T0:33F859I567LIYXHC6OGHTESAI85HBN,1465394596862,11,Mrs Gibbs' worry,hhh,Mrs Gibbs is worried about Cindy's health.,1,1,1,test,test_false,0.15,10070,English,"Most of these statements were pretty nonsensical, I thought it would be more straightforward ""If A, then B"" but how can we know the answers to any of these?",8,8
+A3BH9LOU9KV6T0:33F859I567LIYXHC6OGHTESAI85HBN,1465394599509,12,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.5,2645,English,"Most of these statements were pretty nonsensical, I thought it would be more straightforward ""If A, then B"" but how can we know the answers to any of these?",8,8
+A3CF8ULBSE8MTL:3E7TUJ2EGDUIYOXDM8JVBNIM2G99DW,1465395336769,1,Harold's pet,lll,Harold's girlfriend didn't want a pet in her house before.,0,0,0,test,test_true,1,15723,Engglish,NA,10,1
+A3CF8ULBSE8MTL:3E7TUJ2EGDUIYOXDM8JVBNIM2G99DW,1465395344204,2,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0,7433,Engglish,NA,10,1
+A3CF8ULBSE8MTL:3E7TUJ2EGDUIYOXDM8JVBNIM2G99DW,1465395361467,3,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test,test_false,0.22,17260,Engglish,NA,10,1
+A3CF8ULBSE8MTL:3E7TUJ2EGDUIYOXDM8JVBNIM2G99DW,1465395364267,4,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh2,0.68,2799,Engglish,NA,10,1
+A3CF8ULBSE8MTL:3E7TUJ2EGDUIYOXDM8JVBNIM2G99DW,1465395376037,5,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,0.9,11768,Engglish,NA,10,1
+A3CF8ULBSE8MTL:3E7TUJ2EGDUIYOXDM8JVBNIM2G99DW,1465395378928,6,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.11,2890,Engglish,NA,10,1
+A3CF8ULBSE8MTL:3E7TUJ2EGDUIYOXDM8JVBNIM2G99DW,1465395387013,7,Gigi's exams,hlh,Gigi aspires to a career in science.,1,0,1,test,test_uncertain,0.73,8082,Engglish,NA,10,1
+A3CF8ULBSE8MTL:3E7TUJ2EGDUIYOXDM8JVBNIM2G99DW,1465395400608,8,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.96,13592,Engglish,NA,10,1
+A3CF8ULBSE8MTL:3E7TUJ2EGDUIYOXDM8JVBNIM2G99DW,1465395406189,9,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0,5578,Engglish,NA,10,1
+A3CF8ULBSE8MTL:3E7TUJ2EGDUIYOXDM8JVBNIM2G99DW,1465395408167,10,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.26,1977,Engglish,NA,10,1
+A3CF8ULBSE8MTL:3E7TUJ2EGDUIYOXDM8JVBNIM2G99DW,1465395414471,11,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.5,6301,Engglish,NA,10,1
+A3CF8ULBSE8MTL:3E7TUJ2EGDUIYOXDM8JVBNIM2G99DW,1465395417029,12,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.15,2557,Engglish,NA,10,1
+A3D3NEQ158WUB0:3VHHR074H4PXIHXCKSJZG4ZLGZSL7H,1465401265129,1,Jimmy's trip,lll,Jimmy went on a school trip to New York City.,0,0,0,test,test_false,0,36697,English,Thanks,9,2
+A3D3NEQ158WUB0:3VHHR074H4PXIHXCKSJZG4ZLGZSL7H,1465401278894,2,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0.1,13765,English,Thanks,9,2
+A3D3NEQ158WUB0:3VHHR074H4PXIHXCKSJZG4ZLGZSL7H,1465401321728,3,Danny's racket,hhh,Danny and Alex went to the sports store together.,1,1,1,test,test_false,0.79,42834,English,Thanks,9,2
+A3D3NEQ158WUB0:3VHHR074H4PXIHXCKSJZG4ZLGZSL7H,1465401331343,4,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.96,9615,English,Thanks,9,2
+A3D3NEQ158WUB0:3VHHR074H4PXIHXCKSJZG4ZLGZSL7H,1465401349968,5,Tony's clubbing,lhl,Techno is quite different from Jazz and from Metal.,0,1,0,test,test_true,1,18625,English,Thanks,9,2
+A3D3NEQ158WUB0:3VHHR074H4PXIHXCKSJZG4ZLGZSL7H,1465401357540,6,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.11,7572,English,Thanks,9,2
+A3D3NEQ158WUB0:3VHHR074H4PXIHXCKSJZG4ZLGZSL7H,1465401389293,7,Gerald's graduation,llh,Gerald is friends with both Nico and Rick.,0,0,1,test,test_true,1,31752,English,Thanks,9,2
+A3D3NEQ158WUB0:3VHHR074H4PXIHXCKSJZG4ZLGZSL7H,1465401398407,8,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.78,9114,English,Thanks,9,2
+A3D3NEQ158WUB0:3VHHR074H4PXIHXCKSJZG4ZLGZSL7H,1465401427415,9,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.32,29008,English,Thanks,9,2
+A3D3NEQ158WUB0:3VHHR074H4PXIHXCKSJZG4ZLGZSL7H,1465401437588,10,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.09,10173,English,Thanks,9,2
+A3D3NEQ158WUB0:3VHHR074H4PXIHXCKSJZG4ZLGZSL7H,1465401446653,11,Chloe's holiday,lhh,"Chloe forgot about bringing some beach towels, too.",0,1,1,test,test_uncertain,0.59,9065,English,Thanks,9,2
+A3D3NEQ158WUB0:3VHHR074H4PXIHXCKSJZG4ZLGZSL7H,1465401451838,12,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.68,5185,English,Thanks,9,2
+A3E1TJWP7R9LVF:3LEP4MGT3H81MHCAKSXR2TDCQGHBDD,1465400164437,1,Jimmy's trip,lll,Jimmy went on a school trip to New York City.,0,0,0,test,test_false,0,28991,English,NA,10,2
+A3E1TJWP7R9LVF:3LEP4MGT3H81MHCAKSXR2TDCQGHBDD,1465400169901,2,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh2,0,5463,English,NA,10,2
+A3E1TJWP7R9LVF:3LEP4MGT3H81MHCAKSXR2TDCQGHBDD,1465400191685,3,Mrs Gibbs' worry,hhh,Mrs Gibbs is worried about Cindy's health.,1,1,1,test,test_false,0,21784,English,NA,10,2
+A3E1TJWP7R9LVF:3LEP4MGT3H81MHCAKSXR2TDCQGHBDD,1465400202805,4,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.73,11119,English,NA,10,2
+A3E1TJWP7R9LVF:3LEP4MGT3H81MHCAKSXR2TDCQGHBDD,1465400218885,5,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,0.97,16079,English,NA,10,2
+A3E1TJWP7R9LVF:3LEP4MGT3H81MHCAKSXR2TDCQGHBDD,1465400223877,6,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.93,4992,English,NA,10,2
+A3E1TJWP7R9LVF:3LEP4MGT3H81MHCAKSXR2TDCQGHBDD,1465400242484,7,Gigi's exams,hlh,Gigi studied hard to pass her exams.,1,0,1,test,test_true,0.93,18607,English,NA,10,2
+A3E1TJWP7R9LVF:3LEP4MGT3H81MHCAKSXR2TDCQGHBDD,1465400251125,8,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.94,8640,English,NA,10,2
+A3E1TJWP7R9LVF:3LEP4MGT3H81MHCAKSXR2TDCQGHBDD,1465400302901,9,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.02,51776,English,NA,10,2
+A3E1TJWP7R9LVF:3LEP4MGT3H81MHCAKSXR2TDCQGHBDD,1465400308140,10,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.02,5239,English,NA,10,2
+A3E1TJWP7R9LVF:3LEP4MGT3H81MHCAKSXR2TDCQGHBDD,1465400328781,11,Tony's clubbing,lhl,Rob is a big fan of Techno music as well.,0,1,0,test,test_uncertain,0.7,20641,English,NA,10,2
+A3E1TJWP7R9LVF:3LEP4MGT3H81MHCAKSXR2TDCQGHBDD,1465400349540,12,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh1,0.24,20758,English,NA,10,2
+A3EZE9VQL3LAD:3HRMW88U17Y36OFDZ5Z5124N8QC0MY,1465401004447,1,Carl's party,hll,John did not spend much time outside.,1,0,0,test,test_true,0.76,17611,English,NA,8,3
+A3EZE9VQL3LAD:3HRMW88U17Y36OFDZ5Z5124N8QC0MY,1465401016601,2,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.28,12153,English,NA,8,3
+A3EZE9VQL3LAD:3HRMW88U17Y36OFDZ5Z5124N8QC0MY,1465401032013,3,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0.15,15410,English,NA,8,3
+A3EZE9VQL3LAD:3HRMW88U17Y36OFDZ5Z5124N8QC0MY,1465401040692,4,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.21,8678,English,NA,8,3
+A3EZE9VQL3LAD:3HRMW88U17Y36OFDZ5Z5124N8QC0MY,1465401054564,5,Pete's accident,hhl,Pete's teacher saw him fall off the slide.,1,1,0,test,test_uncertain,0.3,13871,English,NA,8,3
+A3EZE9VQL3LAD:3HRMW88U17Y36OFDZ5Z5124N8QC0MY,1465401060680,6,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.25,6115,English,NA,8,3
+A3EZE9VQL3LAD:3HRMW88U17Y36OFDZ5Z5124N8QC0MY,1465401087275,7,Chloe's holiday,lhh,"Chloe forgot about bringing some beach towels, too.",0,1,1,test,test_uncertain,0.21,26595,English,NA,8,3
+A3EZE9VQL3LAD:3HRMW88U17Y36OFDZ5Z5124N8QC0MY,1465401092185,8,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.76,4909,English,NA,8,3
+A3EZE9VQL3LAD:3HRMW88U17Y36OFDZ5Z5124N8QC0MY,1465401105491,9,Leo's wife,hll,Leo is sponsoring a tennis tournament.,1,0,0,test,test_false,0.84,13305,English,NA,8,3
+A3EZE9VQL3LAD:3HRMW88U17Y36OFDZ5Z5124N8QC0MY,1465401110141,10,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.17,4650,English,NA,8,3
+A3EZE9VQL3LAD:3HRMW88U17Y36OFDZ5Z5124N8QC0MY,1465401125231,11,Harold's pet,lll,Harold's girlfriend didn't want a pet in her house before.,0,0,0,test,test_true,0.85,15089,English,NA,8,3
+A3EZE9VQL3LAD:3HRMW88U17Y36OFDZ5Z5124N8QC0MY,1465401129961,12,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.06,4729,English,NA,8,3
+A3G00D1YAGGBIP:336KAV9KYR0AWF75XVRUELK9EY9Y25,1465399685683,1,Leo's wife,hll,Leo is an avid golf player.,1,0,0,test,test_uncertain,0.6,13758,English,NA,8,4
+A3G00D1YAGGBIP:336KAV9KYR0AWF75XVRUELK9EY9Y25,1465399691163,2,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.23,5480,English,NA,8,4
+A3G00D1YAGGBIP:336KAV9KYR0AWF75XVRUELK9EY9Y25,1465399715190,3,Mrs Sanders' son,hhl,The teacher is trying to find out who queued up twice.,1,1,0,test,test_true,0.63,24027,English,NA,8,4
+A3G00D1YAGGBIP:336KAV9KYR0AWF75XVRUELK9EY9Y25,1465399721266,4,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh1,0.1,6066,English,NA,8,4
+A3G00D1YAGGBIP:336KAV9KYR0AWF75XVRUELK9EY9Y25,1465399733995,5,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0,12729,English,NA,8,4
+A3G00D1YAGGBIP:336KAV9KYR0AWF75XVRUELK9EY9Y25,1465399740322,6,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.15,6326,English,NA,8,4
+A3G00D1YAGGBIP:336KAV9KYR0AWF75XVRUELK9EY9Y25,1465399752641,7,Carl's party,hll,Carl's wife liked the music very much.,1,0,0,test,test_uncertain,0.26,12309,English,NA,8,4
+A3G00D1YAGGBIP:336KAV9KYR0AWF75XVRUELK9EY9Y25,1465399757091,8,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh2,0.18,4440,English,NA,8,4
+A3G00D1YAGGBIP:336KAV9KYR0AWF75XVRUELK9EY9Y25,1465399769402,9,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.36,12310,English,NA,8,4
+A3G00D1YAGGBIP:336KAV9KYR0AWF75XVRUELK9EY9Y25,1465399775024,10,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.56,5622,English,NA,8,4
+A3G00D1YAGGBIP:336KAV9KYR0AWF75XVRUELK9EY9Y25,1465399786921,11,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,0.84,11894,English,NA,8,4
+A3G00D1YAGGBIP:336KAV9KYR0AWF75XVRUELK9EY9Y25,1465399791318,12,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.38,4397,English,NA,8,4
+A3KVNVHIYT3JI8:3DR23U6WE6M6A9KRG9ZW851JWZDETU,1465394529036,1,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test,test_false,0.33,13261,English,NA,4,4
+A3KVNVHIYT3JI8:3DR23U6WE6M6A9KRG9ZW851JWZDETU,1465394537908,2,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh2,0.52,8871,English,NA,4,4
+A3KVNVHIYT3JI8:3DR23U6WE6M6A9KRG9ZW851JWZDETU,1465394548201,3,Gerald's graduation,llh,Gerald is friends with both Nico and Rick.,0,0,1,test,test_true,1,10292,English,NA,4,4
+A3KVNVHIYT3JI8:3DR23U6WE6M6A9KRG9ZW851JWZDETU,1465394562102,4,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.71,13899,English,NA,4,4
+A3KVNVHIYT3JI8:3DR23U6WE6M6A9KRG9ZW851JWZDETU,1465394573722,5,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,0.75,11620,English,NA,4,4
+A3KVNVHIYT3JI8:3DR23U6WE6M6A9KRG9ZW851JWZDETU,1465394579124,6,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.5,5400,English,NA,4,4
+A3KVNVHIYT3JI8:3DR23U6WE6M6A9KRG9ZW851JWZDETU,1465394600697,7,Carl's party,hll,"John and Carl, the hosts, are a gay couple.",1,0,0,test,test_false,0.5,21573,English,NA,4,4
+A3KVNVHIYT3JI8:3DR23U6WE6M6A9KRG9ZW851JWZDETU,1465394606916,8,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.21,6218,English,NA,4,4
+A3KVNVHIYT3JI8:3DR23U6WE6M6A9KRG9ZW851JWZDETU,1465394836512,9,Mrs Sanders' son,hhl,Mrs Sanders had pasta for lunch yesterday.,1,1,0,test,test_uncertain,0.5,229595,English,NA,4,4
+A3KVNVHIYT3JI8:3DR23U6WE6M6A9KRG9ZW851JWZDETU,1465394841160,10,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh2,0.28,4646,English,NA,4,4
+A3KVNVHIYT3JI8:3DR23U6WE6M6A9KRG9ZW851JWZDETU,1465394854200,11,Harold's pet,lll,Harold's girlfriend gave in because Harold kept nagging her about wanting a pet.,0,0,0,test,test_uncertain,0.66,13040,English,NA,4,4
+A3KVNVHIYT3JI8:3DR23U6WE6M6A9KRG9ZW851JWZDETU,1465394858493,12,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.28,4292,English,NA,4,4
+A3MLUEOP3CCLXL:3ZWFC4W1UVFL087V7VE7Q8L1KF0FR5,1465401442334,1,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0.23,28484,English,NA,8,3
+A3MLUEOP3CCLXL:3ZWFC4W1UVFL087V7VE7Q8L1KF0FR5,1465401455652,2,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.47,13318,English,NA,8,3
+A3MLUEOP3CCLXL:3ZWFC4W1UVFL087V7VE7Q8L1KF0FR5,1465401470336,3,Carl's party,hll,John did not spend much time outside.,1,0,0,test,test_true,0.67,14683,English,NA,8,3
+A3MLUEOP3CCLXL:3ZWFC4W1UVFL087V7VE7Q8L1KF0FR5,1465401477988,4,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.25,7652,English,NA,8,3
+A3MLUEOP3CCLXL:3ZWFC4W1UVFL087V7VE7Q8L1KF0FR5,1465401489280,5,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,1,11291,English,NA,8,3
+A3MLUEOP3CCLXL:3ZWFC4W1UVFL087V7VE7Q8L1KF0FR5,1465401494480,6,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.35,5200,English,NA,8,3
+A3MLUEOP3CCLXL:3ZWFC4W1UVFL087V7VE7Q8L1KF0FR5,1465401508472,7,Tony's clubbing,lhl,Rob is a big fan of Techno music as well.,0,1,0,test,test_uncertain,0.5,13992,English,NA,8,3
+A3MLUEOP3CCLXL:3ZWFC4W1UVFL087V7VE7Q8L1KF0FR5,1465401517511,8,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.28,9039,English,NA,8,3
+A3MLUEOP3CCLXL:3ZWFC4W1UVFL087V7VE7Q8L1KF0FR5,1465401527932,9,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test,test_false,0.58,10420,English,NA,8,3
+A3MLUEOP3CCLXL:3ZWFC4W1UVFL087V7VE7Q8L1KF0FR5,1465401533435,10,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.67,5502,English,NA,8,3
+A3MLUEOP3CCLXL:3ZWFC4W1UVFL087V7VE7Q8L1KF0FR5,1465401552087,11,Joshua's delay,llh,"Kevin, Cory and Joshua do not like to hang out with girls.",0,0,1,test,test_uncertain,0.23,18651,English,NA,8,3
+A3MLUEOP3CCLXL:3ZWFC4W1UVFL087V7VE7Q8L1KF0FR5,1465401556547,12,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.5,4459,English,NA,8,3
+A3T7N805PVNEXN:3DR23U6WE6M6A9KRG9ZW851JWZITEE,1465401400732,1,Danny's racket,hhh,Alex needs to buy some equipment before he can play squash with Danny.,1,1,1,test,test_true,1,15564,English,NA,10,1
+A3T7N805PVNEXN:3DR23U6WE6M6A9KRG9ZW851JWZITEE,1465401408889,2,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.69,8157,English,NA,10,1
+A3T7N805PVNEXN:3DR23U6WE6M6A9KRG9ZW851JWZITEE,1465401417046,3,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,1,8156,English,NA,10,1
+A3T7N805PVNEXN:3DR23U6WE6M6A9KRG9ZW851JWZITEE,1465401422215,4,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.49,5168,English,NA,10,1
+A3T7N805PVNEXN:3DR23U6WE6M6A9KRG9ZW851JWZITEE,1465401465809,5,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test,test_false,0.17,43593,English,NA,10,1
+A3T7N805PVNEXN:3DR23U6WE6M6A9KRG9ZW851JWZITEE,1465401469401,6,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.88,3591,English,NA,10,1
+A3T7N805PVNEXN:3DR23U6WE6M6A9KRG9ZW851JWZITEE,1465401502276,7,Tony's clubbing,lhl,Rob is a big fan of Techno music as well.,0,1,0,test,test_uncertain,0.69,32874,English,NA,10,1
+A3T7N805PVNEXN:3DR23U6WE6M6A9KRG9ZW851JWZITEE,1465401507599,8,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.51,5322,English,NA,10,1
+A3T7N805PVNEXN:3DR23U6WE6M6A9KRG9ZW851JWZITEE,1465401519102,9,Lily's husband,lhl,Eric has a problem with his liver for which he has to stop drinking alcohol.,0,1,0,test,test_uncertain,0.79,11503,English,NA,10,1
+A3T7N805PVNEXN:3DR23U6WE6M6A9KRG9ZW851JWZITEE,1465401521970,10,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.44,2866,English,NA,10,1
+A3T7N805PVNEXN:3DR23U6WE6M6A9KRG9ZW851JWZITEE,1465401824988,11,Jimmy's trip,lll,Jimmy went on a school trip to New York City.,0,0,0,test,test_false,0,303018,English,NA,10,1
+A3T7N805PVNEXN:3DR23U6WE6M6A9KRG9ZW851JWZITEE,1465401830070,12,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh2,0.37,5081,English,NA,10,1
+A8OE2E20OZYKI:3H0W84IWBLATUU7ZCKU18Q018ELREZ,1465399842851,1,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,1,13107,English,NA,6,0
+A8OE2E20OZYKI:3H0W84IWBLATUU7ZCKU18Q018ELREZ,1465399852963,2,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh2,0.33,10112,English,NA,6,0
+A8OE2E20OZYKI:3H0W84IWBLATUU7ZCKU18Q018ELREZ,1465399869883,3,Joshua's delay,llh,"Kevin, Cory and Joshua are brothers.",0,0,1,test,test_false,0,16919,English,NA,6,0
+A8OE2E20OZYKI:3H0W84IWBLATUU7ZCKU18Q018ELREZ,1465399874708,4,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.5,4824,English,NA,6,0
+A8OE2E20OZYKI:3H0W84IWBLATUU7ZCKU18Q018ELREZ,1465399891955,5,Danny's racket,hhh,Danny and Alex went to the sports store together.,1,1,1,test,test_false,0.63,17244,English,NA,6,0
+A8OE2E20OZYKI:3H0W84IWBLATUU7ZCKU18Q018ELREZ,1465399900241,6,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,1,8283,English,NA,6,0
+A8OE2E20OZYKI:3H0W84IWBLATUU7ZCKU18Q018ELREZ,1465399910627,7,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.67,10385,English,NA,6,0
+A8OE2E20OZYKI:3H0W84IWBLATUU7ZCKU18Q018ELREZ,1465399915213,8,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.5,4584,English,NA,6,0
+A8OE2E20OZYKI:3H0W84IWBLATUU7ZCKU18Q018ELREZ,1465399930737,9,Leo's wife,hll,Leo is an avid golf player.,1,0,0,test,test_uncertain,0.85,15524,English,NA,6,0
+A8OE2E20OZYKI:3H0W84IWBLATUU7ZCKU18Q018ELREZ,1465399935881,10,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0,5143,English,NA,6,0
+A8OE2E20OZYKI:3H0W84IWBLATUU7ZCKU18Q018ELREZ,1465399947775,11,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test,test_uncertain,0.5,11893,English,NA,6,0
+A8OE2E20OZYKI:3H0W84IWBLATUU7ZCKU18Q018ELREZ,1465399955120,12,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.69,7345,English,NA,6,0
+AAASQIW3J32OL:3WYP994K18ZYEGQ6KX3X4Y1LU376YQ,1465396757394,1,Carl's party,hll,John did not spend much time outside.,1,0,0,test,test_true,0.63,18989,English,Not really.,9,1
+AAASQIW3J32OL:3WYP994K18ZYEGQ6KX3X4Y1LU376YQ,1465396765552,2,Carl's party,hll,It is likely that Carl danced passionately with both Sue and Mary.,1,0,0,critical,exh1,0.13,8156,English,Not really.,9,1
+AAASQIW3J32OL:3WYP994K18ZYEGQ6KX3X4Y1LU376YQ,1465396778751,3,Gigi's exams,hlh,Gigi aspires to a career in science.,1,0,1,test,test_uncertain,1,13198,English,Not really.,9,1
+AAASQIW3J32OL:3WYP994K18ZYEGQ6KX3X4Y1LU376YQ,1465396785014,4,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.79,6263,English,Not really.,9,1
+AAASQIW3J32OL:3WYP994K18ZYEGQ6KX3X4Y1LU376YQ,1465396797488,5,Leo's wife,hll,Leo is an avid golf player.,1,0,0,test,test_uncertain,0.95,12473,English,Not really.,9,1
+AAASQIW3J32OL:3WYP994K18ZYEGQ6KX3X4Y1LU376YQ,1465396805222,6,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.38,7733,English,Not really.,9,1
+AAASQIW3J32OL:3WYP994K18ZYEGQ6KX3X4Y1LU376YQ,1465396825901,7,Lily's husband,lhl,Eric and Lily went to a bar together last night.,0,1,0,test,test_false,0,20679,English,Not really.,9,1
+AAASQIW3J32OL:3WYP994K18ZYEGQ6KX3X4Y1LU376YQ,1465396831872,8,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.43,5970,English,Not really.,9,1
+AAASQIW3J32OL:3WYP994K18ZYEGQ6KX3X4Y1LU376YQ,1465396844892,9,Gerald's graduation,llh,Gerald is friends with both Nico and Rick.,0,0,1,test,test_true,1,13019,English,Not really.,9,1
+AAASQIW3J32OL:3WYP994K18ZYEGQ6KX3X4Y1LU376YQ,1465396861137,10,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.68,16243,English,Not really.,9,1
+AAASQIW3J32OL:3WYP994K18ZYEGQ6KX3X4Y1LU376YQ,1465396882657,11,Mrs Sanders' son,hhl,Ted is Mrs Sanders' husband.,1,1,0,test,test_false,0,21519,English,Not really.,9,1
+AAASQIW3J32OL:3WYP994K18ZYEGQ6KX3X4Y1LU376YQ,1465396890799,12,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh2,0.31,8142,English,Not really.,9,1
+ABXL9SD1N6ZQZ:33ISQZVXPQUARUY2YWYBT71CN16CCM,1465400036474,1,Mrs Sanders' son,hhl,The teacher is trying to find out who queued up twice.,1,1,0,test,test_true,0.38,22763,English,NA,10,0
+ABXL9SD1N6ZQZ:33ISQZVXPQUARUY2YWYBT71CN16CCM,1465400045946,2,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh2,0.36,9471,English,NA,10,0
+ABXL9SD1N6ZQZ:33ISQZVXPQUARUY2YWYBT71CN16CCM,1465400055898,3,Gigi's exams,hlh,Gigi aspires to a career in science.,1,0,1,test,test_uncertain,0.88,9952,English,NA,10,0
+ABXL9SD1N6ZQZ:33ISQZVXPQUARUY2YWYBT71CN16CCM,1465400060689,4,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.84,4790,English,NA,10,0
+ABXL9SD1N6ZQZ:33ISQZVXPQUARUY2YWYBT71CN16CCM,1465400072297,5,Danny's racket,hhh,Danny and Alex went to the sports store together.,1,1,1,test,test_false,1,11607,English,NA,10,0
+ABXL9SD1N6ZQZ:33ISQZVXPQUARUY2YWYBT71CN16CCM,1465400076586,6,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.24,4287,English,NA,10,0
+ABXL9SD1N6ZQZ:33ISQZVXPQUARUY2YWYBT71CN16CCM,1465400086401,7,Chloe's holiday,lhh,Chloe went on holidays with a big group of her friends.,0,1,1,test,test_false,0.32,9815,English,NA,10,0
+ABXL9SD1N6ZQZ:33ISQZVXPQUARUY2YWYBT71CN16CCM,1465400092921,8,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.38,6519,English,NA,10,0
+ABXL9SD1N6ZQZ:33ISQZVXPQUARUY2YWYBT71CN16CCM,1465400107681,9,Tony's clubbing,lhl,Rob is a big fan of Techno music as well.,0,1,0,test,test_uncertain,0.31,14759,English,NA,10,0
+ABXL9SD1N6ZQZ:33ISQZVXPQUARUY2YWYBT71CN16CCM,1465400112161,10,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0.01,4479,English,NA,10,0
+ABXL9SD1N6ZQZ:33ISQZVXPQUARUY2YWYBT71CN16CCM,1465400121969,11,Brad's clothes,hlh,Brad is not happy about the fact that his friends make jokes about his shabby clothes.,1,0,1,test,test_true,0.68,9807,English,NA,10,0
+ABXL9SD1N6ZQZ:33ISQZVXPQUARUY2YWYBT71CN16CCM,1465400125953,12,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh2,0.44,3983,English,NA,10,0
+ADCUK2AHXYSBJ:33F859I567LIYXHC6OGHTESAI8ABHM,1465399823874,1,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,1,19364,English,no,9,0
+ADCUK2AHXYSBJ:33F859I567LIYXHC6OGHTESAI8ABHM,1465399835642,2,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.29,11766,English,no,9,0
+ADCUK2AHXYSBJ:33F859I567LIYXHC6OGHTESAI8ABHM,1465399852997,3,Brad's clothes,hlh,Mandy feels attracted to Brad.,1,0,1,test,test_uncertain,0.15,17350,English,no,9,0
+ADCUK2AHXYSBJ:33F859I567LIYXHC6OGHTESAI8ABHM,1465399864110,4,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh2,0.59,11107,English,no,9,0
+ADCUK2AHXYSBJ:33F859I567LIYXHC6OGHTESAI8ABHM,1465399882174,5,Danny's racket,hhh,Alex needs to buy some equipment before he can play squash with Danny.,1,1,1,test,test_true,0.77,18059,English,no,9,0
+ADCUK2AHXYSBJ:33F859I567LIYXHC6OGHTESAI8ABHM,1465399891913,6,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.86,9736,English,no,9,0
+ADCUK2AHXYSBJ:33F859I567LIYXHC6OGHTESAI8ABHM,1465399902573,7,Gerald's graduation,llh,Gerald took almost ten years to graduate.,0,0,1,test,test_uncertain,0.16,10657,English,no,9,0
+ADCUK2AHXYSBJ:33F859I567LIYXHC6OGHTESAI8ABHM,1465399912361,8,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.2,9784,English,no,9,0
+ADCUK2AHXYSBJ:33F859I567LIYXHC6OGHTESAI8ABHM,1465399925595,9,Harold's pet,lll,Harold is single.,0,0,0,test,test_false,0.01,13228,English,no,9,0
+ADCUK2AHXYSBJ:33F859I567LIYXHC6OGHTESAI8ABHM,1465399931570,10,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh1,0.12,5970,English,no,9,0
+ADCUK2AHXYSBJ:33F859I567LIYXHC6OGHTESAI8ABHM,1465399948721,11,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0,17147,English,no,9,0
+ADCUK2AHXYSBJ:33F859I567LIYXHC6OGHTESAI8ABHM,1465399957355,12,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.09,8627,English,no,9,0
+AGPBP85B17VXL:3TXWC2NHN0YO0DGVJYEK6M4M3JJS99,1465396276003,1,Joshua's delay,llh,"Kevin, Cory and Joshua do not like to hang out with girls.",0,0,1,test,test_uncertain,0.64,7852,English,NA,5,3
+AGPBP85B17VXL:3TXWC2NHN0YO0DGVJYEK6M4M3JJS99,1465396277821,2,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh2,0.66,1818,English,NA,5,3
+AGPBP85B17VXL:3TXWC2NHN0YO0DGVJYEK6M4M3JJS99,1465396279352,3,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0.35,1531,English,NA,5,3
+AGPBP85B17VXL:3TXWC2NHN0YO0DGVJYEK6M4M3JJS99,1465396280848,4,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.62,1496,English,NA,5,3
+AGPBP85B17VXL:3TXWC2NHN0YO0DGVJYEK6M4M3JJS99,1465396282652,5,Tony's clubbing,lhl,Tony has to work at club Macabre tonight.,0,1,0,test,test_false,0.36,1804,English,NA,5,3
+AGPBP85B17VXL:3TXWC2NHN0YO0DGVJYEK6M4M3JJS99,1465396284368,6,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh1,0.61,1716,English,NA,5,3
+AGPBP85B17VXL:3TXWC2NHN0YO0DGVJYEK6M4M3JJS99,1465396295474,7,Leo's wife,hll,Leo is an avid golf player.,1,0,0,test,test_uncertain,0.38,11106,English,NA,5,3
+AGPBP85B17VXL:3TXWC2NHN0YO0DGVJYEK6M4M3JJS99,1465396297301,8,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.63,1826,English,NA,5,3
+AGPBP85B17VXL:3TXWC2NHN0YO0DGVJYEK6M4M3JJS99,1465396301668,9,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.66,4367,English,NA,5,3
+AGPBP85B17VXL:3TXWC2NHN0YO0DGVJYEK6M4M3JJS99,1465396303270,10,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,0.65,1587,English,NA,5,3
+AGPBP85B17VXL:3TXWC2NHN0YO0DGVJYEK6M4M3JJS99,1465396307717,11,Danny's racket,hhh,Alex needs to buy some equipment before he can play squash with Danny.,1,1,1,test,test_true,0.59,4447,English,NA,5,3
+AGPBP85B17VXL:3TXWC2NHN0YO0DGVJYEK6M4M3JJS99,1465396309187,12,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,0.41,1470,English,NA,5,3
+AJMRTVQJVX3E8:39U1BHVTDMZ30B4URPI0PEXM5AST3N,1465399667937,1,Lily's husband,lhl,Eric has a problem with his liver for which he has to stop drinking alcohol.,0,1,0,test,test_uncertain,0.54,32249,english,NA,5,0
+AJMRTVQJVX3E8:39U1BHVTDMZ30B4URPI0PEXM5AST3N,1465399677674,2,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.35,9734,english,NA,5,0
+AJMRTVQJVX3E8:39U1BHVTDMZ30B4URPI0PEXM5AST3N,1465399696449,3,Jimmy's trip,lll,Jimmy went on a school trip to New York City.,0,0,0,test,test_false,0,18770,english,NA,5,0
+AJMRTVQJVX3E8:39U1BHVTDMZ30B4URPI0PEXM5AST3N,1465399707726,4,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh2,0.47,11275,english,NA,5,0
+AJMRTVQJVX3E8:39U1BHVTDMZ30B4URPI0PEXM5AST3N,1465399727582,5,Leo's wife,hll,Leo is wealthy.,1,0,0,test,test_true,1,19853,english,NA,5,0
+AJMRTVQJVX3E8:39U1BHVTDMZ30B4URPI0PEXM5AST3N,1465399737132,6,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh1,0.07,9548,english,NA,5,0
+AJMRTVQJVX3E8:39U1BHVTDMZ30B4URPI0PEXM5AST3N,1465399748594,7,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,1,11460,english,NA,5,0
+AJMRTVQJVX3E8:39U1BHVTDMZ30B4URPI0PEXM5AST3N,1465399757736,8,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0,9140,english,NA,5,0
+AJMRTVQJVX3E8:39U1BHVTDMZ30B4URPI0PEXM5AST3N,1465399767177,9,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,1,9440,english,NA,5,0
+AJMRTVQJVX3E8:39U1BHVTDMZ30B4URPI0PEXM5AST3N,1465399776579,10,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh1,0.67,9398,english,NA,5,0
+AJMRTVQJVX3E8:39U1BHVTDMZ30B4URPI0PEXM5AST3N,1465399789130,11,Chloe's holiday,lhh,"Chloe forgot about bringing some beach towels, too.",0,1,1,test,test_uncertain,0,12548,english,NA,5,0
+AJMRTVQJVX3E8:39U1BHVTDMZ30B4URPI0PEXM5AST3N,1465399796340,12,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh2,0.35,7208,english,NA,5,0
+AKSJ3C5O3V9RB:3S0TNUHWKUQIKJE3HGDHBRNBIAWD8G,1465402723087,1,Pete's accident,hhl,Pete's mother was not there when he fell of the slide.,1,1,0,test,test_true,1,12112,English,"interesting, engaging, and enjoyable study.",10,1
+AKSJ3C5O3V9RB:3S0TNUHWKUQIKJE3HGDHBRNBIAWD8G,1465402737472,2,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.42,14383,English,"interesting, engaging, and enjoyable study.",10,1
+AKSJ3C5O3V9RB:3S0TNUHWKUQIKJE3HGDHBRNBIAWD8G,1465402834770,3,Gerald's graduation,llh,Gerald is friends with both Nico and Rick.,0,0,1,test,test_true,1,97296,English,"interesting, engaging, and enjoyable study.",10,1
+AKSJ3C5O3V9RB:3S0TNUHWKUQIKJE3HGDHBRNBIAWD8G,1465402866334,4,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.47,31561,English,"interesting, engaging, and enjoyable study.",10,1
+AKSJ3C5O3V9RB:3S0TNUHWKUQIKJE3HGDHBRNBIAWD8G,1465402874882,5,Harold's pet,lll,Harold is single.,0,0,0,test,test_false,0,8545,English,"interesting, engaging, and enjoyable study.",10,1
+AKSJ3C5O3V9RB:3S0TNUHWKUQIKJE3HGDHBRNBIAWD8G,1465402882583,6,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh2,0.29,7700,English,"interesting, engaging, and enjoyable study.",10,1
+AKSJ3C5O3V9RB:3S0TNUHWKUQIKJE3HGDHBRNBIAWD8G,1465402896828,7,Brad's clothes,hlh,Mandy feels attracted to Brad.,1,0,1,test,test_uncertain,0.06,14243,English,"interesting, engaging, and enjoyable study.",10,1
+AKSJ3C5O3V9RB:3S0TNUHWKUQIKJE3HGDHBRNBIAWD8G,1465402903220,8,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh2,0.41,6392,English,"interesting, engaging, and enjoyable study.",10,1
+AKSJ3C5O3V9RB:3S0TNUHWKUQIKJE3HGDHBRNBIAWD8G,1465402915073,9,Joshua's delay,llh,"Kevin, Cory and Joshua do not like to hang out with girls.",0,0,1,test,test_uncertain,0.59,11852,English,"interesting, engaging, and enjoyable study.",10,1
+AKSJ3C5O3V9RB:3S0TNUHWKUQIKJE3HGDHBRNBIAWD8G,1465402931017,10,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.62,15943,English,"interesting, engaging, and enjoyable study.",10,1
+AKSJ3C5O3V9RB:3S0TNUHWKUQIKJE3HGDHBRNBIAWD8G,1465402948480,11,Mrs Sanders' son,hhl,Ted is Mrs Sanders' husband.,1,1,0,test,test_false,0,17463,English,"interesting, engaging, and enjoyable study.",10,1
+AKSJ3C5O3V9RB:3S0TNUHWKUQIKJE3HGDHBRNBIAWD8G,1465402955081,12,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh1,0.03,6598,English,"interesting, engaging, and enjoyable study.",10,1
+AR5E0ZVWKJA95:3K9FOBBF2IRML2PZ0Z0OC1LBGEXLNS,1465400119859,1,Gigi's exams,hlh,Gigi studied hard to pass her exams.,1,0,1,test,test_true,0.84,29324,English,NA,8,6
+AR5E0ZVWKJA95:3K9FOBBF2IRML2PZ0Z0OC1LBGEXLNS,1465400125438,2,Gigi's exams,hlh,It is likely that Gigi passed both her Physics exam and her Chemistry exam.,1,0,1,critical,exh1,0.61,5575,English,NA,8,6
+AR5E0ZVWKJA95:3K9FOBBF2IRML2PZ0Z0OC1LBGEXLNS,1465400142646,3,Tony's clubbing,lhl,Tony has to work at club Macabre tonight.,0,1,0,test,test_false,0.09,17203,English,NA,8,6
+AR5E0ZVWKJA95:3K9FOBBF2IRML2PZ0Z0OC1LBGEXLNS,1465400154565,4,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh2,0,11908,English,NA,8,6
+AR5E0ZVWKJA95:3K9FOBBF2IRML2PZ0Z0OC1LBGEXLNS,1465400166799,5,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0,12230,English,NA,8,6
+AR5E0ZVWKJA95:3K9FOBBF2IRML2PZ0Z0OC1LBGEXLNS,1465400172523,6,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.53,5720,English,NA,8,6
+AR5E0ZVWKJA95:3K9FOBBF2IRML2PZ0Z0OC1LBGEXLNS,1465400188301,7,Lily's husband,lhl,Eric has a problem with his liver for which he has to stop drinking alcohol.,0,1,0,test,test_uncertain,0.76,15772,English,NA,8,6
+AR5E0ZVWKJA95:3K9FOBBF2IRML2PZ0Z0OC1LBGEXLNS,1465400192559,8,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,0.76,4254,English,NA,8,6
+AR5E0ZVWKJA95:3K9FOBBF2IRML2PZ0Z0OC1LBGEXLNS,1465400217739,9,Joshua's delay,llh,Kevin and Cory expected Joshua to arrive earlier.,0,0,1,test,test_true,0.75,25175,English,NA,8,6
+AR5E0ZVWKJA95:3K9FOBBF2IRML2PZ0Z0OC1LBGEXLNS,1465400223818,10,Joshua's delay,llh,It is likely that Joshua had to both do his homework and eat lunch.,0,0,1,critical,exh1,0.82,6058,English,NA,8,6
+AR5E0ZVWKJA95:3K9FOBBF2IRML2PZ0Z0OC1LBGEXLNS,1465400242251,11,Brad's clothes,hlh,Mandy feels attracted to Brad.,1,0,1,test,test_uncertain,0.26,18428,English,NA,8,6
+AR5E0ZVWKJA95:3K9FOBBF2IRML2PZ0Z0OC1LBGEXLNS,1465400246431,12,Brad's clothes,hlh,It is likely that Brad bought both a sweater and a pair of jeans.,1,0,1,critical,exh1,0.74,4176,English,NA,8,6
+AVHZJ2HQJG3NB:3JNQLM5FT5UQWG06EG24KDID5J72LJ,1465400282680,1,Jimmy's trip,lll,Jimmy had told his friends about his plans to visit New York City before.,0,0,0,test,test_uncertain,0,23182,English,None,9,4
+AVHZJ2HQJG3NB:3JNQLM5FT5UQWG06EG24KDID5J72LJ,1465400302380,2,Jimmy's trip,lll,It is likely that Jimmy visited both the Statue of Liberty and the Empire State Building.,0,0,0,critical,exh1,0,19692,English,None,9,4
+AVHZJ2HQJG3NB:3JNQLM5FT5UQWG06EG24KDID5J72LJ,1465400314605,3,Mrs Gibbs' worry,hhh,Mrs Gibbs is worried about Cindy's health.,1,1,1,test,test_false,0,12218,English,None,9,4
+AVHZJ2HQJG3NB:3JNQLM5FT5UQWG06EG24KDID5J72LJ,1465400323537,4,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh2,1,8927,English,None,9,4
+AVHZJ2HQJG3NB:3JNQLM5FT5UQWG06EG24KDID5J72LJ,1465400337075,5,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0.99,13534,English,None,9,4
+AVHZJ2HQJG3NB:3JNQLM5FT5UQWG06EG24KDID5J72LJ,1465400341474,6,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.99,4395,English,None,9,4
+AVHZJ2HQJG3NB:3JNQLM5FT5UQWG06EG24KDID5J72LJ,1465400352837,7,Tony's clubbing,lhl,Techno is quite different from Jazz and from Metal.,0,1,0,test,test_true,1,11358,English,None,9,4
+AVHZJ2HQJG3NB:3JNQLM5FT5UQWG06EG24KDID5J72LJ,1465400369208,8,Tony's clubbing,lhl,It is likely that they play both Jazz and Metal at the club tonight.,0,1,0,critical,exh1,0.03,16368,English,None,9,4
+AVHZJ2HQJG3NB:3JNQLM5FT5UQWG06EG24KDID5J72LJ,1465400389971,9,Lily's husband,lhl,Eric has a problem with his liver for which he has to stop drinking alcohol.,0,1,0,test,test_uncertain,0.23,20760,English,None,9,4
+AVHZJ2HQJG3NB:3JNQLM5FT5UQWG06EG24KDID5J72LJ,1465400395669,10,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh2,1,5694,English,None,9,4
+AVHZJ2HQJG3NB:3JNQLM5FT5UQWG06EG24KDID5J72LJ,1465400406965,11,Mrs Sanders' son,hhl,The teacher is trying to find out who queued up twice.,1,1,0,test,test_true,0,11290,English,None,9,4
+AVHZJ2HQJG3NB:3JNQLM5FT5UQWG06EG24KDID5J72LJ,1465400410184,12,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh2,0.99,3212,English,None,9,4
+AXO22N46CSNVT:3MMN5BL1W0CZNGEAISHO302UB2W3MW,1465399801178,1,Harold's pet,lll,Harold is single.,0,0,0,test,test_false,0,20075,English,NA,8,6
+AXO22N46CSNVT:3MMN5BL1W0CZNGEAISHO302UB2W3MW,1465399814218,2,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh2,0.34,13037,English,NA,8,6
+AXO22N46CSNVT:3MMN5BL1W0CZNGEAISHO302UB2W3MW,1465399841178,3,Mrs Gibbs' worry,hhh,Mrs Gibbs did not accompany her husband when Cindy served him.,1,1,1,test,test_true,0.34,26957,English,NA,8,6
+AXO22N46CSNVT:3MMN5BL1W0CZNGEAISHO302UB2W3MW,1465399848566,4,Mrs Gibbs' worry,hhh,It is likely that Mr Gibbs had both a beer and a steak.,1,1,1,critical,exh1,0.26,7385,English,NA,8,6
+AXO22N46CSNVT:3MMN5BL1W0CZNGEAISHO302UB2W3MW,1465399878780,5,Mrs Sanders' son,hhl,Ted is Mrs Sanders' husband.,1,1,0,test,test_false,0,30212,English,NA,8,6
+AXO22N46CSNVT:3MMN5BL1W0CZNGEAISHO302UB2W3MW,1465399888736,6,Mrs Sanders' son,hhl,It is likely that Ted had both pasta and a pizza.,1,1,0,critical,exh1,0.23,9954,English,NA,8,6
+AXO22N46CSNVT:3MMN5BL1W0CZNGEAISHO302UB2W3MW,1465399917867,7,Danny's racket,hhh,Alex needs to buy some equipment before he can play squash with Danny.,1,1,1,test,test_true,0.76,29130,English,NA,8,6
+AXO22N46CSNVT:3MMN5BL1W0CZNGEAISHO302UB2W3MW,1465399928683,8,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh1,1,10812,English,NA,8,6
+AXO22N46CSNVT:3MMN5BL1W0CZNGEAISHO302UB2W3MW,1465399947201,9,Pete's accident,hhl,Pete's teacher saw him fall off the slide.,1,1,0,test,test_uncertain,0.76,18516,English,NA,8,6
+AXO22N46CSNVT:3MMN5BL1W0CZNGEAISHO302UB2W3MW,1465399959346,10,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh2,0.25,12144,English,NA,8,6
+AXO22N46CSNVT:3MMN5BL1W0CZNGEAISHO302UB2W3MW,1465399990656,11,Leo's wife,hll,Leo is an avid golf player.,1,0,0,test,test_uncertain,0.51,31308,English,NA,8,6
+AXO22N46CSNVT:3MMN5BL1W0CZNGEAISHO302UB2W3MW,1465399998669,12,Leo's wife,hll,It is likely that someone made a hole-in-one on both the first and the second hole.,1,0,0,critical,exh2,0.62,8011,English,NA,8,6
+AYD2LKV6C5F2S:3180JW2OT5KC0NVTTESP258XL4SJ5Y,1465399707777,1,Harold's pet,lll,Harold's girlfriend gave in because Harold kept nagging her about wanting a pet.,0,0,0,test,test_uncertain,0.78,10325,english,fun thanks,10,0
+AYD2LKV6C5F2S:3180JW2OT5KC0NVTTESP258XL4SJ5Y,1465399717176,2,Harold's pet,lll,It is likely that Harold bought both a cat and a dog.,0,0,0,critical,exh2,0.15,9397,english,fun thanks,10,0
+AYD2LKV6C5F2S:3180JW2OT5KC0NVTTESP258XL4SJ5Y,1465399736995,3,Danny's racket,hhh,Alex needs to buy some equipment before he can play squash with Danny.,1,1,1,test,test_true,0.83,19816,english,fun thanks,10,0
+AYD2LKV6C5F2S:3180JW2OT5KC0NVTTESP258XL4SJ5Y,1465399777004,4,Danny's racket,hhh,It is likely that Alex bought both a racket and a pair of shoes.,1,1,1,critical,exh2,0.81,40004,english,fun thanks,10,0
+AYD2LKV6C5F2S:3180JW2OT5KC0NVTTESP258XL4SJ5Y,1465399784790,5,Chloe's holiday,lhh,"Chloe forgot about bringing some beach towels, too.",0,1,1,test,test_uncertain,0.29,7784,english,fun thanks,10,0
+AYD2LKV6C5F2S:3180JW2OT5KC0NVTTESP258XL4SJ5Y,1465399826618,6,Chloe's holiday,lhh,It is likely that both Susan and Amelia brought some extra suntan lotion.,0,1,1,critical,exh1,0.49,41827,english,fun thanks,10,0
+AYD2LKV6C5F2S:3180JW2OT5KC0NVTTESP258XL4SJ5Y,1465399846174,7,Gerald's graduation,llh,Nico finally graduated after studying for a long time.,0,0,1,test,test_false,0.16,19555,english,fun thanks,10,0
+AYD2LKV6C5F2S:3180JW2OT5KC0NVTTESP258XL4SJ5Y,1465399871092,8,Gerald's graduation,llh,It is likely that both Gerald's mother and his father attended the ceremony.,0,0,1,critical,exh2,0.53,24917,english,fun thanks,10,0
+AYD2LKV6C5F2S:3180JW2OT5KC0NVTTESP258XL4SJ5Y,1465399879198,9,Pete's accident,hhl,Pete was injured while playing in the garden.,1,1,0,test,test_false,0,8104,english,fun thanks,10,0
+AYD2LKV6C5F2S:3180JW2OT5KC0NVTTESP258XL4SJ5Y,1465399882779,10,Pete's accident,hhl,It is likely that Pete broke both his arm and his leg.,1,1,0,critical,exh1,0.33,3581,english,fun thanks,10,0
+AYD2LKV6C5F2S:3180JW2OT5KC0NVTTESP258XL4SJ5Y,1465399894489,11,Lily's husband,lhl,Eric's doctor told him to stop drinking alcohol.,0,1,0,test,test_true,1,11709,english,fun thanks,10,0
+AYD2LKV6C5F2S:3180JW2OT5KC0NVTTESP258XL4SJ5Y,1465399901975,12,Lily's husband,lhl,It is likely that Eric drank both whisky and vodka.,0,1,0,critical,exh1,0.43,7485,english,fun thanks,10,0
