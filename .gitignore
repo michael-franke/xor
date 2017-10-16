@@ -53,6 +53,9 @@ auto
 # python stuff
 *.pyc
 
+# python virtual env
+/meta/
+
 # psiturk stuff
 participants.db
 .psiturk_history
