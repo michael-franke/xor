@@ -56,6 +56,9 @@ auto
 # python virtual env
 /meta/
 
+# js dependencies
+/node_modules/
+
 # psiturk stuff
 participants.db
 .psiturk_history

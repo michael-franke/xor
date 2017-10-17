@@ -1,4 +1,4 @@
-var items = [
+var vignettes = [
    {"name"          : "Mrs Gibbs' worry",
    "author"         : "micha",
    "thoughts"       : "",
@@ -18,12 +18,12 @@ var items = [
    "question_xorI"  : "Cindy wants to convey that Mr Gibbs did not have both a steak and a beer.",
    "question_exh1"  : "From what Cindy said we may conclude that Mr Gibbs did not have a beer as well.",
    "question_exh2"  : "From what Cindy said we may conclude that Mr Gibbs did not have a steak as well.",
-   "test_true"      : "Mrs Gibbs did not accompany her husband when Cindy served him.",
-   "test_true"		: "Cidny was at the restaurant yesterday.",
-   "test_false"     : "Mrs Gibbs is worried about Cindy's health.",
-   "test_false"     : "Cidny works as shop assistant.",
-   "test_uncertain" : "Cindy is secretly in love with Mrs Gibbs' husband.",
-   "test_uncertain" : "Mr Gibbs often eats at the local restaurant."
+   "test_true1"      : "Mrs Gibbs did not accompany her husband when Cindy served him.",
+   "test_true2"		: "Cidny was at the restaurant yesterday.",
+   "test_false1"     : "Mrs Gibbs is worried about Cindy's health.",
+   "test_false2"     : "Cidny works as shop assistant.",
+   "test_uncertain1" : "Cindy is secretly in love with Mrs Gibbs' husband.",
+   "test_uncertain2" : "Mr Gibbs often eats at the local restaurant."
   },
 
   {"name"           : "Mrs Sanders' son",
@@ -45,12 +45,12 @@ var items = [
    "question_xorI"  : "Mrs Sanders wanted to convey that Ted did not have both pizza and pasta.",
    "question_exh1"  : "From what Mrs Sanders said we may conclude that Ted did not have pasta as well.",
    "question_exh2"  : "From what Mrs Sanders said we may conclude that Ted did not have pizza as well.",
-   "test_true"      : "The teacher is trying to find out who queued up twice.",
-   "test_true"      : "Ted was at the summer camp.",
-   "test_false"     : "Ted is Mrs Sanders' husband.",
-   "test_false"     : "Mrs Sanders is Ted's teacher.",
-   "test_uncertain" : "Mrs Sanders had pasta for lunch yesterday.",
-   "test_uncertain" : "Mrs Sanders and the teacher are friends from college."
+   "test_true1"      : "The teacher is trying to find out who queued up twice.",
+   "test_true2"      : "Ted was at the summer camp.",
+   "test_false1"     : "Ted is Mrs Sanders' husband.",
+   "test_false2"     : "Mrs Sanders is Ted's teacher.",
+   "test_uncertain1" : "Mrs Sanders had pasta for lunch yesterday.",
+   "test_uncertain2" : "Mrs Sanders and the teacher are friends from college."
   },
 
   {"name"           : "Brad's clothes",
@@ -72,12 +72,12 @@ var items = [
    "question_xorI"  : "Gina wants to convey that Brad did not buy both a sweater and a pair of jeans.",
    "question_exh1"  : "From what Gina said we may conclude that Brad did not buy pair of jeans as well.",
    "question_exh2"  : "From what Gina said we may conclude that Brad did not buy a sweater as well.",
-   "test_true"      : "Brad is not happy about the fact that his friends make jokes about his shabby clothes.",
-   "test_true"      : "Brad likes wearing shabby clothes.",
-   "test_false"     : "Gina and Mandy accompanied Brad on his shopping trip.",
-   "test_false"     : "Gina likes the way Brad dresses.",
-   "test_uncertain" : "Mandy feels attracted to Brad.",
-   "test_uncertain" : "It was Mandy who told Gina that Brad went shopping."
+   "test_true1"      : "Brad is not happy about the fact that his friends make jokes about his shabby clothes.",
+   "test_true2"      : "Brad likes wearing shabby clothes.",
+   "test_false1"     : "Gina and Mandy accompanied Brad on his shopping trip.",
+   "test_false2"     : "Gina likes the way Brad dresses.",
+   "test_uncertain1" : "Mandy feels attracted to Brad.",
+   "test_uncertain2" : "It was Mandy who told Gina that Brad went shopping."
   },
 
   {"name"           : "Carl's party",
@@ -99,12 +99,12 @@ var items = [
    "question_xorI"  : "John wanted to convey that Carl did not dance passionately with both Sue and Mary.",
    "question_exh1"  : "From what John said we may conclude that Carl did not dance passionately with Mary as well.",
    "question_exh2"  : "From what John said we may conclude that Carl did not dance passionately with Sue as well.",
-   "test_true"      : "John did not spend much time outside.",
-   "test_true"      : "Carl was married at least twice.",
-   "test_false"     : "John and Carl, the hosts, are a gay couple.",
-   "test_false"     : "John enjoys crowded gatherings.",
-   "test_uncertain" : "Carl's wife liked the music very much.",
-   "test_uncertain" : "John and Sue are a couple."
+   "test_true1"      : "John did not spend much time outside.",
+   "test_true2"      : "Carl was married at least twice.",
+   "test_false1"     : "John and Carl, the hosts, are a gay couple.",
+   "test_false2"     : "John enjoys crowded gatherings.",
+   "test_uncertain1" : "Carl's wife liked the music very much.",
+   "test_uncertain2" : "John and Sue are a couple."
   },  
 
   {"name"           : "Bill's order",
@@ -126,12 +126,12 @@ var items = [
    "question_xorI"  : "Jake wanted to convey that Bill did not order both a starter and a side dish.",
    "question_exh1"  : "From what Jake said we may conclude that Bill did not order a side dish as well.",
    "question_exh2"  : "From what Jake said we may conclude that Bill did not order a starter as well.",
-   "test_true"      : "Jake and Bill spent a lot of time together that day.",
-   "test_true"      : "Jake and Bill had dinner at the restaurant.",
-   "test_false"     : "Jake and Bill went to the restaurant before they went jogging.",
-   "test_false"     : "Jake and Bill played computer games in the afternoon.",
-   "test_uncertain" : "Jake ordered a steak.",
-   "test_uncertain" : "Bill is vegetarian."
+   "test_true1"      : "Jake and Bill spent a lot of time together that day.",
+   "test_true2"      : "Jake and Bill had dinner at the restaurant.",
+   "test_false1"     : "Jake and Bill went to the restaurant before they went jogging.",
+   "test_false2"     : "Jake and Bill played computer games in the afternoon.",
+   "test_uncertain1" : "Jake ordered a steak.",
+   "test_uncertain2" : "Bill is vegetarian."
   },
 
   {"name"           : "Tony's clubbing",
@@ -153,12 +153,12 @@ var items = [
    "question_xorI"  : "Rob wanted to convey that they do not play both Jazz and Metal tonight.",
    "question_exh1"  : "From what Rob said we may conclude that they do not play Metal as well.",
    "question_exh2"  : "From what Rob said we may conclude that they do not play Jazz as well.",
-   "test_true"      : "Techno is quite different from Jazz and from Metal.",
-   "test_true"      : "Tony feels like having a night out tonight.",
-   "test_false"     : "Tony has to work at club Macabre tonight.",
-   "test_false"     : "Rob works as a DJ at the club.",
-   "test_uncertain" : "Rob is a big fan of Techno music as well.",
-   "test_uncertain" : "Tony and Rob used to play hockey together."
+   "test_true1"      : "Techno is quite different from Jazz and from Metal.",
+   "test_true2"      : "Tony feels like having a night out tonight.",
+   "test_false1"     : "Tony has to work at club Macabre tonight.",
+   "test_false2"     : "Rob works as a DJ at the club.",
+   "test_uncertain1" : "Rob is a big fan of Techno music as well.",
+   "test_uncertain2" : "Tony and Rob used to play hockey together."
   },
 
   {"name"           : "Joshua's delay",
@@ -180,12 +180,12 @@ var items = [
    "question_xorI"  : "Cory wanted to convey that Joshua did not have to both eat lunch and do his homework.",
    "question_exh1"  : "From what Cory said we may conclude that Joshua did not have to do his homework as well.",
    "question_exh2"  : "From what Cory said we may conclude that Joshua did not have to eat lunch as well.",
-   "test_true"      : "Kevin and Cory expected Joshua to arrive earlier.",
-   "test_true"      : "Joshua's parents didn't let him go and play earlier.",
-   "test_false"     : "Kevin, Cory and Joshua are brothers.",
-   "test_false"     : "Joshua lives far away from Kevin and Cory and that is why he was late.",
-   "test_uncertain" : "Kevin, Cory and Joshua do not like hanging out with girls.",
-   "test_uncertain" : "Kevin, Cory and Joshua usually play hide and seek."
+   "test_true1"      : "Kevin and Cory expected Joshua to arrive earlier.",
+   "test_true2"      : "Joshua's parents didn't let him go and play earlier.",
+   "test_false1"     : "Kevin, Cory and Joshua are brothers.",
+   "test_false2"     : "Joshua lives far away from Kevin and Cory and that is why he was late.",
+   "test_uncertain1" : "Kevin, Cory and Joshua do not like hanging out with girls.",
+   "test_uncertain2" : "Kevin, Cory and Joshua usually play hide and seek."
   },
 
   {"name"           : "Jimmy's trip",
@@ -207,12 +207,12 @@ var items = [
    "question_xorI"  : "Jimmy's brother wanted to convey that Jimmy did not visit both the Statue of Liberty and the Empire State Building.",
    "question_exh1"  : "From what the brother said we may conclude that Jimmy did not visit the Empire State Building as well.",
    "question_exh2"  : "From what the brother said we may conclude that Jimmy did not visit the Statue of Liberty as well.",
-   "test_true"      : "Jimmy had to rush to be back home and did not have much time to spend in the city.",
-   "test_true"      : "Jimmy's brother knew that he skipped school.",
-   "test_false"     : "Jimmy has a younger sister.",
-   "test_false"     : "Jimmy went on a school trip to New York City.",
-   "test_uncertain" : "Jimmy had told his friends about his plans to visit New York City before.",
-   "test_uncertain" : "The neighbours sometimes look after Jimmy's brother."
+   "test_true1"      : "Jimmy had to rush to be back home and did not have much time to spend in the city.",
+   "test_true2"      : "Jimmy's brother knew that he skipped school.",
+   "test_false1"     : "Jimmy has a younger sister.",
+   "test_false2"     : "Jimmy went on a school trip to New York City.",
+   "test_uncertain1" : "Jimmy had told his friends about his plans to visit New York City before.",
+   "test_uncertain2" : "The neighbours sometimes look after Jimmy's brother."
   },
 
   {"name"           : "Danny's racket",
@@ -234,12 +234,12 @@ var items = [
    "question_xorI"  : "Alex's girlfriend wanted to convey that Alex did not buy both a racket and a pair of shoes.",
    "question_exh1"  : "From what Alex's girlfriend said we may conclude that Alex did not buy a pair of shoes as well.",
    "question_exh2"  : "From what Alex's girlfriend said we may conclude that Alex did not buy a racket as well.",
-   "test_true"      : "Alex needs to buy some equipment before he can play squash with Danny.",
-   "test_true"      : "Alex went to the sports store.",
-   "test_false"     : "Danny and Alex went to the sports store together.",
-   "test_false"     : "Jill is Danny's girlfriend.",
-   "test_uncertain" : "Danny and Alex have known each other since high school.",
-   "test_uncertain" : "Jill also plays squash.",
+   "test_true1"      : "Alex needs to buy some equipment before he can play squash with Danny.",
+   "test_true2"      : "Alex went to the sports store.",
+   "test_false1"     : "Danny and Alex went to the sports store together.",
+   "test_false2"     : "Jill is Danny's girlfriend.",
+   "test_uncertain1" : "Danny and Alex have known each other since high school.",
+   "test_uncertain2" : "Jill also plays squash.",
   },
 
   {"name"           : "Pete's accident",
@@ -261,12 +261,12 @@ var items = [
    "question_xorI"  : "Pete's teacher wanted to convey that Pete did not break both his arm and his leg.",
    "question_exh1"  : "From what Pete's teacher said we may conclude that Pete did not break his leg as well.",
    "question_exh2"  : "From what Pete's teacher said we may conclude that Pete did not break his arm as well.",
-   "test_true"      : "Pete's mother was not there when he fell off the slide.",
-   "test_true"      : "Pete's teacher was worried about him.",
-   "test_false"     : "Pete was injured while playing in the garden.",
-   "test_false"     : "Pete was taken back home after he fell off the slide.",
-   "test_uncertain" : "Pete's teacher saw him fall off the slide.",
-   "test_uncertain" : "The slide was old and shaky."
+   "test_true1"      : "Pete's mother was not there when he fell off the slide.",
+   "test_true2"      : "Pete's teacher was worried about him.",
+   "test_false1"     : "Pete was injured while playing in the garden.",
+   "test_false2"     : "Pete was taken back home after he fell off the slide.",
+   "test_uncertain1" : "Pete's teacher saw him fall off the slide.",
+   "test_uncertain2" : "The slide was old and shaky."
   },
 
   {"name"           : "Gigi's exams",
@@ -288,12 +288,12 @@ var items = [
    "question_xorI"  : "Carrie wanted to convey that Gigi did not pass both her Physics exam and her Chemistry exam.",
    "question_exh1"  : "From what Carrie said we may conclude that Gigi did not pass her Chemistry exam as well.",
    "question_exh2"  : "From what Carrie said we may conclude that Gigi did not pass her Physics exam as well.",
-   "test_true"      : "Gigi studied hard to pass her exams.",
-   "test_true"      : "Gigi and Carrie are students.",
-   "test_false"     : "Gigi hired a private tutor to help her with her Biology and Chemistry exams.",
-   "test_false"     : "Gigi got help from Carrie with the exams.",
-   "test_uncertain" : "Gigi aspires to a career in science.",
-   "test_uncertain" : "Gigi passed both exams."
+   "test_true1"      : "Gigi studied hard to pass her exams.",
+   "test_true2"      : "Gigi and Carrie are students.",
+   "test_false1"     : "Gigi hired a private tutor to help her with her Biology and Chemistry exams.",
+   "test_false2"     : "Gigi got help from Carrie with the exams.",
+   "test_uncertain1" : "Gigi aspires to a career in science.",
+   "test_uncertain2" : "Gigi passed both exams."
   },
 
   {"name"           : "Leo's wife",
@@ -315,12 +315,12 @@ var items = [
    "question_xorI"  : "Hans wanted to convey that the player in question didn't make a hole-in-one on both the first and the second hole.",
    "question_exh1"  : "From what Hans said we may conclude that the player in question didn't make a hole-in-one on the second hole as well.",
    "question_exh2"  : "From what Hans said we may conclude that the player in question didn't make a hole-in-one on the first hole as well",
-   "test_true"      : "Leo is wealthy.",
-   "test_true"      : "Hans knows what happened in the tournament.",
-   "test_false"     : "Leo is sponsoring a tennis tournament.",
-   "test_false"     : "Leo was at the tournament from the very beginning.",
-   "test_uncertain" : "Leo is an avid golf player.",
-   "test_uncertain" : "Hans took part in the tournament."
+   "test_true1"      : "Leo is wealthy.",
+   "test_true2"      : "Hans knows what happened in the tournament.",
+   "test_false1"     : "Leo is sponsoring a tennis tournament.",
+   "test_false2"     : "Leo was at the tournament from the very beginning.",
+   "test_uncertain1" : "Leo is an avid golf player.",
+   "test_uncertain2" : "Hans took part in the tournament."
   },
 
   {"name"           : "Chloe's holiday",
@@ -342,12 +342,12 @@ var items = [
    "question_xorI"  : "Chloe wanted to convey that Susan and Amelia did not both bring some extra suntan lotion.",
    "question_exh1"  : "From what Chloe said we may conclude that Amelia did not bring some extra suntan lotion as well.",
    "question_exh2"  : "From what Chloe said we may conclude that Susan did not bring some extra suntan lotion as well.",
-   "test_true"      : "Chloe recently got back from holidays.",
-   "test_true"      : "Amelia and Susan know each other.",
-   "test_false"     : "Chloe went on holiday with a big group of her friends.",
-   "test_false"     : "Chloe's father went on holiday with her.",
-   "test_uncertain" : "Chloe forgot about bringing some beach towels, too.",
-   "test_uncertain" : "Amelia spent the whole holiday indoors."
+   "test_true1"      : "Chloe recently got back from holidays.",
+   "test_true2"      : "Amelia and Susan know each other.",
+   "test_false1"     : "Chloe went on holiday with a big group of her friends.",
+   "test_false2"     : "Chloe's father went on holiday with her.",
+   "test_uncertain1" : "Chloe forgot about bringing some beach towels, too.",
+   "test_uncertain2" : "Amelia spent the whole holiday indoors."
   },
 
   {"name"           : "Lily's husband",
@@ -369,12 +369,12 @@ var items = [
    "question_xorI"  : "Bill wanted to convey that Eric did not drink both whisky and vodka.",
    "question_exh1"  : "From what Bill said we may conclude that Eric did not drink vodka as well.",
    "question_exh2"  : "From what Bill said we may conclude that Eric did not drink whisky as well.",
-   "test_true"      : "Eric's doctor told him to stop drinking alcohol.",
-   "test_true"      : "Bill drinks alcohol.",
-   "test_false"     : "Eric and Lily went to a bar together last night.",
-   "test_false"     : "Bill phoned Lily to tell him whether Eric had alcohol last night.",
-   "test_uncertain" : "Eric has a problem with his liver for which he has to stop drinking alcohol.",
-   "test_uncertain" : "Eric got back home rather late."
+   "test_true1"      : "Eric's doctor told him to stop drinking alcohol.",
+   "test_true2"      : "Bill drinks alcohol.",
+   "test_false1"     : "Eric and Lily went to a bar together last night.",
+   "test_false2"     : "Bill phoned Lily to tell him whether Eric had alcohol last night.",
+   "test_uncertain1" : "Eric has a problem with his liver for which he has to stop drinking alcohol.",
+   "test_uncertain2" : "Eric got back home rather late."
   },
 
   {"name"           : "Gerald's graduation",
@@ -396,12 +396,12 @@ var items = [
    "question_xorI"  : "Nico wanted to convey that Gerald's mother and his father did not both attend the ceremony.",
    "question_exh1"  : "From what Nico said we may conclude that Gerald's father did not attend the ceremony as well.",
    "question_exh2"  : "From what Nico said we may conclude that Gerald's mother did not attend the ceremony as well.",
-   "test_true"      : "Gerald is friends with both Nico and Rick.",
-   "test_true"      : "Gerald took longer than expected to graduate.",
-   "test_false"     : "Nico finally graduated after studying for a long time.",
-   "test_false"     : "Gerald still hasn't finish his studies.",
-   "test_uncertain" : "Gerald took almost ten years to graduate.",
-   "test_uncertain" : "Rick and Gerald both studied philosophy."
+   "test_true1"      : "Gerald is friends with both Nico and Rick.",
+   "test_true2"      : "Gerald took longer than expected to graduate.",
+   "test_false1"     : "Nico finally graduated after studying for a long time.",
+   "test_false2"     : "Gerald still hasn't finish his studies.",
+   "test_uncertain1" : "Gerald took almost ten years to graduate.",
+   "test_uncertain2" : "Rick and Gerald both studied philosophy."
   },
 
   {"name"           : "Harold's pet",
@@ -423,11 +423,11 @@ var items = [
    "question_xorI"  : "Richard wanted to convey that Harold did not buy both a cat and a dog.",
    "question_exh1"  : "From what Richard said we may conclude that Harold did not buy a dog as well.",
    "question_exh2"  : "From what Richard said we may conclude that Harold did not buy a cat as well.",
-   "test_true"      : "Harold's girlfriend didn't want a pet in her house before.",
-   "test_true"      : "Harold got a pet.",
-   "test_false"     : "Harold is single.",
-   "test_false"     : "Harold hates animals.",
-   "test_uncertain" : "Harold's girlfriend gave in because Harold kept nagging her about wanting a pet.",
-   "test_uncertain" : "Richard and Tom haven't met Harold's girlfriend in person."
+   "test_true1"      : "Harold's girlfriend didn't want a pet in her house before.",
+   "test_true2"      : "Harold got a pet.",
+   "test_false1"     : "Harold is single.",
+   "test_false2"     : "Harold hates animals.",
+   "test_uncertain1" : "Harold's girlfriend gave in because Harold kept nagging her about wanting a pet.",
+   "test_uncertain2" : "Richard and Tom haven't met Harold's girlfriend in person."
   }
 ];
