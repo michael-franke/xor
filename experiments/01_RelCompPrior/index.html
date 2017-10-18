@@ -6,6 +6,9 @@
 		<!-- css -->
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet"> 
+
 		<!-- js dependencies -->
 		<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="../../node_modules/mustache/mustache.min.js"></script>
@@ -15,6 +18,7 @@
 		<script src="js/main.js"></script>
 		<script src="js/exp.js"></script>
 		<script src="js/views.js"></script>
+
 	</head>
 	<body>
 		<noscript>This task requires JavaScript. Please enable your JavaScript.</noscript>
@@ -30,13 +34,18 @@
 		</script>
 		<script id="trial-templ" type="x-tmpl-mustache">
 			<div class="trial">
-				<h1>This is the trial view!</h1>
-				<h2 id="vignette-name"></h2>
+				<h1 id="vignette-name"></h1>
 				<div>
 					<p id="vignette-text"></p>
+					<p id="vignette-utterance"></p>
 					<p id="vignette-question"></p>
-					<input type="range" min=0, max=1 step="0.01" id="slider" />
-					<button type="submit" id="continue">continue</button>
+					<p class="general-question">How likely do you think it is that the statement is true, given the information in the background story?</p> 
+					<p class="slider-container">
+						<label class="false">certainly false</label>
+						<input type="range" min=0, max=1 step="0.01" value="0.5" id="response" />
+						<label class="true">certainly true</label>
+						<p class="move-slider hidden">Please move the slider first.</p>
+					</p>
 				</div>
 			</div>
 			<button type="submit" class="next-btn">next</button>

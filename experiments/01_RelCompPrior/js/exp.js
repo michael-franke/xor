@@ -112,34 +112,36 @@ var initExp = function() {
 				'name': selectedVignettes[i]['name'],
 				'type': selectedVignettes[i]['type'],
 				'background': selectedVignettes[i]['background'],
-				'question': selectedVignettes[i]['question_rel'],
-				'control': selectedVignettes[i]['control_rel']
+				'questions': [selectedVignettes[i]['control_rel'],
+					selectedVignettes[i]['question_rel']]
 			});
 			blocks['comp'].push({
 				'block': 'comp',
 				'name': selectedVignettes[i]['name'],
 				'type': selectedVignettes[i]['type'],
 				'background': selectedVignettes[i]['background'],
-				'question': selectedVignettes[i]['question_comp'],
-				'control': selectedVignettes[i]['control_comp']
+				'questions': [selectedVignettes[i]['control_comp'],
+					selectedVignettes[i]['question_comp']]
 			});
 			blocks['pri'].push({
 				'block': 'pri',
 				'name': selectedVignettes[i]['name'],
 				'type': selectedVignettes[i]['type'],
 				'background': selectedVignettes[i]['background'],
-				'question1': selectedVignettes[i]['question_pri1'],
-				'question2': selectedVignettes[i]['question_pri2'],
-				'control': selectedVignettes[i]['control_pri']
+				'utterances': [selectedVignettes[i]['utterance_disj1'],
+					selectedVignettes[i]['utterance_disj2']],
+				'questions': [selectedVignettes[i]['control_pri'],
+					selectedVignettes[i]['question_pri1'], 
+					selectedVignettes[i]['question_pri2']]
 			});
 			blocks['xor'].push({
 				'block': 'xor',
 				'name': selectedVignettes[i]['name'],
 				'type': selectedVignettes[i]['type'],
 				'background': selectedVignettes[i]['background'],
-				'question': selectedVignettes[i]['question_xor'],
-				'utterance': selectedVignettes[i]['utterance_or'],
-				'control': selectedVignettes[i]['control_xor']
+				'utterances': [selectedVignettes[i]['utterance_or']],
+				'questions': [selectedVignettes[i]['control_xor'],
+					selectedVignettes[i]['question_xor']]
 			});
 		}
 
@@ -154,7 +156,12 @@ var initExp = function() {
 		return final;
 	};
 
+	// exp instance
 	exp.data = createExp();
+
+	exp.addResponse = function(blockIndex, vignetteIndex, responses) {
+		exp.data[blockIndex][vignetteIndex].response = responses;
+	};
 
 	return exp;
 };
