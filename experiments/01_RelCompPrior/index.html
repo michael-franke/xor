@@ -25,7 +25,33 @@
 		<script id="intro-templ" type="x-tmpl-mustache">
 			<div class="intro">
 				<h1>This is the intro view!</h1>
+				<button type="submit" class="next-btn">next</button>
 			</div>
+		</script>
+		<script id="trial-templ" type="x-tmpl-mustache">
+			<div class="trial">
+				<h1>This is the trial view!</h1>
+				<h2 id="vignette-name"></h2>
+				<div>
+					<p id="vignette-text"></p>
+					<p id="vignette-question"></p>
+					<input type="range" min=0, max=1 step="0.01" id="slider" />
+					<button type="submit" id="continue">continue</button>
+				</div>
+			</div>
+			<button type="submit" class="next-btn">next</button>
+		</script>
+		<script id="pause-templ" type="x-tmpl-mustache">
+			<div class="pause">
+				<h1>This is the pause view!</h1>
+			</div>
+			<button type="submit" class="next-btn">next</button>
+		</script>
+		<script id="thanks-templ" type="x-tmpl-mustache">
+			<div class="thanks">
+				<h1>This is the thanks view!</h1>
+			</div>
+			<button type="submit" class="next-btn">next</button>
 		</script>
 	</body>
 </html>

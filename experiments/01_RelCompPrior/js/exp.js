@@ -1,3 +1,7 @@
+// initialises the experiment
+// randomly picks 8 vignettes of different type and 4 control questions
+// random block order (xor is always last)
+// shuffles the vignettes in each block
 var initExp = function() {
 	var exp = {};
 
@@ -20,7 +24,7 @@ var initExp = function() {
 	};
 
 	// selects 8 vignettes each one of different type
-	// returns a list of objects, each object is 1 vignette
+	// returns a list of objects, each object is a vignette
 	var selectVignettes = function() {
 		var selected = [];
 		// keeps track of what story types have been chosen
@@ -30,6 +34,7 @@ var initExp = function() {
 		vignettes = shuffleComb(vignettes);
 		
 		// makes sure vignettes of the same type don't end up in selected
+		// randomly selects 4 control questions for each chosen vignette
 		for (var i = 1; i < vignettes.length; i++) {
 			if (types.indexOf(vignettes[i]['type']) === -1) {
 				// put all control questions in a list				
@@ -73,6 +78,7 @@ var initExp = function() {
 	};
 
 	// generates order of blocks, xor is always last
+	// return a list of 4 strings, each is the name of a block
 	var generateBlocksOrder = function() {
 		blocks = ['rel', 'comp', 'pri'];
 
@@ -82,11 +88,14 @@ var initExp = function() {
 		return blocksOrder;
 	};
 
-
-	exp.data = function() {
+	// generates data for the experiment
+	// selects vignettes, shuffles the blocks and the order of the vignettes
+	// returns a list of 4 lists (1 for each block). Each list contains 8 vignettes
+	var createExp = function() {
 		var selectedVignettes = selectVignettes();
 		var blocksOrder = generateBlocksOrder();
 
+		// an object of four blocks
 		var blocks = {
 			rel: [],
 			comp: [],
@@ -101,6 +110,7 @@ var initExp = function() {
 			blocks['rel'].push({
 				'block': 'rel',
 				'name': selectedVignettes[i]['name'],
+				'type': selectedVignettes[i]['type'],
 				'background': selectedVignettes[i]['background'],
 				'question': selectedVignettes[i]['question_rel'],
 				'control': selectedVignettes[i]['control_rel']
@@ -108,6 +118,7 @@ var initExp = function() {
 			blocks['comp'].push({
 				'block': 'comp',
 				'name': selectedVignettes[i]['name'],
+				'type': selectedVignettes[i]['type'],
 				'background': selectedVignettes[i]['background'],
 				'question': selectedVignettes[i]['question_comp'],
 				'control': selectedVignettes[i]['control_comp']
@@ -115,6 +126,7 @@ var initExp = function() {
 			blocks['pri'].push({
 				'block': 'pri',
 				'name': selectedVignettes[i]['name'],
+				'type': selectedVignettes[i]['type'],
 				'background': selectedVignettes[i]['background'],
 				'question1': selectedVignettes[i]['question_pri1'],
 				'question2': selectedVignettes[i]['question_pri2'],
@@ -123,6 +135,7 @@ var initExp = function() {
 			blocks['xor'].push({
 				'block': 'xor',
 				'name': selectedVignettes[i]['name'],
+				'type': selectedVignettes[i]['type'],
 				'background': selectedVignettes[i]['background'],
 				'question': selectedVignettes[i]['question_xor'],
 				'utterance': selectedVignettes[i]['utterance_or'],
@@ -140,6 +153,8 @@ var initExp = function() {
 
 		return final;
 	};
+
+	exp.data = createExp();
 
 	return exp;
 };
