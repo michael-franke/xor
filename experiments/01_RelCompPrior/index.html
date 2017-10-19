@@ -14,7 +14,8 @@
 		<script src="../../node_modules/mustache/mustache.min.js"></script>
 		
 		<!-- js -->
-		<script src="js/items.js"></script>
+		<script src="js/vignettes.js"></script>
+		<script src="js/sample.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/exp.js"></script>
 		<script src="js/views.js"></script>
@@ -32,19 +33,43 @@
 				<button type="submit" class="next-btn">next</button>
 			</div>
 		</script>
+		<script id="instructions-templ" type="x-tmp-mustache">
+			<div class="instructions">
+				<h1>Instructions</h1>
+				<p> In the following, you will be presented with <b>8 short background stories</b>. Please read them very carefully. We ask you to <b>rate 2 or 3 statements for each background story</b>. Please indicate, using an adjustable slider bar, <b>how likely you think a statement is true based on the background story</b>. The statements are preceded by <span class="questionmark in-text">?</span></p>
+				<h3>Example</h3>
+				<h2>Joe's shopping</h2>
+				<p id="vignette-text">Joe went shopping yesterday, while his wife Sue was at home with the kids. He bought flowers for his wife on the way home.</p>
+				<div class="question-cont">
+					<span class="questionmark">?</span>
+					<p id="vignette-question"></p>
+				</div>
+				<p class="general-question">How likely do you think it is that the statement is true, given the information in the background story?</p>
+				<p id="vignette-explanation"></p>
+				<p class="slider-container">
+					<label class="false">certainly false</label>
+					<input type="range" min=0, max=1 step="0.01" id="response" />
+					<label class="true">certainly true</label>
+				</p>
+			</div>
+			<button type="submit" class="next-btn">next</button>
+		</script>
 		<script id="trial-templ" type="x-tmpl-mustache">
 			<div class="trial">
 				<h1 id="vignette-name"></h1>
 				<div>
 					<p id="vignette-text"></p>
 					<p id="vignette-utterance"></p>
-					<p id="vignette-question"></p>
+					<div class="question-cont">
+						<span class="questionmark">?</span>
+						<p id="vignette-question"></p>
+					</div>
 					<p class="general-question">How likely do you think it is that the statement is true, given the information in the background story?</p> 
 					<p class="slider-container">
 						<label class="false">certainly false</label>
 						<input type="range" min=0, max=1 step="0.01" value="0.5" id="response" />
 						<label class="true">certainly true</label>
-						<p class="move-slider hidden">Please move the slider first.</p>
+						<p class="move-slider hidden">Please interact with the slider before proceeding.</p>
 					</p>
 				</div>
 			</div>
