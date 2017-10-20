@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 
@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 		<!-- fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet" /> 
 
 		<!-- js dependencies -->
 		<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
@@ -60,7 +60,7 @@
 				<p id="vignette-explanation" class="explanation"></p>
 				<p class="slider-container">
 					<label class="false">certainly false</label>
-					<input type="range" min=0, max=1 step="0.01" id="response" />
+					<input type="range" min="0" max="1" step="0.01" id="response" />
 					<label class="true">certainly true</label>
 				</p>
 			</div>
@@ -79,9 +79,9 @@
 					<p class="general-question">How likely do you think it is that the statement is true, given the information in the background story?</p> 
 					<p class="slider-container">
 						<label class="false">certainly false</label>
-						<input type="range" min=0, max=1 step="0.01" value="0.5" id="response" />
+						<input type="range" min="0" max="1" step="0.01" value="0.5" id="response" />
 						<label class="true">certainly true</label>
-						<p class="move-slider hidden">Please interact with the slider before proceeding.</p>
+						<p class="move-slider hidden">Before you proceed, please first rate the statement.</p>
 					</p>
 				</div>
 			</div>
@@ -89,7 +89,8 @@
 		</script>
 		<script id="pause-templ" type="x-tmpl-mustache">
 			<div class="pause">
-				<h1>This is the pause view!</h1>
+				<h1>This block is finished!</h1>
+				<p>To move to the next block, press 'next' button</p>
 			</div>
 			<button type="submit" class="next-btn">next</button>
 		</script>
@@ -97,7 +98,7 @@
 			<h1>Questionnaire</h1>
 			<form class="questionnaire">
 				<p>
-					<label for="language" name="language">What is your native language? <br /><span>(i.e. the language(s) spoken at home when you were a child)</</span></label>
+					<label for="language">What is your native language?<span>(i.e. the language(s) spoken at home when you were a child)</span></label>
 					<input type="text" id="language" />
 				</p>
 				<p>
@@ -108,7 +109,7 @@
 						<option value="8">8</option>
 						<option value="7">7</option>
 						<option value="6">6</option>
-						<option value="5" SELECTED>5 - Moderately</option>
+						<option value="5" selected>5 - Moderately</option>
 						<option value="4">4</option>
 						<option value="3">3</option>
 						<option value="2">2</option>
@@ -124,7 +125,7 @@
 						<option value="8">8</option>
 						<option value="7">7</option>
 						<option value="6">6</option>
-						<option value="5" SELECTED>5 - Moderately</option>
+						<option value="5" selected>5 - Moderately</option>
 						<option value="4">4</option>
 						<option value="3">3</option>
 						<option value="2">2</option>
@@ -141,10 +142,14 @@
 		</script>
 		<script id="thanks-templ" type="x-tmpl-mustache">
 			<div class="thanks">
-				<h1>Thank you for taking part in this study!</h1>
-				<p>Before you close the window, please press 'send data' button below</p>
+				<h1 class="hidden">Thank you for taking part in this study!</h1>
+				<p>Please press the 'submit results' button below.</p>
+				<form id="form">
+					<input type="hidden" name="assignmentId" value="{{ assignmentId }}" />
+					<input type="hidden" name="results" value="{{ results }}"/>
+					<button type="submit" id="submit-results">submit results</button>
+				</form>
 			</div>
-			<button type="submit" class="next-btn">send results</button>
 		</script>
 	</body>
 </html>

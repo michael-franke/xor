@@ -15,6 +15,7 @@ var initInstructionsView = function() {
 	var view = {};
 	view.name = 'instructions';
 	view.template = $('#instructions-templ').html();
+	$(window).scrollTop(0);
 	$('#main').html(Mustache.render(view.template));
 
 	// counters
@@ -163,7 +164,7 @@ initPauseView = function() {
 	return view;
 };
 
-initPostQuestionnaire = function() {
+initQuestionnaireView = function(sendData) {
 	var view = {};
 	view.name = 'postQuest';
 	view.template = $('#post-quest-templ').html();
@@ -171,6 +172,12 @@ initPostQuestionnaire = function() {
 	$('#main').html(Mustache.render(view.template));
 
 	$('.next-btn').on('click', function(){
+		sendData({
+			language: $('#language').val(),
+			difficulty: $('#difficulty').val(),
+			engagement: $('#engagement').val(),
+			comments: $('#comments').val()
+		});
 		rcp.getNextView();
 	});
 
@@ -179,12 +186,53 @@ initPostQuestionnaire = function() {
 
 initThanksView = function() {
 	var view = {};
-	view.name = 'trial';
+	view.name = 'thanks';
 	view.template = $('#thanks-templ').html();
 
-	$('#main').html(Mustache.render(view.template));
-	$('.next-btn').on('click', function(){
-		rcp.getNextView();
+	// func that returns the assignmentId that must be sent with the results
+	var getAssignmentId = function() {
+		var url = window.location.search.substring(1);
+		var qArray = url.split('&');
+		for (var i = 0; i < qArray.length; i++) {
+			var pArr = qArray[i].split('=');
+			if (pArr[0] === "assignmentId") {
+				return pArr[1];
+			}
+		}
+	};
+
+	view.rendered = Mustache.render(view.template, {
+		assignmentId: getAssignmentId(),
+		results: rcp.exp.getJSON()
+	});
+
+	$('#main').html(view.rendered);
+
+	$('#form').on('submit', function(e) {
+		var url = "";
+		console.log(rcp.exp.getJSON());
+
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: $('#form').serialize(),
+			success: function(data) {
+				console.log('Submission successful!');
+				console.log(data);
+			},
+			error: function(data) {
+				console.log('An error occured');
+				console.log(data);
+			}
+		});
+
+		e.preventDefault();
+	});
+
+	$('#submit-results').on('click', function(e) {
+		$('#submit-results').addClass('hidden');
+		$('h1').removeClass('hidden');
+		$('p').text(rcp.exp.getJSON());
 	});
 
 	return view;

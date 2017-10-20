@@ -163,5 +163,18 @@ var initExp = function() {
 		exp.data[blockIndex][vignetteIndex].response = responses;
 	};
 
+	// function that collects the subject's info (language, difficulty, comments, etc)
+	exp.addSubjData = function(info) {
+		exp.subjData = info;
+	};
+
+	// functions that converts the data into JSON
+	exp.getJSON = function() {
+		return JSON.stringify({
+			"results": exp.data,
+			"subjectInfo": exp.subjData
+		});
+	};
+
 	return exp;
 };

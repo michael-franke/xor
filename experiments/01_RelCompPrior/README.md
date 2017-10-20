@@ -22,7 +22,7 @@ Each participant sees 8 vignettes and 2 or 3 statements connected to the stories
 
 The experiment is divided into 4 blocks for each factor. Each block consists of the same 8 vignettes in random order, however, the statements that need to be rated are different.
 
-You can find more information about the experiment design in info/exp_design.md
+You can find more information about the experiment design in `info/exp_design.md`
 
 
 ## Experiment initialisation

@@ -21,7 +21,7 @@ rcp.getNextView = function() {
 		this.view = initTrialView(this.exp.data[this.currentBlock][this.currentVignette], this.currentBlock, this.currentVignette);
 		this.currentVignette++;
 	} else if ((this.view.name === 'trial') && (this.currentBlock === 3) && (this.currentVignette === 8)) {
-		this.view = initPostQuestionnaire();
+		this.view = initQuestionnaireView(rcp.exp.addSubjData);
 	} else if ((this.view.name === 'trial') && (this.currentVignette < 8)) {
 		this.view = initTrialView(this.exp.data[this.currentBlock][this.currentVignette], this.currentBlock, this.currentVignette);
 		this.currentVignette++;
@@ -40,7 +40,7 @@ rcp.getNextView = function() {
 // experiment initialisation
 rcp.init = function() {
 	this.exp = initExp();
-	this.currentBlock = 0; // up to 3
-	this.currentVignette = 0; // up to 8
-	this.view = initPostQuestionnaire();
+	this.currentBlock = 3; // up to 3
+	this.currentVignette = 7; // up to 8
+	this.view = initIntroView();
 };
