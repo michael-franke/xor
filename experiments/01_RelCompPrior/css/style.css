@@ -25,7 +25,8 @@ h2 {
 }
 
 h3 {
-	font-weight: 600;
+	font-family: "Playfair Display", serif;
+	text-align: center;
 	color: #333;
 }
 
@@ -51,7 +52,6 @@ button:focus {
 p {
 	display: block;
 	font-size: 18px;
-	margin: 0 auto;
 	max-width: 700px; 
 }
 
@@ -59,7 +59,12 @@ b {
 	font-weight: 600;
 }
 
-#vignette-text {
+.logo {
+	display: block;
+	margin: 15px auto 50px auto;
+}
+
+.text {
 	background-color: #ededed;
 	border-radius: 10px;
 	color: #333;
@@ -68,21 +73,19 @@ b {
 	padding: 30px 45px;
 }
 
-#vignette-utterance {
+.utterance {
 	font-weight: 600;
 	margin-bottom: 40px;
 }
 
-#vignette-question {
+.question {
 	display: inline-block;
 	font-weight: 600;
 	max-width: 550px;
 }
 
-#vignette-explanation {
-	border-radius: 10px;
-	border: 2px solid #F4044D;
-	padding: 20px;
+.explanation {
+	font-style: italic;
 	margin: 0 0 40px 0;
 }
 
@@ -220,4 +223,27 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 input[type="range"]:focus::-moz-range-thumb {
 	background: #F4044D;
+}
+
+/* questionnaire */
+.questionnaire {
+	margin: 40px 0;
+}
+
+.questionnaire p input,
+.questionnaire p select,
+textarea {
+	display: block;
+}
+
+.questionnaire label {
+	font-weight: normal;
+}
+
+.questionnaire textarea {
+	border: 1px solid #666;
+	border-radius: 10px;
+	font-size: 16px;
+	padding: 10px;
+	width: 500px;
 }

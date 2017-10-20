@@ -29,23 +29,35 @@
 		</main>
 		<script id="intro-templ" type="x-tmpl-mustache">
 			<div class="intro">
-				<h1>This is the intro view!</h1>
-				<button type="submit" class="next-btn">next</button>
+				<h1>ExPrag Experiments</h1>
+				<img class="logo" src="images/uni-tuebingen-logo.png" alt="Tuebingen University Logo" height="200" width="200" />
+				<p>Thank you for your participation in our study! Your anonymous data makes an important contribution to our understanding of human learning and memory.</p>
+				<p><b>Legal information:<br /></b>By answering the following questions, you are participating in a study being performed by scientists from the Eberhard Karls University of Tübingen.<br /><br />You must be at least 18 years old to participate.<br /><br />Your participation in this research is voluntary. You may decline to answer any or all of the following questions. You may decline further participation, at any time, without adverse consequences.<br/><br />Your anonymity is assured; the researchers who have requested your participation will not receive any personal information about you.</p>
+				<button type="submit" class="next-btn">to the experiment</button>
+			</div>
+		</script>
+		<script id="begin-exp-templ" type="x-type-mustache">
+			<div class="begin-exp">
+				<h1>Begin experimet</h1>
+				<p>The exact rating is a matter of taste and you might want to give a higher or lower rating. Just follow your intuition. Good luck!</p>
+				<button type="submit" class="next-btn">begin experiment</button>
 			</div>
 		</script>
 		<script id="instructions-templ" type="x-tmp-mustache">
 			<div class="instructions">
 				<h1>Instructions</h1>
-				<p> In the following, you will be presented with <b>8 short background stories</b>. Please read them very carefully. We ask you to <b>rate 2 or 3 statements for each background story</b>. Please indicate, using an adjustable slider bar, <b>how likely you think a statement is true based on the background story</b>. The statements are preceded by <span class="questionmark in-text">?</span></p>
+				<p> In the following, you will be presented with <b>8 short background stories</b>. Please read them very carefully. We ask you to <b>rate 2 or 3 statements for each background story</b>. Please indicate, using an adjustable slider bar, <b>how likely you think a statement is true based on the background story</b>.</p>
+				<p>The experiment consists of 4 blocks with pauses between. Each block consists of the same 8 background stories, however the statements you have to rate are different.</p>
+				<p>The background story is in grey box.<br />The statements are preceded by <span class="questionmark in-text">?</span></p>
 				<h3>Example</h3>
 				<h2>Joe's shopping</h2>
-				<p id="vignette-text">Joe went shopping yesterday, while his wife Sue was at home with the kids. He bought flowers for his wife on the way home.</p>
+				<p id="vignette-text" class="text">Joe went shopping yesterday, while his wife Sue was at home with the kids. He bought flowers for his wife on the way home.</p>
 				<div class="question-cont">
 					<span class="questionmark">?</span>
-					<p id="vignette-question"></p>
+					<p id="vignette-question" class="question"></p>
 				</div>
 				<p class="general-question">How likely do you think it is that the statement is true, given the information in the background story?</p>
-				<p id="vignette-explanation"></p>
+				<p id="vignette-explanation" class="explanation"></p>
 				<p class="slider-container">
 					<label class="false">certainly false</label>
 					<input type="range" min=0, max=1 step="0.01" id="response" />
@@ -58,11 +70,11 @@
 			<div class="trial">
 				<h1 id="vignette-name"></h1>
 				<div>
-					<p id="vignette-text"></p>
-					<p id="vignette-utterance"></p>
+					<p id="vignette-text" class="text"></p>
+					<p id="vignette-utterance" class="utterance"></p>
 					<div class="question-cont">
 						<span class="questionmark">?</span>
-						<p id="vignette-question"></p>
+						<p id="vignette-question" class="question"></p>
 					</div>
 					<p class="general-question">How likely do you think it is that the statement is true, given the information in the background story?</p> 
 					<p class="slider-container">
@@ -81,11 +93,58 @@
 			</div>
 			<button type="submit" class="next-btn">next</button>
 		</script>
+		<script id="post-quest-templ" type="x-tmpl-mustache">
+			<h1>Questionnaire</h1>
+			<form class="questionnaire">
+				<p>
+					<label for="language" name="language">What is your native language? <br /><span>(i.e. the language(s) spoken at home when you were a child)</</span></label>
+					<input type="text" id="language" />
+				</p>
+				<p>
+					<label for="engagement" name="engagement">On a scale of 1-10 (where 10 is the most engaged), please rate how <b>ENGAGING</b> you found the task:</label>
+					<select id="engagement">
+						<option value="10">10 - Very engaging</option>
+						<option value="9">9</option>
+						<option value="8">8</option>
+						<option value="7">7</option>
+						<option value="6">6</option>
+						<option value="5" SELECTED>5 - Moderately</option>
+						<option value="4">4</option>
+						<option value="3">3</option>
+						<option value="2">2</option>
+						<option value="1">1</option>
+						<option value="0">0 - Not engaged</option>
+					</select>
+				</p>
+				<p>
+					<label for="difficulty" name="difficulty">On a scale of 1-10 (where 10 is the most engaged), please rate how <b>DIFFICULT</b> you found the task:</label>
+					<select id="difficulty">
+						<option value="10">10 - Very difficult</option>
+						<option value="9">9</option>
+						<option value="8">8</option>
+						<option value="7">7</option>
+						<option value="6">6</option>
+						<option value="5" SELECTED>5 - Moderately</option>
+						<option value="4">4</option>
+						<option value="3">3</option>
+						<option value="2">2</option>
+						<option value="1">1</option>
+						<option value="0">0 - Not difficult</option>
+					</select>
+				</p>
+				<p>
+				      <label id="comments" name="comments">Do you have any comments on the study you would like to share with us?</label>
+				      <textarea id="comment" rows="6" cols="40"></textarea>
+				</p>
+				<button type="submit" class="next-btn">next</button>
+			</form>
+		</script>
 		<script id="thanks-templ" type="x-tmpl-mustache">
 			<div class="thanks">
-				<h1>This is the thanks view!</h1>
+				<h1>Thank you for taking part in this study!</h1>
+				<p>Before you close the window, please press 'send data' button below</p>
 			</div>
-			<button type="submit" class="next-btn">next</button>
+			<button type="submit" class="next-btn">send results</button>
 		</script>
 	</body>
 </html>

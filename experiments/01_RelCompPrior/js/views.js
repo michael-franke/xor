@@ -48,6 +48,19 @@ var initInstructionsView = function() {
 	return view;
 };
 
+initBeginExpView = function() {
+	var view = {};
+	view.name = 'beginExp';
+	view.template = $('#begin-exp-templ').html();
+	$('#main').html(Mustache.render(view.template));
+
+	$('.next-btn').on('click', function() {
+		rcp.getNextView();
+	});
+
+	return view;
+};
+
 // trial view
 // handles each trial
 // sends slider's values back to the exp.data object
@@ -143,6 +156,20 @@ initPauseView = function() {
 	view.template = $('#pause-templ').html();
 
 	$('#main').html(Mustache.render(view.template));
+	$('.next-btn').on('click', function(){
+		rcp.getNextView();
+	});
+
+	return view;
+};
+
+initPostQuestionnaire = function() {
+	var view = {};
+	view.name = 'postQuest';
+	view.template = $('#post-quest-templ').html();
+
+	$('#main').html(Mustache.render(view.template));
+
 	$('.next-btn').on('click', function(){
 		rcp.getNextView();
 	});
