@@ -40,7 +40,7 @@ rcp.getNextView = function() {
 // experiment initialisation
 rcp.init = function() {
 	this.exp = initExp();
-	this.currentBlock = 3; // up to 3
-	this.currentVignette = 7; // up to 8
+	this.currentBlock = 0; // up to 3
+	this.currentVignette = 0; // up to 8
 	this.view = initIntroView();
 };
