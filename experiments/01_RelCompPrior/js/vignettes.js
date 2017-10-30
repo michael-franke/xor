@@ -19,9 +19,9 @@ var vignettes = [
    "question_exh1"  : "From what Cindy said we may conclude that Mr Gibbs did not have a beer as well.",
    "question_exh2"  : "From what Cindy said we may conclude that Mr Gibbs did not have a steak as well.",
    "test_true1"      : "Mrs Gibbs did not accompany her husband when Cindy served him.",
-   "test_true2"		: "Cidny was at the restaurant yesterday.",
+   "test_true2"		: "Cindy was at the restaurant yesterday.",
    "test_false1"     : "Mrs Gibbs is worried about Cindy's health.",
-   "test_false2"     : "Cidny works as shop assistant.",
+   "test_false2"     : "Cindy works as shop assistant.",
    "test_uncertain1" : "Cindy is secretly in love with Mrs Gibbs' husband.",
    "test_uncertain2" : "Mr Gibbs often eats at the local restaurant."
   },
