@@ -16,6 +16,8 @@ rcp.getNextView = function() {
 	if (this.view.name === 'intro') {
 		this.view = initInstructionsView();
 	} else if (this.view.name === 'instructions') {
+		this.view = initSampleView();
+	} else if (this.view.name === 'sample') {
 		this.view = initBeginExpView();
 	} else if (this.view.name === 'beginExp') {
 		this.view = initTrialView(this.exp.data[this.currentBlock][this.currentVignette], this.currentBlock, this.currentVignette);

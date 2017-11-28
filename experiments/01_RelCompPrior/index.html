@@ -36,20 +36,18 @@
 				<button type="submit" class="next-btn">to the experiment</button>
 			</div>
 		</script>
-		<script id="begin-exp-templ" type="x-type-mustache">
-			<div class="begin-exp">
-				<h1>Begin experimet</h1>
-				<p>The exact rating is a matter of taste and you might want to give a higher or lower rating. Just follow your intuition. Good luck!</p>
-				<button type="submit" class="next-btn">begin experiment</button>
-			</div>
-		</script>
 		<script id="instructions-templ" type="x-tmp-mustache">
 			<div class="instructions">
 				<h1>Instructions</h1>
 				<p> In the following, you will be presented with <b>8 short background stories</b>. Please read them very carefully. We ask you to <b>rate 2 or 3 statements for each background story</b>. Please indicate, using an adjustable slider bar, <b>how likely you think a statement is true based on the background story</b>.</p>
 				<p>The experiment consists of 4 blocks with pauses between. Each block consists of the same 8 background stories, however the statements you have to rate are different.</p>
 				<p>The background story is in a grey box.<br />The statements to be rated are preceded by <span class="questionmark in-text">?</span></p>
-				<h3>Example</h3>
+			</div>
+			<button type="submit" class="next-btn">next</button>
+		</script>
+		<script id="sample-templ" type="x-tmp-mustache">
+			<div class="sample">
+				<h1>Example</h1>
 				<h2>Joe's shopping</h2>
 				<p id="vignette-text" class="text">Joe went shopping yesterday, while his wife Sue was at home with the kids. He bought flowers for his wife on the way home.</p>
 				<div class="question-cont">
@@ -63,8 +61,15 @@
 					<input type="range" min="0" max="1" step="0.01" id="response" />
 					<label class="true">certainly true</label>
 				</p>
+				<button type="submit" class="next-btn">next</button>
 			</div>
-			<button type="submit" class="next-btn">next</button>
+		</script>
+		<script id="begin-exp-templ" type="x-type-mustache">
+			<div class="begin-exp">
+				<h1>Begin Experiment</h1>
+				<p>The exact rating is a matter of taste and you might want to give a higher or lower rating. Just follow your intuition. Good luck!</p>
+				<button type="submit" class="next-btn">begin experiment</button>
+			</div>
 		</script>
 		<script id="trial-templ" type="x-tmpl-mustache">
 			<div class="trial">

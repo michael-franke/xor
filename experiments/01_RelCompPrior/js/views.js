@@ -18,9 +18,22 @@ var initInstructionsView = function() {
 	$(window).scrollTop(0);
 	$('#main').html(Mustache.render(view.template));
 
+	$('.next-btn').on('click', function() {
+		rcp.getNextView();
+	});
+
+	return view;
+};
+
+var initSampleView = function() {
+	var view = {};
+	view.name = 'sample';
+	view.template = $('#sample-templ').html();
+	$('#main').html(Mustache.render(view.template));
+
 	// counters
-	current = 0;
-	examples = 4;
+	var current = 0;
+	var examples = 4;
 
 	// elements
 	var questionElem = $('#vignette-question');
@@ -47,7 +60,7 @@ var initInstructionsView = function() {
 	});
 
 	return view;
-};
+}
 
 initBeginExpView = function() {
 	var view = {};
