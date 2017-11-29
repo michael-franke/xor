@@ -105,6 +105,7 @@ initTrialView = function(trialInfo, blockIndex, vignetteIndex) {
 		// utterance handler
 		var showNextUtterance = function() {
 			utteranceElem.text(trialInfo['utterances'][currentUtterance]);
+			utteranceElem.addClass('utterance');
 			currentUtterance++;
 		}
 	}

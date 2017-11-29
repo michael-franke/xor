@@ -65,18 +65,24 @@ b {
 	margin: 15px auto 50px auto;
 }
 
-.text {
+.story {
 	background-color: #ededed;
 	border-radius: 10px;
-	color: #333;
-	font-size: 18px;
 	margin-bottom: 45px;
 	padding: 30px 45px;
 }
 
+.text {
+	color: #333;
+	font-size: 18px;	
+}
+
 .utterance {
+	background: #cdcdcd;
 	font-weight: 600;
-	margin-bottom: 40px;
+	margin: 30px 0 0 0;
+	padding: 15px 20px;
+	border-radius: 10px;
 }
 
 .question {
@@ -122,6 +128,8 @@ b {
 	font-size: 16px;
 	height: 20px;
 	margin: 0 0 0 5px;
+	min-height: 20px;
+	min-width: 20px;
 	padding: 5px;
 	width: 20px;
 }

@@ -54,8 +54,6 @@ var initExp = function() {
 					type: vignettes[i]['type'],
 					background: vignettes[i]['background'],
 					utterance_or: vignettes[i]['utterance_or'],
-					utterance_disj1: vignettes[i]['utterance_disj1'],
-					utterance_disj2: vignettes[i]['utterance_disj2'],
 					question_rel: vignettes[i]['question_rel'],
 					question_comp: vignettes[i]['question_comp'],
 					question_pri1: vignettes[i]['question_pri1'],
@@ -128,8 +126,6 @@ var initExp = function() {
 				'name': selectedVignettes[i]['name'],
 				'type': selectedVignettes[i]['type'],
 				'background': selectedVignettes[i]['background'],
-				'utterances': [selectedVignettes[i]['utterance_disj1'],
-					selectedVignettes[i]['utterance_disj2']],
 				'questions': [selectedVignettes[i]['control_pri'],
 					selectedVignettes[i]['question_pri1'], 
 					selectedVignettes[i]['question_pri2']]
