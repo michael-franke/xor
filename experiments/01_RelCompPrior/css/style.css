@@ -21,6 +21,7 @@ h1 {
 
 h2 {
 	font-family: "Playfair Display", serif;
+	color: #1FAFB7;
 	text-align: center;
 }
 
@@ -141,6 +142,40 @@ b {
 	font-size: 16px;
 	padding: 20px 0 40px 0;
 	text-align: center;
+}
+
+/* progress bar */
+.progress-bar-container {
+	display: block;
+	height: 50px;
+	flaot: right;
+	margin: 0 0 20px 0;
+	width: 100%;
+}
+
+.progress-bar-container p {
+	color: #555;
+	display: block;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 16px;
+	margin: 0 0 7px 0;
+	width: 220px;
+}
+
+.block {
+	border: 1px solid #1FAFB7;
+	border-radius: 5px;
+	display: inline-block;
+	float: left;
+	height: 15px;
+	margin: 0 6px 0 0;
+	width: 40px;
+}
+
+.filled {
+	background: #1FAFB7;
+	height: 15px;
+	width: 0;
 }
 
 /* labels (certainly true, certainly false) */

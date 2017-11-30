@@ -1,3 +1,23 @@
+// helpers
+
+var fillProgressBar = function(blockIndex, vignetteIndex) {
+	var block, filled;
+	
+	for (var i = 0; i <= blockIndex; i++) {
+		block = $('.block-' + (i + 1));
+		filled = block.children('.filled').first();
+
+		if (i === blockIndex) {
+			filled.width(5 * vignetteIndex);
+		} else {
+			filled.width(40);
+		}
+	}
+};
+
+
+// views
+
 var initIntroView = function() {
 	var view = {};
 	view.name = 'intro';
@@ -94,6 +114,8 @@ initTrialView = function(trialInfo, blockIndex, vignetteIndex) {
 	var utteranceElem = $('#vignette-utterance');
 	var sliderElem = $('#response');
 	var helpElem = $('.move-slider');
+
+	fillProgressBar(blockIndex, vignetteIndex);
 
 	// checks if there are utterances for this trial
 	// if so, create vars and functions that handle them
