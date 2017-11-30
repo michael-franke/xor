@@ -212,7 +212,8 @@ initQuestionnaireView = function(sendData) {
 			language: $('#language').val(),
 			difficulty: $('#difficulty').val(),
 			engagement: $('#engagement').val(),
-			comments: $('#comments').val()
+			comments: $('#comments').val(),
+			userAgent: navigator.userAgent
 		});
 		rcp.getNextView();
 	});
