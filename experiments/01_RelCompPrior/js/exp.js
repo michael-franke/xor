@@ -3,7 +3,10 @@
 // random block order (xor is always last)
 // shuffles the vignettes in each block
 var initExp = function() {
-	var exp = {};
+	//
+ 	var exp = {};
+	// keeps track of what story types have been chosen
+	var types = [];
 
 	// shuffles the items in a list
 	var shuffleComb = function(comb) {
@@ -22,10 +25,11 @@ var initExp = function() {
 
 		return comb;
 	};
+
 	
 	// shuffle the items in vignettes (vignettes_or.js and vignettes_some.js)
-	var vignettes_or = shuffleComb(vignettes_or);
-	var vignettes_some = shuffleComb(vignettes_some);
+	vignettes_some = shuffleComb(vignettes_some);
+	vignettes_or = shuffleComb(vignettes_or);
 
 	// selects 8 vignettes each one of different type
 	// takes a list of vignettes (vignettes_or)
@@ -33,13 +37,12 @@ var initExp = function() {
 	var selectVignettes = function(items) {
 		// a list of selected vignettes
 		var selected = [];
-		// keeps track of what story types have been chosen
-		var types = [];
-		
-		// makes sure vignettes of the same type don't end up in selected
-		// randomly selects 4 control questions for each chosen vignette
-		while (selected.length < 4) {
-			for (var i = 0; i < items.length; i++) {
+
+		for (var i = 0; i < items.length; i++) {
+			if (selected.length >= 4) {
+				break;
+			} else {
+				// makes sure vignettes of the same type don't end up in selected
 				if (types.indexOf(items[i]['type']) === -1) {
 					// put all control questions in a list				
 					var control_questions = [
@@ -54,28 +57,29 @@ var initExp = function() {
 					control_questions = shuffleComb(control_questions);
 
 					selected.push({
-						name: vignettes[i]['name'],
-						type: vignettes[i]['type'],
-						background: vignettes[i]['background'],
-						utterance_or: vignettes[i]['utterance_or'],
-						question_rel: vignettes[i]['question_rel'],
-						question_comp: vignettes[i]['question_comp'],
-						question_pri1: vignettes[i]['question_pri1'],
-						question_pri2: vignettes[i]['question_pri2'],
-						question_pri2: vignettes[i]['question_pri2'],
-						question_xor: vignettes[i]['question_xor'],
+						name: items[i]['name'],
+						type: items[i]['type'],
+						background: items[i]['background'],
+						utterance_or: items[i]['utterance_or'],
+						question_rel: items[i]['question_rel'],
+						question_comp: items[i]['question_comp'],
+						question_pri1: items[i]['question_pri1'],
+						question_pri2: items[i]['question_pri2'],
+						question_pri2: items[i]['question_pri2'],
+						question_xor: items[i]['question_xor'],
+						// randomly selects 4 control questions for each chosen vignette
 						control_rel: control_questions[0],
 						control_comp: control_questions[1],
 						control_pri: control_questions[2],
 						control_xor: control_questions[3]
 					});
 
-					types.push(vignettes[i]['type']);
-				} else {
-					continue;
+					types.push(items[i]['type']);
 				}
 			}
 		}
+
+		console.log(types);
 
 		return selected;
 	};
@@ -91,63 +95,75 @@ var initExp = function() {
 		return blocksOrder;
 	};
 
-	// generates data for the experiment
-	// selects vignettes, shuffles the blocks and the order of the vignettes
-	// returns a list of 4 lists (1 for each block). Each list contains 8 vignettes
-	var createExp = function() {
-		var selectedOrVignettes = selectVignettes(vignettes_or);
-/*		var selectedSomeVignettes = selectVignettes(vignettes_some);
-*/		var blocksOrder = generateBlocksOrder();
-
+	var fillBlocks = function(items) {
 		// an object of four blocks
 		var blocks = {
 			rel: [],
 			comp: [],
 			pri: [],
-			xor: []};
+			xor: []
+		};
 
-		// list of four items - each one is one block
-		var final = [];
+		for (var i = 0; i < items.length; i++) {
 
-		// 4 variants for each vignette
-		for (var i = 0; i < selectedVignettes.length; i++) {
+
 			blocks['rel'].push({
 				'block': 'rel',
-				'name': selectedVignettes[i]['name'],
-				'type': selectedVignettes[i]['type'],
-				'background': selectedVignettes[i]['background'],
-				'questions': [selectedVignettes[i]['control_rel'],
-					selectedVignettes[i]['question_rel']]
+				'name': items[i]['name'],
+				'type': items[i]['type'],
+				'background': items[i]['background'],
+				'questions': [items[i]['control_rel'], items[i]['question_rel']]
 			});
 			blocks['comp'].push({
 				'block': 'comp',
-				'name': selectedVignettes[i]['name'],
-				'type': selectedVignettes[i]['type'],
-				'background': selectedVignettes[i]['background'],
-				'questions': [selectedVignettes[i]['control_comp'],
-					selectedVignettes[i]['question_comp']]
+				'name': items[i]['name'],
+				'type': items[i]['type'],
+				'background': items[i]['background'],
+				'questions': [items[i]['control_comp'], items[i]['question_comp']]
 			});
 			blocks['pri'].push({
 				'block': 'pri',
-				'name': selectedVignettes[i]['name'],
-				'type': selectedVignettes[i]['type'],
-				'background': selectedVignettes[i]['background'],
-				'questions': [selectedVignettes[i]['control_pri'],
-					selectedVignettes[i]['question_pri1'], 
-					selectedVignettes[i]['question_pri2']]
+				'name': items[i]['name'],
+				'type': items[i]['type'],
+				'background': items[i]['background'],
+				'questions': [items[i]['control_pri'], items[i]['question_pri1']]
+
 			});
 			blocks['xor'].push({
 				'block': 'xor',
-				'name': selectedVignettes[i]['name'],
-				'type': selectedVignettes[i]['type'],
-				'background': selectedVignettes[i]['background'],
-				'utterances': [selectedVignettes[i]['utterance_or']],
-				'questions': [selectedVignettes[i]['control_xor'],
-					selectedVignettes[i]['question_xor']]
+				'name': items[i]['name'],
+				'type': items[i]['type'],
+				'background': items[i]['background'],
+				'utterances': [items[i]['utterance_imp']],
+				'questions': [items[i]['control_xor'],
+					items[i]['question_xor']]
 			});
 		}
 
-		// shuffle the blocks
+		console.log('blocks');
+		console.log(blocks);
+		return blocks;
+	};
+
+	var createExp = function() {
+		// list of objects
+		var final = [];
+		var blocks;
+		var selectedVignettes = [];
+		var blocksOrder = generateBlocksOrder();
+		console.log(blocksOrder);
+
+		selectedOrItems = selectVignettes(vignettes_or);
+		selectedSomeItems = selectVignettes(vignettes_some);
+
+		// combines selected 'or' items and selected 'some' items in one list (selectedVignettes)
+		for (var i = 0; i < 4; i++) {
+			selectedVignettes.push(selectedSomeItems[i]);
+			selectedVignettes.push(selectedOrItems[i]);
+		}
+
+		blocks = fillBlocks(selectedVignettes);
+
 		for (var i = 0; i < blocksOrder.length; i++) {
 			var temp = blocks[blocksOrder[i]];
 
@@ -155,9 +171,13 @@ var initExp = function() {
 			final.push(temp);
 		}
 
+		console.log(final);
 		return final;
 	};
 
+	// generates data for the experiment
+	// selects vignettes, shuffles the blocks and the order of the vignettes
+	// returns a list of 4 lists (1 for each block). Each list contains 8 vignettes (4 for 'some' and 4 for 'or')
 	// exp instance
 	exp.data = createExp();
 
@@ -165,12 +185,12 @@ var initExp = function() {
 		exp.data[blockIndex][vignetteIndex].response = responses;
 	};
 
-	// function that collects the subject's info (language, difficulty, comments, etc)
+	// collects the subject's info (language, difficulty, comments, etc)
 	exp.addSubjData = function(info) {
 		exp.subjData = info;
 	};
 
-	// functions that converts the data into JSON
+	// converts the data into JSON
 	exp.getJSON = function() {
 		return JSON.stringify({
 			"results": exp.data,

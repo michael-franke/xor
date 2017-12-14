@@ -14,9 +14,12 @@ var vignettes_some = [
    "question_priC"  : "If at least some of the rooms had working air conditioning, then all of the rooms had working air conditioning.",
    "question_imp"   : "From what Harry said we may conclude that not all of the rooms had working air conditioning.",
    "question_impI"  : "Harry wants to convey that not all of the rooms had working air conditioning.",
-   "test_true"      : "Harry has just inspected the San Diego hotel.",
-   "test_false"     : "Mr Jaynes is the manager of the San Diego hotel.",
-   "test_uncertain" : "Harry will inspect the Los Angeles hotel next."
+   "test_true1"      : "Harry has just inspected the San Diego hotel.",
+   "test_true2"      : "Harry inspects hotels.",
+   "test_false1"     : "Mr Jaynes is the manager of the San Diego hotel.",
+   "test_false2"     : "Mr Jaynes inspected the San Diego hotel.",
+   "test_uncertain1" : "Harry will inspect the Los Angeles hotel next.",
+   "test_uncertain2" : "Harry noticed a couple of things that were not according to the standards in  the San Diego hotel."
   },
   {"name"          : "NBA experts",
    "author"         : "micha",
@@ -33,9 +36,12 @@ var vignettes_some = [
    "question_priC"  : "If Greg Jones secured victory for his team during the last seconds of at least some of the decisive playoff matches, he also did so in all of them.",
    "question_imp"   : "From what Jason Barley said we may conclude that Greg Jones did not secure victory for his team during the last seconds of all of the decisive playoff matches.",
    "question_impI"  : "Jason Barley wants to convey that Greg Jones did not secure victory for his team during the last seconds of all of the decisive playoff matches.",
-   "test_true"      : "Greg Jones' team is in the playoffs of this year's NBA season.",
-   "test_false"     : "Jason Barley and Richard Trellis have been close friends for almost three decades.",
-   "test_uncertain" : "Jason Barley and Greg Jones are on the payroll of the same sports equipment manufacturer."
+   "test_true1"      : "Greg Jones' team is in the playoffs of this year's NBA season.",
+   "test_true2"      : "Jason Barley's choice for the Most Valueable Player of the year is Greg Jones.",
+   "test_false1"     : "Jason Barley and Richard Trellis have been close friends for almost three decades.", /* isn't this uncertain? */
+   "test_false2"     : "",
+   "test_uncertain1" : "Jason Barley and Greg Jones are on the payroll of the same sports equipment manufacturer.",
+   "test_uncertain2" : "Richard Trellis is an ex-NBA player"
   },
   {"name"          : "gift unwrapping",
    "author"         : "micha",
@@ -52,9 +58,12 @@ var vignettes_some = [
    "question_priC"  : "If Leonard unwrapped at least some of the presents right away, he unwrapped them all.",
    "question_imp"   : "From what Leonard's mother said we may conclude that Leonard did not unwrap all of the presents right away.",
    "question_impI"  : "Leonard's mother wants to convey that Leonard did not unwrap all of the presents right away.",
-   "test_true"      : "Suzanne attended Leonard's birthday party.",
-   "test_false"     : "Leonard's mother was abroad and could therefore not attend the birthday party.",
-   "test_uncertain" : "There were twelve children at the party."
+   "test_true1"      : "Suzanne attended Leonard's birthday party.",
+   "test_true2"      : "Suzanne gave Leonard a birthday present.",
+   "test_false1"     : "Leonard's mother was abroad and could therefore not attend the birthday party.",
+   "test_false2"     : "Leonard's birthday cake was made of vanilla and strawberries.",
+   "test_uncertain1" : "There were twelve children at the party.",
+   "test_uncertain2" : "Leonard was turning 7."
   },
   {"name"          : "van Gogh exhibition",
    "author"         : "micha",
@@ -71,9 +80,12 @@ var vignettes_some = [
    "question_priC"  : "If at least some of van Gogh's paintings are among the most valuable paintings in the world, all of them are.",
    "question_imp"   : "From what the curator said we may conclude that not all of van Gogh's paintings are among the most valuable paintings in the world.",
    "question_impI"  : "The curator wants to convey that not all of van Gogh's paintings are among the most valuable paintings in the world.",
-   "test_true"      : "The van Gogh exhibition is an important event for the city.",
-   "test_false"     : "The curator refused to talk to the mayor.",
-   "test_uncertain" : "The mayor is not interested in art exhibitions."
+   "test_true1"      : "The van Gogh exhibition is an important event for the city.",
+   "test_true2"      : "The mayor attended an exhibition in the Museum of Modern Art.",
+   "test_false1"     : "The curator refused to talk to the mayor.",
+   "test_false2"     : "The exhibition took place in The National Gallery Museum.",
+   "test_uncertain1" : "The mayor is not interested in art exhibitions.",
+   "test_uncertain2" : "The van Gogh's 'Starry Night' painting was not part of this exhibition."
   },
   {"name"          : "Swiss watch protoype testing",
    "author"         : "micha",
@@ -90,9 +102,12 @@ var vignettes_some = [
    "question_priC"  : "If the prototype passed at least some of the tests scheduled for today, it will pass them all.",
    "question_imp"   : "From what the apprentice said we may conclude that the prototype did not pass all of the tests scheduled for today.",
    "question_impI"  : "The apprentice wants to convey that the prototype did not pass all of the tests scheduled for today.",
-   "test_true"      : "Torsten Steinmeier is not executing the tests on the prototype himself.",
-   "test_false"     : "Testing of the prototype is finished.",
-   "test_uncertain" : "The company uses spare parts imported from Malaysia."
+   "test_true1"      : "Torsten Steinmeier is not executing the tests on the prototype himself.",
+   "test_true2"      : "Torsten Steinmeier is not executing the tests on the prototype himself.",
+   "test_false1"     : "Testing of the prototype is finished.",
+   "test_false2"     : "Testing of the prototype is finished.",
+   "test_uncertain1" : "The company uses spare parts imported from Malaysia.",
+   "test_uncertain2" : "The company uses spare parts imported from Malaysia."
   },      
   {"name"          : "gourmet desserts",
    "author"         : "micha",
@@ -109,9 +124,12 @@ var vignettes_some = [
    "question_priC"  : "If at least some of the restaurant's desserts are fantastic, all of them are.",
    "question_imp"   : "From what Claire said we may conclude that not all of the restaurant's desserts are fantastic.",
    "question_impI"  : "Claire wants to convey that not all of the restaurant's desserts are fantastic.",
-   "test_true"      : "Jeremy cares about good food.",
-   "test_false"     : "Claire is the owner of the restaurant.",
-   "test_uncertain" : "Jeremy is madly in love with Claire."
+   "test_true1"      : "Jeremy cares about good food.",
+   "test_true2"      : "Jeremy wants to know if the newly opened place is good.",
+   "test_false1"     : "Claire is the owner of the restaurant.",
+   "test_false2"     : "Claire hasn't been to the new place yet.",
+   "test_uncertain1" : "Jeremy is madly in love with Claire.",
+   "test_uncertain2" : "The newly opened restaurant is Claire's new favourite place."
   },      
   {"name"          : "rotten tomatoes",
    "author"         : "micha",
@@ -128,9 +146,12 @@ var vignettes_some = [
    "question_priC"  : "If at least some of the tomatoes are rotten, all of them are.",
    "question_imp"   : "From what Gilbert said we may conclude that not all of the tomatoes are rotten.",
    "question_impI"  : "Gilbert wants to convey that not all of the tomatoes are rotten.",
-   "test_true"      : "Ted is fully dedicated to serving high quality food.",
-   "test_false"     : "Gilbert is the cleaning lady.",
-   "test_uncertain" : "Gilbert is a former drug addict."
+   "test_true1"      : "Ted is fully dedicated to serving high quality food.",
+   "test_true2"      : "Ted is fully dedicated to serving high quality food.",
+   "test_false1"     : "Gilbert is the cleaning lady.",
+   "test_false2"     : "Gilbert is the cleaning lady.",
+   "test_uncertain1" : "Gilbert is a former drug addict.",
+   "test_uncertain2" : "Gilbert is a former drug addict."
   }, 
   {"name"          : "stand-up comedy show",
    "author"         : "micha",
@@ -147,9 +168,12 @@ var vignettes_some = [
    "question_priC"  : "If at least some of the people who came yesterday also came to today's show, all of them did.",
    "question_imp"   : "From what Lennard said we may conclude that not all of the people who came yesterday also came to today's show.",
    "question_impI"  : "Lennard wants to convey that not all of the people who came yesterday also came to today's show.",
-   "test_true"      : "Lennard is popular in Seattle.",
-   "test_false"     : "Lennard is a salesman for karaoke machines.",
-   "test_uncertain" : "Lennard is making plans for his early retirement."
+   "test_true1"      : "Lennard is popular in Seattle.",
+   "test_true2"      : "Lennard had two shows in Seattle.",
+   "test_false1"     : "Lennard is a salesman for karaoke machines.",
+   "test_false2"     : "Lennard wife was in Seattle with him.",
+   "test_uncertain1" : "Lennard is making plans for his early retirement.",
+   "test_uncertain2" : "Lennard is going to perform in Vancouver next."
   },    
   {"name"           : "tail-donkey blindfold",
    "author"         : "bob",
@@ -166,9 +190,12 @@ var vignettes_some = [
    "question_priC"  : "If Grace put at least some of the tails in the right place, she also put all of them in the right place.",
    "question_imp"   : "From what Oliver said we may conclude that Grace did not put all of the tails in the right place.",
    "question_impI"  : "Oliver wanted to convey that Grace did not put all of the tails in the right place.",
-   "test_true"      : "Grace is unable to see where she has to pin the tails.",
-   "test_false"     : "Grace and Oliver are playing charades.",
-   "test_uncertain" : "Grace and Oliver live in the same apartment."
+   "test_true1"      : "Grace is unable to see where she has to pin the tails.",
+   "test_true2"      : "Grace is unable to see where she has to pin the tails.",
+   "test_false1"     : "Grace and Oliver are playing charades.",
+   "test_false2"     : "Grace and Oliver are playing charades.",
+   "test_uncertain1" : "Grace and Oliver live in the same apartment.",
+   "test_uncertain2" : "Grace and Oliver live in the same apartment."
   },
   {"name"           : "Star Trek expert quiz",
    "author"         : "bob",
@@ -185,9 +212,12 @@ var vignettes_some = [
    "question_priC"  : "If Amber got at least some of the questions right, she also got all of them right.",
    "question_imp"   : "From what George said we may conclude that Amber did not get all of the answers right.",
    "question_impI"  : "George wanted to convey that Amber did not get all of the answers right.",
-   "test_true"      : "Amber knows a lot about 'Star Trek'.",
-   "test_false"     : "George asked ten questions about 'Star Wars'.",
-   "test_uncertain" : "Amber won the game."
+   "test_true1"      : "Amber knows a lot about 'Star Trek'.",
+   "test_true2"      : "Amber was asked questions about 'Star Trek'.",
+   "test_false1"     : "George asked ten questions about 'Star Wars'.",
+   "test_false2"     : "Amber is a big fan of 'Star Wars'.",
+   "test_uncertain1" : "Amber won the game.",
+   "test_uncertain2" : "Amber's choice of topic was 'Harry Potter'."
   },
   {"name"           : "emails from a broken laptop",
    "author"         : "bob",
@@ -204,9 +234,12 @@ var vignettes_some = [
    "question_priC"  : "If Joshua received at least some of Kate's emails, he also received all of them.",
    "question_imp"   : "From what Joshua said we may conclude that he did not receive all of Kate's emails.",
    "question_impI"  : "Joshua wanted to convey that he did not receive all of Kate's emails.",
-   "test_true"      : "Kate has difficulties sending emails.",
-   "test_false"     : "Kate is working on a desktop computer.",
-   "test_uncertain" : "Kate's laptop has a problem with the wifi connection."
+   "test_true1"      : "Kate has difficulties sending emails.",
+   "test_true2"      : "Kate has a meeting with Joshua today.",
+   "test_false1"     : "Kate is working on a desktop computer.",
+   "test_false2"     : "Kate has only one email.",
+   "test_uncertain1" : "Kate's laptop has a problem with the wifi connection.",
+   "test_uncertain2" : "Joshua can fix Kate's computer."
   },
   {"name"           : "underage drinking",
    "author"         : "bob",
@@ -223,9 +256,12 @@ var vignettes_some = [
    "question_priC"  : "If at least some of the patrons drinking alcohol were underage, all of them were underage.",
    "question_imp"   : "From what Edward said we may conclude that not all of the patrons drinking alcohol were underage.",
    "question_impI"  : "Edward wanted to convey that not all of the patrons drinking alcohol were underage.",
-   "test_true"      : "The new laws on underage drinking are very strict.",
-   "test_false"     : "The bar can stay open after Edward's visit.",
-   "test_uncertain" : "There were underage patrons drinking whiskey."
+   "test_true1"      : "The new laws on underage drinking are very strict.",
+   "test_true2"      : "Edward wants to make sure there are no underage partons drinking alcohol in his bar.",
+   "test_false1"     : "The bar can stay open after Edward's visit.",
+   "test_false2"     : "There were only a few people in the bar",
+   "test_uncertain1" : "There were underage patrons drinking whiskey.",
+   "test_uncertain2" : "Edward started checking the IDs around 11pm."
   },
   {"name"           : "M&M's in the hospital",
    "author"         : "bob",
@@ -242,9 +278,12 @@ var vignettes_some = [
    "question_priC"  : "If Henry liked at least some of the M&Ms, he also liked all of them.",
    "question_imp"   : "From what Henry said we may conclude that he did not like all of the M&Ms.",
    "question_impI"  : "Henry wanted to convey that he did not like all of the M&Ms.",
-   "test_true"      : "Henry was involved in a skiing accident.",
-   "test_false"     : "Aunt Bethany gave Henry only candy.",
-   "test_uncertain" : "Aunt Bethany travelled a long distance to visit Henry in the hospital."
+   "test_true1"      : "Henry was involved in a skiing accident.",
+   "test_true2"      : "Henry's Aunt brought him foods.",
+   "test_false1"     : "Aunt Bethany gave Henry only candy.",
+   "test_false2"     : "Henry broke his leg while he was skiing.",
+   "test_uncertain1" : "Aunt Bethany travelled a long distance to visit Henry in the hospital.",
+   "test_uncertain2" : "Henry broke the same arm last year."
   },
   {"name"           : "schizophrenia talk",
    "author"         : "bob",
@@ -261,9 +300,12 @@ var vignettes_some = [
    "question_priC"  : "If at least some of the people enjoyed Lucy's talk, all of them did.",
    "question_imp"   : "From what Jacob said we may conclude that not all of the people enjoyed Lucy's talk.",
    "question_impI"  : "Jacob wanted to convey that not all of the people enjoyed Lucy's talk.",
-   "test_true"      : "Jacob works as a psychologist.",
-   "test_false"     : "Lucy's talk is unlikely to stir much commotion.",
-   "test_uncertain" : "Lucy is really nervous about the talk. "
+   "test_true1"      : "Jacob works as a psychologist.",
+   "test_true2"      : "Jacob is interested in the topic of schizophrenia",
+   "test_false1"     : "Lucy's talk is unlikely to stir much commotion.",
+   "test_false2"     : "Lucy gave small talk on schizophrenia in front of Jacob and a couple of her colleagues.",
+   "test_uncertain1" : "Lucy is really nervous about the talk. ",
+   "test_uncertain2" : "Lucy is going her phd in Clinical Psychology. "
   },
   {"name"           : "Harvard admission exams",
    "author"         : "bob",
@@ -280,9 +322,12 @@ var vignettes_some = [
    "question_priC"  : "If Ethan passed at least some of the exams, he also passed all of them.",
    "question_imp"   : "From what Eleanor said we may conclude that Ethan did not pass all of the exams.",
    "question_impI"  : "Eleanor wanted to convey that Ethan did not pass all of the exams.",
-   "test_true"      : "Ethan is trying to get into an Ivy League university.",
+   "test_true1"      : "Ethan is trying to get into an Ivy League university.",
+   "test_true2"      : "Ethan is studying hard for his final exams.",
    "test_false"     : "Ethan failed to study intensively for his exams.",
-   "test_uncertain" : "Eleanor passed some of her exams."
+   "test_false"     : "Ethan had only a couple of daysto study for the finals.",
+   "test_uncertain1" : "Eleanor passed some of her exams.",
+   "test_uncertain2" : "Eleanor was hoping to get admitted in Harvard."
   },
   {"name"           : "Martha's cookies",
    "author"         : "bob",
@@ -299,8 +344,11 @@ var vignettes_some = [
    "question_priC"  : "If Emily ate at least some of the cookies, she also ate all of them.",
    "question_imp"   : "From what Martha said we may conclude that Emily did not eat all of the cookies.",
    "question_impI"  : "Martha wanted to convey that Emily did not eat all of the cookies.",
-   "test_true"      : "Emily really enjoys chocolate.",
-   "test_false"     : "Martha had dinner with a friend.",
-   "test_uncertain" : "Martha is allergic to chocolate."
+   "test_true1"      : "Emily really enjoys chocolate.",
+   "test_true2"      : "Emily has eaten the cookies that were given to Martha.",
+   "test_false1"     : "Martha had dinner with a friend.",
+   "test_false2"     : "Martha is a single mother.",
+   "test_uncertain1" : "Martha is allergic to chocolate.",
+   "test_uncertain2" : "Martha has two children."
   }
 ];
