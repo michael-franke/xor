@@ -18,29 +18,29 @@ To see the website, open `index.html` in your browser.
 
 ## Design
 
-Each participant sees 8 vignettes and 2 or 3 statements connected to the stories. The participants indicate how truthful the statements are using an adjustable slider.
+Each participant sees 8 vignettes and 2 or 3 statements connected to them. The participants indicate how truthful the statements are using an adjustable slider.
 
-The experiment is divided into 4 blocks for each factor. Each block consists of the same 8 vignettes in random order, however, the statements that need to be rated are different.
+The experiment is divided into 4 blocks for each factor. Each block consists of the same 8 vignettes displayed in random order, however, the statements that need to be rated are different.
 
 You can find more information about the experiment design in `info/exp_design.md`
 
 
 ## Experiment initialisation
 
-The information about the vignettes is in `js/vignettes.js`.
+The information about the vignettes is in `js/vignettes_or.js` and `js/vignettes_some.js`.
 
-Each viginette is an object that contains all the info needed to generate the experiment (background story, statements, control statements, utterances and so on).
+Each viginette is an object that contains all the info needed to generate the experiment (background story, statements, control questions, utterances and so on).
 
 There are 16 vignettes overall, two for every type.
 
 The code that generates the experiment is in `js/exp.js`. What it does:
-1) Randomly picks 8 vignettes of different type form `js/vignettes.js`.
+1) Randomly picks 4 vignettes of different type form `js/vignettes_or.js` and 4 from `vignettes_some.js`. The 8 chosen vignettes are all of different type.
 2) Randomly picks 4 control questions (out of 6) for each vignette.
 3) the order of the first 3 blocks is decided at random (relevance, competence, prior prob.). xor is always last.
-4) the vignettes in each block are shuffled
+4) the vignettes in each block are shuffled so that in every block they are shown in different order.
 
-Every time the website page is refreshed, the experiment is initialised.
-The generated experiment can be seen by typing `rcp.exp.data` in the browser console.
+Every time the page is loaded, the experiment is initialised.
+The generated data for each experiment can be seen by typing `rcp.exp.data` in the browser console.
 
 
 ## Views
@@ -51,6 +51,8 @@ The generated experiment can be seen by typing `rcp.exp.data` in the browser con
 
 - instructions
 	- instrustions
+
+- sample
 	- sample vignette with tips
 
 - begin experiment
@@ -60,7 +62,7 @@ The generated experiment can be seen by typing `rcp.exp.data` in the browser con
 	- background story, utterances if any, statements and slider
 
 - pause
-	- says the block is over and a new one is about to start
+	- says the block, gives instructions for the next block
 
 - questionnaire
 	- form with post questionnaire questions
@@ -74,11 +76,12 @@ The generated experiment can be seen by typing `rcp.exp.data` in the browser con
 `index.html` - contains the templates that the `js/views.js` fills
 
 `js/*` - all the js files
-- `js/exp.js` - knows how to create the experiment (using the info from `js/vignettes.js`)
+- `js/exp.js` - creates the experiment (using the info from `js/vignettes_or.js` and `vignettes_some.js`)
 - `js/views.js` - creates the views (i.e. introduction view, trial view, thanks view..)
-- `js/main.js`  - sends data from exp.js to the views and the opposite, handles the views,  creates an actual experiment   
-- `js/vignettes.js` - contains the stories
-- `js/sample.js` - contains sample vignette (similar to js/vignettes.js)
+- `js/main.js`  - sends data from exp.js to the views and the opposite, handles the views,  initialises experiment   
+- `js/vignettes_or.js` - contains the 'or' stories
+- `js/vignettes_some.js` - contains the 'some' stories
+- `js/sample.js` - contains a sample vignette used in sample view
 
 `images/*` - all the images
 

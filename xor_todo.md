@@ -22,7 +22,11 @@
 
 - fix format of output data: see -> xor/1st_attempt/analyses & data/01_xor-main/data2.csv 
 
-- can we record RTs as well?
+- record RTs
+
+- replace question_or with quesiton_imp in vignettes_or.js
+
+- fix PRI block to show 2 pri question for 'or' items and 1 for 'some' items
 
 
 
