@@ -1,5 +1,5 @@
 var vignettes_some = [
-   {"name"          : "hotel check",
+   {"name"          : "Hotel check",
    "author"         : "micha",
    "thoughts"       : "",
    "type"           : "hhh",
@@ -15,11 +15,11 @@ var vignettes_some = [
    "question_imp"   : "From what Harry said we may conclude that not all of the rooms had working air conditioning.",
    "question_impI"  : "Harry wants to convey that not all of the rooms had working air conditioning.",
    "test_true1"      : "Harry has just inspected the San Diego hotel.",
-   "test_true2"      : "Harry inspects hotels.",
+   "test_true2"      : "Harry works as a hotel inspector.",
    "test_false1"     : "Mr Jaynes is the manager of the San Diego hotel.",
    "test_false2"     : "Mr Jaynes inspected the San Diego hotel.",
    "test_uncertain1" : "Harry will inspect the Los Angeles hotel next.",
-   "test_uncertain2" : "Harry noticed a couple of things that were not according to the standards in  the San Diego hotel."
+   "test_uncertain2" : "Harry noticed a couple of things that were not according to the standards in the San Diego hotel."
   },
   {"name"          : "NBA experts",
    "author"         : "micha",
@@ -38,12 +38,12 @@ var vignettes_some = [
    "question_impI"  : "Jason Barley wants to convey that Greg Jones did not secure victory for his team during the last seconds of all of the decisive playoff matches.",
    "test_true1"      : "Greg Jones' team is in the playoffs of this year's NBA season.",
    "test_true2"      : "Jason Barley's choice for the Most Valueable Player of the year is Greg Jones.",
-   "test_false1"     : "Jason Barley and Richard Trellis have been close friends for almost three decades.", /* isn't this uncertain? */
-   "test_false2"     : "",
+   "test_false1"     : "Jason Barley and Richard Trellis have been close friends for almost three decades.", // isn't this uncertain?
+   "test_false2"     : "Greg Jones is engaged in the discussion of the current NBA season.",
    "test_uncertain1" : "Jason Barley and Greg Jones are on the payroll of the same sports equipment manufacturer.",
-   "test_uncertain2" : "Richard Trellis is an ex-NBA player"
+   "test_uncertain2" : "Richard Trellis is an ex-NBA player."
   },
-  {"name"          : "gift unwrapping",
+  {"name"          : "Gift unwrapping",
    "author"         : "micha",
    "thoughts"       : "no longer so sure if this is high prior; Leonard may want to unwrap all, but it may be uncertain whether he was allowed to",
    "type"           : "lhh",
@@ -85,11 +85,11 @@ var vignettes_some = [
    "test_false1"     : "The curator refused to talk to the mayor.",
    "test_false2"     : "The exhibition took place in The National Gallery Museum.",
    "test_uncertain1" : "The mayor is not interested in art exhibitions.",
-   "test_uncertain2" : "The van Gogh's 'Starry Night' painting was not part of this exhibition."
+   "test_uncertain2" : "The van Gogh's 'Starry Night' painting was part of this exhibition."
   },
   {"name"          : "Swiss watch protoype testing",
    "author"         : "micha",
-   "thoughts"       : "",
+   "thoughts"       : "Stela: Torsten Steinmeier mentioned in test_true1 is not part of the story",
    "type"           : "hlh",
    "relevance"      : "1",
    "competence"     : "0",
@@ -102,14 +102,14 @@ var vignettes_some = [
    "question_priC"  : "If the prototype passed at least some of the tests scheduled for today, it will pass them all.",
    "question_imp"   : "From what the apprentice said we may conclude that the prototype did not pass all of the tests scheduled for today.",
    "question_impI"  : "The apprentice wants to convey that the prototype did not pass all of the tests scheduled for today.",
-   "test_true1"      : "Torsten Steinmeier is not executing the tests on the prototype himself.",
-   "test_true2"      : "Torsten Steinmeier is not executing the tests on the prototype himself.",
+   "test_true1"      : "Torsten Steinmeier is not executing the tests on the prototype himself.", // Torsten Steinmeier has not been mentioned in the story above
+   "test_true2"      : "Product quality is very important for the company.", 
    "test_false1"     : "Testing of the prototype is finished.",
-   "test_false2"     : "Testing of the prototype is finished.",
+   "test_false2"     : "Mr. Tobler attended only the first part of the testing.",
    "test_uncertain1" : "The company uses spare parts imported from Malaysia.",
-   "test_uncertain2" : "The company uses spare parts imported from Malaysia."
+   "test_uncertain2" : "Mr. Tobler's apprentice is his nephew."
   },      
-  {"name"          : "gourmet desserts",
+  {"name"          : "Gourmet desserts",
    "author"         : "micha",
    "thoughts"       : "",
    "type"           : "lhh",
@@ -125,13 +125,13 @@ var vignettes_some = [
    "question_imp"   : "From what Claire said we may conclude that not all of the restaurant's desserts are fantastic.",
    "question_impI"  : "Claire wants to convey that not all of the restaurant's desserts are fantastic.",
    "test_true1"      : "Jeremy cares about good food.",
-   "test_true2"      : "Jeremy wants to know if the newly opened place is good.",
+   "test_true2"      : "Jeremy wants to know whether the newly opened place is good.",
    "test_false1"     : "Claire is the owner of the restaurant.",
    "test_false2"     : "Claire hasn't been to the new place yet.",
    "test_uncertain1" : "Jeremy is madly in love with Claire.",
-   "test_uncertain2" : "The newly opened restaurant is Claire's new favourite place."
+   "test_uncertain2" : "The newly opened restaurant is Claire's new favourite gourmet place."
   },      
-  {"name"          : "rotten tomatoes",
+  {"name"          : "Rotten tomatoes",
    "author"         : "micha",
    "thoughts"       : "",
    "type"           : "hll",
@@ -147,13 +147,13 @@ var vignettes_some = [
    "question_imp"   : "From what Gilbert said we may conclude that not all of the tomatoes are rotten.",
    "question_impI"  : "Gilbert wants to convey that not all of the tomatoes are rotten.",
    "test_true1"      : "Ted is fully dedicated to serving high quality food.",
-   "test_true2"      : "Ted is fully dedicated to serving high quality food.",
+   "test_true2"      : "Gilbert checked the state of the tomatoes.",
    "test_false1"     : "Gilbert is the cleaning lady.",
-   "test_false2"     : "Gilbert is the cleaning lady.",
+   "test_false2"     : "Ted is Gilbert's sous chef.",
    "test_uncertain1" : "Gilbert is a former drug addict.",
-   "test_uncertain2" : "Gilbert is a former drug addict."
+   "test_uncertain2" : "Ted owns the restaurant."
   }, 
-  {"name"          : "stand-up comedy show",
+  {"name"          : "Stand-up comedy show",
    "author"         : "micha",
    "thoughts"       : "",
    "type"           : "lll",
@@ -175,14 +175,14 @@ var vignettes_some = [
    "test_uncertain1" : "Lennard is making plans for his early retirement.",
    "test_uncertain2" : "Lennard is going to perform in Vancouver next."
   },    
-  {"name"           : "tail-donkey blindfold",
+  {"name"           : "Tail-donkey blindfold",
    "author"         : "bob",
    "thoughts"       : "",
    "type"           : "hhl",
    "relevance"      : "1",
    "competence"     : "1",
    "prior"          : "0",
-   "background"     : "Grace and Oliver are playing a game of pin the tail on the donkey. Oliver has hung up a large number of pictures of donkeys and Grace has to pin the tail on as many of them as possible while wearing a blindfold. Grace just pinned the last tail. ",
+   "background"     : "Grace and Oliver are playing a game of pin the tail on the donkey. Oliver has hung up a large number of pictures of donkeys and Grace has to pin the tail on as many of them as possible while wearing a blindfold. Grace just pinned the last tail.",
    "utterance_imp"   : "Oliver says: 'You put some of the tails in the right place.'",
    "question_rel"   : "It is important for Grace to know whether she put all of the tails in the right place.",
    "question_comp"  : "Oliver knows whether Grace put all of the tails in the right place.",
@@ -191,13 +191,13 @@ var vignettes_some = [
    "question_imp"   : "From what Oliver said we may conclude that Grace did not put all of the tails in the right place.",
    "question_impI"  : "Oliver wanted to convey that Grace did not put all of the tails in the right place.",
    "test_true1"      : "Grace is unable to see where she has to pin the tails.",
-   "test_true2"      : "Grace is unable to see where she has to pin the tails.",
+   "test_true2"      : "Olver hanged up the donkey pictures.",
    "test_false1"     : "Grace and Oliver are playing charades.",
-   "test_false2"     : "Grace and Oliver are playing charades.",
+   "test_false2"     : "Oliver has to pin the donkey's tails to the pictures.",
    "test_uncertain1" : "Grace and Oliver live in the same apartment.",
-   "test_uncertain2" : "Grace and Oliver live in the same apartment."
+   "test_uncertain2" : "Grace and Oliver are school mates."
   },
-  {"name"           : "Star Trek expert quiz",
+  {"name"           : "'Star Trek' expert quiz",
    "author"         : "bob",
    "thoughts"       : "",
    "type"           : "hhh",
@@ -219,7 +219,7 @@ var vignettes_some = [
    "test_uncertain1" : "Amber won the game.",
    "test_uncertain2" : "Amber's choice of topic was 'Harry Potter'."
   },
-  {"name"           : "emails from a broken laptop",
+  {"name"           : "Emails from a broken laptop",
    "author"         : "bob",
    "thoughts"       : "",
    "type"           : "lll",
@@ -237,11 +237,11 @@ var vignettes_some = [
    "test_true1"      : "Kate has difficulties sending emails.",
    "test_true2"      : "Kate has a meeting with Joshua today.",
    "test_false1"     : "Kate is working on a desktop computer.",
-   "test_false2"     : "Kate has only one email.",
+   "test_false2"     : "Kate sent email from one account.",
    "test_uncertain1" : "Kate's laptop has a problem with the wifi connection.",
    "test_uncertain2" : "Joshua can fix Kate's computer."
   },
-  {"name"           : "underage drinking",
+  {"name"           : "Underage drinking",
    "author"         : "bob",
    "thoughts"       : "",
    "type"           : "lhl",
@@ -285,7 +285,7 @@ var vignettes_some = [
    "test_uncertain1" : "Aunt Bethany travelled a long distance to visit Henry in the hospital.",
    "test_uncertain2" : "Henry broke the same arm last year."
   },
-  {"name"           : "schizophrenia talk",
+  {"name"           : "Schizophrenia talk",
    "author"         : "bob",
    "thoughts"       : "",
    "type"           : "hll",
@@ -305,7 +305,7 @@ var vignettes_some = [
    "test_false1"     : "Lucy's talk is unlikely to stir much commotion.",
    "test_false2"     : "Lucy gave small talk on schizophrenia in front of Jacob and a couple of her colleagues.",
    "test_uncertain1" : "Lucy is really nervous about the talk. ",
-   "test_uncertain2" : "Lucy is going her phd in Clinical Psychology. "
+   "test_uncertain2" : "Lucy's another topic of interest is Personality Disorders. "
   },
   {"name"           : "Harvard admission exams",
    "author"         : "bob",
@@ -325,7 +325,7 @@ var vignettes_some = [
    "test_true1"      : "Ethan is trying to get into an Ivy League university.",
    "test_true2"      : "Ethan is studying hard for his final exams.",
    "test_false"     : "Ethan failed to study intensively for his exams.",
-   "test_false"     : "Ethan had only a couple of daysto study for the finals.",
+   "test_false"     : "Ethan had only a couple of days to study for the finals.",
    "test_uncertain1" : "Eleanor passed some of her exams.",
    "test_uncertain2" : "Eleanor was hoping to get admitted in Harvard."
   },
