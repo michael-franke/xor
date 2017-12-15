@@ -60,19 +60,22 @@ var initExp = function() {
 						name: items[i]['name'],
 						type: items[i]['type'],
 						background: items[i]['background'],
-						utterance_or: items[i]['utterance_or'],
+						utterance_imp: items[i]['utterance_imp'],
 						question_rel: items[i]['question_rel'],
 						question_comp: items[i]['question_comp'],
 						question_pri1: items[i]['question_pri1'],
-						question_pri2: items[i]['question_pri2'],
-						question_pri2: items[i]['question_pri2'],
-						question_xor: items[i]['question_xor'],
+						question_imp: items[i]['question_imp'],
 						// randomly selects 4 control questions for each chosen vignette
 						control_rel: control_questions[0],
 						control_comp: control_questions[1],
 						control_pri: control_questions[2],
-						control_xor: control_questions[3]
+						control_imp: control_questions[3]
 					});
+
+					// if items has 'question_pri2' (which only 'or' items have), then it is added to selected
+					if (items[i].hasOwnProperty('question_pri2')) {
+						selected[selected.length - 1]['question_pri2'] = items[i]['question_pri2'];
+					}
 
 					types.push(items[i]['type']);
 				}
@@ -105,8 +108,6 @@ var initExp = function() {
 		};
 
 		for (var i = 0; i < items.length; i++) {
-
-
 			blocks['rel'].push({
 				'block': 'rel',
 				'name': items[i]['name'],
@@ -129,19 +130,23 @@ var initExp = function() {
 				'questions': [items[i]['control_pri'], items[i]['question_pri1']]
 
 			});
+
+			// only when there is a second 'pri' question, it is added to the pri block
+			if (items[i].hasOwnProperty('question_pri2')) {
+				blocks['pri'][blocks['pri'].length-1]['questions'].push(items[i]['question_pri2']);
+			}
+
 			blocks['xor'].push({
 				'block': 'xor',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
 				'background': items[i]['background'],
 				'utterances': [items[i]['utterance_imp']],
-				'questions': [items[i]['control_xor'],
-					items[i]['question_xor']]
+				'questions': [items[i]['control_imp'],
+					items[i]['question_imp']]
 			});
 		}
 
-		console.log('blocks');
-		console.log(blocks);
 		return blocks;
 	};
 
