@@ -18,16 +18,16 @@
 
 - record user equipment info (browser, device, OS, ...) **done**
 
-- include instructions between blocks (MF will write these)
+- record RTs **done**
 
-- fix format of output data: see -> xor/1st_attempt/analyses & data/01_xor-main/data2.csv 
 
 - replace question_or with quesiton_imp in vignettes_or.js **done**
 
 - fix PRI block to show 2 pri question for 'or' items and 1 for 'some' items **done**
 
-- record RTs
+- include instructions between blocks (MF will write these) **partially done**
 
+- fix format of output data: see -> xor/1st_attempt/analyses & data/01_xor-main/data2.csv 
 
 
 ## Michael

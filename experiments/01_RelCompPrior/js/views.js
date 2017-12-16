@@ -107,8 +107,12 @@ initTrialView = function(trialInfo, blockIndex, vignetteIndex) {
 	// coutners and flags
 	var currentQuestion = 0;
 	var sliderMoved = false;
+	// time when the page is loaded is recorded for calculating rts
+	var startDate = Date.now();
 	// a list of responses
 	var responses = [];
+	// a list of reaction times
+	var rt = [];
 	// elements
 	var questionElem = $('#vignette-question');
 	var utteranceElem = $('#vignette-utterance');
@@ -164,7 +168,20 @@ initTrialView = function(trialInfo, blockIndex, vignetteIndex) {
 	// when there are no more questions (and utterances) 'next' displays the next vignette
 	$('.next-btn').on('click', function() {
 		if (sliderMoved) {
+			// when the next button was clicked
+			var endDate = Date.now();
+
+			console.log('start time before : ' + startDate);
+			// record the difference between startDate and endDate
+			rt.push(endDate - startDate);
+			console.log('rt ' + rt);
+			// reset the startDate to have the value of endDate for the next question
+			startDate = endDate;
+			console.log('start time after: ' + startDate);
+
+			// check if there are questions to show
 			if (currentQuestion < (trialInfo['questions'].length - 1)) {
+				// check if there are utterances to show, if so, show them
 				if (hasUtterance) {
 					showNextUtterance();
 				}
@@ -174,12 +191,14 @@ initTrialView = function(trialInfo, blockIndex, vignetteIndex) {
 				showNextQuestion();
 			} else {
 				// record the val of the input
-				// add the values back to the vignette object
 				responses.push(sliderElem.val());
-				rcp.exp.addResponse(blockIndex, vignetteIndex, responses);
+				// add the values back to the vignette object
+				rcp.exp.addResponse(blockIndex, vignetteIndex, responses, rt);
+				// show next view
 				rcp.getNextView();
 			}
 		} else {
+			// if the slider hasn't been moved, show help text reminding them to interact with the slider
 			helpElem.removeClass('hidden');
 		}
 	});

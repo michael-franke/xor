@@ -186,8 +186,9 @@ var initExp = function() {
 	// exp instance
 	exp.data = createExp();
 
-	exp.addResponse = function(blockIndex, vignetteIndex, responses) {
+	exp.addResponse = function(blockIndex, vignetteIndex, responses, rt) {
 		exp.data[blockIndex][vignetteIndex].response = responses;
+		exp.data[blockIndex][vignetteIndex].rt = rt;
 	};
 
 	// collects the subject's info (language, difficulty, comments, etc)
