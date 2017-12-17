@@ -108,43 +108,71 @@ var initExp = function() {
 		};
 
 		for (var i = 0; i < items.length; i++) {
-			blocks['rel'].push({
+			blocks['rel'].push([{
 				'block': 'rel',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
 				'background': items[i]['background'],
-				'questions': [items[i]['control_rel'], items[i]['question_rel']]
-			});
-			blocks['comp'].push({
+				'question': items[i]['control_rel']
+			},{
+				'block': 'rel',
+				'name': items[i]['name'],
+				'type': items[i]['type'],
+				'background': items[i]['background'],
+				'question': items[i]['question_rel']
+			}]);
+			blocks['comp'].push([{
 				'block': 'comp',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
 				'background': items[i]['background'],
-				'questions': [items[i]['control_comp'], items[i]['question_comp']]
-			});
-			blocks['pri'].push({
+				'question': items[i]['control_comp']
+			},{
+				'block': 'comp',
+				'name': items[i]['name'],
+				'type': items[i]['type'],
+				'background': items[i]['background'],
+				'question': items[i]['question_comp']
+			}]);
+			blocks['pri'].push([{
 				'block': 'pri',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
 				'background': items[i]['background'],
-				'questions': [items[i]['control_pri'], items[i]['question_pri1']]
-
-			});
+				'question': items[i]['control_pri']
+			},{
+				'block': 'pri',
+				'name': items[i]['name'],
+				'type': items[i]['type'],
+				'background': items[i]['background'],
+				'question': items[i]['question_pri1']
+			}]);
 
 			// only when there is a second 'pri' question, it is added to the pri block
 			if (items[i].hasOwnProperty('question_pri2')) {
-				blocks['pri'][blocks['pri'].length-1]['questions'].push(items[i]['question_pri2']);
+				blocks['pri'][blocks['pri'].length-1].push({
+					'block': 'pri',
+					'name': items[i]['name'],
+					'type': items[i]['type'],
+					'background': items[i]['background'],
+					'question': items[i]['question_pri2']
+				});
 			}
 
-			blocks['xor'].push({
+			blocks['xor'].push([{
 				'block': 'xor',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
 				'background': items[i]['background'],
-				'utterances': [items[i]['utterance_imp']],
-				'questions': [items[i]['control_imp'],
-					items[i]['question_imp']]
-			});
+				'question': items[i]['control_imp']
+			},{
+				'block': 'xor',
+				'name': items[i]['name'],
+				'type': items[i]['type'],
+				'background': items[i]['background'],
+				'utterance': items[i]['utterance_imp'],
+				'question': items[i]['question_imp']
+			}]);
 		}
 
 		return blocks;
@@ -186,9 +214,9 @@ var initExp = function() {
 	// exp instance
 	exp.data = createExp();
 
-	exp.addResponse = function(blockIndex, vignetteIndex, responses, rt) {
-		exp.data[blockIndex][vignetteIndex].response = responses;
-		exp.data[blockIndex][vignetteIndex].rt = rt;
+	exp.addResponse = function(blockIndex, vignetteIndex, questionIndex, response, rt) {
+		exp.data[blockIndex][vignetteIndex][questionIndex].response = response;
+		exp.data[blockIndex][vignetteIndex][questionIndex].rt = rt;
 	};
 
 	// collects the subject's info (language, difficulty, comments, etc)

@@ -20,7 +20,6 @@
 
 - record RTs **done**
 
-
 - replace question_or with quesiton_imp in vignettes_or.js **done**
 
 - fix PRI block to show 2 pri question for 'or' items and 1 for 'some' items **done**

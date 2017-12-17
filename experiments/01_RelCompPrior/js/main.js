@@ -19,21 +19,30 @@ rcp.getNextView = function() {
 		this.view = initSampleView();
 	} else if (this.view.name === 'sample') {
 		this.view = initBeginExpView();
-	} else if (this.view.name === 'beginExp') {
-		this.view = initTrialView(this.exp.data[this.currentBlock][this.currentVignette], this.currentBlock, this.currentVignette);
-		this.currentVignette++;
+	} else if ((this.view.name === 'beginExp') || ((this.view.name === 'trial') && (this.currentVignette <= 7))) {
+		console.log('vig ' + this.currentVignette);
+		console.log('que ' + this.currentQuestion);
+		if (this.exp.data[this.currentBlock][this.currentVignette].length > this.currentQuestion) {
+			this.view = initTrialView(this.exp.data[this.currentBlock][this.currentVignette][this.currentQuestion], this.currentBlock, this.currentVignette, this.currentQuestion);
+			this.currentQuestion++;
+		} else {
+			this.currentQuestion = 0;
+			this.currentVignette++;
+			if (this.currentVignette === 8) {
+				this.view = initPauseView();
+				this.currentBlock++;
+				this.currentVignette = 0;
+			} else {
+				this.view = initTrialView(this.exp.data[this.currentBlock][this.currentVignette][this.currentQuestion], this.currentBlock, this.currentVignette, this.currentQuestion);
+				this.currentQuestion++;
+			}
+		}
 	} else if ((this.view.name === 'trial') && (this.currentBlock === 3) && (this.currentVignette === 8)) {
 		this.view = initQuestionnaireView(rcp.exp.addSubjData);
-	} else if ((this.view.name === 'trial') && (this.currentVignette < 8)) {
-		this.view = initTrialView(this.exp.data[this.currentBlock][this.currentVignette], this.currentBlock, this.currentVignette);
-		this.currentVignette++;
-	} else if ((this.view.name === 'trial') && (this.currentVignette === 8)) {
-		this.view = initPauseView();
-		this.currentBlock++;
-		this.currentVignette = 0;
-	} else if (this.view.name == 'pause') {
-		this.view = initTrialView(this.exp.data[this.currentBlock][this.currentVignette], this.currentBlock, this.currentVignette);
-		this.currentVignette++;
+	} else if ((this.view.name == 'pause') && (this.currentBlock < 3)) {
+		console.log(this.currentQuestion);
+		this.view = initTrialView(this.exp.data[this.currentBlock][this.currentVignette][this.currentQuestion], this.currentBlock, this.currentVignette, this.currentQuestion);
+		this.currentQuestion++;
 	} else {
 		this.view = initThanksView();
 	}
@@ -43,6 +52,7 @@ rcp.getNextView = function() {
 rcp.init = function() {
 	this.exp = initExp();
 	this.currentBlock = 0; // up to 3
-	this.currentVignette = 0; // up to 8
+	this.currentVignette = 0; // up to 7
+	this.currentQuestion = 0;
 	this.view = initIntroView();
 };
