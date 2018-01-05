@@ -25,7 +25,6 @@ var initExp = function() {
 
 		return comb;
 	};
-
 	
 	// shuffle the items in vignettes (vignettes_or.js and vignettes_some.js)
 	vignettes_some = shuffleComb(vignettes_some);
@@ -46,19 +45,24 @@ var initExp = function() {
 				if (types.indexOf(items[i]['type']) === -1) {
 					// put all control questions in a list				
 					var control_questions = [
-							items[i]['test_true1'],
-							items[i]['test_true2'],
-							items[i]['test_false1'],
-							items[i]['test_false2'],
-							items[i]['test_uncertain1'],
-							items[i]['test_uncertain2']];
+							[items[i]['test_true1'], 'test true'],
+							[items[i]['test_true2'], 'test true'],
+							[items[i]['test_false1'], 'test false'],
+							[items[i]['test_false2'], 'test false'],
+							[items[i]['test_uncertain1'], 'test uncertain'],
+							[items[i]['test_uncertain2'], 'test uncertain']];
 
 					// shuffle the control questions and take the first 4
 					control_questions = shuffleComb(control_questions);
 
+					console.log(control_questions);
+
 					selected.push({
 						name: items[i]['name'],
 						type: items[i]['type'],
+						relevance: Number(items[i]['relevance']),
+						competence: Number(items[i]['competence']),
+						prior: Number(items[i]['prior']),
 						background: items[i]['background'],
 						utterance_imp: items[i]['utterance_imp'],
 						question_rel: items[i]['question_rel'],
@@ -66,10 +70,14 @@ var initExp = function() {
 						question_pri1: items[i]['question_pri1'],
 						question_imp: items[i]['question_imp'],
 						// randomly selects 4 control questions for each chosen vignette
-						control_rel: control_questions[0],
-						control_comp: control_questions[1],
-						control_pri: control_questions[2],
-						control_imp: control_questions[3]
+						control_rel: control_questions[0][0],
+						control_rel_type: control_questions[0][1],
+						control_comp: control_questions[1][0],
+						control_rel_type: control_questions[1][1],
+						control_pri: control_questions[2][0],
+						control_pri_type: control_questions[2][1],
+						control_imp: control_questions[3][0],
+						control_imp_type: control_questions[3][1]
 					});
 
 					// if items has 'question_pri2' (which only 'or' items have), then it is added to selected
@@ -112,8 +120,12 @@ var initExp = function() {
 				'block': 'rel',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
+				'relevance': items[i]['relevance'],
+				'competence': items[i]['competence'],
+				'prior': items[i]['prior'],
 				'background': items[i]['background'],
-				'question': items[i]['control_rel']
+				'question': items[i]['control_rel'],
+				'test_type': items[i]['control_rel_type']
 			},{
 				'block': 'rel',
 				'name': items[i]['name'],
@@ -125,12 +137,19 @@ var initExp = function() {
 				'block': 'comp',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
+				'relevance': items[i]['relevance'],
+				'competence': items[i]['competence'],
+				'prior': items[i]['prior'],
 				'background': items[i]['background'],
-				'question': items[i]['control_comp']
+				'question': items[i]['control_comp'],
+				'test_type': items[i]['control_comp_type']
 			},{
 				'block': 'comp',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
+				'relevance': items[i]['relevance'],
+				'competence': items[i]['competence'],
+				'prior': items[i]['prior'],
 				'background': items[i]['background'],
 				'question': items[i]['question_comp']
 			}]);
@@ -138,12 +157,19 @@ var initExp = function() {
 				'block': 'pri',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
+				'relevance': items[i]['relevance'],
+				'competence': items[i]['competence'],
+				'prior': items[i]['prior'],
 				'background': items[i]['background'],
-				'question': items[i]['control_pri']
+				'question': items[i]['control_pri'],
+				'test_type': items[i]['control_pri_type']
 			},{
 				'block': 'pri',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
+				'relevance': items[i]['relevance'],
+				'competence': items[i]['competence'],
+				'prior': items[i]['prior'],
 				'background': items[i]['background'],
 				'question': items[i]['question_pri1']
 			}]);
@@ -154,6 +180,9 @@ var initExp = function() {
 					'block': 'pri',
 					'name': items[i]['name'],
 					'type': items[i]['type'],
+					'relevance': items[i]['relevance'],
+					'competence': items[i]['competence'],
+					'prior': items[i]['prior'],
 					'background': items[i]['background'],
 					'question': items[i]['question_pri2']
 				});
@@ -163,12 +192,19 @@ var initExp = function() {
 				'block': 'xor',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
+				'relevance': items[i]['relevance'],
+				'competence': items[i]['competence'],
+				'prior': items[i]['prior'],
 				'background': items[i]['background'],
-				'question': items[i]['control_imp']
+				'question': items[i]['control_imp'],
+				'test_type': items[i]['control_imp_type']
 			},{
 				'block': 'xor',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
+				'relevance': items[i]['relevance'],
+				'competence': items[i]['competence'],
+				'prior': items[i]['prior'],
 				'background': items[i]['background'],
 				'utterance': items[i]['utterance_imp'],
 				'question': items[i]['question_imp']
