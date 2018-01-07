@@ -73,7 +73,7 @@ var initExp = function() {
 						control_rel: control_questions[0][0],
 						control_rel_type: control_questions[0][1],
 						control_comp: control_questions[1][0],
-						control_rel_type: control_questions[1][1],
+						control_comp_type: control_questions[1][1],
 						control_pri: control_questions[2][0],
 						control_pri_type: control_questions[2][1],
 						control_imp: control_questions[3][0],
@@ -125,13 +125,17 @@ var initExp = function() {
 				'prior': items[i]['prior'],
 				'background': items[i]['background'],
 				'question': items[i]['control_rel'],
-				'test_type': items[i]['control_rel_type']
+				'condition': items[i]['control_rel_type']
 			},{
 				'block': 'rel',
 				'name': items[i]['name'],
 				'type': items[i]['type'],
+				'relevance': items[i]['relevance'],
+				'competence': items[i]['competence'],
+				'prior': items[i]['prior'],
 				'background': items[i]['background'],
-				'question': items[i]['question_rel']
+				'question': items[i]['question_rel'],
+				'condition': 'rel'
 			}]);
 			blocks['comp'].push([{
 				'block': 'comp',
@@ -142,7 +146,7 @@ var initExp = function() {
 				'prior': items[i]['prior'],
 				'background': items[i]['background'],
 				'question': items[i]['control_comp'],
-				'test_type': items[i]['control_comp_type']
+				'condition': items[i]['control_comp_type']
 			},{
 				'block': 'comp',
 				'name': items[i]['name'],
@@ -151,7 +155,8 @@ var initExp = function() {
 				'competence': items[i]['competence'],
 				'prior': items[i]['prior'],
 				'background': items[i]['background'],
-				'question': items[i]['question_comp']
+				'question': items[i]['question_comp'],
+				'condition': 'comp'
 			}]);
 			blocks['pri'].push([{
 				'block': 'pri',
@@ -162,7 +167,7 @@ var initExp = function() {
 				'prior': items[i]['prior'],
 				'background': items[i]['background'],
 				'question': items[i]['control_pri'],
-				'test_type': items[i]['control_pri_type']
+				'condition': items[i]['control_pri_type']
 			},{
 				'block': 'pri',
 				'name': items[i]['name'],
@@ -171,7 +176,8 @@ var initExp = function() {
 				'competence': items[i]['competence'],
 				'prior': items[i]['prior'],
 				'background': items[i]['background'],
-				'question': items[i]['question_pri1']
+				'question': items[i]['question_pri1'],
+				'condition': 'prior'
 			}]);
 
 			// only when there is a second 'pri' question, it is added to the pri block
@@ -184,7 +190,8 @@ var initExp = function() {
 					'competence': items[i]['competence'],
 					'prior': items[i]['prior'],
 					'background': items[i]['background'],
-					'question': items[i]['question_pri2']
+					'question': items[i]['question_pri2'],
+					'condition': 'prior'
 				});
 			}
 
@@ -197,7 +204,7 @@ var initExp = function() {
 				'prior': items[i]['prior'],
 				'background': items[i]['background'],
 				'question': items[i]['control_imp'],
-				'test_type': items[i]['control_imp_type']
+				'condition': items[i]['control_imp_type']
 			},{
 				'block': 'xor',
 				'name': items[i]['name'],
@@ -207,7 +214,8 @@ var initExp = function() {
 				'prior': items[i]['prior'],
 				'background': items[i]['background'],
 				'utterance': items[i]['utterance_imp'],
-				'question': items[i]['question_imp']
+				'question': items[i]['question_imp'],
+				'condition': 'imp'
 			}]);
 		}
 
@@ -220,7 +228,6 @@ var initExp = function() {
 		var blocks;
 		var selectedVignettes = [];
 		var blocksOrder = generateBlocksOrder();
-		console.log(blocksOrder);
 
 		selectedOrItems = selectVignettes(vignettes_or);
 		selectedSomeItems = selectVignettes(vignettes_some);
@@ -240,7 +247,6 @@ var initExp = function() {
 			final.push(temp);
 		}
 
-		console.log(final);
 		return final;
 	};
 
@@ -250,9 +256,10 @@ var initExp = function() {
 	// exp instance
 	exp.data = createExp();
 
-	exp.addResponse = function(blockIndex, vignetteIndex, questionIndex, response, rt) {
+	exp.addResponse = function(blockIndex, vignetteIndex, questionIndex, response, rt, currentTrial) {
 		exp.data[blockIndex][vignetteIndex][questionIndex].response = response;
 		exp.data[blockIndex][vignetteIndex][questionIndex].rt = rt;
+		exp.data[blockIndex][vignetteIndex][questionIndex].trial_number = currentTrial;
 	};
 
 	// collects the subject's info (language, difficulty, comments, etc)

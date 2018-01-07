@@ -324,8 +324,8 @@ var vignettes_some = [
    "question_impI"  : "Eleanor wanted to convey that Ethan did not pass all of the exams.",
    "test_true1"      : "Ethan is trying to get into an Ivy League university.",
    "test_true2"      : "Ethan is studying hard for his final exams.",
-   "test_false"     : "Ethan failed to study intensively for his exams.",
-   "test_false"     : "Ethan had only a couple of days to study for the finals.",
+   "test_false1"     : "Ethan failed to study intensively for his exams.",
+   "test_false2"     : "Ethan had only a couple of days to study for the finals.",
    "test_uncertain1" : "Eleanor passed some of her exams.",
    "test_uncertain2" : "Eleanor was hoping to get admitted in Harvard."
   },

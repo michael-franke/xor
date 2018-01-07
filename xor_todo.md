@@ -26,7 +26,7 @@
 
 - include instructions between blocks (MF will write these) **partially done**
 
-- fix format of output data: see -> xor/1st_attempt/analyses & data/01_xor-main/data2.csv 
+- fix format of output data: see -> xor/1st_attempt/analyses & data/01_xor-main/data2.csv  **done**
 
 
 ## Michael

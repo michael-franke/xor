@@ -98,7 +98,7 @@ initBeginExpView = function() {
 // trial view
 // handles each trial
 // sends slider's values back to the exp.data object
-initTrialView = function(trialInfo, blockIndex, vignetteIndex, questionIndex) {
+initTrialView = function(trialInfo, blockIndex, vignetteIndex, questionIndex, currentTrial) {
 	var view = {};
 	view.name = 'trial';
 	view.template = $('#trial-templ').html();
@@ -169,7 +169,7 @@ initTrialView = function(trialInfo, blockIndex, vignetteIndex, questionIndex) {
 			// record the val of the input
 			response = sliderElem.val();
 			// add the values back to the vignette object
-			rcp.exp.addResponse(blockIndex, vignetteIndex, questionIndex, response, rt);
+			rcp.exp.addResponse(blockIndex, vignetteIndex, questionIndex, response, rt, currentTrial);
 			rcp.getNextView();
 		} else {
 			// if the slider hasn't been moved, show help text reminding them to interact with the slider
