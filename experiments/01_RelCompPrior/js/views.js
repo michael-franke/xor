@@ -203,6 +203,8 @@ initQuestionnaireView = function(sendData) {
 	$('.next-btn').on('click', function(){
 		sendData({
 			language: $('#language').val(),
+      gender: $('#gender').val(),
+      age: $('#age').val(),
 			difficulty: $('#difficulty').val(),
 			engagement: $('#engagement').val(),
 			comments: $('#comments').val(),
