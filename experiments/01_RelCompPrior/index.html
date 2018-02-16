@@ -33,16 +33,17 @@
 				<h1>ExPrag Experiments</h1>
 				<img class="logo" src="images/uni-tuebingen-logo.png" alt="Tuebingen University Logo" height="200" width="200" />
 				<p>Thank you for your participation in our study! Your anonymous data makes an important contribution to our understanding of human learning and memory.</p>
-				<p><b>Legal information:<br /></b>By answering the following questions, you are participating in a study being performed by scientists from the Eberhard Karls University of Tübingen.<br /><br />You must be at least 18 years old to participate.<br /><br />Your participation in this research is voluntary. You may decline to answer any or all of the following questions. You may decline further participation, at any time, without adverse consequences.<br/><br />Your anonymity is assured; the researchers who have requested your participation will not receive any personal information about you.</p>
+				<p><b>Legal information:<br /></b>By answering the following questions, you are participating in a study being performed by scientists from the Eberhard Karls University Tübingen, Germany.<br /><br />You must be at least 18 years old to participate.<br /><br />Your participation in this research is voluntary. You may decline to answer any or all of the following questions. You may decline further participation, at any time, without adverse consequences.<br/><br />Your anonymity is assured; the researchers who have requested your participation will not receive any personal information about you.</p>
 				<button type="submit" class="next-btn">to the experiment</button>
 			</div>
 		</script>
 		<script id="instructions-templ" type="x-tmp-mustache">
 			<div class="instructions">
 				<h1>Instructions</h1>
-				<p> In the following, you will be presented with <b>8 short background stories</b>. Please read them very carefully. We ask you to <b>rate 2 or 3 statements for each background story</b>. Please indicate, using an adjustable slider bar, <b>how likely you think a statement is true based on the background story</b>.</p>
-				<p>The experiment consists of 4 blocks with pauses between. Each block consists of the same 8 background stories, however the statements you have to rate are different.</p>
+				<p> In the following, you will be presented with <b>8 short stories</b>. Please read them very carefully, even if they appear to be repeated and you think that you remember them well enough. We ask you to <b>rate statements about each short story</b>. Please indicate, using an adjustable slider bar, <b>how likely you think a statement is true based on the story</b> you read.</p>
+				<p>The experiment consists of 4 blocks with pauses between. Within each block you are asked to rate different kinds of statements.</p>
 				<p>The background story is in a grey box.<br />The statements to be rated are preceded by <span class="questionmark in-text">?</span></p>
+        <p>An example is provided next.</p>
 			</div>
 			<button type="submit" class="next-btn">next</button>
 		</script>
@@ -127,6 +128,14 @@
 				<p>
 					<label for="language">What is your native language?<span>(i.e. the language(s) spoken at home when you were a child)</span></label>
 					<input type="text" id="language" />
+				</p>
+        <p>
+					<label for="gender">What is your gender?</label>
+					<input type="text" id="gender" />
+				</p>
+        <p>
+					<label for="gender">What is your age?</label>
+					<input type="text" id="age" />
 				</p>
 				<p>
 					<label for="engagement" name="engagement">On a scale of 1-10 (where 10 is the most engaged), please rate how <b>ENGAGING</b> you found the task:</label>
