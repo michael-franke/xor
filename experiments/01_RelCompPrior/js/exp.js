@@ -259,6 +259,7 @@ var initExp = function() {
 	exp.addResponse = function(blockIndex, vignetteIndex, questionIndex, response, rt, currentTrial) {
 		exp.data[blockIndex][vignetteIndex][questionIndex].response = response;
 		exp.data[blockIndex][vignetteIndex][questionIndex].rt = rt;
+		exp.data[blockIndex][vignetteIndex][questionIndex].block_number = blockIndex + 1;
 		exp.data[blockIndex][vignetteIndex][questionIndex].trial_number = currentTrial;
 	};
 

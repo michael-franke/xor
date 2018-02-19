@@ -367,11 +367,11 @@ var vignettes_some = [
    "question_imp"   : "From what Jamie said we may conclude that not all of the books are meant for use in the common room.",
    "question_impI"  : "Jamie wants to convey that not all of the books are meant for use in the common room.",
    "test_true1"      : "Hannah and Jamie want to open a hostel.",
-   "test_true2"      : "Hannah and Jamie want to open a hostel.",
+   "test_true2"      : "Hannah and Jamie are doing the last touches of the common room.",
    "test_false1"     : "The hostel doesn't have a common room.",
-   "test_false2"     : "The hostel doesn't have a common room.",
+   "test_false2"     : "Hannah's father gave them a box full of books.",
    "test_uncertain1" : "Jamie's father donated magazines.",
-   "test_uncertain2" : "Jamie's father donated magazines."
+   "test_uncertain2" : "Hannah and Jamie are cousins."
   },
   {"name"          : "School headmaster",
    "author"         : "neele",
@@ -389,11 +389,11 @@ var vignettes_some = [
    "question_imp"   : "From what the headmaster said we may conclude that not all of the children are ill.",
    "question_impI"  : "The headmaster wants to convey that not all of the children are ill.",
    "test_true1"      : "Mary is a teacher.",
-   "test_true2"      : "Mary is a teacher.",
+   "test_true2"      : "The headmaster knows which children are ill.",
    "test_false1"     : "Mary works in New York.",
-   "test_false2"     : "Mary works in New York.",
+   "test_false2"     : "After school hours, Mary spoke to the headmaster about the absent children.",
    "test_uncertain1" : "The headmaster's name is Mr. Robert.",
-   "test_uncertain2" : "The headmaster's name is Mr. Robert."
+   "test_uncertain2" : "The headmaster is worried there might be a flu epidemic in school."
   },
   {"name"          : "Nut allergy",
    "author"         : "neele",
@@ -411,11 +411,11 @@ var vignettes_some = [
    "question_imp"   : "From what Garry said we may conclude that not all of the cakes contain nuts.",
    "question_impI"  : "Garry wants to convey that not all of the cakes contain nuts.",
    "test_true1"      : "It's Garry's birthday.",
-   "test_true2"      : "It's Garry's birthday.",
+   "test_true2"      : "There are several birthday cakes at the party.",
    "test_false1"     : "Garry is twenty years old.",
-   "test_false2"     : "Garry is twenty years old.",
+   "test_false2"     : "Brian is celebrating his fiftieth birthday.",
    "test_uncertain1" : "Brian is allergic to apples.",
-   "test_uncertain2" : "Brian is allergic to apples."
+   "test_uncertain2" : "Brian also brought cake."
   },
   {"name"          : "Harry Potter",
    "author"         : "neele",
@@ -433,11 +433,11 @@ var vignettes_some = [
    "question_imp"   : "From what Samantha said we may conclude that the friends will not watch all of the Harry Potter movies.",
    "question_impI"  : "Samantha wants to convey that they will not watch all of the Harry Potter movies.",
    "test_true1"      : "Samantha loves Harry Potter.",
-   "test_true2"      : "Samantha loves Harry Potter.",
+   "test_true2"      : "Samantha likes Harry Potter movies.",
    "test_false1"     : "Samantha doesn't want to invite anyone.",
-   "test_false2"     : "Samantha doesn't want to invite anyone.",
+   "test_false2"     : "Samantha is planning a Lord of the Rings marathon.",
    "test_uncertain1" : "Samantha's friends like Lord of the Rings.",
-   "test_uncertain2" : "Samantha's friends like Lord of the Rings."
+   "test_uncertain2" : "Samantha has watched the movies 5 times already."
   },
   {"name"          : "Picnic pictures",
    "author"         : "neele",
@@ -455,11 +455,11 @@ var vignettes_some = [
    "question_imp"   : "From what Lexie said we may conclude that Alex did not develop all of the pictures from the picnic.",
    "question_impI"  : "Lexie wants to convey that Alex has not has developd all of the pictures from the picnic.",
    "test_true1"      : "Beth and Lexie organized a picnic.",
-   "test_true2"      : "Beth and Lexie organized a picnic.",
+   "test_true2"      : "Alex is interested in photography.",
    "test_false1"     : "The weather is awful.",
-   "test_false2"     : "The weather is awful.",
+   "test_false2"     : "Alex forgot bringing his camera to the picnic.",
    "test_uncertain1" : "Lexie brought fruit for the picnic.",
-   "test_uncertain2" : "Lexie brought fruit for the picnic."
+   "test_uncertain2" : "Beth, Lexie and Alex are high school friends."
   },
   {"name"          : "New computer game",
    "author"         : "neele",
@@ -477,11 +477,11 @@ var vignettes_some = [
    "question_imp"   : "From what Max said we may conclude that not all of the copies of 'World Eater' were already sold during the first hour.",
    "question_impI"  : "Max wants to convey that not all of the copies of 'World Eater' were already sold during the first hour.",
    "test_true1"      : "Tim likes playing computer games.",
-   "test_true2"      : "Tim likes playing computer games.",
+   "test_true2"      : "Max's friends skipped class.",
    "test_false1"     : "Tim is already working.",
-   "test_false2"     : "Tim is already working.",
+   "test_false2"     : "Tim wants to go to the game store alone.",
    "test_uncertain1" : "Max has bought the new game.",
-   "test_uncertain2" : "Max has bought the new game."
+   "test_uncertain2" : "'World Eater' is a multiplayer game."
   },
   {"name"          : "Champagne reception",
    "author"         : "neele",
@@ -499,10 +499,10 @@ var vignettes_some = [
    "question_imp"   : "From what Cedric said we may conclude that not all of the guests don't drink alcohol",
    "question_impI"  : "Cedric wants to convey that not all of the guests don't drink alcohol.",
    "test_true1"      : "Cedric is invited to a wedding.",
-   "test_true2"      : "Cedric is invited to a wedding.",
+   "test_true2"      : "There is champagne for the invited to the wedding.",
    "test_false1"     : "Cedric is on a funeral.",
-   "test_false2"     : "Cedric is on a funeral.",
+   "test_false2"     : "There is only champagne at the reception.",
    "test_uncertain1" : "Cedric and Tara are married.",
-   "test_uncertain2" : "Cedric and Tara are married."
+   "test_uncertain2" : "Tara hasn't been to weddings before."
   }
 ];
