@@ -55,8 +55,6 @@ var initExp = function() {
 					// shuffle the control questions and take the first 4
 					control_questions = shuffleComb(control_questions);
 
-					console.log(control_questions);
-
 					selected.push({
 						name: items[i]['name'],
 						type: items[i]['type'],
@@ -89,8 +87,6 @@ var initExp = function() {
 				}
 			}
 		}
-
-		console.log(types);
 
 		return selected;
 	};
@@ -256,11 +252,35 @@ var initExp = function() {
 	// exp instance
 	exp.data = createExp();
 
+	// a list where the trial data and results are stored.
+	// gets filled with object by exp.addResponse(..) function
+	// each object represents one trial
+	exp.trials = [];
+
+	// adds the response and trial info to an object and pushes the object to exp.results
 	exp.addResponse = function(blockIndex, vignetteIndex, questionIndex, response, rt, currentTrial) {
-		exp.data[blockIndex][vignetteIndex][questionIndex].response = response;
-		exp.data[blockIndex][vignetteIndex][questionIndex].rt = rt;
-		exp.data[blockIndex][vignetteIndex][questionIndex].block_number = blockIndex + 1;
-		exp.data[blockIndex][vignetteIndex][questionIndex].trial_number = currentTrial;
+
+		if (exp.data[blockIndex][vignetteIndex][questionIndex].hasOwnProperty('utterance') === false) {
+			exp.data[blockIndex][vignetteIndex][questionIndex].utterance = '-';
+		}
+		
+		exp.trials.push({
+			'block_number': blockIndex + 1,
+			'trial_number': currentTrial,
+			'condition': exp.data[blockIndex][vignetteIndex][questionIndex].condition,
+			'block_type': exp.data[blockIndex][vignetteIndex][questionIndex].block,
+			'name': exp.data[blockIndex][vignetteIndex][questionIndex].name,
+			'type': exp.data[blockIndex][vignetteIndex][questionIndex].type,
+			'background': exp.data[blockIndex][vignetteIndex][questionIndex].background,
+			'question': exp.data[blockIndex][vignetteIndex][questionIndex].question,
+			'utterance': exp.data[blockIndex][vignetteIndex][questionIndex].utterance,
+			'relevance': exp.data[blockIndex][vignetteIndex][questionIndex].relevance,
+			'competence': exp.data[blockIndex][vignetteIndex][questionIndex].competence,
+			'prior': exp.data[blockIndex][vignetteIndex][questionIndex].prior,
+			'response': response,
+			'rt': rt
+		});
+
 	};
 
 	// collects the subject's info (language, difficulty, comments, etc)
@@ -271,7 +291,7 @@ var initExp = function() {
 	// converts the data into JSON
 	exp.getJSON = function() {
 		return JSON.stringify({
-			"results": exp.data,
+			"results": exp.trials,
 			"subjectInfo": exp.subjData
 		});
 	};
