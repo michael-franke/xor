@@ -51,9 +51,9 @@ rcp.getNextView = function() {
 // experiment initialisation
 rcp.init = function() {
 	this.exp = initExp();
-	this.currentBlock = 0; // up to 3
-	this.currentVignette = 0; // up to 7
+	this.currentBlock = 3; // starting form 0, up to 3 (4 in total)
+	this.currentVignette = 6; //starting from 0, up to 7 (8 in total)
 	this.currentQuestion = 0;
 	this.currentTrial = 1;
-	this.view = initIntroView();
+	this.view = initQuestionnaireView(rcp.exp.addSubjData);
 };

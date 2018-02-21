@@ -203,8 +203,8 @@ initQuestionnaireView = function(sendData) {
 	$('.next-btn').on('click', function(){
 		sendData({
 			language: $('#language').val(),
-      gender: $('#gender').val(),
-      age: $('#age').val(),
+			gender: $('#gender').val(),
+			age: $('#age').val(),
 			difficulty: $('#difficulty').val(),
 			engagement: $('#engagement').val(),
 			comments: $('#comments').val(),
@@ -240,32 +240,9 @@ initThanksView = function() {
 
 	$('#main').html(view.rendered);
 
-	$('#form').on('submit', function(e) {
-		var url = "";
-		console.log(rcp.exp.getJSON());
-
-		$.ajax({
-			type: "POST",
-			url: url,
-			data: $('#form').serialize(),
-			success: function(data) {
-				console.log('Submission successful!');
-				console.log(data);
-			},
-			error: function(data) {
-				console.log('An error occured');
-				console.log(data);
-			}
-		});
-
-		e.preventDefault();
-	});
-
-	$('#submit-results').on('click', function(e) {
-		$('#submit-results').addClass('hidden');
-		$('h1').removeClass('hidden');
-		$('p').text(rcp.exp.getJSON());
-	});
+	setTimeout(function() {
+		submitResults(false, 'stella.plamenova@gmail.com');
+	}, 100);
 
 	return view;
 };

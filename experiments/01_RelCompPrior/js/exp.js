@@ -291,8 +291,10 @@ var initExp = function() {
 	// converts the data into JSON
 	exp.getJSON = function() {
 		return JSON.stringify({
-			"results": exp.trials,
-			"subjectInfo": exp.subjData
+			"author": "Stela",
+			"experiment_id": "xor_pilot_1",
+			"trials": exp.trials,
+			"subject_info": exp.subjData
 		});
 	};
 

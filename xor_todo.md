@@ -4,6 +4,9 @@
 
 ## Stela
 
+
+### Done
+
 - show initial example on separate screen (first instructions, then click to example) **done**
 
 - Headline "Begin Experimet" -> "ExperimeNt" **done**
@@ -27,6 +30,20 @@
 - include instructions between blocks (MF will write these) **partially done**
 
 - fix format of output data: see -> xor/1st_attempt/analyses & data/01_xor-main/data2.csv  **done**
+
+
+### TODO
+
+- get workerID
+
+- add instructions before the last block
+
+- test submission to uni server and mturk's server
+
+- <option selected> error
+
+- deploy the experiment to GitLab pages
+
 
 
 ## Michael
