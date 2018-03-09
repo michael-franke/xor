@@ -55,5 +55,5 @@ rcp.init = function() {
 	this.currentVignette = 0; // starting from 0, up to 7 (8 in total)
 	this.currentQuestion = 0;
 	this.currentTrial = 1; // starting from 1
-	this.view = initIntroView(rcp.exp.addSubjData);
+	this.view = initIntroView();
 };

@@ -1,5 +1,4 @@
 // helpers
-
 var fillProgressBar = function(blockIndex, vignetteIndex) {
 	var block, filled;
 	
@@ -17,7 +16,6 @@ var fillProgressBar = function(blockIndex, vignetteIndex) {
 
 
 // views
-
 var initIntroView = function() {
 	var view = {};
 	view.name = 'intro';
@@ -193,6 +191,7 @@ initPauseView = function() {
 	return view;
 };
 
+
 initQuestionnaireView = function(sendData) {
 	var view = {};
 	view.name = 'postQuest';
@@ -216,33 +215,41 @@ initQuestionnaireView = function(sendData) {
 	return view;
 };
 
+
 initThanksView = function() {
 	var view = {};
 	view.name = 'thanks';
 	view.template = $('#thanks-templ').html();
+	var HITData = getHITData();
 
-	// func that returns the assignmentId that must be sent with the results
-	var getAssignmentId = function() {
-		var url = window.location.search.substring(1);
-		var qArray = url.split('&');
-		for (var i = 0; i < qArray.length; i++) {
-			var pArr = qArray[i].split('=');
-			if (pArr[0] === "assignmentId") {
-				return pArr[1];
-			}
-		}
-	};
+	$('#main').html(Mustache.render(view.template, {
+		trials: JSON.stringify(rcp.exp.trials),
+		author: 'Stela',
+		experiment_id: 'xor_pilot_test-01',
+		subject_info: rcp.exp.subjData,
+		description: 'The goal of this study is to get insights into the factors that determine the strength/availability of exclusive readings of "or".',
+		// MTurk expects a key 'assignmentId' for the submission to work, that is why is it not consistent with the snake case that the other keys have
+		assignmentId: HITData['assignmentId'],
+		worker_id: HITData['workerId'],
+		HIT_id: HITData['hitId']
+	}));
 
-	view.rendered = Mustache.render(view.template, {
-		assignmentId: getAssignmentId(),
-		results: rcp.exp.getJSON()
-	});
+	var data = {
+		'trials': rcp.exp.trials,
+		'author': 'Stela',
+		'experiment_id': 'xor_pilot_test-01',
+		'subject_info': rcp.exp.subjData,
+		'description': 'The goal of this study is to get insights into the factors that determine the strength/availability of exclusive readings of "or".',
+		// MTurk expects a key 'assignmentId' for the submission to work, that is why is it not consistent with the snake case that the other keys have
+		'assignmentId': HITData['assignmentId'],
+		'worker_id': HITData['workerId'],
+		'HIT_id': HITData['hitId']
+	}
 
-	$('#main').html(view.rendered);
 
 	setTimeout(function() {
-		submitResults(false, 'stella.plamenova@gmail.com');
-	}, 100);
+		submitResults(true, 'stella.plamenova@gmail.com', data);
+	}, 0);
 
 	return view;
 };

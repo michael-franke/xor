@@ -67,3 +67,7 @@ participants.db
 .~lock.*
 
 *.tmp
+
+
+# deploy script and testing related things
+experiments/01_RelCompPrior/meta

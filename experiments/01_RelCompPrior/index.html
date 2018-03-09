@@ -10,8 +10,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet" /> 
 
 		<!-- js dependencies -->
-		<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-		<script src="../../node_modules/mustache/mustache.min.js"></script>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/mustache/mustache.min.js"></script>
 		
 		<!-- js -->
 		<script src="js/vignettes_or.js"></script>
@@ -31,7 +31,7 @@
 		</main>
 		<script id="intro-templ" type="x-tmpl-mustache">
 			<div class="intro">
-				<h1>ExPrag Experiments</h1>
+				<h1>XPrag Experiments</h1>
 				<img class="logo" src="images/uni-tuebingen-logo.png" alt="Tuebingen University Logo" height="200" width="200" />
 				<p>Thank you for your participation in our study! Your anonymous data makes an important contribution to our understanding of human learning and memory.</p>
 				<p><b>Legal information:<br /></b>By answering the following questions, you are participating in a study being performed by scientists from the Eberhard Karls University Tübingen, Germany.<br /><br />You must be at least 18 years old to participate.<br /><br />Your participation in this research is voluntary. You may decline to answer any or all of the following questions. You may decline further participation, at any time, without adverse consequences.<br/><br />Your anonymity is assured; the researchers who have requested your participation will not receive any personal information about you.</p>
@@ -146,7 +146,7 @@
 						<option value="8">8</option>
 						<option value="7">7</option>
 						<option value="6">6</option>
-						<option value="5">5 - Moderately</option>
+						<option value="5" selected>5 - Moderately</option>
 						<option value="4">4</option>
 						<option value="3">3</option>
 						<option value="2">2</option>
@@ -162,7 +162,7 @@
 						<option value="8">8</option>
 						<option value="7">7</option>
 						<option value="6">6</option>
-						<option value="5">5 - Moderately</option>
+						<option value="5 selected">5 - Moderately</option>
 						<option value="4">4</option>
 						<option value="3">3</option>
 						<option value="2">2</option>
@@ -180,10 +180,15 @@
 		<script id="thanks-templ" type="x-tmpl-mustache">
 			<div class="thanks">
 				<h1 class='thanks-message hidden'>Thank you for taking part in this study!</h1>
-				<form method="post" action="https://www.mturk.com/mturk/externalSubmit"
-				id="submit_to_mturk">
+				<form method="post" id="mturk-submission-form" action="https://workersandbox.mturk.com/mturk/externalSubmit">
 					<input type="hidden" name="assignmentId" value="{{ assignmentId }}" />
-					<input type="hidden" name="results" value="{{ results }}"/>
+					<input type="hidden" name="author" value="{{ author }}"/>
+					<input type="hidden" name="experiment_id" value="{{ experiment_id }}"/>
+					<input type="hidden" name="trials" value="{{ trials }}"/>
+					<input type="hidden" name="subject_info" value="{{ subject_info }}"/>
+					<input type="hidden" name="description" value="{{ description }}"/>
+					<input type="hidden" name="worker_id" value="{{ worker_id }}"/>
+					<input type="hidden" name="HIT_id" value="{{ HIT_id }}"/>
 				</form>
 			</div>
 		</script>

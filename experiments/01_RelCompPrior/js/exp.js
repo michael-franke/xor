@@ -293,6 +293,7 @@ var initExp = function() {
 		return JSON.stringify({
 			"author": "Stela",
 			"experiment_id": "xor_pilot_1",
+			"description": "The goal of this study is to get insights into the factors that determine the strength/availability of exclusive readings of 'or'.",
 			"trials": exp.trials,
 			"subject_info": exp.subjData
 		});

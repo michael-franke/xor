@@ -2,8 +2,8 @@
 // takes two arguments:
 // 1. isMTurk - boolean; true if the experiment is run on MTurk
 // 2. contactEmail - string
-//
-var submitResults = function(isMTurk, contactEmail) {
+// 3. data - the JSON with the results
+var submitResults = function(isMTurk, contactEmail, data) {
 	// if isMTurk is not given, sets it to false
 	isMTurk = typeof isMTurk !== 'undefined' ? isMTurk : false;
 	// set a default contact email
@@ -11,13 +11,9 @@ var submitResults = function(isMTurk, contactEmail) {
 
 	$.ajax({
 		type: 'POST',
-		url: '',
-		data: {
-			'trials': rcp.exp.trials,
-			'author': 'Stela',
-			'experiment_id': 'xor_pilot_1',
-			'subject_info': rcp.exp.subjData
-		},
+		crossDomain: true,
+		url: 'https://procomprag.herokuapp.com/api/submit_experiment',
+		data: data,
 		success: function (responseData, textStatus, jqXHR) {
 			console.log(textStatus)
 			if (isMTurk) {
@@ -51,12 +47,25 @@ var submitResults = function(isMTurk, contactEmail) {
 	});
 };
 
-// submits to MTurk's servers
+// submits to MTurk's servers if config.is_MTurk is set to true
+// and the correct url is given in config.MTurk_server
 var submitToMTurk = function() {
-	console.log('submit to mturk called');
-	var form = $('#submit_to_mturk');
-
-/*	form.action = submitTo;*/
+	var form = $('#mturk-submission-form');
 	form.submit();
 };
 
+// parses the url to get thr assignment_id and worker_id
+var getHITData = function() {
+	var url = window.location.href;
+	var qArray = url.split('?');
+	qArray = qArray[1].split('&');
+	var HITData = {};
+
+	for (var i=0; i<qArray.length; i++) {
+		HITData[qArray[i].split('=')[0]] = qArray[i].split('=')[1];
+	}
+
+	console.log(HITData);
+
+	return HITData;
+};

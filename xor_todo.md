@@ -32,13 +32,14 @@
 - fix format of output data: see -> xor/1st_attempt/analyses & data/01_xor-main/data2.csv  **done**
 
 
+
 ### TODO
 
-- get workerID
+- get workerID **done**
 
 - add instructions before the last block
 
-- test submission to uni server and mturk's server
+- test submission to uni server and mturk's server **done**
 
 - <option selected> error
 
