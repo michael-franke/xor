@@ -178,12 +178,23 @@ initTrialView = function(trialInfo, blockIndex, vignetteIndex, questionIndex, cu
 	return view;
 };
 
-initPauseView = function() {
+
+initPauseView = function(pauseNumber) {
 	var view = {};
 	view.name = 'pause';
 	view.template = $('#pause-templ').html();
+	var instructions;
 
-	$('#main').html(Mustache.render(view.template));
+	if (pauseNumber === 2) {
+		instructions = 'In this block <strong>some</strong> of the stories will be accompanied by an <strong>utterance</strong>. The utterance will appear in the story box in a darker grey box. Your task is, again, to indicate how likely the statement is true based on the story and the utterance.';
+	} else {
+		instructions = '';
+	}
+
+	$('#main').html(Mustache.render(view.template, {
+		instructions: instructions
+	}));
+
 	$('.next-btn').on('click', function(){
 		rcp.getNextView();
 	});

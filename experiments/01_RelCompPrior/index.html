@@ -119,6 +119,9 @@
 		<script id="pause-templ" type="x-tmpl-mustache">
 			<div class="pause">
 				<h1>This block is finished!</h1>
+				{{# instructions }}
+				<p>{{{ instructions }}}</p>
+				{{/ instructions }}
 				<p>To move to the next block, press 'next' button</p>
 			</div>
 			<button type="submit" class="next-btn">next</button>

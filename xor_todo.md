@@ -37,11 +37,11 @@
 
 - get workerID **done**
 
-- add instructions before the last block
+- add instructions before the last block **done**
 
 - test submission to uni server and mturk's server **done**
 
-- <option selected> error
+- <option selected> error **done**
 
 - deploy the experiment to GitLab pages
 

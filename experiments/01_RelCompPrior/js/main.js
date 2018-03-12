@@ -28,8 +28,9 @@ rcp.getNextView = function() {
 			this.currentQuestion = 0;
 			this.currentVignette++;
 			if (this.currentVignette === 8) {
-				this.view = initPauseView();
+				this.view = initPauseView(this.currentPause);
 				this.currentBlock++;
+				this.currentPause++;
 				this.currentVignette = 0;
 			} else {
 				this.view = initTrialView(this.exp.data[this.currentBlock][this.currentVignette][this.currentQuestion], this.currentBlock, this.currentVignette, this.currentQuestion, this.currentTrial);
@@ -55,5 +56,6 @@ rcp.init = function() {
 	this.currentVignette = 0; // starting from 0, up to 7 (8 in total)
 	this.currentQuestion = 0;
 	this.currentTrial = 1; // starting from 1
+	this.currentPause = 0; // starting from 0
 	this.view = initIntroView();
 };
