@@ -431,3 +431,16 @@ var vignettes = [
    "test_uncertain2" : "Richard and Tom haven't met Harold's girlfriend in person."
   }
 ];
+
+// trying out creating new block-based trial info
+// const trials_block_xor = _.map(
+//     vignettes,
+//     function(v) {
+//         var u = v;
+//         u.QUD = u.background;
+//         u.optionLeft = "surely not";
+//         u.optionRight  = "surely certain";
+//         u.question = u.question_xor;
+//         return(u);
+//     }
+// )
